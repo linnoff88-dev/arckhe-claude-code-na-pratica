@@ -12,7 +12,7 @@
 | **Tier** | Nano Banana 2 (Flash) |
 | **Speed** | Fast - optimized for high-volume use |
 | **Aspect Ratios** | All 14 ratios (see table below) |
-| **Max Resolution** | Up to 4096×4096 (4K tier) |
+| **Max Resolution** | Up to 4096Ã—4096 (4K tier) |
 | **Features** | Google Search grounding (web + image), thinking levels, image-only output, extreme aspect ratios |
 | **Rate Limits (Free)** | ~10 RPM / ~500 RPD (per Google Cloud project, resets midnight Pacific) |
 | **Output Tokens** | ~1,290 output tokens per image |
@@ -25,7 +25,7 @@
 | **Tier** | Nano Banana 2 (Flash, previous gen) |
 | **Speed** | Fast |
 | **Aspect Ratios** | 1:1, 16:9, 9:16, 4:3, 3:4 |
-| **Max Resolution** | Up to 1024×1024 (1K tier) |
+| **Max Resolution** | Up to 1024Ã—1024 (1K tier) |
 | **Rate Limits (Free)** | ~10 RPM / ~500 RPD |
 | **Best For** | Stable fallback, proven quality |
 
@@ -45,20 +45,20 @@ All 14 supported ratios. Availability varies by model:
 
 | Ratio | Orientation | Use Cases | 3.1 Flash | 2.5 Flash |
 |-------|-------------|-----------|:---------:|:---------:|
-| `1:1` | Square | Social posts, avatars, thumbnails | ✅ | ✅ |
-| `16:9` | Landscape | Blog headers, YouTube thumbnails, presentations | ✅ | ✅ |
-| `9:16` | Portrait | Stories, Reels, TikTok, mobile | ✅ | ✅ |
-| `4:3` | Landscape | Product shots, classic display | ✅ | ✅ |
-| `3:4` | Portrait | Book covers, portrait framing | ✅ | ✅ |
-| `2:3` | Portrait | Pinterest pins, posters | ✅ | ❌ |
-| `3:2` | Landscape | DSLR standard, photo prints | ✅ | ❌ |
-| `4:5` | Portrait | Instagram portrait, social | ✅ | ❌ |
-| `5:4` | Landscape | Large format photography | ✅ | ❌ |
-| `1:4` | Tall strip | Vertical banners, side panels | ✅ | ❌ |
-| `4:1` | Wide strip | Website banners, headers | ✅ | ❌ |
-| `1:8` | Extreme tall | Narrow vertical strips | ✅ | ❌ |
-| `8:1` | Extreme wide | Ultra-wide banners | ✅ | ❌ |
-| `21:9` | Ultra-wide | Cinematic, film-grade, ultra-wide monitors | ✅ | ❌ |
+| `1:1` | Square | Social posts, avatars, thumbnails | âœ… | âœ… |
+| `16:9` | Landscape | Blog headers, YouTube thumbnails, presentations | âœ… | âœ… |
+| `9:16` | Portrait | Stories, Reels, TikTok, mobile | âœ… | âœ… |
+| `4:3` | Landscape | Product shots, classic display | âœ… | âœ… |
+| `3:4` | Portrait | Book covers, portrait framing | âœ… | âœ… |
+| `2:3` | Portrait | Pinterest pins, posters | âœ… | âŒ |
+| `3:2` | Landscape | DSLR standard, photo prints | âœ… | âŒ |
+| `4:5` | Portrait | Instagram portrait, social | âœ… | âŒ |
+| `5:4` | Landscape | Large format photography | âœ… | âŒ |
+| `1:4` | Tall strip | Vertical banners, side panels | âœ… | âŒ |
+| `4:1` | Wide strip | Website banners, headers | âœ… | âŒ |
+| `1:8` | Extreme tall | Narrow vertical strips | âœ… | âŒ |
+| `8:1` | Extreme wide | Ultra-wide banners | âœ… | âŒ |
+| `21:9` | Ultra-wide | CARCKHÉtic, film-grade, ultra-wide monitors | âœ… | âŒ |
 
 ## Resolution Tiers
 
@@ -66,13 +66,13 @@ Control output resolution with the `imageSize` parameter. Note the **uppercase K
 
 | `imageSize` Value | Pixel Range | Model Availability | Use Case |
 |-------------------|-------------|-------------------|----------|
-| `512` | Up to 512×512 | All models | Drafts, quick iteration, low bandwidth |
-| `1K` (default) | Up to 1024×1024 | All models | Standard web use, social media |
-| `2K` | Up to 2048×2048 | 3.1 Flash | Quality assets, detailed work |
-| `4K` | Up to 4096×4096 | 3.1 Flash | Print production, hero images, final assets |
+| `512` | Up to 512Ã—512 | All models | Drafts, quick iteration, low bandwidth |
+| `1K` (default) | Up to 1024Ã—1024 | All models | Standard web use, social media |
+| `2K` | Up to 2048Ã—2048 | 3.1 Flash | Quality assets, detailed work |
+| `4K` | Up to 4096Ã—4096 | 3.1 Flash | Print production, hero images, final assets |
 
 **Notes:**
-- Actual pixel dimensions depend on aspect ratio (e.g., 4K at 16:9 = 4096×2304)
+- Actual pixel dimensions depend on aspect ratio (e.g., 4K at 16:9 = 4096Ã—2304)
 - Higher resolutions consume more tokens and cost more
 - Default is `1K` if `imageSize` is not specified
 
@@ -151,8 +151,8 @@ Useful for character consistency, style transfer, and brand-aligned generation.
 | Model | Resolution | Cost per Image | Notes |
 |-------|-----------|---------------|-------|
 | 3.1 Flash | 1K | ~$0.039 | Standard |
-| 3.1 Flash | 2K | ~$0.078 | 2× standard |
-| 3.1 Flash | 4K | ~$0.156 | 4× standard |
+| 3.1 Flash | 2K | ~$0.078 | 2Ã— standard |
+| 3.1 Flash | 4K | ~$0.156 | 4Ã— standard |
 | 2.5 Flash | 1K | ~$0.039 | Standard |
 | Batch API | Any | 50% discount | Asynchronous, higher latency |
 
@@ -164,7 +164,7 @@ Research suggests NB2 pricing may be ~$0.067/img (vs documented $0.039). Verify 
 | Property | Value |
 |----------|-------|
 | **Format** | PNG |
-| **Max Resolution** | Up to 4096×4096 (4K tier, 3.1 Flash) |
+| **Max Resolution** | Up to 4096Ã—4096 (4K tier, 3.1 Flash) |
 | **Color Space** | sRGB |
 | **Text Rendering** | Supported - best under 25 characters |
 | **Style Control** | Via prompt engineering |

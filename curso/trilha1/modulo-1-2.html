@@ -4,29 +4,29 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-na-pratica" name="inema-course"/>
-<title>1.2 Fundamentos e Setup: do zero ao primeiro comando | Claude Code na Prática</title>
+<meta content="claude-na-pratica" name="ARCKHÉ-course"/>
+<title>1.2 Fundamentos e Setup: do zero ao primeiro comando | Claude Code na PrÃ¡tica</title>
 <!-- ANTI-FOUC: bloqueante, SEPARADO, antes do Tailwind/learn.css -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){ var r={}; for (var x in o) r[x]=o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='inema-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'inema-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'emerald');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--inema-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
+      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
       var fam = p.font==='system' ? 'system-ui,-apple-system,"Segoe UI",Roboto,sans-serif' : (p.font==='leitura' ? '"Atkinson Hyperlegible","Inter",system-ui,sans-serif' : '"Inter",system-ui,sans-serif');
       s.setProperty('--font-body', fam);
@@ -43,8 +43,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../assets/learn.css" rel="stylesheet"/>
-<!-- Manifesto do curso (IDÊNTICO em TODA pagina) -->
-<script data-inema-manifest="" type="application/json">
+<!-- Manifesto do curso (IDÃŠNTICO em TODA pagina) -->
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "claude-na-pratica",
     "tracks": [
@@ -79,7 +79,7 @@
     .dark body { background-color: #111827; }
     .topic-explanation { display: none; }
     .topic-explanation.active { display: block; }
-    section[data-inema-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
+    section[data-ARCKHÉ-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
     .skip { position:absolute; left:-999px; top:0; z-index:100; }
     .skip:focus { left:8px; top:8px; background:#111827; color:#fff; padding:8px 12px; border-radius:8px; }
 
@@ -125,29 +125,29 @@
       .wf-a:nth-child(2){animation-delay:.25s} .wf-a:nth-child(3){animation-delay:.5s} .wf-a:nth-child(4){animation-delay:.75s}
     }
   </style>
-<link href="https://inematds.github.io/claude-code-na-pratica/curso/trilha1/modulo-1-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/claude-code-na-pratica/en/curso/trilha1/modulo-1-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/claude-code-na-pratica/es/curso/trilha1/modulo-1-2.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-1-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha1/modulo-1-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha1/modulo-1-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
-<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-1-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha1/modulo-1-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha1/modulo-1-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
 <!-- NAV -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">⚡</span>
-<span class="font-bold text-lg hidden sm:inline">Claude Code na Prática</span>
+<span class="text-2xl">âš¡</span>
+<span class="font-bold text-lg hidden sm:inline">Claude Code na PrÃ¡tica</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Construir</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Operar &amp; Lucrar</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Biblioteca</span></a>
-<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-inema-journey-open="" title="Minha jornada" type="button">
-<span aria-hidden="true">◷</span><span class="hidden lg:inline">Jornada</span>
-<span aria-hidden="true" class="inema-journey-badge hidden"></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHÉ-journey-open="" title="Minha jornada" type="button">
+<span aria-hidden="true">â—·</span><span class="hidden lg:inline">Jornada</span>
+<span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span>
 </button>
 <button aria-label="Alternar tema claro/escuro" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle" title="Tema claro/escuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -158,31 +158,31 @@
 </div>
 </nav>
 <!-- BREADCRUMB -->
-<nav aria-label="Trilha de navegação" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Trilha de navegaÃ§Ã£o" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
-<a class="hover:text-emerald-400" href="../../index.html">Início</a>
+<a class="hover:text-emerald-400" href="../../index.html">InÃ­cio</a>
 <span>/</span>
 <a class="hover:text-emerald-400" href="index.html">Fundamentos</a>
 <span>/</span>
-<span class="text-emerald-400">Módulo 1.2</span>
+<span class="text-emerald-400">MÃ³dulo 1.2</span>
 </div>
 </nav>
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MÓDULO 1.2</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">🛡️ Fundamentos e Setup: do zero ao primeiro comando</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">A aula da mão na massa. Você instala o Claude Code, entende a diferença entre o modelo e o ambiente, aprende a proteger seu contexto e dá seu primeiro comando que cria arquivos de verdade no seu computador.</p>
+<span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 1.2</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ›¡ï¸ Fundamentos e Setup: do zero ao primeiro comando</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">A aula da mÃ£o na massa. VocÃª instala o Claude Code, entende a diferenÃ§a entre o modelo e o ambiente, aprende a proteger seu contexto e dÃ¡ seu primeiro comando que cria arquivos de verdade no seu computador.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">Tópicos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">TÃ³picos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">~75</div><div class="text-xs text-neutral-400">Minutos</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Iniciante</div><div class="text-xs text-neutral-400">Nível</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Prática</div><div class="text-xs text-neutral-400">Tipo</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Iniciante</div><div class="text-xs text-neutral-400">NÃ­vel</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">PrÃ¡tica</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 <!-- Medidor de progresso do modulo -->
 <div class="mt-6 max-w-2xl">
-<div aria-label="Progresso do módulo 1.2" aria-valuemax="100" aria-valuemin="0" class="inema-meter" data-inema-meter="modulo:1-2" role="progressbar">
-<span class="inema-meter-pct" data-inema-meter-pct="">0%</span> <span class="inema-meter-count text-neutral-400 text-sm" data-inema-meter-frac="">0 de 6</span>
+<div aria-label="Progresso do mÃ³dulo 1.2" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter" data-ARCKHÉ-meter="modulo:1-2" role="progressbar">
+<span class="ARCKHÉ-meter-pct" data-ARCKHÉ-meter-pct="">0%</span> <span class="ARCKHÉ-meter-count text-neutral-400 text-sm" data-ARCKHÉ-meter-frac="">0 de 6</span>
 </div>
 </div>
 </div>
@@ -190,21 +190,21 @@
 <!-- CONTEUDO + TOC -->
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[220px_1fr] lg:gap-10" id="conteudo">
 <!-- TOC sticky -->
-<nav aria-label="Índice da página" class="hidden lg:block sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Seção <span class="inema-toc-pos">1</span> de <span class="inema-toc-total">6</span></p>
+<nav aria-label="Ãndice da pÃ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">SeÃ§Ã£o <span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">6</span></p>
 <ul class="space-y-1 text-sm">
-<li><a class="inema-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-1">1. Modelo x Ambiente</a></li>
-<li><a class="inema-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-2">2. Instalando</a></li>
-<li><a class="inema-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-3">3. A interface</a></li>
-<li><a class="inema-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-4">4. Modos de permissão</a></li>
-<li><a class="inema-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-5">5. Janela de contexto</a></li>
-<li><a class="inema-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-6">6. Slash commands &amp; plano</a></li>
+<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-1">1. Modelo x Ambiente</a></li>
+<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-2">2. Instalando</a></li>
+<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-3">3. A interface</a></li>
+<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-4">4. Modos de permissÃ£o</a></li>
+<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-5">5. Janela de contexto</a></li>
+<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-6">6. Slash commands &amp; plano</a></li>
 </ul>
 </nav>
-<div class="inema-prose">
+<div class="ARCKHÉ-prose">
 <!-- SVG modelo x ambiente -->
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-10 overflow-hidden">
-<svg aria-label="À esquerda o modelo, o cérebro inteligente; à direita o ambiente ou IDE, a armadura que dá corpo ao modelo; embaixo uma barra de janela de contexto que vai do verde ao vermelho mostrando o apodrecimento de contexto conforme a conversa cresce" class="w-full h-auto" role="img" viewbox="0 0 1000 260">
+<svg aria-label="Ã€ esquerda o modelo, o cÃ©rebro inteligente; Ã  direita o ambiente ou IDE, a armadura que dÃ¡ corpo ao modelo; embaixo uma barra de janela de contexto que vai do verde ao vermelho mostrando o apodrecimento de contexto conforme a conversa cresce" class="w-full h-auto" role="img" viewbox="0 0 1000 260">
 <defs>
 <lineargradient id="m12-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#34d399"></stop><stop offset="1" stop-color="#10b981"></stop></lineargradient>
 <lineargradient id="m12-rot" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#10b981"></stop><stop offset="0.55" stop-color="#34d399"></stop><stop offset="1" stop-color="#ef4444"></stop></lineargradient>
@@ -218,7 +218,7 @@
 <circle cx="125" cy="98" fill="none" r="30" stroke="#34d399" stroke-width="2.4"></circle>
 <path class="wf-a" d="M108,88 C112,80 138,80 142,88 C150,92 150,108 142,112 C138,120 112,120 108,112 C100,108 100,92 108,88 Z" fill="none" stroke="#34d399" stroke-width="2"></path>
 <text fill="#34d399" font-family="Inter,sans-serif" font-size="20" font-weight="700" text-anchor="middle" x="220" y="92">MODELO</text>
-<text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="220" y="116">o cérebro · a inteligência</text>
+<text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="220" y="116">o cÃ©rebro Â· a inteligÃªncia</text>
 <!-- seta cerebro entra na armadura -->
 <path d="M330,100 L430,100" fill="none" marker-end="url(#m12-ah)" opacity="0.8" stroke="#34d399" stroke-width="2.2"></path>
 <text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="380" y="88">entra na</text>
@@ -231,89 +231,89 @@
 <line x1="565" x2="580" y1="74" y2="100"></line>
 </g>
 <text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="18" font-weight="700" text-anchor="middle" x="650" y="92">AMBIENTE</text>
-<text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="650" y="114">a armadura · IDE</text>
+<text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="650" y="114">a armadura Â· IDE</text>
 <!-- saidas/acoes da armadura -->
 <g font-family="Inter,sans-serif" font-size="12" font-weight="600">
-<g class="wf-a"><rect fill="#0e2018" height="30" rx="8" stroke="#34d399" stroke-width="1.8" width="190" x="770" y="46"></rect><text fill="#9fe7c9" text-anchor="middle" x="865" y="66">📁 lê e cria arquivos</text></g>
-<g class="wf-a"><rect fill="#0e2018" height="30" rx="8" stroke="#34d399" stroke-width="1.8" width="190" x="770" y="84"></rect><text fill="#9fe7c9" text-anchor="middle" x="865" y="104">⚙️ executa comandos</text></g>
-<g class="wf-a"><rect fill="#0e2018" height="30" rx="8" stroke="#34d399" stroke-width="1.8" width="190" x="770" y="122"></rect><text fill="#9fe7c9" text-anchor="middle" x="865" y="142">🔌 conecta ferramentas</text></g>
+<g class="wf-a"><rect fill="#0e2018" height="30" rx="8" stroke="#34d399" stroke-width="1.8" width="190" x="770" y="46"></rect><text fill="#9fe7c9" text-anchor="middle" x="865" y="66">ðŸ“ lÃª e cria arquivos</text></g>
+<g class="wf-a"><rect fill="#0e2018" height="30" rx="8" stroke="#34d399" stroke-width="1.8" width="190" x="770" y="84"></rect><text fill="#9fe7c9" text-anchor="middle" x="865" y="104">âš™ï¸ executa comandos</text></g>
+<g class="wf-a"><rect fill="#0e2018" height="30" rx="8" stroke="#34d399" stroke-width="1.8" width="190" x="770" y="122"></rect><text fill="#9fe7c9" text-anchor="middle" x="865" y="142">ðŸ”Œ conecta ferramentas</text></g>
 </g>
 <!-- barra janela de contexto -->
 <text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="13" font-weight="600" x="40" y="200">Janela de contexto</text>
 <rect fill="#0e2018" height="22" rx="11" stroke="#34d399" stroke-width="1.4" width="920" x="40" y="210"></rect>
 <rect fill="url(#m12-rot)" height="18" opacity="0.85" rx="9" width="916" x="42" y="212"></rect>
-<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="500" y="252">context rot — o desempenho cai conforme a conversa cresce · regra de ouro: uma tarefa, uma janela</text>
+<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="500" y="252">context rot â€” o desempenho cai conforme a conversa cresce Â· regra de ouro: uma tarefa, uma janela</text>
 </svg>
 </div>
-<h2 class="text-2xl font-bold mb-6">Conteúdo detalhado</h2>
+<h2 class="text-2xl font-bold mb-6">ConteÃºdo detalhado</h2>
 <!-- TOPICO 1 -->
-<section class="mb-16" data-inema-module="1-2" data-inema-topic="modulo-1-2#topico-1" data-inema-track="1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-module="1-2" data-ARCKHÉ-topic="modulo-1-2#topico-1" data-ARCKHÉ-track="1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">1</span>
-<h2 class="text-2xl font-bold">🛡️ Modelo x Ambiente — a armadura do Homem de Ferro</h2>
+<h2 class="text-2xl font-bold">ðŸ›¡ï¸ Modelo x Ambiente â€” a armadura do Homem de Ferro</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t1-p1">O Claude Code traz a IA para <strong class="text-emerald-400">dentro do seu computador</strong>, em vez de você só conversar com ela num site. Pense assim: o <strong class="text-emerald-400">modelo é o Tony Stark</strong> (o cérebro, a inteligência) e o <strong class="text-emerald-400">ambiente é a armadura do Homem de Ferro</strong> — o corpo que deixa o cérebro ler arquivos, rodar comandos e mexer nas coisas de verdade.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t1-p1">O Claude Code traz a IA para <strong class="text-emerald-400">dentro do seu computador</strong>, em vez de vocÃª sÃ³ conversar com ela num site. Pense assim: o <strong class="text-emerald-400">modelo Ã© o Tony Stark</strong> (o cÃ©rebro, a inteligÃªncia) e o <strong class="text-emerald-400">ambiente Ã© a armadura do Homem de Ferro</strong> â€” o corpo que deixa o cÃ©rebro ler arquivos, rodar comandos e mexer nas coisas de verdade.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">O modelo é a inteligência; o ambiente (ou IDE) é onde essa inteligência age — lendo, executando e criando coisas na sua máquina.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem esse conceito, tudo vira mágica confusa. Com ele, você entende por que a mesma IA roda em lugares diferentes e por que escolher o ambiente importa.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Modelo · ambiente · IDE · "uma tarefa, uma janela".</p></div>
+<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">O modelo Ã© a inteligÃªncia; o ambiente (ou IDE) Ã© onde essa inteligÃªncia age â€” lendo, executando e criando coisas na sua mÃ¡quina.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem esse conceito, tudo vira mÃ¡gica confusa. Com ele, vocÃª entende por que a mesma IA roda em lugares diferentes e por que escolher o ambiente importa.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Modelo Â· ambiente Â· IDE Â· "uma tarefa, uma janela".</p></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">✓ O modelo (Tony Stark)</h4>
+<h4 class="font-bold text-emerald-400 mb-4">âœ“ O modelo (Tony Stark)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>É o cérebro: raciocina, escreve, decide.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Sozinho é genial, mas não age no mundo.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Você pode trocar de modelo sem trocar de ambiente.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Ã‰ o cÃ©rebro: raciocina, escreve, decide.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Sozinho Ã© genial, mas nÃ£o age no mundo.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>VocÃª pode trocar de modelo sem trocar de ambiente.</span></li>
 </ul>
 </div>
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">✓ O ambiente (a armadura / IDE)</h4>
+<h4 class="font-bold text-emerald-400 mb-4">âœ“ O ambiente (a armadura / IDE)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Dá "corpo" ao modelo: lê e cria arquivos.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Executa comandos e conecta outras ferramentas.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Existem várias "armaduras" — você troca quando quiser.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>DÃ¡ "corpo" ao modelo: lÃª e cria arquivos.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Executa comandos e conecta outras ferramentas.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Existem vÃ¡rias "armaduras" â€” vocÃª troca quando quiser.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Não trave no termo "IDE"</h3>
-<p class="text-neutral-300 text-sm">IDE quer dizer "ambiente integrado de desenvolvimento". Por enquanto, pense em IDE só como <em>"o lugar onde o assistente trabalha"</em>. Nada além disso.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> NÃ£o trave no termo "IDE"</h3>
+<p class="text-neutral-300 text-sm">IDE quer dizer "ambiente integrado de desenvolvimento". Por enquanto, pense em IDE sÃ³ como <em>"o lugar onde o assistente trabalha"</em>. Nada alÃ©m disso.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-inema-module="1-2" data-inema-topic="modulo-1-2#topico-2" data-inema-track="1" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-module="1-2" data-ARCKHÉ-topic="modulo-1-2#topico-2" data-ARCKHÉ-track="1" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">2</span>
-<h2 class="text-2xl font-bold">💻 Instalando o Claude Code</h2>
+<h2 class="text-2xl font-bold">ðŸ’» Instalando o Claude Code</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t2-p1">Hora de tirar a IA do navegador e colocar na sua máquina. A instalação é o pré-requisito de tudo: <strong class="text-emerald-400">sem instalar, não há prática</strong>. Um aviso importante antes de começar — o Claude Code exige <strong class="text-emerald-400">plano pago</strong>; o plano gratuito não o inclui.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t2-p1">Hora de tirar a IA do navegador e colocar na sua mÃ¡quina. A instalaÃ§Ã£o Ã© o prÃ©-requisito de tudo: <strong class="text-emerald-400">sem instalar, nÃ£o hÃ¡ prÃ¡tica</strong>. Um aviso importante antes de comeÃ§ar â€” o Claude Code exige <strong class="text-emerald-400">plano pago</strong>; o plano gratuito nÃ£o o inclui.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Baixar e instalar o aplicativo oficial do Claude Code e conectar sua conta.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o ponto de partida obrigatório. Tudo que vem depois assume o app instalado e logado.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Instalação · login com a conta Claude · plano pago obrigatório.</p></div>
+<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Baixar e instalar o aplicativo oficial do Claude Code e conectar sua conta.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Ã‰ o ponto de partida obrigatÃ³rio. Tudo que vem depois assume o app instalado e logado.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">InstalaÃ§Ã£o Â· login com a conta Claude Â· plano pago obrigatÃ³rio.</p></div>
 </div>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Acesse o site oficial</h4><p class="text-neutral-300 text-sm">Abra <a class="text-sky-400 hover:text-sky-300" href="https://claude.com/claude-code" target="_blank">claude.com/claude-code</a> — a fonte oficial da instalação.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Acesse o site oficial</h4><p class="text-neutral-300 text-sm">Abra <a class="text-sky-400 hover:text-sky-300" href="https://claude.com/claude-code" target="_blank">claude.com/claude-code</a> â€” a fonte oficial da instalaÃ§Ã£o.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Baixe para o seu sistema</h4><p class="text-neutral-300 text-sm">Escolha a versão de Windows, macOS ou Linux. Funciona nos três.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Baixe para o seu sistema</h4><p class="text-neutral-300 text-sm">Escolha a versÃ£o de Windows, macOS ou Linux. Funciona nos trÃªs.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Instale e abra o aplicativo</h4><p class="text-neutral-300 text-sm">Siga o instalador padrão do seu sistema e abra o app.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Instale e abra o aplicativo</h4><p class="text-neutral-300 text-sm">Siga o instalador padrÃ£o do seu sistema e abra o app.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">4</span></div>
@@ -321,228 +321,228 @@
 </div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-inema-module="1-2" data-inema-topic="modulo-1-2#topico-3" data-inema-track="1" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-module="1-2" data-ARCKHÉ-topic="modulo-1-2#topico-3" data-ARCKHÉ-track="1" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">3</span>
-<h2 class="text-2xl font-bold">🧭 A interface por dentro</h2>
+<h2 class="text-2xl font-bold">ðŸ§­ A interface por dentro</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t3-p1">Antes de comandar, conheça a tela. Saber <strong class="text-emerald-400">onde fica cada botão</strong> evita travar logo no começo: histórico de conversas, seletor de modelo, modo de permissão, indicador de uso e a janela de contexto.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t3-p1">Antes de comandar, conheÃ§a a tela. Saber <strong class="text-emerald-400">onde fica cada botÃ£o</strong> evita travar logo no comeÃ§o: histÃ³rico de conversas, seletor de modelo, modo de permissÃ£o, indicador de uso e a janela de contexto.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">O tour da tela: painel de conversas, seletor de modelo, indicador de uso do plano e a janela de contexto.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Localizar os controles é o que te tira do "não sei nem por onde começar".</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Painel de conversas · seletor de modelo · indicador de uso · janela de contexto · microfone · anexar arquivos.</p></div>
+<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">O tour da tela: painel de conversas, seletor de modelo, indicador de uso do plano e a janela de contexto.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Localizar os controles Ã© o que te tira do "nÃ£o sei nem por onde comeÃ§ar".</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Painel de conversas Â· seletor de modelo Â· indicador de uso Â· janela de contexto Â· microfone Â· anexar arquivos.</p></div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">🔎</span> Onde olhar primeiro</h3>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ”Ž</span> Onde olhar primeiro</h3>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-primary mt-0.5">•</span><span>O histórico de projetos costuma ficar de um lado da tela.</span></li>
-<li class="flex items-start space-x-2"><span class="text-primary mt-0.5">•</span><span>O seletor de modelo e o modo de permissão ficam perto da caixa de digitação.</span></li>
-<li class="flex items-start space-x-2"><span class="text-primary mt-0.5">•</span><span>O indicador de uso do plano e do contexto aparece junto ao campo de mensagem.</span></li>
+<li class="flex items-start space-x-2"><span class="text-primary mt-0.5">â€¢</span><span>O histÃ³rico de projetos costuma ficar de um lado da tela.</span></li>
+<li class="flex items-start space-x-2"><span class="text-primary mt-0.5">â€¢</span><span>O seletor de modelo e o modo de permissÃ£o ficam perto da caixa de digitaÃ§Ã£o.</span></li>
+<li class="flex items-start space-x-2"><span class="text-primary mt-0.5">â€¢</span><span>O indicador de uso do plano e do contexto aparece junto ao campo de mensagem.</span></li>
 </ul>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-inema-module="1-2" data-inema-topic="modulo-1-2#topico-4" data-inema-track="1" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-module="1-2" data-ARCKHÉ-topic="modulo-1-2#topico-4" data-ARCKHÉ-track="1" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">4</span>
-<h2 class="text-2xl font-bold">🔐 Modos de permissão</h2>
+<h2 class="text-2xl font-bold">ðŸ” Modos de permissÃ£o</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t4-p1">O modo de permissão controla <strong class="text-emerald-400">quanto de liberdade você dá ao assistente</strong> — quanto ele pode fazer sozinho, sem te perguntar. É a sua trava de segurança: liberdade demais cedo é receita para sustos.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t4-p1">O modo de permissÃ£o controla <strong class="text-emerald-400">quanto de liberdade vocÃª dÃ¡ ao assistente</strong> â€” quanto ele pode fazer sozinho, sem te perguntar. Ã‰ a sua trava de seguranÃ§a: liberdade demais cedo Ã© receita para sustos.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">O controle de quanto o assistente age por conta própria, do mais cauteloso ao mais ousado.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É a diferença entre experimentar com tranquilidade e bagunçar arquivos importantes sem querer.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Quatro modos: perguntar antes · aceitar edições · modo plano · ignorar permissões.</p></div>
+<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">O controle de quanto o assistente age por conta prÃ³pria, do mais cauteloso ao mais ousado.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Ã‰ a diferenÃ§a entre experimentar com tranquilidade e bagunÃ§ar arquivos importantes sem querer.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Quatro modos: perguntar antes Â· aceitar ediÃ§Ãµes Â· modo plano Â· ignorar permissÃµes.</p></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">✓ Seguro para começar</h4>
+<h4 class="font-bold text-emerald-400 mb-4">âœ“ Seguro para comeÃ§ar</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span><strong>Perguntar antes:</strong> confirma cada edição e cada comando. Ideal para projetos desconhecidos.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span><strong>Aceitar edições:</strong> edita sozinho, mas ainda pede para comandos sensíveis. <em>Recomendado para começar.</em></span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span><strong>Modo plano:</strong> não executa; pensa e propõe um plano primeiro.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span><strong>Perguntar antes:</strong> confirma cada ediÃ§Ã£o e cada comando. Ideal para projetos desconhecidos.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span><strong>Aceitar ediÃ§Ãµes:</strong> edita sozinho, mas ainda pede para comandos sensÃ­veis. <em>Recomendado para comeÃ§ar.</em></span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span><strong>Modo plano:</strong> nÃ£o executa; pensa e propÃµe um plano primeiro.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">✗ Perigoso para iniciantes</h4>
+<h4 class="font-bold text-red-400 mb-4">âœ— Perigoso para iniciantes</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span><strong>Ignorar permissões:</strong> não pergunta nada. Poderoso e perigoso.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Use só em ambiente isolado, quando souber exatamente o que faz.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Nunca num computador "de verdade" com dados importantes.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span><strong>Ignorar permissÃµes:</strong> nÃ£o pergunta nada. Poderoso e perigoso.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Use sÃ³ em ambiente isolado, quando souber exatamente o que faz.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Nunca num computador "de verdade" com dados importantes.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Dica de ouro</h3>
-<p class="text-neutral-300 text-sm">Comece em <strong class="text-emerald-400">"aceitar edições"</strong>. É seguro o bastante para ganhar fluidez sem ter que aprovar cada passo, e ainda te protege nos comandos mais sensíveis.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Dica de ouro</h3>
+<p class="text-neutral-300 text-sm">Comece em <strong class="text-emerald-400">"aceitar ediÃ§Ãµes"</strong>. Ã‰ seguro o bastante para ganhar fluidez sem ter que aprovar cada passo, e ainda te protege nos comandos mais sensÃ­veis.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-inema-module="1-2" data-inema-topic="modulo-1-2#topico-5" data-inema-track="1" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-module="1-2" data-ARCKHÉ-topic="modulo-1-2#topico-5" data-ARCKHÉ-track="1" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">5</span>
-<h2 class="text-2xl font-bold">🧠 Janela de contexto e o "apodrecimento"</h2>
+<h2 class="text-2xl font-bold">ðŸ§  Janela de contexto e o "apodrecimento"</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t5-p1">Imagine uma pessoa genial, de QI altíssimo, mas com <strong class="text-emerald-400">amnésia</strong>. A janela de contexto é o quanto da conversa o modelo consegue lembrar com precisão. Quanto mais longa a conversa, pior ele lembra — fenômeno chamado de <strong class="text-emerald-400">"apodrecimento de contexto"</strong> (context rot). Daí a regra de ouro: <strong class="text-emerald-400">uma tarefa, uma janela</strong>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t5-p1">Imagine uma pessoa genial, de QI altÃ­ssimo, mas com <strong class="text-emerald-400">amnÃ©sia</strong>. A janela de contexto Ã© o quanto da conversa o modelo consegue lembrar com precisÃ£o. Quanto mais longa a conversa, pior ele lembra â€” fenÃ´meno chamado de <strong class="text-emerald-400">"apodrecimento de contexto"</strong> (context rot). DaÃ­ a regra de ouro: <strong class="text-emerald-400">uma tarefa, uma janela</strong>.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">O limite de quanto da conversa o modelo lembra bem — e por que conversas longas pioram a qualidade.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Gerenciar contexto separa quem tem resultados confiáveis de quem recebe respostas "confiantemente erradas".</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Janela de contexto · tokens · context rot · alucinação · "uma tarefa, uma janela".</p></div>
+<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">O limite de quanto da conversa o modelo lembra bem â€” e por que conversas longas pioram a qualidade.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Gerenciar contexto separa quem tem resultados confiÃ¡veis de quem recebe respostas "confiantemente erradas".</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Janela de contexto Â· tokens Â· context rot Â· alucinaÃ§Ã£o Â· "uma tarefa, uma janela".</p></div>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">📊</span> Na prática: cuidado com a alucinação</h3>
+<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ðŸ“Š</span> Na prÃ¡tica: cuidado com a alucinaÃ§Ã£o</h3>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">•</span><span>O modelo pode <strong>alucinar</strong> (inventar com convicção) entre ~1% e ~10% das vezes.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">•</span><span>É pior em conversas longas — quanto mais lotada a janela, maior o risco.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">•</span><span>Seja protetor do seu contexto: comece nova conversa por tarefa.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>O modelo pode <strong>alucinar</strong> (inventar com convicÃ§Ã£o) entre ~1% e ~10% das vezes.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>Ã‰ pior em conversas longas â€” quanto mais lotada a janela, maior o risco.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>Seja protetor do seu contexto: comece nova conversa por tarefa.</span></li>
 </ul>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
-<p class="text-sm text-neutral-400 mb-2">Higiene rápida de contexto</p>
-<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">/context     # vê quanto da janela já foi usada
+<p class="text-sm text-neutral-400 mb-2">Higiene rÃ¡pida de contexto</p>
+<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">/context     # vÃª quanto da janela jÃ¡ foi usada
 /compact     # resume a conversa, preservando o essencial
-/clear       # zera tudo e começa do zero (refresh total)</pre>
+/clear       # zera tudo e comeÃ§a do zero (refresh total)</pre>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-inema-module="1-2" data-inema-topic="modulo-1-2#topico-6" data-inema-track="1" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-module="1-2" data-ARCKHÉ-topic="modulo-1-2#topico-6" data-ARCKHÉ-track="1" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">6</span>
-<h2 class="text-2xl font-bold">⌨️ Slash commands e o modo plano</h2>
+<h2 class="text-2xl font-bold">âŒ¨ï¸ Slash commands e o modo plano</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t6-p1">Slash commands são comandos digitados com <strong class="text-emerald-400">/</strong> que controlam a conversa e o contexto — suas ferramentas de higiene diária. E para tarefas grandes existe o <strong class="text-emerald-400">modo plano</strong>: o assistente raciocina e propõe um plano <em>antes</em> de executar qualquer coisa.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t6-p1">Slash commands sÃ£o comandos digitados com <strong class="text-emerald-400">/</strong> que controlam a conversa e o contexto â€” suas ferramentas de higiene diÃ¡ria. E para tarefas grandes existe o <strong class="text-emerald-400">modo plano</strong>: o assistente raciocina e propÃµe um plano <em>antes</em> de executar qualquer coisa.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Comandos rápidos para limpar, resumir, medir e trocar coisas — mais um modo que planeja antes de agir.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Economizam tempo e tokens, e o modo plano reduz erros e retrabalho em tarefas difíceis.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm"><code>/clear</code> · <code>/compact</code> · <code>/context</code> · <code>/model</code> · <code>/cost</code> · <code>/init</code> · <code>/memory</code> · modo plano · intenção declarada.</p></div>
+<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Comandos rÃ¡pidos para limpar, resumir, medir e trocar coisas â€” mais um modo que planeja antes de agir.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Economizam tempo e tokens, e o modo plano reduz erros e retrabalho em tarefas difÃ­ceis.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm"><code>/clear</code> Â· <code>/compact</code> Â· <code>/context</code> Â· <code>/model</code> Â· <code>/cost</code> Â· <code>/init</code> Â· <code>/memory</code> Â· modo plano Â· intenÃ§Ã£o declarada.</p></div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
 <p class="text-sm text-neutral-400 mb-2">Os comandos essenciais do dia a dia</p>
-<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">/clear     apaga a conversa e começa do zero
+<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">/clear     apaga a conversa e comeÃ§a do zero
 /compact   resume a conversa preservando o essencial
-/context   mostra quanto da janela já foi usada
+/context   mostra quanto da janela jÃ¡ foi usada
 /model     troca o modelo em uso
-/cost      mostra uso de tokens e custo da sessão
+/cost      mostra uso de tokens e custo da sessÃ£o
 /init      pede para o assistente conhecer a pasta/projeto
-/memory    abre e edita os arquivos de memória (CLAUDE.md)</pre>
+/memory    abre e edita os arquivos de memÃ³ria (CLAUDE.md)</pre>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">🗺️</span> O truque que funciona no modo plano</h3>
-<p class="text-neutral-300 text-sm">Sempre diga sua intenção real. Algo como: <em>"Minha intenção declarada é X. Estou te pedindo isto porque o que quero que seja verdade é ___."</em> Deixar a intenção explícita melhora muito a resposta.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ—ºï¸</span> O truque que funciona no modo plano</h3>
+<p class="text-neutral-300 text-sm">Sempre diga sua intenÃ§Ã£o real. Algo como: <em>"Minha intenÃ§Ã£o declarada Ã© X. Estou te pedindo isto porque o que quero que seja verdade Ã© ___."</em> Deixar a intenÃ§Ã£o explÃ­cita melhora muito a resposta.</p>
 </div>
 <details class="bg-dark-800 border border-dark-600 rounded-xl p-5 mb-6">
 <summary class="cursor-pointer font-semibold text-emerald-400">Indo mais fundo (opcional): /compact vs /clear</summary>
-<p class="text-neutral-300 text-sm mt-3">Use <code>/clear</code> quando trocar de tarefa por completo — quer uma janela limpa. Use <code>/compact</code> quando ainda está na mesma tarefa, mas a conversa esticou: ele resume o que importa (decisões e objetivo) e libera espaço sem perder o fio. Pequena diferença, grande impacto na qualidade.</p>
+<p class="text-neutral-300 text-sm mt-3">Use <code>/clear</code> quando trocar de tarefa por completo â€” quer uma janela limpa. Use <code>/compact</code> quando ainda estÃ¡ na mesma tarefa, mas a conversa esticou: ele resume o que importa (decisÃµes e objetivo) e libera espaÃ§o sem perder o fio. Pequena diferenÃ§a, grande impacto na qualidade.</p>
 </details>
 <!-- Checagem leve opcional -->
-<div class="inema-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-1-2#q1">
-<p class="font-medium mb-4">Auto-checagem (opcional): você terminou uma tarefa e vai começar outra, bem diferente. Qual comando usar?</p>
-<div class="inema-check-options space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button"><code>/cost</code> — para ver quanto gastei até agora.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button"><code>/clear</code> — para zerar e começar a nova tarefa numa janela limpa.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">Nenhum — continuo na mesma conversa para ganhar tempo.</button>
+<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-1-2#q1">
+<p class="font-medium mb-4">Auto-checagem (opcional): vocÃª terminou uma tarefa e vai comeÃ§ar outra, bem diferente. Qual comando usar?</p>
+<div class="ARCKHÉ-check-options space-y-2">
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button"><code>/cost</code> â€” para ver quanto gastei atÃ© agora.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button"><code>/clear</code> â€” para zerar e comeÃ§ar a nova tarefa numa janela limpa.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Nenhum â€” continuo na mesma conversa para ganhar tempo.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
 </div>
 </section>
 <!-- EXERCICIOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">✏️ Exercícios</h2>
+<h2 class="text-2xl font-bold mb-6">âœï¸ ExercÃ­cios</h2>
 <div class="space-y-4">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. Instalação concluída <span class="text-xs text-neutral-500">(fácil)</span></h3><p class="text-neutral-300 text-sm">Instale o Claude Code e faça login. <span class="text-emerald-400">Critério:</span> o app abre conectado à sua conta e você consegue enviar uma mensagem.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Primeiro arquivo <span class="text-xs text-neutral-500">(fácil)</span></h3><p class="text-neutral-300 text-sm">Peça à IA para criar uma pasta com dois arquivos <code>.md</code> (como no exemplo guiado). <span class="text-emerald-400">Critério:</span> a pasta e os dois arquivos existem no computador, com conteúdo.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Higiene de contexto <span class="text-xs text-neutral-500">(médio)</span></h3><p class="text-neutral-300 text-sm">Inicie uma conversa, rode <code>/context</code>, depois <code>/clear</code>, e rode <code>/context</code> de novo. <span class="text-emerald-400">Critério:</span> você vê o contexto cair para perto de zero após o <code>/clear</code>.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. Modo plano <span class="text-xs text-neutral-500">(médio)</span></h3><p class="text-neutral-300 text-sm">Ative o modo plano e peça um plano para "organizar minha pasta de Downloads" — sem executar. <span class="text-emerald-400">Critério:</span> o assistente devolve um plano em etapas, sem mexer em nada.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. Intenção declarada <span class="text-xs text-neutral-500">(médio)</span></h3><p class="text-neutral-300 text-sm">Refaça o exercício 4 incluindo "Minha intenção declarada é...". <span class="text-emerald-400">Critério:</span> o plano fica visivelmente mais alinhado ao que você quer.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. InstalaÃ§Ã£o concluÃ­da <span class="text-xs text-neutral-500">(fÃ¡cil)</span></h3><p class="text-neutral-300 text-sm">Instale o Claude Code e faÃ§a login. <span class="text-emerald-400">CritÃ©rio:</span> o app abre conectado Ã  sua conta e vocÃª consegue enviar uma mensagem.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Primeiro arquivo <span class="text-xs text-neutral-500">(fÃ¡cil)</span></h3><p class="text-neutral-300 text-sm">PeÃ§a Ã  IA para criar uma pasta com dois arquivos <code>.md</code> (como no exemplo guiado). <span class="text-emerald-400">CritÃ©rio:</span> a pasta e os dois arquivos existem no computador, com conteÃºdo.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Higiene de contexto <span class="text-xs text-neutral-500">(mÃ©dio)</span></h3><p class="text-neutral-300 text-sm">Inicie uma conversa, rode <code>/context</code>, depois <code>/clear</code>, e rode <code>/context</code> de novo. <span class="text-emerald-400">CritÃ©rio:</span> vocÃª vÃª o contexto cair para perto de zero apÃ³s o <code>/clear</code>.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. Modo plano <span class="text-xs text-neutral-500">(mÃ©dio)</span></h3><p class="text-neutral-300 text-sm">Ative o modo plano e peÃ§a um plano para "organizar minha pasta de Downloads" â€” sem executar. <span class="text-emerald-400">CritÃ©rio:</span> o assistente devolve um plano em etapas, sem mexer em nada.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. IntenÃ§Ã£o declarada <span class="text-xs text-neutral-500">(mÃ©dio)</span></h3><p class="text-neutral-300 text-sm">RefaÃ§a o exercÃ­cio 4 incluindo "Minha intenÃ§Ã£o declarada Ã©...". <span class="text-emerald-400">CritÃ©rio:</span> o plano fica visivelmente mais alinhado ao que vocÃª quer.</p></div>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">⌨️ Prompts prontos</h2>
-<p class="text-neutral-300 text-sm mb-6">Agora você já pode rodar estes de verdade. Eles cobrem do primeiro arquivo ao modo plano e à higiene de contexto. O banco completo está na <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Biblioteca → Prompts</a>.</p>
+<h2 class="text-2xl font-bold mb-6">âŒ¨ï¸ Prompts prontos</h2>
+<p class="text-neutral-300 text-sm mb-6">Agora vocÃª jÃ¡ pode rodar estes de verdade. Eles cobrem do primeiro arquivo ao modo plano e Ã  higiene de contexto. O banco completo estÃ¡ na <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Biblioteca â†’ Prompts</a>.</p>
 <div class="space-y-5">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Seu primeiro comando (cria arquivos)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Crie uma pasta chamada "cafe-gelado" na minha área de trabalho e escreva dois
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Seu primeiro comando (cria arquivos)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Crie uma pasta chamada "cafe-gelado" na minha Ã¡rea de trabalho e escreva dois
 arquivos .md dentro: "por-que-cafe-e-otimo.md" e "por-que-cafe-nao-e-otimo.md".
-Três frases curtas em cada.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Modo plano, sem executar</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Minha pasta de Downloads está bagunçada. Sem executar nada ainda, me devolva um
-PLANO em etapas para organizá-la por tipo de arquivo. Vou aprovar antes de você agir.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Intenção declarada (canônico)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Minha intenção declarada é: quero entender, não só receber pronto.
-Me explique o que é a "janela de contexto" do Claude Code em 3 frases simples,
+TrÃªs frases curtas em cada.</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Modo plano, sem executar</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Minha pasta de Downloads estÃ¡ bagunÃ§ada. Sem executar nada ainda, me devolva um
+PLANO em etapas para organizÃ¡-la por tipo de arquivo. Vou aprovar antes de vocÃª agir.</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">IntenÃ§Ã£o declarada (canÃ´nico)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Minha intenÃ§Ã£o declarada Ã©: quero entender, nÃ£o sÃ³ receber pronto.
+Me explique o que Ã© a "janela de contexto" do Claude Code em 3 frases simples,
 como se eu nunca tivesse programado.</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">My stated intention is ___. I'm asking you to do this because the thing I want
 to be true is ___.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Familiarizar com um projeto</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Familiarize-se com esta pasta (rode a inicialização) e me diga, em 5 bullets,
-para que serve este projeto e quais são os arquivos mais importantes.</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Familiarizar com um projeto</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Familiarize-se com esta pasta (rode a inicializaÃ§Ã£o) e me diga, em 5 bullets,
+para que serve este projeto e quais sÃ£o os arquivos mais importantes.</pre></div>
 </div>
 </section>
 <!-- ERROS COMUNS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">⚠️ Erros comuns</h2>
+<h2 class="text-2xl font-bold mb-6">âš ï¸ Erros comuns</h2>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span><strong>Achar que o plano gratuito basta.</strong> Não basta — o Claude Code exige plano pago. Sem isso, você instala mas não usa.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span><strong>Deixar a conversa virar um monstro.</strong> Misturar dez tarefas numa janela só leva ao apodrecimento de contexto. Use <code>/clear</code> entre tarefas.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span><strong>Começar em "ignorar permissões".</strong> Num computador real, é pedir para apagar ou bagunçar algo. Comece em "aceitar edições".</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span><strong>Confiar cegamente.</strong> O modelo pode alucinar. Revise resultados importantes — principalmente em conversas longas.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span><strong>Encher o <code>CLAUDE.md</code> de texto.</strong> Acima de ~200 palavras começa a poluir o contexto. Seja curto e direto.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Achar que o plano gratuito basta.</strong> NÃ£o basta â€” o Claude Code exige plano pago. Sem isso, vocÃª instala mas nÃ£o usa.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Deixar a conversa virar um monstro.</strong> Misturar dez tarefas numa janela sÃ³ leva ao apodrecimento de contexto. Use <code>/clear</code> entre tarefas.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>ComeÃ§ar em "ignorar permissÃµes".</strong> Num computador real, Ã© pedir para apagar ou bagunÃ§ar algo. Comece em "aceitar ediÃ§Ãµes".</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Confiar cegamente.</strong> O modelo pode alucinar. Revise resultados importantes â€” principalmente em conversas longas.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Encher o <code>CLAUDE.md</code> de texto.</strong> Acima de ~200 palavras comeÃ§a a poluir o contexto. Seja curto e direto.</span></li>
 </ul>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-emerald-900/40 via-dark-800 to-dark-800 rounded-xl border border-emerald-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> Resumo do módulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumo do mÃ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong>Modelo x ambiente</strong><span class="text-neutral-400"> — o modelo é o cérebro (Tony Stark); o ambiente/IDE é a armadura que o deixa agir.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong>Instalação e plano pago</strong><span class="text-neutral-400"> — baixe no site oficial, entre com sua conta e confirme o plano pago.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong>Permissões e contexto</strong><span class="text-neutral-400"> — comece em "aceitar edições" e proteja a janela de contexto contra o apodrecimento.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong>Slash commands e modo plano</strong><span class="text-neutral-400"> — /clear, /compact, /context e planejar antes de agir, com intenção declarada.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>Modelo x ambiente</strong><span class="text-neutral-400"> â€” o modelo Ã© o cÃ©rebro (Tony Stark); o ambiente/IDE Ã© a armadura que o deixa agir.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>InstalaÃ§Ã£o e plano pago</strong><span class="text-neutral-400"> â€” baixe no site oficial, entre com sua conta e confirme o plano pago.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>PermissÃµes e contexto</strong><span class="text-neutral-400"> â€” comece em "aceitar ediÃ§Ãµes" e proteja a janela de contexto contra o apodrecimento.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>Slash commands e modo plano</strong><span class="text-neutral-400"> â€” /clear, /compact, /context e planejar antes de agir, com intenÃ§Ã£o declarada.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-emerald-400 mb-3">Checklist de conclusão</h3>
+<h3 class="font-semibold text-emerald-400 mb-3">Checklist de conclusÃ£o</h3>
 <ul class="space-y-2 text-sm text-neutral-300">
-<li>☐ Claude Code instalado e conectado à minha conta (plano pago).</li>
-<li>☐ Entendo a diferença entre modelo (Tony Stark) e ambiente/IDE (armadura).</li>
-<li>☐ Sei localizar: seletor de modelo, modo de permissão, indicador de uso e janela de contexto.</li>
-<li>☐ Criei minha primeira pasta e arquivos pedindo à IA.</li>
-<li>☐ Usei /context, /clear e /compact pelo menos uma vez.</li>
-<li>☐ Experimentei o modo plano com uma intenção declarada.</li>
-<li>☐ Sei que "uma tarefa, uma janela" é a regra de ouro.</li>
+<li>â˜ Claude Code instalado e conectado Ã  minha conta (plano pago).</li>
+<li>â˜ Entendo a diferenÃ§a entre modelo (Tony Stark) e ambiente/IDE (armadura).</li>
+<li>â˜ Sei localizar: seletor de modelo, modo de permissÃ£o, indicador de uso e janela de contexto.</li>
+<li>â˜ Criei minha primeira pasta e arquivos pedindo Ã  IA.</li>
+<li>â˜ Usei /context, /clear e /compact pelo menos uma vez.</li>
+<li>â˜ Experimentei o modo plano com uma intenÃ§Ã£o declarada.</li>
+<li>â˜ Sei que "uma tarefa, uma janela" Ã© a regra de ouro.</li>
 </ul>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-emerald-400 mb-2">Próximo módulo:</h3>
-<p class="text-neutral-300">1.3 — Sistema de memória: como o CLAUDE.md dá contexto duradouro ao assistente</p>
+<h3 class="font-semibold text-emerald-400 mb-2">PrÃ³ximo mÃ³dulo:</h3>
+<p class="text-neutral-300">1.3 â€” Sistema de memÃ³ria: como o CLAUDE.md dÃ¡ contexto duradouro ao assistente</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Voltar para a trilha</a>
-<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-3.html">Próximo módulo →</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Voltar para a trilha</a>
+<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-3.html">PrÃ³ximo mÃ³dulo â†’</a>
 </div>
 </div>
 </section>
@@ -551,7 +551,7 @@ para que serve este projeto e quais são os arquivos mais importantes.</pre></di
 <!-- FOOTER -->
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Claude Code na Prática — <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>Claude Code na PrÃ¡tica â€” <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
 </div>
 </footer>
 <!-- SCRIPTS: nucleo v1 -->
@@ -560,7 +560,7 @@ para que serve este projeto e quais são os arquivos mais importantes.</pre></di
     (function(){ var tt=document.getElementById('theme-toggle'); if(!tt) return; var di=document.getElementById('theme-toggle-dark-icon'), li=document.getElementById('theme-toggle-light-icon'), html=document.documentElement;
       function sync(){ if(html.classList.contains('dark')){ li&&li.classList.remove('hidden'); di&&di.classList.add('hidden'); } else { di&&di.classList.remove('hidden'); li&&li.classList.add('hidden'); } }
       sync();
-      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'); p.theme=dark?'inema-dark':'claro'; localStorage.setItem('inema.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
+      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}'); p.theme=dark?'ARCKHÉ-dark':'claro'; localStorage.setItem('ARCKHÉ.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
     function openModal(id){ var m=document.getElementById(id); if(m){ m.classList.remove('hidden'); document.body.style.overflow='hidden'; } }
     function closeModal(){ document.querySelectorAll('.modal').forEach(function(m){ m.classList.add('hidden'); }); document.body.style.overflow='auto'; }
     document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
@@ -568,11 +568,11 @@ para que serve este projeto e quais são os arquivos mais importantes.</pre></di
 <!-- Camada de aprendizagem -->
 <script>
     window.addEventListener('DOMContentLoaded', function(){
-      if (window.INEMA && INEMA.registerCheck) {
-        INEMA.registerCheck('modulo-1-2#q1', {
+      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
+        ARCKHÉ.registerCheck('modulo-1-2#q1', {
           answer: 1,
           explain: {
-            0: '/cost mostra o gasto, mas não prepara uma janela limpa para a nova tarefa.',
+            0: '/cost mostra o gasto, mas nÃ£o prepara uma janela limpa para a nova tarefa.',
             1: 'Isso! Tarefa nova, janela nova. /clear zera o contexto e evita o apodrecimento.',
             2: 'Continuar na mesma conversa mistura tarefas e leva ao apodrecimento de contexto.'
           }
@@ -581,6 +581,6 @@ para que serve este projeto e quais são os arquivos mais importantes.</pre></di
     });
   </script>
 <script src="../../assets/learn.js"></script>
-<script>if (window.INEMA && typeof window.INEMA.init==='function'){ window.INEMA.init(); }</script>
+<script>if (window.ARCKHÉ && typeof window.ARCKHÉ.init==='function'){ window.ARCKHÉ.init(); }</script>
 </body>
 </html>

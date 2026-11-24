@@ -32,7 +32,7 @@ preset format (see `references/presets.md` for schema details).
   "description": "Dramatic widescreen hero for blog posts",
   "aspect_ratio": "16:9",
   "resolution": "2K",
-  "domain_mode": "Cinema",
+  "domain_mode": "CARCKHÉ",
   "style": {
     "colors": ["contextual"],
     "mood": "Dramatic, atmospheric, editorial",

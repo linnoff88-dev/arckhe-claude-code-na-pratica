@@ -4,29 +4,29 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-na-pratica" name="inema-course"/>
-<title>2.1 Website do zero ao deploy: pesquise, projete e publique | Claude Code na Prática</title>
+<meta content="claude-na-pratica" name="ARCKHÉ-course"/>
+<title>2.1 Website do zero ao deploy: pesquise, projete e publique | Claude Code na PrÃ¡tica</title>
 <!-- ANTI-FOUC: bloqueante, SEPARADO, antes do Tailwind/learn.css -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){ var r={}; for (var x in o) r[x]=o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='inema-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'inema-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'emerald');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--inema-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
+      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
       var fam = p.font==='system' ? 'system-ui,-apple-system,"Segoe UI",Roboto,sans-serif' : (p.font==='leitura' ? '"Atkinson Hyperlegible","Inter",system-ui,sans-serif' : '"Inter",system-ui,sans-serif');
       s.setProperty('--font-body', fam);
@@ -43,8 +43,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../assets/learn.css" rel="stylesheet"/>
-<!-- Manifesto do curso (IDÊNTICO em TODA pagina) -->
-<script data-inema-manifest="" type="application/json">
+<!-- Manifesto do curso (IDÃŠNTICO em TODA pagina) -->
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "claude-na-pratica",
     "tracks": [
@@ -79,7 +79,7 @@
     .dark body { background-color: #111827; }
     .topic-explanation { display: none; }
     .topic-explanation.active { display: block; }
-    section[data-inema-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
+    section[data-ARCKHÉ-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
     .skip { position:absolute; left:-999px; top:0; z-index:100; }
     .skip:focus { left:8px; top:8px; background:#111827; color:#fff; padding:8px 12px; border-radius:8px; }
 
@@ -125,29 +125,29 @@
       .wf-a:nth-child(2){animation-delay:.25s} .wf-a:nth-child(3){animation-delay:.5s} .wf-a:nth-child(4){animation-delay:.75s}
     }
   </style>
-<link href="https://inematds.github.io/claude-code-na-pratica/curso/trilha2/modulo-2-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/claude-code-na-pratica/en/curso/trilha2/modulo-2-1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/claude-code-na-pratica/es/curso/trilha2/modulo-2-1.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-2-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha2/modulo-2-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha2/modulo-2-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
-<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-2-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha2/modulo-2-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha2/modulo-2-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
 <!-- NAV -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">⚡</span>
-<span class="font-bold text-lg hidden sm:inline">Claude Code na Prática</span>
+<span class="text-2xl">âš¡</span>
+<span class="font-bold text-lg hidden sm:inline">Claude Code na PrÃ¡tica</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-blue-400 bg-blue-500/10" href="index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Construir</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Operar &amp; Lucrar</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Biblioteca</span></a>
-<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-inema-journey-open="" title="Minha jornada" type="button">
-<span aria-hidden="true">◷</span><span class="hidden lg:inline">Jornada</span>
-<span aria-hidden="true" class="inema-journey-badge hidden"></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHÉ-journey-open="" title="Minha jornada" type="button">
+<span aria-hidden="true">â—·</span><span class="hidden lg:inline">Jornada</span>
+<span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span>
 </button>
 <button aria-label="Alternar tema claro/escuro" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle" title="Tema claro/escuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -158,31 +158,31 @@
 </div>
 </nav>
 <!-- BREADCRUMB -->
-<nav aria-label="Trilha de navegação" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Trilha de navegaÃ§Ã£o" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
-<a class="hover:text-blue-400" href="../../index.html">Início</a>
+<a class="hover:text-blue-400" href="../../index.html">InÃ­cio</a>
 <span>/</span>
 <a class="hover:text-blue-400" href="index.html">Construir</a>
 <span>/</span>
-<span class="text-blue-400">Módulo 2.1</span>
+<span class="text-blue-400">MÃ³dulo 2.1</span>
 </div>
 </nav>
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MÓDULO 2.1</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">🚀 Website do zero ao deploy: pesquise, projete e publique</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">A primeira aula de construção. Você aprende o sistema de 3 passos — pesquisar concorrentes, escrever um design brief e construir + publicar — e sai com um site real no ar, com URL pública para enviar a qualquer pessoa.</p>
+<span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 2.1</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸš€ Website do zero ao deploy: pesquise, projete e publique</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">A primeira aula de construÃ§Ã£o. VocÃª aprende o sistema de 3 passos â€” pesquisar concorrentes, escrever um design brief e construir + publicar â€” e sai com um site real no ar, com URL pÃºblica para enviar a qualquer pessoa.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">6</div><div class="text-xs text-neutral-400">Tópicos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">6</div><div class="text-xs text-neutral-400">TÃ³picos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">~75</div><div class="text-xs text-neutral-400">Minutos</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Iniciante</div><div class="text-xs text-neutral-400">Nível</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Iniciante</div><div class="text-xs text-neutral-400">NÃ­vel</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Hands-on</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 <!-- Medidor de progresso do modulo -->
 <div class="mt-6 max-w-2xl">
-<div aria-label="Progresso do módulo 2.1" aria-valuemax="100" aria-valuemin="0" class="inema-meter" data-inema-meter="modulo:2-1" role="progressbar">
-<span class="inema-meter-pct" data-inema-meter-pct="">0%</span> <span class="inema-meter-count text-neutral-400 text-sm" data-inema-meter-frac="">0 de 6</span>
+<div aria-label="Progresso do mÃ³dulo 2.1" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter" data-ARCKHÉ-meter="modulo:2-1" role="progressbar">
+<span class="ARCKHÉ-meter-pct" data-ARCKHÉ-meter-pct="">0%</span> <span class="ARCKHÉ-meter-count text-neutral-400 text-sm" data-ARCKHÉ-meter-frac="">0 de 6</span>
 </div>
 </div>
 </div>
@@ -190,21 +190,21 @@
 <!-- CONTEUDO + TOC -->
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[220px_1fr] lg:gap-10" id="conteudo">
 <!-- TOC sticky -->
-<nav aria-label="Índice da página" class="hidden lg:block sticky top-24 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-3">Seção <span class="inema-toc-pos">1</span> de <span class="inema-toc-total">6</span></p>
+<nav aria-label="Ãndice da pÃ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-3">SeÃ§Ã£o <span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">6</span></p>
 <ul class="space-y-1 text-sm">
-<li><a class="inema-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-1">1. Copie o que vence</a></li>
-<li><a class="inema-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-2">2. Pesquisa + matriz</a></li>
-<li><a class="inema-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-3">3. Design brief</a></li>
-<li><a class="inema-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-4">4. Agentes paralelos</a></li>
-<li><a class="inema-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-5">5. UI sniping + SEO</a></li>
-<li><a class="inema-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-6">6. Deploy na Vercel</a></li>
+<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-1">1. Copie o que vence</a></li>
+<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-2">2. Pesquisa + matriz</a></li>
+<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-3">3. Design brief</a></li>
+<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-4">4. Agentes paralelos</a></li>
+<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-5">5. UI sniping + SEO</a></li>
+<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-6">6. Deploy na Vercel</a></li>
 </ul>
 </nav>
-<div class="inema-prose">
+<div class="ARCKHÉ-prose">
 <!-- SVG sistema de 3 passos -->
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 mb-10 overflow-hidden">
-<svg aria-label="Sistema de três passos: pesquisar concorrentes com Firecrawl, escrever um design brief e construir mais publicar o site, terminando numa URL pública" class="w-full h-auto" role="img" viewbox="0 0 1000 240">
+<svg aria-label="Sistema de trÃªs passos: pesquisar concorrentes com Firecrawl, escrever um design brief e construir mais publicar o site, terminando numa URL pÃºblica" class="w-full h-auto" role="img" viewbox="0 0 1000 240">
 <defs>
 <lineargradient id="m21-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#60a5fa"></stop><stop offset="1" stop-color="#3b82f6"></stop></lineargradient>
 <filter height="180%" id="m21-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -216,22 +216,22 @@
 <!-- Passo 1: Pesquisar -->
 <g filter="url(#m21-glow)"><rect fill="#0e1622" height="78" rx="14" stroke="url(#m21-grad)" stroke-width="2.5" width="200" x="34" y="74"></rect></g>
 <circle cx="78" cy="106" fill="none" r="13" stroke="#60a5fa" stroke-width="2.4"></circle><line stroke="#60a5fa" stroke-linecap="round" stroke-width="2.4" x1="88" x2="98" y1="116" y2="126"></line>
-<text fill="#9ec5ff" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="150" y="104">① Pesquisar</text>
-<text fill="#7fb0f5" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="150" y="124">inteligência competitiva</text>
+<text fill="#9ec5ff" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="150" y="104">â‘  Pesquisar</text>
+<text fill="#7fb0f5" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="150" y="124">inteligÃªncia competitiva</text>
 <text fill="#6b9bdc" font-family="Inter,sans-serif" font-size="10.5" text-anchor="middle" x="150" y="140">firecrawl.dev</text>
 <!-- seta 1 -->
 <path d="M234,113 L334,113" fill="none" marker-end="url(#m21-ah)" opacity="0.7" stroke="#60a5fa" stroke-width="2"></path>
 <!-- Passo 2: Projetar -->
 <rect fill="#0e1b26" height="78" rx="12" stroke="#38bdf8" stroke-width="2" width="200" x="334" y="74"></rect>
 <g opacity="0.85" stroke="#38bdf8" stroke-linecap="round" stroke-width="2"><rect fill="none" height="34" rx="3" width="26" x="364" y="92"></rect><line x1="404" x2="500" y1="98" y2="98"></line><line x1="404" x2="492" y1="110" y2="110"></line><line x1="404" x2="500" y1="122" y2="122"></line></g>
-<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="434" y="142">② Design brief</text>
+<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="434" y="142">â‘¡ Design brief</text>
 <!-- seta 2 -->
 <path d="M534,113 L634,113" fill="none" marker-end="url(#m21-ahc)" opacity="0.7" stroke="#38bdf8" stroke-width="2"></path>
 <!-- Passo 3: Construir + publicar (3 janelas convergindo) -->
 <g font-family="Inter,sans-serif" font-size="12" font-weight="600">
-<g class="wf-a"><rect fill="#0e1622" height="30" rx="7" stroke="#3b82f6" stroke-width="1.8" width="118" x="634" y="56"></rect><circle cx="648" cy="71" fill="#60a5fa" r="3"></circle><text fill="#9ec5ff" text-anchor="middle" x="694" y="75">versão 1</text></g>
-<g class="wf-a"><rect fill="#0e1622" height="30" rx="7" stroke="#3b82f6" stroke-width="1.8" width="118" x="634" y="98"></rect><circle cx="648" cy="113" fill="#60a5fa" r="3"></circle><text fill="#9ec5ff" text-anchor="middle" x="694" y="117">versão 2</text></g>
-<g class="wf-a"><rect fill="#0e1622" height="30" rx="7" stroke="#3b82f6" stroke-width="1.8" width="118" x="634" y="140"></rect><circle cx="648" cy="155" fill="#60a5fa" r="3"></circle><text fill="#9ec5ff" text-anchor="middle" x="694" y="159">versão 3</text></g>
+<g class="wf-a"><rect fill="#0e1622" height="30" rx="7" stroke="#3b82f6" stroke-width="1.8" width="118" x="634" y="56"></rect><circle cx="648" cy="71" fill="#60a5fa" r="3"></circle><text fill="#9ec5ff" text-anchor="middle" x="694" y="75">versÃ£o 1</text></g>
+<g class="wf-a"><rect fill="#0e1622" height="30" rx="7" stroke="#3b82f6" stroke-width="1.8" width="118" x="634" y="98"></rect><circle cx="648" cy="113" fill="#60a5fa" r="3"></circle><text fill="#9ec5ff" text-anchor="middle" x="694" y="117">versÃ£o 2</text></g>
+<g class="wf-a"><rect fill="#0e1622" height="30" rx="7" stroke="#3b82f6" stroke-width="1.8" width="118" x="634" y="140"></rect><circle cx="648" cy="155" fill="#60a5fa" r="3"></circle><text fill="#9ec5ff" text-anchor="middle" x="694" y="159">versÃ£o 3</text></g>
 </g>
 <g fill="none" opacity="0.55" stroke="#38bdf8" stroke-width="1.8">
 <path d="M752,71 C812,71 824,108 866,108" marker-end="url(#m21-ahc)"></path>
@@ -241,242 +241,242 @@
 <!-- globo + URL -->
 <g filter="url(#m21-glow)"><circle cx="918" cy="113" fill="#0e1622" r="34" stroke="url(#m21-grad)" stroke-width="2.5"></circle></g>
 <circle cx="918" cy="113" fill="none" r="20" stroke="#60a5fa" stroke-width="2"></circle><ellipse cx="918" cy="113" fill="none" rx="9" ry="20" stroke="#60a5fa" stroke-width="1.6"></ellipse><line stroke="#60a5fa" stroke-width="1.6" x1="898" x2="938" y1="113" y2="113"></line>
-<text fill="#9ec5ff" font-family="Inter,sans-serif" font-size="11" font-weight="600" text-anchor="middle" x="918" y="170">③ URL pública</text>
-<text fill="#6b9bdc" font-family="Inter,sans-serif" font-size="10.5" text-anchor="middle" x="694" y="200">UI sniping · SEO · deploy (Vercel)</text>
-<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="500" y="224">do zero → URL pública — você não reinventa a roda, você parte do que já vence</text>
+<text fill="#9ec5ff" font-family="Inter,sans-serif" font-size="11" font-weight="600" text-anchor="middle" x="918" y="170">â‘¢ URL pÃºblica</text>
+<text fill="#6b9bdc" font-family="Inter,sans-serif" font-size="10.5" text-anchor="middle" x="694" y="200">UI sniping Â· SEO Â· deploy (Vercel)</text>
+<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="500" y="224">do zero â†’ URL pÃºblica â€” vocÃª nÃ£o reinventa a roda, vocÃª parte do que jÃ¡ vence</text>
 </svg>
 </div>
-<h2 class="text-2xl font-bold mb-6">Conteúdo detalhado</h2>
+<h2 class="text-2xl font-bold mb-6">ConteÃºdo detalhado</h2>
 <!-- TOPICO 1 -->
-<section class="mb-16" data-inema-module="2-1" data-inema-topic="modulo-2-1#topico-1" data-inema-track="2" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-module="2-1" data-ARCKHÉ-topic="modulo-2-1#topico-1" data-ARCKHÉ-track="2" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">1</span>
-<h2 class="text-2xl font-bold">🎯 Copie o que já vence: a estratégia da lei de potência</h2>
+<h2 class="text-2xl font-bold">ðŸŽ¯ Copie o que jÃ¡ vence: a estratÃ©gia da lei de potÃªncia</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-1-t1-p1">A maior alavanca para construir um bom site não é ter uma ideia original — é <strong class="text-blue-400">descobrir o que já funciona</strong> e partir dali. Pense num chef abrindo um restaurante: ele come nos melhores lugares da cidade, anota o que dá certo e só então monta o cardápio dele — melhor, porque parte do que já está validado.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-1-t1-p1">A maior alavanca para construir um bom site nÃ£o Ã© ter uma ideia original â€” Ã© <strong class="text-blue-400">descobrir o que jÃ¡ funciona</strong> e partir dali. Pense num chef abrindo um restaurante: ele come nos melhores lugares da cidade, anota o que dÃ¡ certo e sÃ³ entÃ£o monta o cardÃ¡pio dele â€” melhor, porque parte do que jÃ¡ estÃ¡ validado.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Uma postura de construção que parte da observação, não da imaginação. Você mapeia os sites que já dão resultado e extrai os padrões deles.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sites de referência já passaram por anos de tentativa e erro. Você herda esse aprendizado de graça e evita reinventar a roda.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">"Não reinvente a roda" · extrair padrões (CTAs, propósito, estrutura) · usar IA para construir rápido a partir do validado.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Uma postura de construÃ§Ã£o que parte da observaÃ§Ã£o, nÃ£o da imaginaÃ§Ã£o. VocÃª mapeia os sites que jÃ¡ dÃ£o resultado e extrai os padrÃµes deles.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sites de referÃªncia jÃ¡ passaram por anos de tentativa e erro. VocÃª herda esse aprendizado de graÃ§a e evita reinventar a roda.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">"NÃ£o reinvente a roda" Â· extrair padrÃµes (CTAs, propÃ³sito, estrutura) Â· usar IA para construir rÃ¡pido a partir do validado.</p></div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">🍽️</span> A analogia do chef</h3>
-<p class="text-neutral-300 text-sm">O site é o sistema de 3 passos do módulo. <strong>Passo 1</strong> — você "come nos melhores restaurantes" (pesquisa concorrentes). <strong>Passo 2</strong> — vira o garçom anotando o pedido (design brief). <strong>Passo 3</strong> — cozinha e serve (constrói e publica). Tudo parte do que já está provado.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ½ï¸</span> A analogia do chef</h3>
+<p class="text-neutral-300 text-sm">O site Ã© o sistema de 3 passos do mÃ³dulo. <strong>Passo 1</strong> â€” vocÃª "come nos melhores restaurantes" (pesquisa concorrentes). <strong>Passo 2</strong> â€” vira o garÃ§om anotando o pedido (design brief). <strong>Passo 3</strong> â€” cozinha e serve (constrÃ³i e publica). Tudo parte do que jÃ¡ estÃ¡ provado.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-inema-module="2-1" data-inema-topic="modulo-2-1#topico-2" data-inema-track="2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-module="2-1" data-ARCKHÉ-topic="modulo-2-1#topico-2" data-ARCKHÉ-track="2" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">2</span>
-<h2 class="text-2xl font-bold">🔎 Inteligência competitiva: pesquisa + matriz de avaliação</h2>
+<h2 class="text-2xl font-bold">ðŸ”Ž InteligÃªncia competitiva: pesquisa + matriz de avaliaÃ§Ã£o</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-1-t2-p1">Use o <strong class="text-blue-400">Firecrawl</strong> dentro do Claude Code para encontrar e ler os sites dos concorrentes do seu nicho. Daí você sai de uma lista ampla para um top 5 e monta uma <strong class="text-blue-400">matriz de avaliação</strong> que transforma achismo em uma grade objetiva de notas.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-1-t2-p1">Use o <strong class="text-blue-400">Firecrawl</strong> dentro do Claude Code para encontrar e ler os sites dos concorrentes do seu nicho. DaÃ­ vocÃª sai de uma lista ampla para um top 5 e monta uma <strong class="text-blue-400">matriz de avaliaÃ§Ã£o</strong> que transforma achismo em uma grade objetiva de notas.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Raspar concorrentes com o Firecrawl e pontuá-los numa tabela por critérios (oferta, prova social, clareza, design, SEO).</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É a matéria-prima do seu site. Sem essa base, você constrói no escuro. A matriz revela padrões repetidos entre os vencedores.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Lista ampla → top 5 · fontes (avaliações no Google, ranking de SEO, clareza da oferta) · "o que os 5 melhores têm que os 5 piores não têm".</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Raspar concorrentes com o Firecrawl e pontuÃ¡-los numa tabela por critÃ©rios (oferta, prova social, clareza, design, SEO).</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Ã‰ a matÃ©ria-prima do seu site. Sem essa base, vocÃª constrÃ³i no escuro. A matriz revela padrÃµes repetidos entre os vencedores.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Lista ampla â†’ top 5 Â· fontes (avaliaÃ§Ãµes no Google, ranking de SEO, clareza da oferta) Â· "o que os 5 melhores tÃªm que os 5 piores nÃ£o tÃªm".</p></div>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">🪜</span> Passo a passo</h3>
+<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ðŸªœ</span> Passo a passo</h3>
 <ol class="space-y-2 text-neutral-300 text-sm list-decimal list-inside">
 <li>Crie uma pasta nova (ex.: <code class="text-blue-400">website</code>) e abra o Claude Code nela.</li>
 <li>Conecte o Firecrawl (firecrawl.dev) ao agente.</li>
 <li>Envie o <strong>prompt de pesquisa de concorrentes</strong> (ver "Prompts prontos").</li>
-<li>Responda às perguntas de clarificação: quem é o cliente, qual o ângulo, qual a região.</li>
-<li>Receba o relatório com a lista, o top 5 e a análise comparativa. Se vier sem formatação, peça "crie um resumo em HTML dessa pesquisa".</li>
+<li>Responda Ã s perguntas de clarificaÃ§Ã£o: quem Ã© o cliente, qual o Ã¢ngulo, qual a regiÃ£o.</li>
+<li>Receba o relatÃ³rio com a lista, o top 5 e a anÃ¡lise comparativa. Se vier sem formataÃ§Ã£o, peÃ§a "crie um resumo em HTML dessa pesquisa".</li>
 </ol>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-inema-module="2-1" data-inema-topic="modulo-2-1#topico-3" data-inema-track="2" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-module="2-1" data-ARCKHÉ-topic="modulo-2-1#topico-3" data-ARCKHÉ-track="2" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">3</span>
-<h2 class="text-2xl font-bold">📝 O design brief estruturado (best-principles.md)</h2>
+<h2 class="text-2xl font-bold">ðŸ“ O design brief estruturado (best-principles.md)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-1-t3-p1">Transforme a pesquisa num documento único — <strong class="text-blue-400">best-principles.md</strong> — onde você cola toda a investigação e os princípios extraídos. O agente constrói muito melhor lendo um brief organizado do que recebendo instruções soltas no chat.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-1-t3-p1">Transforme a pesquisa num documento Ãºnico â€” <strong class="text-blue-400">best-principles.md</strong> â€” onde vocÃª cola toda a investigaÃ§Ã£o e os princÃ­pios extraÃ­dos. O agente constrÃ³i muito melhor lendo um brief organizado do que recebendo instruÃ§Ãµes soltas no chat.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Um arquivo <code class="text-blue-400">.md</code> que vira a fonte de verdade do projeto: nome, oferta, público, tom e princípios da pesquisa.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Um brief claro orienta sem engessar. É a ponte entre a pesquisa e o que o agente vai construir.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Menos prescritivo é melhor · dê liberdade ao agente · deixe preço/posicionamento guiados pela pesquisa.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Um arquivo <code class="text-blue-400">.md</code> que vira a fonte de verdade do projeto: nome, oferta, pÃºblico, tom e princÃ­pios da pesquisa.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Um brief claro orienta sem engessar. Ã‰ a ponte entre a pesquisa e o que o agente vai construir.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Menos prescritivo Ã© melhor Â· dÃª liberdade ao agente Â· deixe preÃ§o/posicionamento guiados pela pesquisa.</p></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
-<h4 class="font-bold text-blue-400 mb-4">✓ Faça assim</h4>
+<h4 class="font-bold text-blue-400 mb-4">âœ“ FaÃ§a assim</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Dê direção: nome, oferta, público, tom.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Cole toda a pesquisa do Passo 1 no arquivo.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Responda de forma geral; deixe espaço para boas decisões.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>DÃª direÃ§Ã£o: nome, oferta, pÃºblico, tom.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Cole toda a pesquisa do Passo 1 no arquivo.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Responda de forma geral; deixe espaÃ§o para boas decisÃµes.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">✗ Evite</h4>
+<h4 class="font-bold text-red-400 mb-4">âœ— Evite</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Encher de regras minuciosas que travam o agente.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Mandar instruções soltas no chat, sem documento.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Fixar preço/posição antes da pesquisa indicar.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Encher de regras minuciosas que travam o agente.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Mandar instruÃ§Ãµes soltas no chat, sem documento.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Fixar preÃ§o/posiÃ§Ã£o antes da pesquisa indicar.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Dica prática</h3>
-<p class="text-neutral-300 text-sm">Depois de colar a pesquisa, peça: <em>"familiarize-se com o best-principles.md e me avise quando entender o brief"</em>. As perguntas que o agente devolver mostram se o brief está bom.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Dica prÃ¡tica</h3>
+<p class="text-neutral-300 text-sm">Depois de colar a pesquisa, peÃ§a: <em>"familiarize-se com o best-principles.md e me avise quando entender o brief"</em>. As perguntas que o agente devolver mostram se o brief estÃ¡ bom.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-inema-module="2-1" data-inema-topic="modulo-2-1#topico-4" data-inema-track="2" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-module="2-1" data-ARCKHÉ-topic="modulo-2-1#topico-4" data-ARCKHÉ-track="2" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">4</span>
-<h2 class="text-2xl font-bold">🤖 Agentes paralelos: três sites de uma vez</h2>
+<h2 class="text-2xl font-bold">ðŸ¤– Agentes paralelos: trÃªs sites de uma vez</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-1-t4-p1">O mesmo prompt gera resultados diferentes a cada execução. Em vez de torcer por uma única tentativa, abra <strong class="text-blue-400">vários terminais</strong> — cada um com um Claude Code construindo uma versão com uma estratégia distinta — e escolha a vencedora.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-1-t4-p1">O mesmo prompt gera resultados diferentes a cada execuÃ§Ã£o. Em vez de torcer por uma Ãºnica tentativa, abra <strong class="text-blue-400">vÃ¡rios terminais</strong> â€” cada um com um Claude Code construindo uma versÃ£o com uma estratÃ©gia distinta â€” e escolha a vencedora.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Rodar versões paralelas do site: do brief puro, de um HTML de inspiração e de um sistema de design de referência.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Você compara "sabores" e não fica refém de uma única saída por azar.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Terminais paralelos · pastas separadas (<code class="text-blue-400">1/</code>, <code class="text-blue-400">2/</code>, <code class="text-blue-400">3/</code>) · três estratégias · comparar e escolher.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Rodar versÃµes paralelas do site: do brief puro, de um HTML de inspiraÃ§Ã£o e de um sistema de design de referÃªncia.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">VocÃª compara "sabores" e nÃ£o fica refÃ©m de uma Ãºnica saÃ­da por azar.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Terminais paralelos Â· pastas separadas (<code class="text-blue-400">1/</code>, <code class="text-blue-400">2/</code>, <code class="text-blue-400">3/</code>) Â· trÃªs estratÃ©gias Â· comparar e escolher.</p></div>
 </div>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Abra três terminais</h4><p class="text-neutral-300 text-sm">Renomeie-os: "versão brief", "versão inspiração HTML", "versão design system". Cada um lê o <code class="text-blue-400">best-principles.md</code>.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Abra trÃªs terminais</h4><p class="text-neutral-300 text-sm">Renomeie-os: "versÃ£o brief", "versÃ£o inspiraÃ§Ã£o HTML", "versÃ£o design system". Cada um lÃª o <code class="text-blue-400">best-principles.md</code>.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Rode estratégias diferentes</h4><p class="text-neutral-300 text-sm">Peça que cada agente salve sua versão numa pasta própria (<code class="text-blue-400">1/</code>, <code class="text-blue-400">2/</code>, <code class="text-blue-400">3/</code>).</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Rode estratÃ©gias diferentes</h4><p class="text-neutral-300 text-sm">PeÃ§a que cada agente salve sua versÃ£o numa pasta prÃ³pria (<code class="text-blue-400">1/</code>, <code class="text-blue-400">2/</code>, <code class="text-blue-400">3/</code>).</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Compare e escolha</h4><p class="text-neutral-300 text-sm">Abra cada versão em localhost, compare, mantenha a melhor e apague as outras.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Compare e escolha</h4><p class="text-neutral-300 text-sm">Abra cada versÃ£o em localhost, compare, mantenha a melhor e apague as outras.</p></div>
 </div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-inema-module="2-1" data-inema-topic="modulo-2-1#topico-5" data-inema-track="2" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-module="2-1" data-ARCKHÉ-topic="modulo-2-1#topico-5" data-ARCKHÉ-track="2" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">5</span>
-<h2 class="text-2xl font-bold">✂️ UI sniping + SEO: polimento que converte</h2>
+<h2 class="text-2xl font-bold">âœ‚ï¸ UI sniping + SEO: polimento que converte</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-1-t5-p1">Com a versão escolhida em mãos, dê o acabamento. <strong class="text-blue-400">UI sniping</strong> é pegar componentes prontos e bonitos em galerias e integrá-los; em paralelo, rode pacotes de <strong class="text-blue-400">UI/UX e SEO</strong> para deixar o site acessível e rankeável.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-1-t5-p1">Com a versÃ£o escolhida em mÃ£os, dÃª o acabamento. <strong class="text-blue-400">UI sniping</strong> Ã© pegar componentes prontos e bonitos em galerias e integrÃ¡-los; em paralelo, rode pacotes de <strong class="text-blue-400">UI/UX e SEO</strong> para deixar o site acessÃ­vel e rankeÃ¡vel.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Trazer trechos de interface que comprovadamente funcionam (de 21st.dev, Codepen) e rodar um agente de UI/UX e outro de SEO ao mesmo tempo.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Você ganha qualidade visual de ponta sem desenhar do zero — e design bonito que ninguém acha não converte.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">21st.dev e Codepen · integrar "abaixo do H1" / "na seção de depoimentos" · pacotes de UI/UX e SEO em paralelo · relatório com itens marcados.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Trazer trechos de interface que comprovadamente funcionam (de 21st.dev, Codepen) e rodar um agente de UI/UX e outro de SEO ao mesmo tempo.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">VocÃª ganha qualidade visual de ponta sem desenhar do zero â€” e design bonito que ninguÃ©m acha nÃ£o converte.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">21st.dev e Codepen Â· integrar "abaixo do H1" / "na seÃ§Ã£o de depoimentos" Â· pacotes de UI/UX e SEO em paralelo Â· relatÃ³rio com itens marcados.</p></div>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">📊</span> Fluxo de refino</h3>
+<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ðŸ“Š</span> Fluxo de refino</h3>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">•</span><span>Escolha um componente (depoimentos, efeito de destaque), copie o código e peça ao agente para integrar e ajustar o texto.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">•</span><span>Num terminal, rode o pacote de UI/UX (contraste, tamanho de botão, navegação, mobile) "sem dó".</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">•</span><span>Em outro, rode o pacote de SEO (palavras-chave, copy, schema markup) sem mexer no design.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">•</span><span>Peça um relatório com tudo marcado e faça a revisão crítica final.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>Escolha um componente (depoimentos, efeito de destaque), copie o cÃ³digo e peÃ§a ao agente para integrar e ajustar o texto.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>Num terminal, rode o pacote de UI/UX (contraste, tamanho de botÃ£o, navegaÃ§Ã£o, mobile) "sem dÃ³".</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>Em outro, rode o pacote de SEO (palavras-chave, copy, schema markup) sem mexer no design.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>PeÃ§a um relatÃ³rio com tudo marcado e faÃ§a a revisÃ£o crÃ­tica final.</span></li>
 </ul>
 </div>
 <details class="bg-dark-800 border border-dark-600 rounded-xl p-5 mb-6">
-<summary class="cursor-pointer font-semibold text-blue-400">Indo mais fundo (opcional): use só o que combina</summary>
-<p class="text-neutral-300 text-sm mt-3">Nem todo componente bonito serve para o seu negócio. Pegue o que reforça a mensagem e descarte o resto. Galerias de UI são ponto de partida, não obrigação — coerência vence quantidade.</p>
+<summary class="cursor-pointer font-semibold text-blue-400">Indo mais fundo (opcional): use sÃ³ o que combina</summary>
+<p class="text-neutral-300 text-sm mt-3">Nem todo componente bonito serve para o seu negÃ³cio. Pegue o que reforÃ§a a mensagem e descarte o resto. Galerias de UI sÃ£o ponto de partida, nÃ£o obrigaÃ§Ã£o â€” coerÃªncia vence quantidade.</p>
 </details>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-inema-module="2-1" data-inema-topic="modulo-2-1#topico-6" data-inema-track="2" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-module="2-1" data-ARCKHÉ-topic="modulo-2-1#topico-6" data-ARCKHÉ-track="2" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">6</span>
-<h2 class="text-2xl font-bold">🚀 Deploy na Vercel: do localhost à URL pública</h2>
+<h2 class="text-2xl font-bold">ðŸš€ Deploy na Vercel: do localhost Ã  URL pÃºblica</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Tenho dúvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m2-1-t6-p1">Um site só no seu computador não serve para ninguém. <strong class="text-blue-400">GitHub guarda o código</strong> (como um "save de videogame": se algo quebrar, você volta para a versão anterior) e a <strong class="text-blue-400">Vercel</strong> coloca o site no ar com uma URL que você envia para qualquer pessoa.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-1-t6-p1">Um site sÃ³ no seu computador nÃ£o serve para ninguÃ©m. <strong class="text-blue-400">GitHub guarda o cÃ³digo</strong> (como um "save de videogame": se algo quebrar, vocÃª volta para a versÃ£o anterior) e a <strong class="text-blue-400">Vercel</strong> coloca o site no ar com uma URL que vocÃª envia para qualquer pessoa.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Subir o projeto para o GitHub e conectar à Vercel para gerar uma URL acessível por qualquer pessoa.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">A URL pública é o que você envia para clientes. Sem deploy, o site não existe para o mundo.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">GitHub como backup e "save state" · repositório privado vs. público · Vercel conecta ao GitHub · domínio personalizado e redirecionamento 301.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Subir o projeto para o GitHub e conectar Ã  Vercel para gerar uma URL acessÃ­vel por qualquer pessoa.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">A URL pÃºblica Ã© o que vocÃª envia para clientes. Sem deploy, o site nÃ£o existe para o mundo.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">GitHub como backup e "save state" Â· repositÃ³rio privado vs. pÃºblico Â· Vercel conecta ao GitHub Â· domÃ­nio personalizado e redirecionamento 301.</p></div>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">🪜</span> Passo a passo</h3>
+<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ðŸªœ</span> Passo a passo</h3>
 <ol class="space-y-2 text-neutral-300 text-sm list-decimal list-inside">
-<li>Peça ao agente para conectar ao GitHub via CLI (ou confirmar se já está conectado).</li>
-<li>Peça para criar um repositório com o projeto inteiro.</li>
-<li>Peça para conectar à CLI da Vercel.</li>
-<li>Peça: "publique isto na Vercel". Você recebe uma URL pública.</li>
-<li>(Opcional) Na Vercel, adicione um domínio personalizado e aguarde a propagação.</li>
+<li>PeÃ§a ao agente para conectar ao GitHub via CLI (ou confirmar se jÃ¡ estÃ¡ conectado).</li>
+<li>PeÃ§a para criar um repositÃ³rio com o projeto inteiro.</li>
+<li>PeÃ§a para conectar Ã  CLI da Vercel.</li>
+<li>PeÃ§a: "publique isto na Vercel". VocÃª recebe uma URL pÃºblica.</li>
+<li>(Opcional) Na Vercel, adicione um domÃ­nio personalizado e aguarde a propagaÃ§Ã£o.</li>
 </ol>
 </div>
 <!-- Checagem leve opcional -->
-<div class="inema-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-2-1#q1">
-<p class="font-medium mb-4">Auto-checagem (opcional): por que construir o site em versões paralelas?</p>
-<div class="inema-check-options space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">Para gastar mais créditos e acelerar o agente.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">Porque o mesmo prompt gera saídas diferentes; você compara e escolhe a melhor.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">Porque a Vercel exige três pastas para publicar.</button>
+<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-2-1#q1">
+<p class="font-medium mb-4">Auto-checagem (opcional): por que construir o site em versÃµes paralelas?</p>
+<div class="ARCKHÉ-check-options space-y-2">
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">Para gastar mais crÃ©ditos e acelerar o agente.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Porque o mesmo prompt gera saÃ­das diferentes; vocÃª compara e escolhe a melhor.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Porque a Vercel exige trÃªs pastas para publicar.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-inema-read-toggle="" type="button"><span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
 </div>
 </section>
 <!-- EXERCICIOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">✏️ Exercícios</h2>
+<h2 class="text-2xl font-bold mb-6">âœï¸ ExercÃ­cios</h2>
 <div class="space-y-4">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. Pesquisa de concorrentes <span class="text-xs text-neutral-500">(médio)</span></h3><p class="text-neutral-300 text-sm">Escolha um nicho real e rode o prompt de pesquisa com o Firecrawl. <span class="text-blue-400">Critério:</span> você tem uma lista do top 5 e uma matriz de avaliação preenchida.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Design brief <span class="text-xs text-neutral-500">(médio)</span></h3><p class="text-neutral-300 text-sm">Monte o <code class="text-blue-400">best-principles.md</code> com a pesquisa. <span class="text-blue-400">Critério:</span> o agente confirma que entendeu o brief e faz perguntas pertinentes.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Agentes paralelos <span class="text-xs text-neutral-500">(médio)</span></h3><p class="text-neutral-300 text-sm">Construa três versões do site em pastas separadas. <span class="text-blue-400">Critério:</span> você abre as três em localhost e justifica qual escolheu e por quê.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. UI sniping <span class="text-xs text-neutral-500">(médio)</span></h3><p class="text-neutral-300 text-sm">Integre pelo menos dois componentes de 21st.dev ou Codepen, com o texto ajustado. <span class="text-blue-400">Critério:</span> os componentes aparecem e fazem sentido no contexto.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. Deploy <span class="text-xs text-neutral-500">(difícil)</span></h3><p class="text-neutral-300 text-sm">Publique na Vercel. <span class="text-blue-400">Critério:</span> você abre a URL pública num navegador anônimo e o site carrega.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. Pesquisa de concorrentes <span class="text-xs text-neutral-500">(mÃ©dio)</span></h3><p class="text-neutral-300 text-sm">Escolha um nicho real e rode o prompt de pesquisa com o Firecrawl. <span class="text-blue-400">CritÃ©rio:</span> vocÃª tem uma lista do top 5 e uma matriz de avaliaÃ§Ã£o preenchida.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Design brief <span class="text-xs text-neutral-500">(mÃ©dio)</span></h3><p class="text-neutral-300 text-sm">Monte o <code class="text-blue-400">best-principles.md</code> com a pesquisa. <span class="text-blue-400">CritÃ©rio:</span> o agente confirma que entendeu o brief e faz perguntas pertinentes.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Agentes paralelos <span class="text-xs text-neutral-500">(mÃ©dio)</span></h3><p class="text-neutral-300 text-sm">Construa trÃªs versÃµes do site em pastas separadas. <span class="text-blue-400">CritÃ©rio:</span> vocÃª abre as trÃªs em localhost e justifica qual escolheu e por quÃª.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. UI sniping <span class="text-xs text-neutral-500">(mÃ©dio)</span></h3><p class="text-neutral-300 text-sm">Integre pelo menos dois componentes de 21st.dev ou Codepen, com o texto ajustado. <span class="text-blue-400">CritÃ©rio:</span> os componentes aparecem e fazem sentido no contexto.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. Deploy <span class="text-xs text-neutral-500">(difÃ­cil)</span></h3><p class="text-neutral-300 text-sm">Publique na Vercel. <span class="text-blue-400">CritÃ©rio:</span> vocÃª abre a URL pÃºblica num navegador anÃ´nimo e o site carrega.</p></div>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">⌨️ Prompts prontos</h2>
-<p class="text-neutral-300 text-sm mb-6">Estes são os prompts-chave do sistema de 3 passos. Note o <strong class="text-blue-400">tom</strong>: claro, em português, dizendo <em>o quê</em> e <em>para quem</em>, e deixando espaço para o agente decidir bem. O banco completo está na <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Biblioteca → Prompts</a>.</p>
+<h2 class="text-2xl font-bold mb-6">âŒ¨ï¸ Prompts prontos</h2>
+<p class="text-neutral-300 text-sm mb-6">Estes sÃ£o os prompts-chave do sistema de 3 passos. Note o <strong class="text-blue-400">tom</strong>: claro, em portuguÃªs, dizendo <em>o quÃª</em> e <em>para quem</em>, e deixando espaÃ§o para o agente decidir bem. O banco completo estÃ¡ na <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Biblioteca â†’ Prompts</a>.</p>
 <div class="space-y-5">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Pesquisa de concorrentes (Firecrawl)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Olá! Quero criar um site para uma consultoria de crescimento online
-que constrói sites e ajuda empresas a conseguir clientes. No fundo,
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Pesquisa de concorrentes (Firecrawl)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">OlÃ¡! Quero criar um site para uma consultoria de crescimento online
+que constrÃ³i sites e ajuda empresas a conseguir clientes. No fundo,
 precisa ser algo que ajude empresas a ter um site que funcione.
 
-O que quero que você faça: use a conexão com o Firecrawl e encontre as
+O que quero que vocÃª faÃ§a: use a conexÃ£o com o Firecrawl e encontre as
 melhores e mais bem-sucedidas consultorias/construtoras de sites do meu
-mercado. Vou atuar em [REGIÃO], mas isso pode ser internacional.
+mercado. Vou atuar em [REGIÃƒO], mas isso pode ser internacional.
 
 1. Identifique uma lista ampla dessas empresas.
-2. Recorte o top 5. Você pode avaliá-las como achar melhor: avaliações
+2. Recorte o top 5. VocÃª pode avaliÃ¡-las como achar melhor: avaliaÃ§Ãµes
    no Google, ranking de SEO, clareza da oferta etc. Crie uma matriz de
    julgamento que ajude a entender e pontuar cada uma.
-3. Entregue um relatório das 5 melhores.
-4. Faça uma análise profunda: o que os 5 melhores têm em comum que os 5
-   piores NÃO têm? Quero usar esses princípios para construir o meu site.
+3. Entregue um relatÃ³rio das 5 melhores.
+4. FaÃ§a uma anÃ¡lise profunda: o que os 5 melhores tÃªm em comum que os 5
+   piores NÃƒO tÃªm? Quero usar esses princÃ­pios para construir o meu site.
 
-Me faça quaisquer perguntas necessárias para clarificar o entendimento.</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">Hi! I'd like to create a website for an online growth consultancy that
+Me faÃ§a quaisquer perguntas necessÃ¡rias para clarificar o entendimento.</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">Hi! I'd like to create a website for an online growth consultancy that
 builds websites and helps businesses get customers. Fundamentally, it
 needs to be something that helps businesses get a website that works.
 
@@ -485,7 +485,7 @@ best, most successful website consultancies / website builders in my
 market. I'll be operating in [REGION], but this could be international.
 
 1. Identify a large list of these.
-2. Narrow it to the top 5. Assess them however you see fit — Google
+2. Narrow it to the top 5. Assess them however you see fit â€” Google
    reviews, SEO ranking, offer clarity, etc. Build a judging matrix that
    helps you understand and score them.
 3. Deliver a report of the 5 best.
@@ -493,79 +493,79 @@ market. I'll be operating in [REGION], but this could be international.
    worst do NOT? I want to use those principles to build mine.
 
 Ask me any questions you need to clarify your understanding.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Design brief / construir a partir do best-principles.md</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Olá! Quero que você se familiarize com o documento best-principles.md.
-Vamos construir juntos um site de [TIPO DE NEGÓCIO].
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Design brief / construir a partir do best-principles.md</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">OlÃ¡! Quero que vocÃª se familiarize com o documento best-principles.md.
+Vamos construir juntos um site de [TIPO DE NEGÃ“CIO].
 
-Use os princípios extraídos da pesquisa de concorrentes como base.
-Seja menos prescritivo do que mais — tem liberdade para decidir o que
-funciona melhor. Use os melhores recursos e bibliotecas disponíveis
-para deixar o site o mais bonito e interativo possível.
+Use os princÃ­pios extraÃ­dos da pesquisa de concorrentes como base.
+Seja menos prescritivo do que mais â€” tem liberdade para decidir o que
+funciona melhor. Use os melhores recursos e bibliotecas disponÃ­veis
+para deixar o site o mais bonito e interativo possÃ­vel.
 
-Me avise quando tiver entendido o brief; aí começamos a construir.</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">Hi! Please familiarize yourself with the best-principles.md document.
+Me avise quando tiver entendido o brief; aÃ­ comeÃ§amos a construir.</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">Hi! Please familiarize yourself with the best-principles.md document.
 We're going to build a website together for a [BUSINESS TYPE].
 
 Use the principles extracted from the competitor research as your base.
-Be less prescriptive rather than more — you have freedom to decide what
+Be less prescriptive rather than more â€” you have freedom to decide what
 works best. Use the best resources and libraries available to make this
 as beautiful and interactive as possible.
 
 Let me know when you've understood the brief, then we'll start building.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">UI sniping — integrar componente</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Ótimo trabalho. Quero que você integre o componente abaixo [logo após o
-H1 / na seção de depoimentos] e ajuste o texto para fazer sentido no
-nosso site. Aqui está o código/URL do componente: [COLE AQUI].</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Deploy na Vercel</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">1. Conecte-se ao GitHub via CLI. Se já estiver conectado, apenas confirme.
-2. Crie um repositório no GitHub com este projeto inteiro.
-3. Conecte-se à CLI da Vercel. Se já estiver conectado, apenas confirme.
-4. Publique este site na Vercel e me dê a URL pública.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Revisão crítica final</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Quero que você atue como um avaliador crítico e exigente. Percorra o site
-e encontre inconsistências, textos que não fazem sentido e design ruim.
-Volte com uma lista classificada em crítico / alto / médio / baixo. Não
-invente bugs críticos onde não existem, mas olhe de verdade para me ajudar
-a melhorar. Traga qualquer repositório/pacote relevante que ajude.</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">UI sniping â€” integrar componente</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Ã“timo trabalho. Quero que vocÃª integre o componente abaixo [logo apÃ³s o
+H1 / na seÃ§Ã£o de depoimentos] e ajuste o texto para fazer sentido no
+nosso site. Aqui estÃ¡ o cÃ³digo/URL do componente: [COLE AQUI].</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Deploy na Vercel</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">1. Conecte-se ao GitHub via CLI. Se jÃ¡ estiver conectado, apenas confirme.
+2. Crie um repositÃ³rio no GitHub com este projeto inteiro.
+3. Conecte-se Ã  CLI da Vercel. Se jÃ¡ estiver conectado, apenas confirme.
+4. Publique este site na Vercel e me dÃª a URL pÃºblica.</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">RevisÃ£o crÃ­tica final</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Quero que vocÃª atue como um avaliador crÃ­tico e exigente. Percorra o site
+e encontre inconsistÃªncias, textos que nÃ£o fazem sentido e design ruim.
+Volte com uma lista classificada em crÃ­tico / alto / mÃ©dio / baixo. NÃ£o
+invente bugs crÃ­ticos onde nÃ£o existem, mas olhe de verdade para me ajudar
+a melhorar. Traga qualquer repositÃ³rio/pacote relevante que ajude.</pre></div>
 </div>
 </section>
 <!-- ERROS COMUNS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">⚠️ Erros comuns</h2>
+<h2 class="text-2xl font-bold mb-6">âš ï¸ Erros comuns</h2>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span><strong>Ser prescritivo demais no brief.</strong> Encher de regras "trava" o agente e o resultado fica engessado. Dê direção, mas deixe espaço para boas decisões.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span><strong>Construir uma versão só.</strong> O mesmo prompt gera saídas diferentes a cada execução. Com uma única tentativa, você pode ficar com a pior por azar.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span><strong>Esquecer de tornar o site público/acessível.</strong> Site só no localhost não serve a ninguém. Cheque repositório privado vs. público e HTTPS.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span><strong>Pular SEO e acessibilidade.</strong> Um site lindo que ninguém encontra (e que exclui quem tem limitação) não converte. Rode os pacotes antes de considerar pronto.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">✗</span><span><strong>Confiar cegamente no resultado.</strong> Sempre faça a revisão crítica final: copy, consistência, propagação do domínio, links quebrados.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Ser prescritivo demais no brief.</strong> Encher de regras "trava" o agente e o resultado fica engessado. DÃª direÃ§Ã£o, mas deixe espaÃ§o para boas decisÃµes.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Construir uma versÃ£o sÃ³.</strong> O mesmo prompt gera saÃ­das diferentes a cada execuÃ§Ã£o. Com uma Ãºnica tentativa, vocÃª pode ficar com a pior por azar.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Esquecer de tornar o site pÃºblico/acessÃ­vel.</strong> Site sÃ³ no localhost nÃ£o serve a ninguÃ©m. Cheque repositÃ³rio privado vs. pÃºblico e HTTPS.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Pular SEO e acessibilidade.</strong> Um site lindo que ninguÃ©m encontra (e que exclui quem tem limitaÃ§Ã£o) nÃ£o converte. Rode os pacotes antes de considerar pronto.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Confiar cegamente no resultado.</strong> Sempre faÃ§a a revisÃ£o crÃ­tica final: copy, consistÃªncia, propagaÃ§Ã£o do domÃ­nio, links quebrados.</span></li>
 </ul>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-blue-900/40 via-dark-800 to-dark-800 rounded-xl border border-blue-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> Resumo do módulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumo do mÃ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong>Pesquise primeiro</strong><span class="text-neutral-400"> — inteligência competitiva com Firecrawl + matriz de avaliação revelam o que já vence.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong>Projete o brief</strong><span class="text-neutral-400"> — o best-principles.md vira a fonte de verdade; menos prescritivo é melhor.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong>Construa em paralelo</strong><span class="text-neutral-400"> — três versões ao mesmo tempo; compare e escolha a melhor.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong>Polir e publicar</strong><span class="text-neutral-400"> — UI sniping, SEO/UX e deploy na Vercel: do localhost à URL pública.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong>Pesquise primeiro</strong><span class="text-neutral-400"> â€” inteligÃªncia competitiva com Firecrawl + matriz de avaliaÃ§Ã£o revelam o que jÃ¡ vence.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong>Projete o brief</strong><span class="text-neutral-400"> â€” o best-principles.md vira a fonte de verdade; menos prescritivo Ã© melhor.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong>Construa em paralelo</strong><span class="text-neutral-400"> â€” trÃªs versÃµes ao mesmo tempo; compare e escolha a melhor.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong>Polir e publicar</strong><span class="text-neutral-400"> â€” UI sniping, SEO/UX e deploy na Vercel: do localhost Ã  URL pÃºblica.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-blue-400 mb-3">Checklist de conclusão</h3>
+<h3 class="font-semibold text-blue-400 mb-3">Checklist de conclusÃ£o</h3>
 <ul class="space-y-2 text-sm text-neutral-300">
-<li>☐ Rodei a pesquisa de concorrentes com o Firecrawl e tenho um relatório do top 5.</li>
-<li>☐ Montei a matriz de avaliação com critérios e notas.</li>
-<li>☐ Criei o best-principles.md e o agente confirmou que entendeu o brief.</li>
-<li>☐ Construí 2–3 versões em paralelo e escolhi a melhor de forma justificada.</li>
-<li>☐ Apliquei UI sniping com ao menos dois componentes integrados e ajustados.</li>
-<li>☐ Rodei SEO e UI/UX e recebi os relatórios.</li>
-<li>☐ Publiquei na Vercel e tenho uma URL pública que abre num navegador anônimo.</li>
+<li>â˜ Rodei a pesquisa de concorrentes com o Firecrawl e tenho um relatÃ³rio do top 5.</li>
+<li>â˜ Montei a matriz de avaliaÃ§Ã£o com critÃ©rios e notas.</li>
+<li>â˜ Criei o best-principles.md e o agente confirmou que entendeu o brief.</li>
+<li>â˜ ConstruÃ­ 2â€“3 versÃµes em paralelo e escolhi a melhor de forma justificada.</li>
+<li>â˜ Apliquei UI sniping com ao menos dois componentes integrados e ajustados.</li>
+<li>â˜ Rodei SEO e UI/UX e recebi os relatÃ³rios.</li>
+<li>â˜ Publiquei na Vercel e tenho uma URL pÃºblica que abre num navegador anÃ´nimo.</li>
 </ul>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-blue-400 mb-2">Próximo módulo:</h3>
-<p class="text-neutral-300">2.2 — Construindo apps: do site estático à primeira aplicação interativa</p>
+<h3 class="font-semibold text-blue-400 mb-2">PrÃ³ximo mÃ³dulo:</h3>
+<p class="text-neutral-300">2.2 â€” Construindo apps: do site estÃ¡tico Ã  primeira aplicaÃ§Ã£o interativa</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Voltar para a trilha</a>
-<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="modulo-2-2.html">Próximo módulo →</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Voltar para a trilha</a>
+<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="modulo-2-2.html">PrÃ³ximo mÃ³dulo â†’</a>
 </div>
 </div>
 </section>
@@ -574,7 +574,7 @@ a melhorar. Traga qualquer repositório/pacote relevante que ajude.</pre></div>
 <!-- FOOTER -->
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Claude Code na Prática — <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>Claude Code na PrÃ¡tica â€” <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
 </div>
 </footer>
 <!-- SCRIPTS: nucleo v1 -->
@@ -583,7 +583,7 @@ a melhorar. Traga qualquer repositório/pacote relevante que ajude.</pre></div>
     (function(){ var tt=document.getElementById('theme-toggle'); if(!tt) return; var di=document.getElementById('theme-toggle-dark-icon'), li=document.getElementById('theme-toggle-light-icon'), html=document.documentElement;
       function sync(){ if(html.classList.contains('dark')){ li&&li.classList.remove('hidden'); di&&di.classList.add('hidden'); } else { di&&di.classList.remove('hidden'); li&&li.classList.add('hidden'); } }
       sync();
-      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'); p.theme=dark?'inema-dark':'claro'; localStorage.setItem('inema.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
+      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}'); p.theme=dark?'ARCKHÉ-dark':'claro'; localStorage.setItem('ARCKHÉ.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
     function openModal(id){ var m=document.getElementById(id); if(m){ m.classList.remove('hidden'); document.body.style.overflow='hidden'; } }
     function closeModal(){ document.querySelectorAll('.modal').forEach(function(m){ m.classList.add('hidden'); }); document.body.style.overflow='auto'; }
     document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
@@ -591,19 +591,19 @@ a melhorar. Traga qualquer repositório/pacote relevante que ajude.</pre></div>
 <!-- Camada de aprendizagem -->
 <script>
     window.addEventListener('DOMContentLoaded', function(){
-      if (window.INEMA && INEMA.registerCheck) {
-        INEMA.registerCheck('modulo-2-1#q1', {
+      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
+        ARCKHÉ.registerCheck('modulo-2-1#q1', {
           answer: 1,
           explain: {
-            0: 'Não — paralelizar não é sobre gastar mais, é sobre ter opções para comparar.',
-            1: 'Isso! Cada execução produz um resultado diferente; com versões paralelas você escolhe a melhor.',
-            2: 'A Vercel publica qualquer projeto único — as pastas paralelas são para comparação, não exigência de deploy.'
+            0: 'NÃ£o â€” paralelizar nÃ£o Ã© sobre gastar mais, Ã© sobre ter opÃ§Ãµes para comparar.',
+            1: 'Isso! Cada execuÃ§Ã£o produz um resultado diferente; com versÃµes paralelas vocÃª escolhe a melhor.',
+            2: 'A Vercel publica qualquer projeto Ãºnico â€” as pastas paralelas sÃ£o para comparaÃ§Ã£o, nÃ£o exigÃªncia de deploy.'
           }
         });
       }
     });
   </script>
 <script src="../../assets/learn.js"></script>
-<script>if (window.INEMA && typeof window.INEMA.init==='function'){ window.INEMA.init(); }</script>
+<script>if (window.ARCKHÉ && typeof window.ARCKHÉ.init==='function'){ window.ARCKHÉ.init(); }</script>
 </body>
 </html>

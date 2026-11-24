@@ -75,7 +75,7 @@ of Dorothea Lange's documentary portraiture"
 
 ## Domain Mode Modifier Libraries
 
-### Cinema Mode
+### CARCKHÉ Mode
 **Camera specs:** RED V-Raptor, ARRI Alexa 65, Sony Venice 2, Blackmagic URSA
 **Lenses:** Cooke S7/i, Zeiss Supreme Prime, Atlas Orion anamorphic
 **Film stocks:** Kodak Vision3 500T (tungsten), Kodak Vision3 250D (daylight), Fuji Eterna Vivid
@@ -166,10 +166,10 @@ mid-century modern typeface feel.
 
 ### Positive Framing (No Negative Prompts)
 Gemini does NOT support negative prompts. Rephrase exclusions:
-- Instead of "no blur" → "sharp, in-focus, tack-sharp detail"
-- Instead of "no people" → "empty, deserted, uninhabited"
-- Instead of "no text" → "clean, uncluttered, text-free"
-- Instead of "not dark" → "brightly lit, high-key lighting"
+- Instead of "no blur" â†’ "sharp, in-focus, tack-sharp detail"
+- Instead of "no people" â†’ "empty, deserted, uninhabited"
+- Instead of "no text" â†’ "clean, uncluttered, text-free"
+- Instead of "not dark" â†’ "brightly lit, high-key lighting"
 
 ### Search-Grounded Generation
 For images based on real-world data (weather, events, statistics),
@@ -202,7 +202,7 @@ to Gemini's natural language format:
 ## Common Prompt Mistakes
 
 1. **Keyword stuffing**:stacking generic quality terms ("8K, masterpiece, best quality") adds nothing. Use only "ultra-realistic, high resolution" at the end
-2. **Tag lists**:Gemini wants prose, not "red car, sunset, mountain, cinematic"
+2. **Tag lists**:Gemini wants prose, not "red car, sunset, mountain, cARCKHÉtic"
 3. **Missing lighting**:The single biggest quality differentiator
 4. **No composition direction**:Results in generic centered framing
 5. **Vague style**:"make it look cool" vs specific art direction
@@ -389,9 +389,9 @@ When a prompt is blocked, the only path forward is rephrasing.
 
 | Category | Triggers on | Rephrase approach |
 |----------|------------|-------------------|
-| Violence/weapons | Combat, blood, injuries, firearms | Use metaphor or aftermath: "battle-worn" → "weathered veteran" |
-| Medical/gore | Surgery, wounds, anatomical detail | Abstract or clinical: "open wound" → "medical illustration" |
-| Real public figures | Named celebrities, politicians | Use archetypes: "Elon Musk" → "a tech entrepreneur in a minimalist office" |
+| Violence/weapons | Combat, blood, injuries, firearms | Use metaphor or aftermath: "battle-worn" â†’ "weathered veteran" |
+| Medical/gore | Surgery, wounds, anatomical detail | Abstract or clinical: "open wound" â†’ "medical illustration" |
+| Real public figures | Named celebrities, politicians | Use archetypes: "Elon Musk" â†’ "a tech entrepreneur in a minimalist office" |
 | Children + risk | Minors in any ambiguous context | Add safety context: specify educational, family, or playful framing |
 | NSFW/suggestive | Revealing clothing, intimate poses | Use artistic framing: "fashion editorial, fully clothed, editorial pose" |
 

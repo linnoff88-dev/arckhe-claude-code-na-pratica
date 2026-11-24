@@ -56,7 +56,7 @@ Each use case maps to pre-configured banana parameters:
 | Use Case | Aspect Ratio | Resolution | Domain Mode | Notes |
 |----------|-------------|------------|-------------|-------|
 | **OG/Social Preview** | `16:9` | `1K` | Product or UI/Web | Clean, professional, text-friendly |
-| **Blog Hero** | `16:9` | `2K` | Cinema or Editorial | Dramatic, atmospheric, editorial quality |
+| **Blog Hero** | `16:9` | `2K` | CARCKHÉ or Editorial | Dramatic, atmospheric, editorial quality |
 | **Schema Image** | `4:3` | `1K` | Product | Clean, descriptive, schema ImageObject |
 | **Social Square** | `1:1` | `1K` | UI/Web | Platform-optimized square |
 | **Product Photo** | `4:3` | `2K` | Product | White background, studio lighting |

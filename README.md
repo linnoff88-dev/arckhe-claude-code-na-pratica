@@ -1,4 +1,4 @@
-﻿# âš¡ Claude Code na PrÃ¡tica
+# âš¡ Claude Code na PrÃ¡tica
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -9,12 +9,12 @@
 Curso prÃ¡tico e gratuito sobre **Claude Code** â€” do zero ao produto. Sem jargÃ£o, sem
 prÃ©-requisito de programaÃ§Ã£o. VocÃª aprende fazendo e sai com projetos reais no ar.
 
-ðŸ”— **Acesse:** https://inematds.github.io/claude-code-na-pratica/ Â· Parte do [INEMA.CLUB](https://inema.club)
+ðŸ”— **Acesse:** https://linnoff88-dev.github.io/ Â· Parte do [ARCKHÉ AI](https://ARCKHÉ AI)
 
 ## O que Ã©
 
 Um site de curso autocontido (HTML + Tailwind via CDN + JS, sem build), no padrÃ£o
-INEMA.CLUB v2, com **camada de aprendizagem**: progresso por tÃ³pico, "marcar como lido",
+ARCKHÉ AI v2, com **camada de aprendizagem**: progresso por tÃ³pico, "marcar como lido",
 dÃºvidas, anotaÃ§Ãµes, medidores por mÃ³dulo/trilha/curso e painel "Minha jornada" â€” tudo salvo
 no prÃ³prio navegador (localStorage). Tema claro/escuro incluso.
 
@@ -53,7 +53,7 @@ python3 -m http.server 8000
 
 ---
 
-Curso de pesquisa e educaÃ§Ã£o Â· INEMA.CLUB Â· 2026
+Curso de pesquisa e educaÃ§Ã£o Â· ARCKHÉ AI Â· 2026
 
 ---
 
