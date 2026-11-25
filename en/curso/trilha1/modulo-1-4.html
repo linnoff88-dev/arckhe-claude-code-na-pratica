@@ -4,29 +4,29 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-na-pratica" name="ARCKHÉ-course"/>
+<meta content="claude-na-pratica" name="ARCKHê-course"/>
 <title>1.4 Power Features: supercharge your workflow | Claude Code in Practice</title>
 <!-- ANTI-FOUC: bloqueante, SEPARADO, antes do Tailwind/learn.css -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){ var r={}; for (var x in o) r[x]=o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHê-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var THEMES = { 'ARCKHê-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'emerald');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
+      s.setProperty('--ARCKHê-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
       var fam = p.font==='system' ? 'system-ui,-apple-system,"Segoe UI",Roboto,sans-serif' : (p.font==='leitura' ? '"Atkinson Hyperlegible","Inter",system-ui,sans-serif' : '"Inter",system-ui,sans-serif');
       s.setProperty('--font-body', fam);
@@ -43,8 +43,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
-<!-- Manifesto do curso (IDÃŠNTICO em TODA pagina) -->
-<script data-ARCKHÉ-manifest="" type="application/json">
+<!-- Manifesto do curso (IDêÅ NTICO em TODA pagina) -->
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "claude-na-pratica",
     "tracks": [
@@ -79,7 +79,7 @@
     .dark body { background-color: #111827; }
     .topic-explanation { display: none; }
     .topic-explanation.active { display: block; }
-    section[data-ARCKHÉ-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
+    section[data-ARCKHê-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
     .skip { position:absolute; left:-999px; top:0; z-index:100; }
     .skip:focus { left:8px; top:8px; background:#111827; color:#fff; padding:8px 12px; border-radius:8px; }
 
@@ -126,7 +126,7 @@
     }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/modulo-1-4.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-1-4.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha1/modulo-1-4.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/modulo-1-4.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-1-4.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha1/modulo-1-4.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip" href="#conteudo">Skip to content</a>
 <!-- NAV -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -134,20 +134,20 @@
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">âš¡</span>
+<span class="text-2xl">ê¢Å¡Â¡</span>
 <span class="font-bold text-lg hidden sm:inline">Claude Code in Practice</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentals</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Build</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Operate &amp; Profit</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Library</span></a>
-<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHÉ-journey-open="" title="My journey" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden lg:inline">Journey</span>
-<span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHê-journey-open="" title="My journey" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden lg:inline">Journey</span>
+<span aria-hidden="true" class="ARCKHê-journey-badge hidden"></span>
 </button>
 <button aria-label="Toggle light/dark theme" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle" title="Light/dark theme">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -171,8 +171,8 @@
 <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MODULE 1.4</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">âš¡ Power Features: from lone assistant to turbocharged team</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">The lesson that turns Claude Code from a "helper" into a "team." Slash commands, context management, skills, MCP, parallel subagents, and the critique loop â€” the features that multiply your results.</p>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê¢Å¡Â¡ Power Features: from lone assistant to turbocharged team</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">The lesson that turns Claude Code from a "helper" into a "team." Slash commands, context management, skills, MCP, parallel subagents, and the critique loop ê¢â¬â the features that multiply your results.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">Topics</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">~60</div><div class="text-xs text-neutral-400">Minutes</div></div>
@@ -181,8 +181,8 @@
 </div>
 <!-- Medidor de progresso do modulo -->
 <div class="mt-6 max-w-2xl">
-<div aria-label="Module 1.4 progress" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter" data-ARCKHÉ-meter="modulo:1-4" role="progressbar">
-<span class="ARCKHÉ-meter-pct" data-ARCKHÉ-meter-pct="">0%</span> <span class="ARCKHÉ-meter-count text-neutral-400 text-sm" data-ARCKHÉ-meter-frac="">0 of 6</span>
+<div aria-label="Module 1.4 progress" aria-valuemax="100" aria-valuemin="0" class="ARCKHê-meter" data-ARCKHê-meter="modulo:1-4" role="progressbar">
+<span class="ARCKHê-meter-pct" data-ARCKHê-meter-pct="">0%</span> <span class="ARCKHê-meter-count text-neutral-400 text-sm" data-ARCKHê-meter-frac="">0 of 6</span>
 </div>
 </div>
 </div>
@@ -190,19 +190,19 @@
 <!-- CONTEUDO + TOC -->
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[220px_1fr] lg:gap-10" id="conteudo">
 <!-- TOC sticky -->
-<nav aria-label="Page index" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-3">Section <span class="ARCKHÉ-toc-pos">1</span> of <span class="ARCKHÉ-toc-total">6</span></p>
+<nav aria-label="Page index" class="hidden lg:block sticky top-24 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-3">Section <span class="ARCKHê-toc-pos">1</span> of <span class="ARCKHê-toc-total">6</span></p>
 <ul class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-1">1. Slash commands</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-2">2. Context and tokens</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-3">3. Skills</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-4">4. MCP</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-5">5. Subagents</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-6">6. Critique loop</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-1">1. Slash commands</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-2">2. Context and tokens</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-3">3. Skills</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-4">4. MCP</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-5">5. Subagents</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-6">6. Critique loop</a></li>
 </ul>
 </nav>
-<div class="ARCKHÉ-prose">
-<!-- SVG orquestraÃ§Ã£o / fan-out -->
+<div class="ARCKHê-prose">
+<!-- SVG orquestraêÂ§êÂ£o / fan-out -->
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-10 overflow-hidden">
 <svg aria-label="Claude Code at the center orchestrates five power features: slash commands, skills, MCP, parallel subagents, and a critique loop, on top of a context bar managed with /clear" class="w-full h-auto" role="img" viewbox="0 0 1000 300">
 <defs>
@@ -215,7 +215,7 @@
 <rect fill="url(#m14-grid)" height="300" width="1000" x="0" y="0"></rect>
 <!-- nucleo Claude Code -->
 <g filter="url(#m14-glow)"><rect fill="#0e2018" height="64" rx="16" stroke="url(#m14-grad)" stroke-width="2.8" width="188" x="406" y="96"></rect></g>
-<text fill="#34d399" font-family="Inter,sans-serif" font-size="18" font-weight="700" text-anchor="middle" x="500" y="124">âš¡ Claude Code</text>
+<text fill="#34d399" font-family="Inter,sans-serif" font-size="18" font-weight="700" text-anchor="middle" x="500" y="124">ê¢Å¡Â¡ Claude Code</text>
 <text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="11.5" text-anchor="middle" x="500" y="144">team orchestrator</text>
 <!-- raios para os 5 features (fan-out) -->
 <g fill="none" opacity="0.55" stroke="#38bdf8" stroke-width="1.8">
@@ -233,9 +233,9 @@
 <!-- caixas dos features -->
 <g font-family="Inter,sans-serif" font-size="12.5" font-weight="600">
 <g class="wf-a"><rect fill="#0e1b26" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="128" x="40" y="36"></rect><text fill="#bfe6ff" text-anchor="middle" x="104" y="57">/ slash commands</text></g>
-<g class="wf-a"><rect fill="#0e1b26" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="128" x="104" y="92"></rect><text fill="#bfe6ff" text-anchor="middle" x="168" y="113">ðŸŽ¯ skills</text></g>
-<g class="wf-a"><rect fill="#0e1b26" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="128" x="768" y="92"></rect><text fill="#bfe6ff" text-anchor="middle" x="832" y="113">ðŸ”Œ MCP</text></g>
-<g class="wf-a"><rect fill="#0e1b26" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="128" x="832" y="36"></rect><text fill="#bfe6ff" text-anchor="middle" x="896" y="57">ðŸ” critique</text></g>
+<g class="wf-a"><rect fill="#0e1b26" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="128" x="104" y="92"></rect><text fill="#bfe6ff" text-anchor="middle" x="168" y="113">ê°Å¸Å½Â¯ skills</text></g>
+<g class="wf-a"><rect fill="#0e1b26" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="128" x="768" y="92"></rect><text fill="#bfe6ff" text-anchor="middle" x="832" y="113">ê°Å¸âÅ MCP</text></g>
+<g class="wf-a"><rect fill="#0e1b26" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="128" x="832" y="36"></rect><text fill="#bfe6ff" text-anchor="middle" x="896" y="57">ê°Å¸âÂ critique</text></g>
 </g>
 <!-- subagentes circulos -->
 <g font-family="Inter,sans-serif" font-size="11" font-weight="600">
@@ -248,53 +248,53 @@
 <rect fill="#0e1b26" height="14" rx="7" stroke="#374151" stroke-width="1.4" width="800" x="40" y="270"></rect>
 <rect fill="url(#m14-grad)" height="10" opacity="0.7" rx="5" width="300" x="42" y="272"></rect>
 <text fill="#6b7280" font-family="Inter,sans-serif" font-size="10.5" x="40" y="266">context (finite window)</text>
-<g><rect fill="#0e2018" height="22" rx="7" stroke="#34d399" stroke-width="2" width="104" x="856" y="266"></rect><text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="908" y="281">/clear â†º</text></g>
+<g><rect fill="#0e2018" height="22" rx="7" stroke="#34d399" stroke-width="2" width="104" x="856" y="266"></rect><text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="908" y="281">/clear ê¢â Âº</text></g>
 </svg>
 </div>
 <h2 class="text-2xl font-bold mb-6">Detailed content</h2>
 <!-- TOPICO 1 -->
-<section class="mb-16" data-ARCKHÉ-module="1-4" data-ARCKHÉ-topic="modulo-1-4#topico-1" data-ARCKHÉ-track="1" id="topico-1">
+<section class="mb-16" data-ARCKHê-module="1-4" data-ARCKHê-topic="modulo-1-4#topico-1" data-ARCKHê-track="1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">1</span>
-<h2 class="text-2xl font-bold">âš¡ Slash commands: time-saving shortcuts</h2>
+<h2 class="text-2xl font-bold">ê¢Å¡Â¡ Slash commands: time-saving shortcuts</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-4-t1-p1">You type <code class="text-emerald-400 font-mono">/</code> and a list of actions appears immediately. These are the <strong class="text-emerald-400">slash commands</strong> â€” the cheapest way to control your session state. Two are essential from here on: <code class="text-emerald-400 font-mono">/context</code> shows how much of the context window has already been used, and <code class="text-emerald-400 font-mono">/clear</code> clears the conversation and starts from scratch.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-4-t1-p1">You type <code class="text-emerald-400 font-mono">/</code> and a list of actions appears immediately. These are the <strong class="text-emerald-400">slash commands</strong> ê¢â¬â the cheapest way to control your session state. Two are essential from here on: <code class="text-emerald-400 font-mono">/context</code> shows how much of the context window has already been used, and <code class="text-emerald-400 font-mono">/clear</code> clears the conversation and starts from scratch.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
 <div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Quick actions built into Claude Code, triggered by typing <code class="font-mono text-emerald-400">/</code>. Think of keyboard shortcuts, but in text.</p></div>
-<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Theyâ€™re the cheapest way to manage the session. Knowing what takes up space and when to reset prevents quality from dropping.</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm"><code class="font-mono text-emerald-400">/clear</code> = open a new tab (fresh context) Â· custom commands Â· skills become commands when installed.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Theyê¢â¬â¢re the cheapest way to manage the session. Knowing what takes up space and when to reset prevents quality from dropping.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm"><code class="font-mono text-emerald-400">/clear</code> = open a new tab (fresh context) êÂ· custom commands êÂ· skills become commands when installed.</p></div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
-<p class="text-sm text-neutral-400 mb-2">The two commands youâ€™ll use most in this module</p>
-<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">/context     # quanto da janela jÃ¡ foi consumido
-/clear       # zera a conversa â€” igual a abrir uma aba nova
-/            # abre a lista de todos os comandos disponÃ­veis</pre>
+<p class="text-sm text-neutral-400 mb-2">The two commands youê¢â¬â¢ll use most in this module</p>
+<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">/context     # quanto da janela jêÂ¡ foi consumido
+/clear       # zera a conversa ê¢â¬â igual a abrir uma aba nova
+/            # abre a lista de todos os comandos disponêÂ­veis</pre>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Practical tip</h3>
-<p class="text-neutral-300 text-sm">Several skills appear as slash commands when installed. When you're not sure what's available, just type <code class="font-mono text-emerald-400">/</code> and scroll through the list â€” itâ€™s your session â€œmenu.â€</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Practical tip</h3>
+<p class="text-neutral-300 text-sm">Several skills appear as slash commands when installed. When you're not sure what's available, just type <code class="font-mono text-emerald-400">/</code> and scroll through the list ê¢â¬â itê¢â¬â¢s your session ê¢â¬Åmenu.ê¢â¬Â</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-ARCKHÉ-module="1-4" data-ARCKHÉ-topic="modulo-1-4#topico-2" data-ARCKHÉ-track="1" id="topico-2">
+<section class="mb-16" data-ARCKHê-module="1-4" data-ARCKHê-topic="modulo-1-4#topico-2" data-ARCKHê-track="1" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">2</span>
-<h2 class="text-2xl font-bold">ðŸ§  Context and Tokens: The Invisible Cliff</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â  Context and Tokens: The Invisible Cliff</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-4-t2-p1">Every conversation has a cliff. The longer it gets, the worse the performanceâ€”a phenomenon called <strong class="text-emerald-400">context rot</strong>. It's the #1 beginner mistake: using the same window all day. Managing context is exactly what separates a good result from a mediocre one.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-4-t2-p1">Every conversation has a cliff. The longer it gets, the worse the performanceê¢â¬âa phenomenon called <strong class="text-emerald-400">context rot</strong>. It's the #1 beginner mistake: using the same window all day. Managing context is exactly what separates a good result from a mediocre one.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
 <div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm"><em>Context rot</em> is the drop in performance as the conversation grows. The more history piles up, the more the model loses track.</p></div>
 <div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Context is a finite resource. Treat it as disposable, and quality will stay high from one task to the next.</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">One task, one window Â· when you're done, discard it (<code class="font-mono text-emerald-400">/clear</code>) Â· <code class="font-mono text-emerald-400">/context</code> to see the usage Â· the right model for the task.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">One task, one window êÂ· when you're done, discard it (<code class="font-mono text-emerald-400">/clear</code>) êÂ· <code class="font-mono text-emerald-400">/context</code> to see the usage êÂ· the right model for the task.</p></div>
 </div>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
@@ -311,126 +311,126 @@
 </div>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ðŸ“Š</span> The right model for the right task</h3>
+<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ê°Å¸âÅ </span> The right model for the right task</h3>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>Not every task requires the heaviest modelâ€”simple tasks run well on lighter models.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>Using the lightweight model for simple tasks saves money and scales better.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>Save the strongest model for difficult reasoning and critical review.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span>Not every task requires the heaviest modelê¢â¬âsimple tasks run well on lighter models.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span>Using the lightweight model for simple tasks saves money and scales better.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span>Save the strongest model for difficult reasoning and critical review.</span></li>
 </ul>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-ARCKHÉ-module="1-4" data-ARCKHÉ-topic="modulo-1-4#topico-3" data-ARCKHÉ-track="1" id="topico-3">
+<section class="mb-16" data-ARCKHê-module="1-4" data-ARCKHê-topic="modulo-1-4#topico-3" data-ARCKHê-track="1" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">3</span>
-<h2 class="text-2xl font-bold">ðŸŽ¯ Skills: the expert's recipe book</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Å½Â¯ Skills: the expert's recipe book</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-4-t3-p1">A <strong class="text-emerald-400">skill</strong> is a set of instructionsâ€”a file <code class="font-mono text-emerald-400">SKILL.md</code> with a name, description, and step-by-step instructionsâ€”which Claude loads automatically when the task fits. Without a skill, the model improvises; with a skill, it follows a tested recipe and consistently delivers the same quality standard.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-4-t3-p1">A <strong class="text-emerald-400">skill</strong> is a set of instructionsê¢â¬âa file <code class="font-mono text-emerald-400">SKILL.md</code> with a name, description, and step-by-step instructionsê¢â¬âwhich Claude loads automatically when the task fits. Without a skill, the model improvises; with a skill, it follows a tested recipe and consistently delivers the same quality standard.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
 <div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">A reusable procedure packaged in a <code class="font-mono text-emerald-400">SKILL.md</code>. Ask "put together a presentation" and the presentation skill kicks in without you naming it.</p></div>
-<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Skills are "the science behind the output." Every task you repeat is a candidate for a skill â€” encode it once and benefit from the pattern forever.</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">The skill is discovered by <strong>description</strong> (the trigger) Â· check whatâ€™s available by typing <code class="font-mono text-emerald-400">/</code> + a name Â· three parts: name, description, content.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Skills are "the science behind the output." Every task you repeat is a candidate for a skill ê¢â¬â encode it once and benefit from the pattern forever.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">The skill is discovered by <strong>description</strong> (the trigger) êÂ· check whatê¢â¬â¢s available by typing <code class="font-mono text-emerald-400">/</code> + a name êÂ· three parts: name, description, content.</p></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">âœ“ Well-made skill</h4>
+<h4 class="font-bold text-emerald-400 mb-4">ê¢Åâ Well-made skill</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Clear description of the <em>when</em> use itâ€”itâ€™s what makes the skill "kick in" at the right time.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>A short, direct procedure that's easy to follow.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Tested: you request the task and the skill triggers automatically.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Clear description of the <em>when</em> use itê¢â¬âitê¢â¬â¢s what makes the skill "kick in" at the right time.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>A short, direct procedure that's easy to follow.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Tested: you request the task and the skill triggers automatically.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— Skill that doesnâ€™t light up</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ Skill that doesnê¢â¬â¢t light up</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Vague or generic description â€” Claude never knows when to apply it.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>A long, confusing step-by-step process full of exceptions.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Never tested â€” you only find out it doesnâ€™t trigger when it matters.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Vague or generic description ê¢â¬â Claude never knows when to apply it.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>A long, confusing step-by-step process full of exceptions.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Never tested ê¢â¬â you only find out it doesnê¢â¬â¢t trigger when it matters.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
-<p class="text-sm text-neutral-400 mb-2">Build your skill from scratchâ€”ask like this</p>
-<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Vamos criar uma skill para padronizar meu resumo de reuniÃ£o.
-Comece pela DESCRIÃ‡ÃƒO (quando ela deve ser usada),
+<p class="text-sm text-neutral-400 mb-2">Build your skill from scratchê¢â¬âask like this</p>
+<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Vamos criar uma skill para padronizar meu resumo de reuniêÂ£o.
+Comece pela DESCRIêâ¡êÆO (quando ela deve ser usada),
 depois o passo a passo. Entregue como um SKILL.md pronto para revisar.</pre>
 </div>
 <details class="bg-dark-800 border border-dark-600 rounded-xl p-5 mb-6">
 <summary class="cursor-pointer font-semibold text-emerald-400">Going deeper (optional): the description is everything</summary>
-<p class="text-neutral-300 text-sm mt-3">Claude chooses the skill by reading the <strong>description</strong>, not the body. A generic description ("help with texts") rarely triggers; a specific one ("use when the user asks for a meeting summary with decisions and next steps") fires at the right time. Give it your best, as if it were the triggerâ€”because it is.</p>
+<p class="text-neutral-300 text-sm mt-3">Claude chooses the skill by reading the <strong>description</strong>, not the body. A generic description ("help with texts") rarely triggers; a specific one ("use when the user asks for a meeting summary with decisions and next steps") fires at the right time. Give it your best, as if it were the triggerê¢â¬âbecause it is.</p>
 </details>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-ARCKHÉ-module="1-4" data-ARCKHÉ-topic="modulo-1-4#topico-4" data-ARCKHÉ-track="1" id="topico-4">
+<section class="mb-16" data-ARCKHê-module="1-4" data-ARCKHê-topic="modulo-1-4#topico-4" data-ARCKHê-track="1" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">4</span>
-<h2 class="text-2xl font-bold">ðŸ”Œ MCP: the universal outlet</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÅ MCP: the universal outlet</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-4-t4-p1">O <strong class="text-emerald-400">Model Context Protocol (MCP)</strong> is an open standard that lets the model talk to APIs and services without you writing the integration. An API is a technical manual machines use to talk to other machines; MCP is the <strong class="text-emerald-400">standardized adapter</strong> on top of it. You don't code the "glue"â€”you list the MCP server and ask in English.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-4-t4-p1">O <strong class="text-emerald-400">Model Context Protocol (MCP)</strong> is an open standard that lets the model talk to APIs and services without you writing the integration. An API is a technical manual machines use to talk to other machines; MCP is the <strong class="text-emerald-400">standardized adapter</strong> on top of it. You don't code the "glue"ê¢â¬âyou list the MCP server and ask in English.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
 <div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">An open standard (announced by Anthropic in late 2024) that gives Claude a window into your tools: email, data, scrapers, services.</p></div>
 <div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Instead of memorizing endpoints and writing integration code, you talk to the tool. Today, almost every serious tool has an MCP server.</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">API = machine-to-machine Â· MCP = wrapper that exposes only whatâ€™s needed Â· Local MCP keeps your key on your machine, with no intermediary.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">API = machine-to-machine êÂ· MCP = wrapper that exposes only whatê¢â¬â¢s needed êÂ· Local MCP keeps your key on your machine, with no intermediary.</p></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">âœ“ With MCP</h4>
+<h4 class="font-bold text-emerald-400 mb-4">ê¢Åâ With MCP</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>You ask in Portuguese: "pull up my latest unread emails".</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>The key stays in an environment variable, never in the chat.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>One standard works for any tool with an MCP server.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>You ask in Portuguese: "pull up my latest unread emails".</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>The key stays in an environment variable, never in the chat.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>One standard works for any tool with an MCP server.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— Without MCP (raw API)</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ Without MCP (raw API)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>You memorize endpoints and write the integration "cheat sheet" by hand.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Risk of pasting a key in the wrong place.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>A different codebase to maintain for each service.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>You memorize endpoints and write the integration "cheat sheet" by hand.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Risk of pasting a key in the wrong place.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>A different codebase to maintain for each service.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
-<p class="text-sm text-neutral-400 mb-2">Create a local MCP (example: video service)â€”ask like this</p>
+<p class="text-sm text-neutral-400 mb-2">Create a local MCP (example: video service)ê¢â¬âask like this</p>
 <pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">I want to create a local MCP for [SERVICE].
 The API key is already set as an environment variable.
 List the available features, choose the ones most useful for my needs,
 and create the local MCP. At the end, explain how to call it in a conversation.</pre>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ”’</span> Never put keys in chat</h3>
-<p class="text-neutral-300 text-sm">The API key lives in a local environment variable â€” never pasted into the conversation or a versioned file. A local MCP runs directly on your machine and keeps the key there, away from any intermediary.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸ââ</span> Never put keys in chat</h3>
+<p class="text-neutral-300 text-sm">The API key lives in a local environment variable ê¢â¬â never pasted into the conversation or a versioned file. A local MCP runs directly on your machine and keeps the key there, away from any intermediary.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-ARCKHÉ-module="1-4" data-ARCKHÉ-topic="modulo-1-4#topico-5" data-ARCKHÉ-track="1" id="topico-5">
+<section class="mb-16" data-ARCKHê-module="1-4" data-ARCKHê-topic="modulo-1-4#topico-5" data-ARCKHê-track="1" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">5</span>
-<h2 class="text-2xl font-bold">ðŸ‘¥ Subagents: delegate to finish faster</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ¥ Subagents: delegate to finish faster</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-4-t5-p1">Instead of one worker doing everything in sequence, you open a <strong class="text-emerald-400">team</strong>. <strong class="text-emerald-400">Subagents</strong> are agents launched for separate tasks, each with its own context window. Independent work runs in parallel and finishes sooner.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-4-t5-p1">Instead of one worker doing everything in sequence, you open a <strong class="text-emerald-400">team</strong>. <strong class="text-emerald-400">Subagents</strong> are agents launched for separate tasks, each with its own context window. Independent work runs in parallel and finishes sooner.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
 <div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Parallelization: multiple agents working at the same time, each with their own context.</p></div>
 <div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Great for multi-angle research and breaking a project into workstreams. Independent tasks finish sooner.</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Delegate parts that donâ€™t depend on each other Â· each subagent returns only the conclusion (not the raw history) Â· this protects your main context.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Delegate parts that donê¢â¬â¢t depend on each other êÂ· each subagent returns only the conclusion (not the raw history) êÂ· this protects your main context.</p></div>
 </div>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
@@ -439,7 +439,7 @@ and create the local MCP. At the end, explain how to call it in a conversation.<
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Launch the subagents</h4><p class="text-neutral-300 text-sm">"Create three subagents â€” one analyzes X, another Y, and another Z." Each returns only the conclusions.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Launch the subagents</h4><p class="text-neutral-300 text-sm">"Create three subagents ê¢â¬â one analyzes X, another Y, and another Z." Each returns only the conclusions.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">3</span></div>
@@ -447,7 +447,7 @@ and create the local MCP. At the end, explain how to call it in a conversation.<
 </div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
-<p class="text-sm text-neutral-400 mb-2">Parallel fan-out â€” ask like this</p>
+<p class="text-sm text-neutral-400 mb-2">Parallel fan-out ê¢â¬â ask like this</p>
 <pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Do [TASK]. Create three independent subagents:
 - subagent 1: analyzes [angle X]
 - subagent 2: analyzes [angle Y]
@@ -455,52 +455,52 @@ and create the local MCP. At the end, explain how to call it in a conversation.<
 Each one returns only its conclusions. Then consolidate them into a comparison table.</pre>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-ARCKHÉ-module="1-4" data-ARCKHÉ-topic="modulo-1-4#topico-6" data-ARCKHÉ-track="1" id="topico-6">
+<section class="mb-16" data-ARCKHê-module="1-4" data-ARCKHê-topic="modulo-1-4#topico-6" data-ARCKHê-track="1" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">6</span>
-<h2 class="text-2xl font-bold">ðŸ” Critique loop: one creates, another reviews</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ Critique loop: one creates, another reviews</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-4-t6-p1">"Claude evaluates Claudeâ€™s work." Ask it to <strong class="text-emerald-400">create</strong> is one thing; asking <strong class="text-emerald-400">review</strong> is completely differentâ€”and greatly improves the result. Automatic review catches errors the author doesnâ€™t see.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-4-t6-p1">"Claude evaluates Claudeê¢â¬â¢s work." Ask it to <strong class="text-emerald-400">create</strong> is one thing; asking <strong class="text-emerald-400">review</strong> is completely differentê¢â¬âand greatly improves the result. Automatic review catches errors the author doesnê¢â¬â¢t see.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
 <div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">A workflow where one agent creates the deliverable and another takes on the role of critical reviewer, pointing out gaps and returning the corrected version.</p></div>
-<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Review catches what the author canâ€™t see. You can even use a different model as the reviewer to bring in a second point of view.</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Separate the roles (author vs. critic) Â· explicitly ask for critique Â· iterate for one or two rounds Â· other model CLIs can join as external reviewers.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Review catches what the author canê¢â¬â¢t see. You can even use a different model as the reviewer to bring in a second point of view.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Separate the roles (author vs. critic) êÂ· explicitly ask for critique êÂ· iterate for one or two rounds êÂ· other model CLIs can join as external reviewers.</p></div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
-<p class="text-sm text-neutral-400 mb-2">Switch roles to reviewâ€”ask like this</p>
-<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">VocÃª acabou de criar [ENTREGÃVEL]. Agora mude de papel:
-seja um revisor crÃ­tico e rigoroso. Aponte furos, vieses e o que faltou.
-Em seguida entregue a versÃ£o final corrigida.</pre>
+<p class="text-sm text-neutral-400 mb-2">Switch roles to reviewê¢â¬âask like this</p>
+<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">VocêÂª acabou de criar [ENTREGêÂVEL]. Agora mude de papel:
+seja um revisor crêÂ­tico e rigoroso. Aponte furos, vieses e o que faltou.
+Em seguida entregue a versêÂ£o final corrigida.</pre>
 </div>
 <details class="bg-dark-800 border border-dark-600 rounded-xl p-5 mb-6">
 <summary class="cursor-pointer font-semibold text-emerald-400">Going deeper (optional): why separating roles works</summary>
-<p class="text-neutral-300 text-sm mt-3">When the same agent creates and judges in the same breath, it tends to defend its own draft. By explicitly asking â€œnow be the critic,â€ you reset its stance: the goal becomes finding problems, not justifying choices. One or two rounds are usually enough â€” more than that has diminishing returns.</p>
+<p class="text-neutral-300 text-sm mt-3">When the same agent creates and judges in the same breath, it tends to defend its own draft. By explicitly asking ê¢â¬Ånow be the critic,ê¢â¬Â you reset its stance: the goal becomes finding problems, not justifying choices. One or two rounds are usually enough ê¢â¬â more than that has diminishing returns.</p>
 </details>
 <!-- Checagem leve opcional -->
-<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-1-4#q1">
+<div class="ARCKHê-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHê-check="modulo-1-4#q1">
 <p class="font-medium mb-4">Self-check (optional): what is the best way to avoid the <em>context rot</em>?</p>
-<div class="ARCKHÉ-check-options space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">Using the same window all day to "avoid losing the history".</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">One task per window and run <code class="font-mono">/clear</code> when finished.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Always switch to the most powerful model available.</button>
+<div class="ARCKHê-check-options space-y-2">
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="0" type="button">Using the same window all day to "avoid losing the history".</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="1" type="button">One task per window and run <code class="font-mono">/clear</code> when finished.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="2" type="button">Always switch to the most powerful model available.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHê-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- EXEMPLO PRATICO GUIADO -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">ðŸ§ª Guided Hands-On Example: Mini-Research â€œWhere to Liveâ€</h2>
-<p class="text-neutral-300 text-sm mb-6">Let's bring together <strong class="text-emerald-400">skills + subagents + critique loop</strong> on a real task â€” and see context management in practice.</p>
+<h2 class="text-2xl font-bold mb-6">ê°Å¸Â§Âª Guided Hands-On Example: Mini-Research ê¢â¬ÅWhere to Liveê¢â¬Â</h2>
+<p class="text-neutral-300 text-sm mb-6">Let's bring together <strong class="text-emerald-400">skills + subagents + critique loop</strong> on a real task ê¢â¬â and see context management in practice.</p>
 <div class="space-y-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">1</span></div>
@@ -516,17 +516,17 @@ Em seguida entregue a versÃ£o final corrigida.</pre>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">4</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Critique loop</h4><p class="text-neutral-300 text-sm">"Now act as a critical reviewer: point out gaps, biases, and whatâ€™s missing. Then deliver the corrected final version."</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Critique loop</h4><p class="text-neutral-300 text-sm">"Now act as a critical reviewer: point out gaps, biases, and whatê¢â¬â¢s missing. Then deliver the corrected final version."</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">5</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Check the context</h4><p class="text-neutral-300 text-sm">Run <code class="font-mono text-emerald-400">/context</code>. Notice how much the window has grown â€” and why you'll want to <code class="font-mono text-emerald-400">/clear</code> before the next task.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Check the context</h4><p class="text-neutral-300 text-sm">Run <code class="font-mono text-emerald-400">/context</code>. Notice how much the window has grown ê¢â¬â and why you'll want to <code class="font-mono text-emerald-400">/clear</code> before the next task.</p></div>
 </div>
 </div>
 </section>
 <!-- EXERCICIOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âœï¸ Exercises</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂê¯Â¸Â Exercises</h2>
 <div class="space-y-4">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. Context hygiene <span class="text-xs text-neutral-500">(easy)</span></h3><p class="text-neutral-300 text-sm">Run <code class="font-mono text-emerald-400">/context</code>, do a short task, run <code class="font-mono text-emerald-400">/context</code> again and then <code class="font-mono text-emerald-400">/clear</code>. <span class="text-emerald-400">Criterion:</span> you know how much the task consumed, and the window resets to zero after the <code class="font-mono text-emerald-400">/clear</code>.</p></div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Use a Ready-Made Skill <span class="text-xs text-neutral-500">(medium)</span></h3><p class="text-neutral-300 text-sm">Install a collection of skills from a trusted source, verify a skill with <code class="font-mono text-emerald-400">/</code> + a name and use it for a real task. <span class="text-emerald-400">Criterion:</span> the skill appears in the list and produces output in its format.</p></div>
@@ -537,14 +537,14 @@ Em seguida entregue a versÃ£o final corrigida.</pre>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âŒ¨ï¸ Ready-to-use prompts</h2>
-<p class="text-neutral-300 text-sm mb-6">Four instructions for activating the power features. Use them as a starting point and adapt them to your situation. The full library is in the <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Library â†’ Prompts</a>.</p>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂ¨ê¯Â¸Â Ready-to-use prompts</h2>
+<p class="text-neutral-300 text-sm mb-6">Four instructions for activating the power features. Use them as a starting point and adapt them to your situation. The full library is in the <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Library ê¢â â Prompts</a>.</p>
 <div class="space-y-5">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Check and clear context</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Antes de comeÃ§armos, me diga: o que estÃ¡ ocupando minha janela de contexto agora?
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Check and clear context</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Antes de comeêÂ§armos, me diga: o que estêÂ¡ ocupando minha janela de contexto agora?
 Se passar de metade, sugira o que descartar. (equivalente a /context)</pre></div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Create a skill from scratch (canonical)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Quero criar uma skill para [TAREFA QUE REPITO].
-Primeiro escreva a DESCRIÃ‡ÃƒO (quando esta skill deve ser usada).
-Depois o passo a passo que vocÃª deve seguir toda vez.
+Primeiro escreva a DESCRIêâ¡êÆO (quando esta skill deve ser usada).
+Depois o passo a passo que vocêÂª deve seguir toda vez.
 Entregue como um SKILL.md pronto para eu revisar.</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">I want to create a skill for [REPEATED TASK].
 First write the DESCRIPTION (when this skill should trigger).
 Then the step-by-step you must follow every time.
@@ -556,51 +556,51 @@ Output it as a ready-to-review SKILL.md.</pre></div>
 Each one returns only its conclusions. Then consolidate them into a comparison table.</pre></div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Audit a third-party skill before installing it</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Vou instalar esta skill de terceiros. Leia o SKILL.md, me diga em bullets
 o que ela executa, que acessos ela pede e qualquer sinal de risco.
-SÃ³ recomende usar se for seguro.</pre></div>
+SêÂ³ recomende usar se for seguro.</pre></div>
 </div>
 </section>
 <!-- ERROS COMUNS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âš ï¸ Common errors</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢Å¡Â ê¯Â¸Â Common errors</h2>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Use the same window all day.</strong> Long conversation = <em>context rot</em> = quality drop. One task per window; <code class="font-mono">/clear</code> when finished.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Install a skill from a questionable source.</strong> A skill is code that runs on your machine. Read the <code class="font-mono">SKILL.md</code> and install only from trusted sources.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Pasting API keys into chat.</strong> Keys belong in local environment variables, never in the conversation text or version-controlled files.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Skip the review.</strong> Accepting the first draft without a critique loop lets errors slip through. Creating and reviewing are different steps.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Parallelize dependent tasks.</strong> Subagents shine at independent work. If part B depends on A, running them in parallel only creates rework.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Use the same window all day.</strong> Long conversation = <em>context rot</em> = quality drop. One task per window; <code class="font-mono">/clear</code> when finished.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Install a skill from a questionable source.</strong> A skill is code that runs on your machine. Read the <code class="font-mono">SKILL.md</code> and install only from trusted sources.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Pasting API keys into chat.</strong> Keys belong in local environment variables, never in the conversation text or version-controlled files.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Skip the review.</strong> Accepting the first draft without a critique loop lets errors slip through. Creating and reviewing are different steps.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Parallelize dependent tasks.</strong> Subagents shine at independent work. If part B depends on A, running them in parallel only creates rework.</span></li>
 </ul>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-emerald-900/40 via-dark-800 to-dark-800 rounded-xl border border-emerald-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Module summary</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Åâ¦</span> Module summary</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>Slash commands and context</strong><span class="text-neutral-400"> â€” <code class="font-mono">/context</code> measures, <code class="font-mono">/clear</code> resets; one task per window beats the <em>context rot</em>.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>Skills</strong><span class="text-neutral-400"> â€” the recipe book: they standardize the output; the description is the trigger. You can use ready-made ones or create your own.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>MCP</strong><span class="text-neutral-400"> â€” the universal plug: connects to external tools without integration code, with the key in the environment.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>Subagents and critique loop</strong><span class="text-neutral-400"> â€” delegate in parallel and separate the author from the critic to multiply speed and quality.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>Slash commands and context</strong><span class="text-neutral-400"> ê¢â¬â <code class="font-mono">/context</code> measures, <code class="font-mono">/clear</code> resets; one task per window beats the <em>context rot</em>.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>Skills</strong><span class="text-neutral-400"> ê¢â¬â the recipe book: they standardize the output; the description is the trigger. You can use ready-made ones or create your own.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>MCP</strong><span class="text-neutral-400"> ê¢â¬â the universal plug: connects to external tools without integration code, with the key in the environment.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>Subagents and critique loop</strong><span class="text-neutral-400"> ê¢â¬â delegate in parallel and separate the author from the critic to multiply speed and quality.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
 <h3 class="font-semibold text-emerald-400 mb-3">Completion checklist</h3>
 <ul class="space-y-2 text-sm text-neutral-300">
-<li>â˜ I know how to use <code class="font-mono">/context</code> e <code class="font-mono">/clear</code> and understand what <em>context rot</em>.</li>
-<li>â˜ I installed and used a ready-made skill from a trusted source.</li>
-<li>â˜ I created at least one skill from scratch (name + description + step-by-step instructions).</li>
-<li>â˜ I connected an external tool via MCP, with the key in the environment.</li>
-<li>â˜ I launched subagents in parallel and consolidated the results.</li>
-<li>â˜ I ran a critique loop (create â†’ review â†’ final version).</li>
-<li>â˜ I can choose the right model for simple vs. complex tasks.</li>
+<li>ê¢ËÂ I know how to use <code class="font-mono">/context</code> e <code class="font-mono">/clear</code> and understand what <em>context rot</em>.</li>
+<li>ê¢ËÂ I installed and used a ready-made skill from a trusted source.</li>
+<li>ê¢ËÂ I created at least one skill from scratch (name + description + step-by-step instructions).</li>
+<li>ê¢ËÂ I connected an external tool via MCP, with the key in the environment.</li>
+<li>ê¢ËÂ I launched subagents in parallel and consolidated the results.</li>
+<li>ê¢ËÂ I ran a critique loop (create ê¢â â review ê¢â â final version).</li>
+<li>ê¢ËÂ I can choose the right model for simple vs. complex tasks.</li>
 </ul>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-emerald-400 mb-2">ðŸŽ‰ End of Track 1!</h3>
-<p class="text-neutral-300">You've completed the Fundamentals. <strong>Next track: Build</strong> â€” start with module 2.1, from building a website from scratch to deployment.</p>
+<h3 class="font-semibold text-emerald-400 mb-2">ê°Å¸Å½â° End of Track 1!</h3>
+<p class="text-neutral-300">You've completed the Fundamentals. <strong>Next track: Build</strong> ê¢â¬â start with module 2.1, from building a website from scratch to deployment.</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Back to the track</a>
-<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="../trilha2/modulo-2-1.html">Next track: Build â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Back to the track</a>
+<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="../trilha2/modulo-2-1.html">Next track: Build ê¢â â</a>
 </div>
 </div>
 </section>
@@ -609,7 +609,7 @@ SÃ³ recomende usar se for seguro.</pre></div>
 <!-- FOOTER -->
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Claude Code in Practice â€” <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>Claude Code in Practice ê¢â¬â <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <!-- SCRIPTS: nucleo v1 -->
@@ -618,7 +618,7 @@ SÃ³ recomende usar se for seguro.</pre></div>
     (function(){ var tt=document.getElementById('theme-toggle'); if(!tt) return; var di=document.getElementById('theme-toggle-dark-icon'), li=document.getElementById('theme-toggle-light-icon'), html=document.documentElement;
       function sync(){ if(html.classList.contains('dark')){ li&&li.classList.remove('hidden'); di&&di.classList.add('hidden'); } else { di&&di.classList.remove('hidden'); li&&li.classList.add('hidden'); } }
       sync();
-      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}'); p.theme=dark?'ARCKHÉ-dark':'claro'; localStorage.setItem('ARCKHÉ.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
+      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHê.prefs')||'{}'); p.theme=dark?'ARCKHê-dark':'claro'; localStorage.setItem('ARCKHê.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
     function openModal(id){ var m=document.getElementById(id); if(m){ m.classList.remove('hidden'); document.body.style.overflow='hidden'; } }
     function closeModal(){ document.querySelectorAll('.modal').forEach(function(m){ m.classList.add('hidden'); }); document.body.style.overflow='auto'; }
     document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
@@ -626,19 +626,19 @@ SÃ³ recomende usar se for seguro.</pre></div>
 <!-- Camada de aprendizagem -->
 <script>
     window.addEventListener('DOMContentLoaded', function(){
-      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
-        ARCKHÉ.registerCheck('modulo-1-4#q1', {
+      if (window.ARCKHê && ARCKHê.registerCheck) {
+        ARCKHê.registerCheck('modulo-1-4#q1', {
           answer: 1,
           explain: {
-            0: 'Ã‰ justamente o erro nÂº 1 â€” a mesma janela o dia inteiro acumula context rot e derruba a qualidade.',
-            1: 'Isso! Uma tarefa por janela e /clear ao terminar mantÃ©m o contexto fresco e o resultado consistente.',
-            2: 'NÃ£o Ã© sobre o modelo mais pesado â€” tarefas simples rodam bem em modelos leves; o que importa Ã© gerenciar a janela.'
+            0: 'êâ° justamente o erro nêÂº 1 ê¢â¬â a mesma janela o dia inteiro acumula context rot e derruba a qualidade.',
+            1: 'Isso! Uma tarefa por janela e /clear ao terminar mantêÂ©m o contexto fresco e o resultado consistente.',
+            2: 'NêÂ£o êÂ© sobre o modelo mais pesado ê¢â¬â tarefas simples rodam bem em modelos leves; o que importa êÂ© gerenciar a janela.'
           }
         });
       }
     });
   </script>
 <script src="../../../assets/learn.js"></script>
-<script>if (window.ARCKHÉ && typeof window.ARCKHÉ.init==='function'){ window.ARCKHÉ.init(); }</script>
+<script>if (window.ARCKHê && typeof window.ARCKHê.init==='function'){ window.ARCKHê.init(); }</script>
 </body>
 </html>

@@ -4,29 +4,29 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-na-pratica" name="ARCKHÉ-course"/>
-<title>2.2 CreaciÃ³n de apps: del concepto a la app funcional | Claude Code na PrÃ¡tica</title>
+<meta content="claude-na-pratica" name="ARCKHê-course"/>
+<title>2.2 CreaciêÂ³n de apps: del concepto a la app funcional | Claude Code na PrêÂ¡tica</title>
 <!-- ANTI-FOUC: bloqueante, SEPARADO, antes do Tailwind/learn.css -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){ var r={}; for (var x in o) r[x]=o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHê-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var THEMES = { 'ARCKHê-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'emerald');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
+      s.setProperty('--ARCKHê-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
       var fam = p.font==='system' ? 'system-ui,-apple-system,"Segoe UI",Roboto,sans-serif' : (p.font==='leitura' ? '"Atkinson Hyperlegible","Inter",system-ui,sans-serif' : '"Inter",system-ui,sans-serif');
       s.setProperty('--font-body', fam);
@@ -43,8 +43,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
-<!-- Manifesto do curso (IDÃŠNTICO em TODA pagina) -->
-<script data-ARCKHÉ-manifest="" type="application/json">
+<!-- Manifesto do curso (IDêÅ NTICO em TODA pagina) -->
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "claude-na-pratica",
     "tracks": [
@@ -79,7 +79,7 @@
     .dark body { background-color: #111827; }
     .topic-explanation { display: none; }
     .topic-explanation.active { display: block; }
-    section[data-ARCKHÉ-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
+    section[data-ARCKHê-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
     .skip { position:absolute; left:-999px; top:0; z-index:100; }
     .skip:focus { left:8px; top:8px; background:#111827; color:#fff; padding:8px 12px; border-radius:8px; }
 
@@ -126,7 +126,7 @@
     }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha2/modulo-2-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha2/modulo-2-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-2-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha2/modulo-2-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha2/modulo-2-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-2-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="skip" href="#conteudo">Saltar al contenido</a>
 <!-- NAV -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -134,20 +134,20 @@
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">âš¡</span>
-<span class="font-bold text-lg hidden sm:inline">Claude Code en la prÃ¡ctica</span>
+<span class="text-2xl">ê¢Å¡Â¡</span>
+<span class="font-bold text-lg hidden sm:inline">Claude Code en la prêÂ¡ctica</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-blue-400 bg-blue-500/10" href="index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Construir</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Operar y ganar</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Biblioteca</span></a>
-<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHÉ-journey-open="" title="Mi recorrido" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden lg:inline">Recorrido</span>
-<span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHê-journey-open="" title="Mi recorrido" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden lg:inline">Recorrido</span>
+<span aria-hidden="true" class="ARCKHê-journey-badge hidden"></span>
 </button>
 <button aria-label="Alternar entre tema claro y oscuro" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle" title="Tema claro/oscuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -158,31 +158,31 @@
 </div>
 </nav>
 <!-- BREADCRUMB -->
-<nav aria-label="Ruta de navegaciÃ³n" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Ruta de navegaciêÂ³n" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
 <a class="hover:text-blue-400" href="../../index.html">Inicio</a>
 <span>/</span>
 <a class="hover:text-blue-400" href="index.html">Construir</a>
 <span>/</span>
-<span class="text-blue-400">MÃ³dulo 2.2</span>
+<span class="text-blue-400">MêÂ³dulo 2.2</span>
 </div>
 </nav>
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 2.2</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ§© Crear apps: del concepto a la app funcional</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Un sitio solo muestra; una app reacciona. AquÃ­ tomas un sitio sencillo y lo conviertes en una app de verdad â€”con base de datos, inicio de sesiÃ³n, un formulario que guarda los datos y todo en lÃ­neaâ€”, construyÃ©ndola en capas pequeÃ±as y comprobables.</p>
+<span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MêâDULO 2.2</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸Â§Â© Crear apps: del concepto a la app funcional</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Un sitio solo muestra; una app reacciona. AquêÂ­ tomas un sitio sencillo y lo conviertes en una app de verdad ê¢â¬âcon base de datos, inicio de sesiêÂ³n, un formulario que guarda los datos y todo en lêÂ­neaê¢â¬â, construyêÂ©ndola en capas pequeêÂ±as y comprobables.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">6</div><div class="text-xs text-neutral-400">Temas</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">~60</div><div class="text-xs text-neutral-400">Minutos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Inter.</div><div class="text-xs text-neutral-400">Nivel</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">PrÃ¡ctica</div><div class="text-xs text-neutral-400">Tipo</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">PrêÂ¡ctica</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 <!-- Medidor de progresso do modulo -->
 <div class="mt-6 max-w-2xl">
-<div aria-label="Progreso del mÃ³dulo 2.2" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter" data-ARCKHÉ-meter="modulo:2-2" role="progressbar">
-<span class="ARCKHÉ-meter-pct" data-ARCKHÉ-meter-pct="">0%</span> <span class="ARCKHÉ-meter-count text-neutral-400 text-sm" data-ARCKHÉ-meter-frac="">0 de 6</span>
+<div aria-label="Progreso del mêÂ³dulo 2.2" aria-valuemax="100" aria-valuemin="0" class="ARCKHê-meter" data-ARCKHê-meter="modulo:2-2" role="progressbar">
+<span class="ARCKHê-meter-pct" data-ARCKHê-meter-pct="">0%</span> <span class="ARCKHê-meter-count text-neutral-400 text-sm" data-ARCKHê-meter-frac="">0 de 6</span>
 </div>
 </div>
 </div>
@@ -190,21 +190,21 @@
 <!-- CONTEUDO + TOC -->
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[220px_1fr] lg:gap-10" id="conteudo">
 <!-- TOC sticky -->
-<nav aria-label="Ãndice de la pÃ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-3">SecciÃ³n <span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">6</span></p>
+<nav aria-label="êÂndice de la pêÂ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-3">SecciêÂ³n <span class="ARCKHê-toc-pos">1</span> de <span class="ARCKHê-toc-total">6</span></p>
 <ul class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-1">1. Sitio web vs. app</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-2">2. Base de datos</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-3">3. Login y cuentas</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-4">4. Construir por capas</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-5">5. Probar de principio a fin</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-6">6. Publicar en lÃ­nea</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-1">1. Sitio web vs. app</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-2">2. Base de datos</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-3">3. Login y cuentas</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-4">4. Construir por capas</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-5">5. Probar de principio a fin</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-6">6. Publicar en lêÂ­nea</a></li>
 </ul>
 </nav>
-<div class="ARCKHÉ-prose">
+<div class="ARCKHê-prose">
 <!-- SVG anatomia de um app -->
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 mb-10 overflow-hidden">
-<svg aria-label="AnatomÃ­a de una app: el front-end (el salÃ³n) se conecta al back-end (la cocina), que se conecta a la base de datos; las integraciones de correo y acceso salen al exterior, y una flecha de publicaciÃ³n lleva a la app en lÃ­nea" class="w-full h-auto" role="img" viewbox="0 0 1000 240">
+<svg aria-label="AnatomêÂ­a de una app: el front-end (el salêÂ³n) se conecta al back-end (la cocina), que se conecta a la base de datos; las integraciones de correo y acceso salen al exterior, y una flecha de publicaciêÂ³n lleva a la app en lêÂ­nea" class="w-full h-auto" role="img" viewbox="0 0 1000 240">
 <defs>
 <lineargradient id="m22-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#60a5fa"></stop><stop offset="1" stop-color="#3b82f6"></stop></lineargradient>
 <filter height="180%" id="m22-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -215,13 +215,13 @@
 <rect fill="url(#m22-grid)" height="240" width="1000" x="0" y="0"></rect>
 <!-- front-end -->
 <g filter="url(#m22-glow)"><rect fill="#0e1622" height="68" rx="14" stroke="url(#m22-grad)" stroke-width="2.5" width="180" x="30" y="70"></rect></g>
-<text fill="#60a5fa" font-family="Inter,sans-serif" font-size="16" font-weight="600" text-anchor="middle" x="120" y="98">ðŸ–¥ï¸ Front-end</text>
-<text fill="#9ec6ff" font-family="Inter,sans-serif" font-size="11.5" text-anchor="middle" x="120" y="118">el salÃ³n (lo que se ve)</text>
+<text fill="#60a5fa" font-family="Inter,sans-serif" font-size="16" font-weight="600" text-anchor="middle" x="120" y="98">ê°Å¸âÂ¥ê¯Â¸Â Front-end</text>
+<text fill="#9ec6ff" font-family="Inter,sans-serif" font-size="11.5" text-anchor="middle" x="120" y="118">el salêÂ³n (lo que se ve)</text>
 <!-- seta front -> back -->
 <path d="M210,104 L300,104" fill="none" marker-end="url(#m22-ah)" opacity="0.7" stroke="#60a5fa" stroke-width="2"></path>
 <!-- back-end -->
 <rect fill="#0e1622" height="60" rx="12" stroke="#3b82f6" stroke-width="2" width="180" x="300" y="74"></rect>
-<text fill="#cfe2ff" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="390" y="100">âš™ï¸ Back-end</text>
+<text fill="#cfe2ff" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="390" y="100">ê¢Å¡â¢ê¯Â¸Â Back-end</text>
 <text fill="#9ec6ff" font-family="Inter,sans-serif" font-size="11.5" text-anchor="middle" x="390" y="120">la cocina (procesa)</text>
 <!-- seta back -> banco -->
 <path d="M480,104 L580,104" fill="none" marker-end="url(#m22-ah)" opacity="0.7" stroke="#60a5fa" stroke-width="2"></path>
@@ -231,12 +231,12 @@
 <path d="M602,80 L602,128 A58,14 0 0 0 718,128 L718,80" fill="#0e1622" stroke="url(#m22-grad)" stroke-width="2.5"></path>
 <ellipse cx="660" cy="80" fill="#0e1622" rx="58" ry="14" stroke="url(#m22-grad)" stroke-width="2.5"></ellipse>
 </g>
-<text fill="#60a5fa" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="660" y="106">ðŸ—„ï¸ Base de datos</text>
+<text fill="#60a5fa" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="660" y="106">ê°Å¸ââê¯Â¸Â Base de datos</text>
 <text fill="#9ec6ff" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="660" y="124">la despensa</text>
 <!-- integracoes -->
 <g font-family="Inter,sans-serif" font-size="13" font-weight="600">
-<g class="wf-a"><rect fill="#0e1622" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="170" x="800" y="58"></rect><text fill="#bfe6ff" text-anchor="middle" x="885" y="79">âœ‰ï¸ correo electrÃ³nico</text></g>
-<g class="wf-a"><rect fill="#0e1622" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="170" x="800" y="118"></rect><text fill="#bfe6ff" text-anchor="middle" x="885" y="139">ðŸ” inicio de sesiÃ³n</text></g>
+<g class="wf-a"><rect fill="#0e1622" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="170" x="800" y="58"></rect><text fill="#bfe6ff" text-anchor="middle" x="885" y="79">ê¢Åâ°ê¯Â¸Â correo electrêÂ³nico</text></g>
+<g class="wf-a"><rect fill="#0e1622" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="170" x="800" y="118"></rect><text fill="#bfe6ff" text-anchor="middle" x="885" y="139">ê°Å¸âÂ inicio de sesiêÂ³n</text></g>
 </g>
 <g fill="none" opacity="0.5" stroke="#38bdf8" stroke-width="1.8">
 <path d="M718,100 C760,100 770,74 800,74" marker-end="url(#m22-ahc)"></path>
@@ -244,80 +244,80 @@
 </g>
 <!-- faixa de publicacao -->
 <path d="M120,180 L820,180" fill="none" marker-end="url(#m22-ah)" opacity="0.6" stroke="#60a5fa" stroke-dasharray="6 5" stroke-width="2"></path>
-<text fill="#9ec6ff" font-family="Inter,sans-serif" font-size="11.5" text-anchor="middle" x="300" y="172">publicar â†’ en lÃ­nea</text>
-<g class="wf-a"><rect fill="#0e1622" height="32" rx="9" stroke="#60a5fa" stroke-width="2" width="148" x="822" y="164"></rect><text fill="#cfe2ff" font-family="Inter,sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="896" y="185">â–² en lÃ­nea</text></g>
-<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="500" y="222">una app = front-end + back-end + base de datos + integraciones â€” y despuÃ©s, publicada</text>
+<text fill="#9ec6ff" font-family="Inter,sans-serif" font-size="11.5" text-anchor="middle" x="300" y="172">publicar ê¢â â en lêÂ­nea</text>
+<g class="wf-a"><rect fill="#0e1622" height="32" rx="9" stroke="#60a5fa" stroke-width="2" width="148" x="822" y="164"></rect><text fill="#cfe2ff" font-family="Inter,sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="896" y="185">ê¢âÂ² en lêÂ­nea</text></g>
+<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="500" y="222">una app = front-end + back-end + base de datos + integraciones ê¢â¬â y despuêÂ©s, publicada</text>
 </svg>
 </div>
 <h2 class="text-2xl font-bold mb-6">Contenido detallado</h2>
 <!-- TOPICO 1 -->
-<section class="mb-16" data-ARCKHÉ-module="2-2" data-ARCKHÉ-topic="modulo-2-2#topico-1" data-ARCKHÉ-track="2" id="topico-1">
+<section class="mb-16" data-ARCKHê-module="2-2" data-ARCKHê-topic="modulo-2-2#topico-1" data-ARCKHê-track="2" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">1</span>
-<h2 class="text-2xl font-bold">ðŸ§± Sitio web vs. app: quÃ© estÃ¡s construyendo realmente</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â± Sitio web vs. app: quêÂ© estêÂ¡s construyendo realmente</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-2-t1-p1">Un <strong class="text-blue-400">sitio</strong> por lo general, es solo de lectura: la persona llega, ve el contenido y se va; nada queda guardado. Un <strong class="text-blue-400">app</strong> responde a quien lo usa: recibe datos, los guarda, te recuerda y ejecuta acciones. Es la diferencia entre un cartel en la pared y un cajero automÃ¡tico.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-2-t1-p1">Un <strong class="text-blue-400">sitio</strong> por lo general, es solo de lectura: la persona llega, ve el contenido y se va; nada queda guardado. Un <strong class="text-blue-400">app</strong> responde a quien lo usa: recibe datos, los guarda, te recuerda y ejecuta acciones. Es la diferencia entre un cartel en la pared y un cajero automêÂ¡tico.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Las cuatro piezas de una app: front-end (lo que se ve), back-end (lo que procesa), base de datos (donde se guarda) e integraciones (servicios externos).</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Saber cuÃ¡l es la herramienta adecuada para cada problema evita pedirle lo equivocado a Claude y perder tiempo.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Front-end Â· back-end Â· base de datos Â· integraciÃ³n Â· determinÃ­stico vs. probabilÃ­stico.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Las cuatro piezas de una app: front-end (lo que se ve), back-end (lo que procesa), base de datos (donde se guarda) e integraciones (servicios externos).</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Saber cuêÂ¡l es la herramienta adecuada para cada problema evita pedirle lo equivocado a Claude y perder tiempo.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Front-end êÂ· back-end êÂ· base de datos êÂ· integraciêÂ³n êÂ· determinêÂ­stico vs. probabilêÂ­stico.</p></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
-<h4 class="font-bold text-blue-400 mb-4">âœ“ Es hora de convertirlo en una app cuandoâ€¦</h4>
+<h4 class="font-bold text-blue-400 mb-4">ê¢Åâ Es hora de convertirlo en una app cuandoê¢â¬Â¦</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Necesitas guardar datos de quienes lo usan (correos, respuestas).</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Cada persona tiene que entrar y ver su propia Ã¡rea.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Algo debe ocurrir despuÃ©s (enviar un correo, registrar un pedido).</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢Åâ</span><span>Necesitas guardar datos de quienes lo usan (correos, respuestas).</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢Åâ</span><span>Cada persona tiene que entrar y ver su propia êÂ¡rea.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢Åâ</span><span>Algo debe ocurrir despuêÂ©s (enviar un correo, registrar un pedido).</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— TodavÃ­a es solo un sitio web cuandoâ€¦</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ TodavêÂ­a es solo un sitio web cuandoê¢â¬Â¦</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>La persona solo lee el contenido y no queda nada guardado.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>No hay inicio de sesiÃ³n ni Ã¡reas privadas.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>No ocurre ninguna acciÃ³n despuÃ©s de la visita.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>La persona solo lee el contenido y no queda nada guardado.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>No hay inicio de sesiêÂ³n ni êÂ¡reas privadas.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>No ocurre ninguna acciêÂ³n despuêÂ©s de la visita.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ½ï¸</span> AnalogÃ­a del restaurante</h3>
-<p class="text-neutral-300 text-sm">O <strong>front-end</strong> es el salÃ³n (mesas, menÃº). El <strong>back-end</strong> es la cocina (donde se procesa el pedido). El <strong>banco</strong> es la despensa y el libro de cuentas. Las <strong>integraciones</strong> son los proveedores y la terminal de pago: servicios externos que el restaurante llama cuando los necesita.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸ÂÂ½ê¯Â¸Â</span> AnalogêÂ­a del restaurante</h3>
+<p class="text-neutral-300 text-sm">O <strong>front-end</strong> es el salêÂ³n (mesas, menêÂº). El <strong>back-end</strong> es la cocina (donde se procesa el pedido). El <strong>banco</strong> es la despensa y el libro de cuentas. Las <strong>integraciones</strong> son los proveedores y la terminal de pago: servicios externos que el restaurante llama cuando los necesita.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-ARCKHÉ-module="2-2" data-ARCKHÉ-topic="modulo-2-2#topico-2" data-ARCKHÉ-track="2" id="topico-2">
+<section class="mb-16" data-ARCKHê-module="2-2" data-ARCKHê-topic="modulo-2-2#topico-2" data-ARCKHê-track="2" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">2</span>
-<h2 class="text-2xl font-bold">ðŸ—„ï¸ La base de datos: donde viven los datos</h2>
+<h2 class="text-2xl font-bold">ê°Å¸ââê¯Â¸Â La base de datos: donde viven los datos</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-2-t2-p1">Sin una base de datos, todos los datos recopilados se pierden cuando se cierra la pestaÃ±a. Con una base, se convierten en un activo tuyo. Piensa en Supabase como una <strong class="text-blue-400">hoja de cÃ¡lculo potenciada</strong>: las tablas son pestaÃ±as, las filas son registros y las columnas son campos; solo que es confiable, tiene una API lista y se comunica directamente con Claude Code.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-2-t2-p1">Sin una base de datos, todos los datos recopilados se pierden cuando se cierra la pestaêÂ±a. Con una base, se convierten en un activo tuyo. Piensa en Supabase como una <strong class="text-blue-400">hoja de cêÂ¡lculo potenciada</strong>: las tablas son pestaêÂ±as, las filas son registros y las columnas son campos; solo que es confiable, tiene una API lista y se comunica directamente con Claude Code.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Un lugar confiable para guardar registros: nombres, correos electrÃ³nicos, respuestas de formularios, cuentas de usuario.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">La base de datos es el "esqueleto firme" determinista de la app: guardar un correo electrÃ³nico tiene que guardar <em>aquel</em> correo electrÃ³nico, siempre igual.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Tabla Â· fila Â· columna Â· Â«punto de registroÂ» (la fuente de la verdad) Â· conector/MCP.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Un lugar confiable para guardar registros: nombres, correos electrêÂ³nicos, respuestas de formularios, cuentas de usuario.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">La base de datos es el "esqueleto firme" determinista de la app: guardar un correo electrêÂ³nico tiene que guardar <em>aquel</em> correo electrêÂ³nico, siempre igual.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Tabla êÂ· fila êÂ· columna êÂ· êÂ«punto de registroêÂ» (la fuente de la verdad) êÂ· conector/MCP.</p></div>
 </div>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Abre los conectores</h4><p class="text-neutral-300 text-sm">En Claude Code, haz clic en el botÃ³n "+" y luego en "conectores".</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Abre los conectores</h4><p class="text-neutral-300 text-sm">En Claude Code, haz clic en el botêÂ³n "+" y luego en "conectores".</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Conecta Supabase</h4><p class="text-neutral-300 text-sm">Busca Supabase en la lista y haz clic en conectar; se abrirÃ¡ una ventana para autorizar.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Conecta Supabase</h4><p class="text-neutral-300 text-sm">Busca Supabase en la lista y haz clic en conectar; se abrirêÂ¡ una ventana para autorizar.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Crea el proyecto y confÃ­rmalo</h4><p class="text-neutral-300 text-sm">PÃ­dele a Claude que cree un proyecto nuevo. DespuÃ©s confirma en supabase.com que apareciÃ³.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Crea el proyecto y confêÂ­rmalo</h4><p class="text-neutral-300 text-sm">PêÂ­dele a Claude que cree un proyecto nuevo. DespuêÂ©s confirma en supabase.com que apareciêÂ³.</p></div>
 </div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
@@ -325,110 +325,110 @@
 <pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Conecte este projeto a um banco de dados Supabase. Crie um projeto novo para este app.</pre>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-ARCKHÉ-module="2-2" data-ARCKHÉ-topic="modulo-2-2#topico-3" data-ARCKHÉ-track="2" id="topico-3">
+<section class="mb-16" data-ARCKHê-module="2-2" data-ARCKHê-topic="modulo-2-2#topico-3" data-ARCKHê-track="2" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">3</span>
-<h2 class="text-2xl font-bold">ðŸ” Inicio de sesiÃ³n y cuentas: capturar datos de forma segura</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ Inicio de sesiêÂ³n y cuentas: capturar datos de forma segura</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-2-t3-p1">Dos piezas van juntas: el <strong class="text-blue-400">formulario</strong>, que convierte cada respuesta en una fila de la tabla, y la <strong class="text-blue-400">autenticaciÃ³n</strong>, que identifica a cada persona (registro, inicio de sesiÃ³n, cierre de sesiÃ³n). Sin inicio de sesiÃ³n, todos ven todo; con inicio de sesiÃ³n, tienes Ã¡reas privadas y contenido por usuario; todo gestionado por Supabase.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-2-t3-p1">Dos piezas van juntas: el <strong class="text-blue-400">formulario</strong>, que convierte cada respuesta en una fila de la tabla, y la <strong class="text-blue-400">autenticaciêÂ³n</strong>, que identifica a cada persona (registro, inicio de sesiêÂ³n, cierre de sesiêÂ³n). Sin inicio de sesiêÂ³n, todos ven todo; con inicio de sesiêÂ³n, tienes êÂ¡reas privadas y contenido por usuario; todo gestionado por Supabase.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Formulario â†’ tabla (el campo se convierte en columna), sumado al sistema de cuentas: registro (sign-up), inicio de sesiÃ³n (sign-in) y sesiÃ³n.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Es el salto de Â«sitio que muestraÂ» a Â«app que recopila y protegeÂ»: el comienzo de un valor real.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Campo â†’ columna Â· validaciÃ³n Â· sesiÃ³n Â· Â«Ã¡rea autenticadaÂ».</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Formulario ê¢â â tabla (el campo se convierte en columna), sumado al sistema de cuentas: registro (sign-up), inicio de sesiêÂ³n (sign-in) y sesiêÂ³n.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Es el salto de êÂ«sitio que muestraêÂ» a êÂ«app que recopila y protegeêÂ»: el comienzo de un valor real.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Campo ê¢â â columna êÂ· validaciêÂ³n êÂ· sesiêÂ³n êÂ· êÂ«êÂ¡rea autenticadaêÂ».</p></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
-<h4 class="font-bold text-blue-400 mb-4">âœ“ Hazlo en la prueba</h4>
+<h4 class="font-bold text-blue-400 mb-4">ê¢Åâ Hazlo en la prueba</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Pide registro e inicio de sesiÃ³n con contraseÃ±a obligatoria, gestionados en Supabase.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>En Authentication â†’ Sign-in providers, desactiva la confirmaciÃ³n por correo electrÃ³nico solo durante las pruebas.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Considera "iniciar sesiÃ³n con Google": hoy es lo habitual y facilita la vida de quienes lo usan.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢Åâ</span><span>Pide registro e inicio de sesiêÂ³n con contraseêÂ±a obligatoria, gestionados en Supabase.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢Åâ</span><span>En Authentication ê¢â â Sign-in providers, desactiva la confirmaciêÂ³n por correo electrêÂ³nico solo durante las pruebas.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢Åâ</span><span>Considera "iniciar sesiêÂ³n con Google": hoy es lo habitual y facilita la vida de quienes lo usan.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— No olvides esto antes de publicarlo</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ No olvides esto antes de publicarlo</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Dejar desactivada la confirmaciÃ³n por correo electrÃ³nico en producciÃ³n (llena la base de datos de registros falsos).</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Olvidar probar el cierre de sesiÃ³n y un nuevo inicio de sesiÃ³n con la misma contraseÃ±a.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Dar acceso a Ã¡reas privadas sin una sesiÃ³n vÃ¡lida.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Dejar desactivada la confirmaciêÂ³n por correo electrêÂ³nico en producciêÂ³n (llena la base de datos de registros falsos).</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Olvidar probar el cierre de sesiêÂ³n y un nuevo inicio de sesiêÂ³n con la misma contraseêÂ±a.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Dar acceso a êÂ¡reas privadas sin una sesiêÂ³n vêÂ¡lida.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
-<p class="text-sm text-neutral-400 mb-2">AutenticaciÃ³n bÃ¡sica</p>
-<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Agrega registro e acceso con contraseÃ±a obligatoria; todo autenticado y gestionado en Supabase.
-DespuÃ©s del acceso, lleva a la persona a un dashboard sencillo con el mismo estilo del sitio.</pre>
+<p class="text-sm text-neutral-400 mb-2">AutenticaciêÂ³n bêÂ¡sica</p>
+<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Agrega registro e acceso con contraseêÂ±a obligatoria; todo autenticado y gestionado en Supabase.
+DespuêÂ©s del acceso, lleva a la persona a un dashboard sencillo con el mismo estilo del sitio.</pre>
 <p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p>
 <pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">Add sign-up and login with a required password, fully authenticated and managed in Supabase.
 After login, take the user to a simple dashboard in the same style as the site.</pre>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-ARCKHÉ-module="2-2" data-ARCKHÉ-topic="modulo-2-2#topico-4" data-ARCKHÉ-track="2" id="topico-4">
+<section class="mb-16" data-ARCKHê-module="2-2" data-ARCKHê-topic="modulo-2-2#topico-4" data-ARCKHê-track="2" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">4</span>
-<h2 class="text-2xl font-bold">ðŸ’¬ Construir por capas: pedir, probar, repetir</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ¬ Construir por capas: pedir, probar, repetir</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-2-t4-p1">No escribes todo de una vez. TÃº <strong class="text-blue-400">conversaciÃ³n por capas</strong>: Â«agrega un formularioÂ», pruÃ©balo, Â«ahora guarda en la base de datosÂ», pruÃ©balo, Â«ahora hazlo mÃ¡s bonitoÂ», pruÃ©balo. Cada pedido es pequeÃ±o y verificable: asÃ­ se construye con confianza.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-2-t4-p1">No escribes todo de una vez. TêÂº <strong class="text-blue-400">conversaciêÂ³n por capas</strong>: êÂ«agrega un formularioêÂ», pruêÂ©balo, êÂ«ahora guarda en la base de datosêÂ», pruêÂ©balo, êÂ«ahora hazlo mêÂ¡s bonitoêÂ», pruêÂ©balo. Cada pedido es pequeêÂ±o y verificable: asêÂ­ se construye con confianza.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Describir un cambio pequeÃ±o en lenguaje natural, ver el resultado y ajustarlo â€” en lugar de intentar hacerlo todo de una vez.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Los cambios pequeÃ±os son fÃ¡ciles de probar y corregir. Eso es lo que mantiene el proyecto bajo control.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Ciclo pedir â†’ probar â†’ recibir comentarios Â· describir el "quÃ©", no el "cÃ³mo" Â· contexto conciso (<code class="text-blue-400">/compact</code>, fork).</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Describir un cambio pequeêÂ±o en lenguaje natural, ver el resultado y ajustarlo ê¢â¬â en lugar de intentar hacerlo todo de una vez.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Los cambios pequeêÂ±os son fêÂ¡ciles de probar y corregir. Eso es lo que mantiene el proyecto bajo control.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Ciclo pedir ê¢â â probar ê¢â â recibir comentarios êÂ· describir el "quêÂ©", no el "cêÂ³mo" êÂ· contexto conciso (<code class="text-blue-400">/compact</code>, fork).</p></div>
 </div>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Haz una sola solicitud</h4><p class="text-neutral-300 text-sm">Describe un Ãºnico cambio pequeÃ±o y espera a que Claude termine.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Haz una sola solicitud</h4><p class="text-neutral-300 text-sm">Describe un êÂºnico cambio pequeêÂ±o y espera a que Claude termine.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Abre la app y comprueba</h4><p class="text-neutral-300 text-sm">Haz una prueba real. No confÃ­es en el "listo": compruÃ©balo con tus propios ojos.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Abre la app y comprueba</h4><p class="text-neutral-300 text-sm">Haz una prueba real. No confêÂ­es en el "listo": compruêÂ©balo con tus propios ojos.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Da feedback y repite</h4><p class="text-neutral-300 text-sm">Describe quÃ© estÃ¡ mal o quÃ© falta y envÃ­a la siguiente solicitud. RepÃ­telo hasta que te guste.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Da feedback y repite</h4><p class="text-neutral-300 text-sm">Describe quêÂ© estêÂ¡ mal o quêÂ© falta y envêÂ­a la siguiente solicitud. RepêÂ­telo hasta que te guste.</p></div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ§ </span> Consejo prÃ¡ctico: cuida el contexto</h3>
-<p class="text-neutral-300 text-sm">Una conversaciÃ³n demasiado larga empeora las respuestas. Cuando el historial se vuelva pesado, usa <code class="text-primary">/compact</code>. Para un experimento aislado sin mezclar todo, renombra la conversaciÃ³n actual y crea un <strong>fork</strong> a partir de ella.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸Â§Â </span> Consejo prêÂ¡ctico: cuida el contexto</h3>
+<p class="text-neutral-300 text-sm">Una conversaciêÂ³n demasiado larga empeora las respuestas. Cuando el historial se vuelva pesado, usa <code class="text-primary">/compact</code>. Para un experimento aislado sin mezclar todo, renombra la conversaciêÂ³n actual y crea un <strong>fork</strong> a partir de ella.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-ARCKHÉ-module="2-2" data-ARCKHÉ-topic="modulo-2-2#topico-5" data-ARCKHÉ-track="2" id="topico-5">
+<section class="mb-16" data-ARCKHê-module="2-2" data-ARCKHê-topic="modulo-2-2#topico-5" data-ARCKHê-track="2" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">5</span>
-<h2 class="text-2xl font-bold">âœ… Probar de principio a fin</h2>
+<h2 class="text-2xl font-bold">ê¢Åâ¦ Probar de principio a fin</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-2-t5-p1">"Parece funcionar" no basta. Pruebas el flujo completo como una persona de verdad â€”rellenas, envÃ­asâ€” y <strong class="text-blue-400">solo entonces revisa Supabase</strong> para ver el registro exacto en la tabla. La pantalla dice Â«enviadoÂ»; la base de datos dice la verdad.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-2-t5-p1">"Parece funcionar" no basta. Pruebas el flujo completo como una persona de verdad ê¢â¬ârellenas, envêÂ­asê¢â¬â y <strong class="text-blue-400">solo entonces revisa Supabase</strong> para ver el registro exacto en la tabla. La pantalla dice êÂ«enviadoêÂ»; la base de datos dice la verdad.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Recorrer la app como usuaria(o) y, despuÃ©s, verificar manualmente en el Table Editor de Supabase.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Ver Â«enviado con Ã©xitoÂ» en la pantalla no prueba que se haya guardado. Confirmarlo en la base de datos es lo que da certeza.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Prueba de punta a punta Â· fuente de la verdad Â· verificaciÃ³n manual.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Recorrer la app como usuaria(o) y, despuêÂ©s, verificar manualmente en el Table Editor de Supabase.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Ver êÂ«enviado con êÂ©xitoêÂ» en la pantalla no prueba que se haya guardado. Confirmarlo en la base de datos es lo que da certeza.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Prueba de punta a punta êÂ· fuente de la verdad êÂ· verificaciêÂ³n manual.</p></div>
 </div>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Usa la app de verdad</h4><p class="text-neutral-300 text-sm">Completa el formulario, crea una cuenta de prueba e inicia sesiÃ³n como lo harÃ­a cualquier persona.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Usa la app de verdad</h4><p class="text-neutral-300 text-sm">Completa el formulario, crea una cuenta de prueba e inicia sesiêÂ³n como lo harêÂ­a cualquier persona.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">2</span></div>
@@ -436,125 +436,125 @@ After login, take the user to a simple dashboard in the same style as the site.<
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Confirma el dato correcto</h4><p class="text-neutral-300 text-sm">El nombre y el correo electrÃ³nico que escribiste tienen que estar ahÃ­, campo por campo. Solo entonces queda validado.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Confirma el dato correcto</h4><p class="text-neutral-300 text-sm">El nombre y el correo electrêÂ³nico que escribiste tienen que estar ahêÂ­, campo por campo. Solo entonces queda validado.</p></div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âš–ï¸</span> DeterminÃ­stico vs. probabilÃ­stico</h3>
-<p class="text-neutral-300 text-sm">Los modelos de lenguaje son probabilÃ­sticos: la misma pregunta puede dar respuestas distintas. Una app necesita partes deterministas â€” guardar un correo electrÃ³nico tiene que guardar <em>aquel</em> correo electrÃ³nico, siempre igual. Por eso la verdad estÃ¡ en la base de datos, no en la generaciÃ³n de texto.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê¢Å¡âê¯Â¸Â</span> DeterminêÂ­stico vs. probabilêÂ­stico</h3>
+<p class="text-neutral-300 text-sm">Los modelos de lenguaje son probabilêÂ­sticos: la misma pregunta puede dar respuestas distintas. Una app necesita partes deterministas ê¢â¬â guardar un correo electrêÂ³nico tiene que guardar <em>aquel</em> correo electrêÂ³nico, siempre igual. Por eso la verdad estêÂ¡ en la base de datos, no en la generaciêÂ³n de texto.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-ARCKHÉ-module="2-2" data-ARCKHÉ-topic="modulo-2-2#topico-6" data-ARCKHÉ-track="2" id="topico-6">
+<section class="mb-16" data-ARCKHê-module="2-2" data-ARCKHê-topic="modulo-2-2#topico-6" data-ARCKHê-track="2" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">6</span>
-<h2 class="text-2xl font-bold">ðŸš€ Publicar en lÃ­nea (deploy)</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Å¡â¬ Publicar en lêÂ­nea (deploy)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-2-t6-p1">Una app que solo estÃ¡ en tu PC no le sirve a nadie. <strong class="text-blue-400">Publicar</strong> es Â«subirÂ» el cÃ³digo a internet, con una direcciÃ³n que cualquiera puede abrir. Es el paso que hace que la app sea real y completa el ciclo concepto â†’ app funcional.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-2-t6-p1">Una app que solo estêÂ¡ en tu PC no le sirve a nadie. <strong class="text-blue-400">Publicar</strong> es êÂ«subirêÂ» el cêÂ³digo a internet, con una direcciêÂ³n que cualquiera puede abrir. Es el paso que hace que la app sea real y completa el ciclo concepto ê¢â â app funcional.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Poner la app en producciÃ³n en Vercel, con una direcciÃ³n pÃºblica que cualquiera pueda abrir.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Publicar es lo que transforma un experimento local en algo que otras personas realmente usan.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Deploy Â· entorno de producciÃ³n Â· "en lÃ­nea" Â· lista de verificaciÃ³n previa al lanzamiento.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Poner la app en producciêÂ³n en Vercel, con una direcciêÂ³n pêÂºblica que cualquiera pueda abrir.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Publicar es lo que transforma un experimento local en algo que otras personas realmente usan.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Deploy êÂ· entorno de producciêÂ³n êÂ· "en lêÂ­nea" êÂ· lista de verificaciêÂ³n previa al lanzamiento.</p></div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
-<p class="text-sm text-neutral-400 mb-2">Publicar en lÃ­nea</p>
-<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Quando estas mudanÃ§as estiverem prontas, publique e coloque o app no ar na Vercel.</pre>
+<p class="text-sm text-neutral-400 mb-2">Publicar en lêÂ­nea</p>
+<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Quando estas mudanêÂ§as estiverem prontas, publique e coloque o app no ar na Vercel.</pre>
 <p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p>
 <pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">When these changes are ready, deploy and publish the app live on Vercel.</pre>
 </div>
 <details class="bg-dark-800 border border-dark-600 rounded-xl p-5 mb-6">
-<summary class="cursor-pointer font-semibold text-blue-400">Profundiza (opcional): la lista de verificaciÃ³n antes de divulgar</summary>
-<p class="text-neutral-300 text-sm mt-3">Antes de enviarle el enlace a alguien: confirma en vercel.com que el deploy se completÃ³, abre la direcciÃ³n generada y repite todo el flujo en un navegador de incÃ³gnito. Y lo mÃ¡s importante: <strong>reactiva la confirmaciÃ³n de correo electrÃ³nico en Supabase</strong> â€” solo la habÃ­as desactivado para probar.</p>
+<summary class="cursor-pointer font-semibold text-blue-400">Profundiza (opcional): la lista de verificaciêÂ³n antes de divulgar</summary>
+<p class="text-neutral-300 text-sm mt-3">Antes de enviarle el enlace a alguien: confirma en vercel.com que el deploy se completêÂ³, abre la direcciêÂ³n generada y repite todo el flujo en un navegador de incêÂ³gnito. Y lo mêÂ¡s importante: <strong>reactiva la confirmaciêÂ³n de correo electrêÂ³nico en Supabase</strong> ê¢â¬â solo la habêÂ­as desactivado para probar.</p>
 </details>
 <!-- Checagem leve opcional -->
-<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-2-2#q1">
-<p class="font-medium mb-4">AutoevaluaciÃ³n (opcional): cÃ³mo tienes <em>certeza</em> de que se guardÃ³ un lead?</p>
-<div class="ARCKHÉ-check-options space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">Porque la pantalla mostrÃ³ "enviado correctamente".</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Abriendo Table Editor de Supabase y viendo la fila exacta.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Volver a pedirle a la IA que confirme que guardÃ³.</button>
+<div class="ARCKHê-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHê-check="modulo-2-2#q1">
+<p class="font-medium mb-4">AutoevaluaciêÂ³n (opcional): cêÂ³mo tienes <em>certeza</em> de que se guardêÂ³ un lead?</p>
+<div class="ARCKHê-check-options space-y-2">
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="0" type="button">Porque la pantalla mostrêÂ³ "enviado correctamente".</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="1" type="button">Abriendo Table Editor de Supabase y viendo la fila exacta.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="2" type="button">Volver a pedirle a la IA que confirme que guardêÂ³.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHê-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- EXERCICIOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âœï¸ Ejercicios</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂê¯Â¸Â Ejercicios</h2>
 <div class="space-y-4">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. Conecta y crea la tabla <span class="text-xs text-neutral-500">(fÃ¡cil)</span></h3><p class="text-neutral-300 text-sm">Conecta Supabase a tu proyecto y crea la tabla <code class="text-blue-400">leads</code>. <span class="text-blue-400">Criterio:</span> la tabla aparece en el Table Editor con las columnas correctas.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Capta un lead real <span class="text-xs text-neutral-500">(fÃ¡cil)</span></h3><p class="text-neutral-300 text-sm">Agrega el formulario y envÃ­a una respuesta de prueba. <span class="text-blue-400">Criterio:</span> la fila con el nombre y el correo electrÃ³nico que escribiste aparece en la tabla <code class="text-blue-400">leads</code>.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Agrega login <span class="text-xs text-neutral-500">(medio)</span></h3><p class="text-neutral-300 text-sm">Implementa el registro y el inicio de sesiÃ³n con contraseÃ±a. <span class="text-blue-400">Criterio:</span> creas una cuenta, cierras sesiÃ³n y vuelves a entrar con la contraseÃ±a â€”y ves un Ã¡rea que solo aparece despuÃ©s de iniciar sesiÃ³n.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. Itera con feedback <span class="text-xs text-neutral-500">(medio)</span></h3><p class="text-neutral-300 text-sm">Haz al menos tres mejoras pequeÃ±as (una por solicitud), probando entre ellas. <span class="text-blue-400">Criterio:</span> cada cambio se describiÃ³ en una frase, se probÃ³ y se confirmÃ³ antes del siguiente.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. Publica <span class="text-xs text-neutral-500">(medio)</span></h3><p class="text-neutral-300 text-sm">Publica la app en Vercel. <span class="text-blue-400">Criterio:</span> abres la direcciÃ³n pÃºblica en un navegador anÃ³nimo y el flujo completo funciona.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. Conecta y crea la tabla <span class="text-xs text-neutral-500">(fêÂ¡cil)</span></h3><p class="text-neutral-300 text-sm">Conecta Supabase a tu proyecto y crea la tabla <code class="text-blue-400">leads</code>. <span class="text-blue-400">Criterio:</span> la tabla aparece en el Table Editor con las columnas correctas.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Capta un lead real <span class="text-xs text-neutral-500">(fêÂ¡cil)</span></h3><p class="text-neutral-300 text-sm">Agrega el formulario y envêÂ­a una respuesta de prueba. <span class="text-blue-400">Criterio:</span> la fila con el nombre y el correo electrêÂ³nico que escribiste aparece en la tabla <code class="text-blue-400">leads</code>.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Agrega login <span class="text-xs text-neutral-500">(medio)</span></h3><p class="text-neutral-300 text-sm">Implementa el registro y el inicio de sesiêÂ³n con contraseêÂ±a. <span class="text-blue-400">Criterio:</span> creas una cuenta, cierras sesiêÂ³n y vuelves a entrar con la contraseêÂ±a ê¢â¬ây ves un êÂ¡rea que solo aparece despuêÂ©s de iniciar sesiêÂ³n.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. Itera con feedback <span class="text-xs text-neutral-500">(medio)</span></h3><p class="text-neutral-300 text-sm">Haz al menos tres mejoras pequeêÂ±as (una por solicitud), probando entre ellas. <span class="text-blue-400">Criterio:</span> cada cambio se describiêÂ³ en una frase, se probêÂ³ y se confirmêÂ³ antes del siguiente.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. Publica <span class="text-xs text-neutral-500">(medio)</span></h3><p class="text-neutral-300 text-sm">Publica la app en Vercel. <span class="text-blue-400">Criterio:</span> abres la direcciêÂ³n pêÂºblica en un navegador anêÂ³nimo y el flujo completo funciona.</p></div>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âŒ¨ï¸ Prompts listos</h2>
-<p class="text-neutral-300 text-sm mb-6">Usa estos como punto de partida y adÃ¡ptalos a tu app. Cuando el prompt sea canÃ³nico, tambiÃ©n dejamos el <strong class="text-blue-400">original en inglÃ©s</strong>. El banco completo estÃ¡ en la <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Biblioteca â†’ Prompts</a>.</p>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂ¨ê¯Â¸Â Prompts listos</h2>
+<p class="text-neutral-300 text-sm mb-6">Usa estos como punto de partida y adêÂ¡ptalos a tu app. Cuando el prompt sea canêÂ³nico, tambiêÂ©n dejamos el <strong class="text-blue-400">original en inglêÂ©s</strong>. El banco completo estêÂ¡ en la <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Biblioteca ê¢â â Prompts</a>.</p>
 <div class="space-y-5">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Formulario que guarda en la base de datos</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Agrega un formulario con nombre, correo electrÃ³nico y Â«Â¿cuÃ¡l es tu mayor desafÃ­o hoy?Â».
-Cuando lo envÃ­en, guarda las respuestas en Supabase, en la tabla `leads`.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Pedir comentarios antes de construir</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Antes de implementar, dime quÃ© necesitas de mÃ­ y quÃ© decisiones vas a tomar.
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Formulario que guarda en la base de datos</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Agrega un formulario con nombre, correo electrêÂ³nico y êÂ«êÂ¿cuêÂ¡l es tu mayor desafêÂ­o hoy?êÂ».
+Cuando lo envêÂ­en, guarda las respuestas en Supabase, en la tabla `leads`.</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Pedir comentarios antes de construir</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Antes de implementar, dime quêÂ© necesitas de mêÂ­ y quêÂ© decisiones vas a tomar.
 Haz preguntas aclaratorias si algo es ambiguo.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Iterar a partir de una pantalla</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Aqui estÃ¡ um print da tela atual. HÃ¡ espaÃ§o demais acima e abaixo da imagem.
-Ajuste para caber bem, sem cortar o conteÃºdo importante.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Dejar que Claude ejecute en lugar de pedÃ­rtelo a ti (canÃ³nico)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Sempre que possÃ­vel, execute vocÃª mesmo as tarefas (CLI, scripts) em vez de me pedir para fazer manualmente.
-SÃ³ me peÃ§a quando for algo que sÃ³ eu posso fornecer (login, chave, decisÃ£o).</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">Whenever possible, run the tasks yourself (CLI, scripts) instead of asking me to do them manually.
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Iterar a partir de una pantalla</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Aqui estêÂ¡ um print da tela atual. HêÂ¡ espaêÂ§o demais acima e abaixo da imagem.
+Ajuste para caber bem, sem cortar o conteêÂºdo importante.</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Dejar que Claude ejecute en lugar de pedêÂ­rtelo a ti (canêÂ³nico)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Sempre que possêÂ­vel, execute vocêÂª mesmo as tarefas (CLI, scripts) em vez de me pedir para fazer manualmente.
+SêÂ³ me peêÂ§a quando for algo que sêÂ³ eu posso fornecer (login, chave, decisêÂ£o).</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">Whenever possible, run the tasks yourself (CLI, scripts) instead of asking me to do them manually.
 Only ask me for things only I can provide (login, key, decision).</pre></div>
 </div>
 </section>
 <!-- ERROS COMUNS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âš ï¸ Errores comunes</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢Å¡Â ê¯Â¸Â Errores comunes</h2>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Intentar todo de una sola vez.</strong> Un Ãºnico pedido enorme genera un resultado difÃ­cil de probar y corregir. DivÃ­delo en pasos pequeÃ±os.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>No validar en la base de datos.</strong> Ver Â«enviado con Ã©xitoÂ» en la pantalla no prueba que se haya guardado. Abre el Table Editor y verifica la fila.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Olvidar reactivar la confirmaciÃ³n por correo electrÃ³nico.</strong> EstÃ¡ bien desactivarlo para probar; dejarlo desactivado en producciÃ³n llena la base de datos de registros falsos.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Esperar respuestas idÃ©nticas de la IA.</strong> Los modelos son probabilÃ­sticos. Para lo que siempre debe ser igual, confÃ­a en la base de datos y la lÃ³gica.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Dejar que el contexto se infle.</strong> Una conversaciÃ³n demasiado larga empeora las respuestas. Usa <code class="text-red-400">/compact</code> y considera hacer un fork para frentes paralelos.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Intentar todo de una sola vez.</strong> Un êÂºnico pedido enorme genera un resultado difêÂ­cil de probar y corregir. DivêÂ­delo en pasos pequeêÂ±os.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>No validar en la base de datos.</strong> Ver êÂ«enviado con êÂ©xitoêÂ» en la pantalla no prueba que se haya guardado. Abre el Table Editor y verifica la fila.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Olvidar reactivar la confirmaciêÂ³n por correo electrêÂ³nico.</strong> EstêÂ¡ bien desactivarlo para probar; dejarlo desactivado en producciêÂ³n llena la base de datos de registros falsos.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Esperar respuestas idêÂ©nticas de la IA.</strong> Los modelos son probabilêÂ­sticos. Para lo que siempre debe ser igual, confêÂ­a en la base de datos y la lêÂ³gica.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Dejar que el contexto se infle.</strong> Una conversaciêÂ³n demasiado larga empeora las respuestas. Usa <code class="text-red-400">/compact</code> y considera hacer un fork para frentes paralelos.</span></li>
 </ul>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-blue-900/40 via-dark-800 to-dark-800 rounded-xl border border-blue-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumen del mÃ³dulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Åâ¦</span> Resumen del mêÂ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong>Sitio vs. app</strong><span class="text-neutral-400"> â€” el sitio muestra; la app guarda datos y reacciona. Las cuatro piezas: front-end, back-end, base de datos e integraciones.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong>Base de datos + inicio de sesiÃ³n</strong><span class="text-neutral-400"> â€” Supabase guarda los datos (la fuente de la verdad) y gestiona el registro, el inicio de sesiÃ³n y la sesiÃ³n.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong>Construir por capas</strong><span class="text-neutral-400"> â€” pedido pequeÃ±o â†’ prueba â†’ feedback â†’ siguiente, con el contexto acotado.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong>Probar y publicar</strong><span class="text-neutral-400"> â€” valida todo el flujo en la base de datos y publica la app en Vercel.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong>Sitio vs. app</strong><span class="text-neutral-400"> ê¢â¬â el sitio muestra; la app guarda datos y reacciona. Las cuatro piezas: front-end, back-end, base de datos e integraciones.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong>Base de datos + inicio de sesiêÂ³n</strong><span class="text-neutral-400"> ê¢â¬â Supabase guarda los datos (la fuente de la verdad) y gestiona el registro, el inicio de sesiêÂ³n y la sesiêÂ³n.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong>Construir por capas</strong><span class="text-neutral-400"> ê¢â¬â pedido pequeêÂ±o ê¢â â prueba ê¢â â feedback ê¢â â siguiente, con el contexto acotado.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong>Probar y publicar</strong><span class="text-neutral-400"> ê¢â¬â valida todo el flujo en la base de datos y publica la app en Vercel.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-blue-400 mb-3">Lista de verificaciÃ³n de finalizaciÃ³n</h3>
+<h3 class="font-semibold text-blue-400 mb-3">Lista de verificaciêÂ³n de finalizaciêÂ³n</h3>
 <ul class="space-y-2 text-sm text-neutral-300">
-<li>â˜ SÃ© explicar la diferencia entre sitio web y app, y nombrar las cuatro piezas (front, back, base de datos, integraciones).</li>
-<li>â˜ ConectÃ© Supabase a mi proyecto y creÃ© un proyecto nuevo de base de datos.</li>
-<li>â˜ Tengo un formulario que guarda respuestas reales en la tabla <code class="text-blue-400">leads</code>.</li>
-<li>â˜ ConfirmÃ© el registro directamente en el Table Editor de Supabase.</li>
-<li>â˜ AÃ±adÃ­ el registro y el inicio de sesiÃ³n con contraseÃ±a, y probÃ© crear una cuenta, cerrar sesiÃ³n e iniciar sesiÃ³n.</li>
-<li>â˜ ConstruÃ­ de forma incremental: pedido pequeÃ±o â†’ prueba â†’ comentarios â†’ siguiente paso.</li>
-<li>â˜ PubliquÃ© la app en Vercel y validÃ© el flujo completo (con la confirmaciÃ³n por correo electrÃ³nico reactivada).</li>
+<li>ê¢ËÂ SêÂ© explicar la diferencia entre sitio web y app, y nombrar las cuatro piezas (front, back, base de datos, integraciones).</li>
+<li>ê¢ËÂ ConectêÂ© Supabase a mi proyecto y creêÂ© un proyecto nuevo de base de datos.</li>
+<li>ê¢ËÂ Tengo un formulario que guarda respuestas reales en la tabla <code class="text-blue-400">leads</code>.</li>
+<li>ê¢ËÂ ConfirmêÂ© el registro directamente en el Table Editor de Supabase.</li>
+<li>ê¢ËÂ AêÂ±adêÂ­ el registro y el inicio de sesiêÂ³n con contraseêÂ±a, y probêÂ© crear una cuenta, cerrar sesiêÂ³n e iniciar sesiêÂ³n.</li>
+<li>ê¢ËÂ ConstruêÂ­ de forma incremental: pedido pequeêÂ±o ê¢â â prueba ê¢â â comentarios ê¢â â siguiente paso.</li>
+<li>ê¢ËÂ PubliquêÂ© la app en Vercel y validêÂ© el flujo completo (con la confirmaciêÂ³n por correo electrêÂ³nico reactivada).</li>
 </ul>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-blue-400 mb-2">Siguiente mÃ³dulo:</h3>
-<p class="text-neutral-300">2.3 â€” Construye cualquier cosa: mÃ¡s allÃ¡ de sitios y apps, automatizaciones y herramientas a medida</p>
+<h3 class="font-semibold text-blue-400 mb-2">Siguiente mêÂ³dulo:</h3>
+<p class="text-neutral-300">2.3 ê¢â¬â Construye cualquier cosa: mêÂ¡s allêÂ¡ de sitios y apps, automatizaciones y herramientas a medida</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Volver a la ruta</a>
-<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="modulo-2-3.html">Siguiente: 2.3 â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Volver a la ruta</a>
+<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="modulo-2-3.html">Siguiente: 2.3 ê¢â â</a>
 </div>
 </div>
 </section>
@@ -563,7 +563,7 @@ Only ask me for things only I can provide (login, key, decision).</pre></div>
 <!-- FOOTER -->
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Claude Code en la prÃ¡ctica â€” <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>Claude Code en la prêÂ¡ctica ê¢â¬â <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <!-- SCRIPTS: nucleo v1 -->
@@ -572,7 +572,7 @@ Only ask me for things only I can provide (login, key, decision).</pre></div>
     (function(){ var tt=document.getElementById('theme-toggle'); if(!tt) return; var di=document.getElementById('theme-toggle-dark-icon'), li=document.getElementById('theme-toggle-light-icon'), html=document.documentElement;
       function sync(){ if(html.classList.contains('dark')){ li&&li.classList.remove('hidden'); di&&di.classList.add('hidden'); } else { di&&di.classList.remove('hidden'); li&&li.classList.add('hidden'); } }
       sync();
-      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}'); p.theme=dark?'ARCKHÉ-dark':'claro'; localStorage.setItem('ARCKHÉ.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
+      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHê.prefs')||'{}'); p.theme=dark?'ARCKHê-dark':'claro'; localStorage.setItem('ARCKHê.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
     function openModal(id){ var m=document.getElementById(id); if(m){ m.classList.remove('hidden'); document.body.style.overflow='hidden'; } }
     function closeModal(){ document.querySelectorAll('.modal').forEach(function(m){ m.classList.add('hidden'); }); document.body.style.overflow='auto'; }
     document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
@@ -580,19 +580,19 @@ Only ask me for things only I can provide (login, key, decision).</pre></div>
 <!-- Camada de aprendizagem -->
 <script>
     window.addEventListener('DOMContentLoaded', function(){
-      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
-        ARCKHÉ.registerCheck('modulo-2-2#q1', {
+      if (window.ARCKHê && ARCKHê.registerCheck) {
+        ARCKHê.registerCheck('modulo-2-2#q1', {
           answer: 1,
           explain: {
-            0: 'A mensagem na tela nÃ£o prova nada â€” ela aparece mesmo se o salvamento falhar silenciosamente.',
-            1: 'Isso! A fonte da verdade Ã© o banco. Veja a linha exata no Table Editor do Supabase.',
-            2: 'A IA Ã© probabilÃ­stica; ela pode "achar" que salvou. Confirme vocÃª mesmo no banco.'
+            0: 'A mensagem na tela nêÂ£o prova nada ê¢â¬â ela aparece mesmo se o salvamento falhar silenciosamente.',
+            1: 'Isso! A fonte da verdade êÂ© o banco. Veja a linha exata no Table Editor do Supabase.',
+            2: 'A IA êÂ© probabilêÂ­stica; ela pode "achar" que salvou. Confirme vocêÂª mesmo no banco.'
           }
         });
       }
     });
   </script>
 <script src="../../../assets/learn.js"></script>
-<script>if (window.ARCKHÉ && typeof window.ARCKHÉ.init==='function'){ window.ARCKHÉ.init(); }</script>
+<script>if (window.ARCKHê && typeof window.ARCKHê.init==='function'){ window.ARCKHê.init(); }</script>
 </body>
 </html>

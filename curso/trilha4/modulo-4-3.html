@@ -4,28 +4,28 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-na-pratica" name="ARCKHÉ-course"/>
-<title>Agentes | Biblioteca Â· Claude Code na PrÃ¡tica</title>
+<meta content="claude-na-pratica" name="ARCKHê-course"/>
+<title>Agentes | Biblioteca êÂ· Claude Code na PrêÂ¡tica</title>
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){ var r={}; for (var x in o) r[x]=o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHê-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var THEMES = { 'ARCKHê-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'emerald');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
+      s.setProperty('--ARCKHê-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
       var fam = p.font==='system' ? 'system-ui,-apple-system,"Segoe UI",Roboto,sans-serif' : (p.font==='leitura' ? '"Atkinson Hyperlegible","Inter",system-ui,sans-serif' : '"Inter",system-ui,sans-serif');
       s.setProperty('--font-body', fam);
@@ -42,7 +42,7 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../assets/learn.css" rel="stylesheet"/>
-<script data-ARCKHÉ-manifest="" type="application/json">
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "claude-na-pratica",
     "tracks": [
@@ -106,23 +106,23 @@
     .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-4-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha4/modulo-4-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha4/modulo-4-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
-<a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-4-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha4/modulo-4-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha4/modulo-4-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<a class="skip" href="#conteudo">Pular para o conteêÂºdo</a>
 <!-- NAV -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
-<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">âš¡</span><span class="font-bold text-lg hidden sm:inline">Claude Code na PrÃ¡tica</span></a>
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">ê¢Å¡Â¡</span><span class="font-bold text-lg hidden sm:inline">Claude Code na PrêÂ¡tica</span></a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Construir</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Operar &amp; Lucrar</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-amber-400 bg-amber-500/10" href="index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Biblioteca</span></a>
-<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHÉ-journey-open="" title="Minha jornada" type="button"><span aria-hidden="true">â—·</span><span class="hidden lg:inline">Jornada</span><span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span></button>
+<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHê-journey-open="" title="Minha jornada" type="button"><span aria-hidden="true">ê¢âÂ·</span><span class="hidden lg:inline">Jornada</span><span aria-hidden="true" class="ARCKHê-journey-badge hidden"></span></button>
 <button aria-label="Alternar tema claro/escuro" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle" title="Tema claro/escuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
@@ -133,8 +133,8 @@
 </nav>
 <!-- BREADCRUMB -->
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
-<nav aria-label="Trilha de navegaÃ§Ã£o" class="text-sm text-neutral-500">
-<a class="hover:text-amber-400" href="../../index.html">InÃ­cio</a>
+<nav aria-label="Trilha de navegaêÂ§êÂ£o" class="text-sm text-neutral-500">
+<a class="hover:text-amber-400" href="../../index.html">InêÂ­cio</a>
 <span class="mx-2">/</span>
 <a class="hover:text-amber-400" href="index.html">Biblioteca</a>
 <span class="mx-2">/</span>
@@ -144,21 +144,21 @@
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">BIBLIOTECA Â· CATÃLOGO</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ¤– Agentes</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">18 agentes especialistas de SEO (open-source, MIT). Cada um Ã© um <code class="text-amber-400">.md</code> que define um especialista focado para vocÃª delegar uma tarefa especÃ­fica â€” tÃ©cnico, conteÃºdo, schema, local, backlinks, performance e mais. Clique em qualquer card para abrir a definiÃ§Ã£o do agente.</p>
+<span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">BIBLIOTECA êÂ· CATêÂLOGO</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸Â¤â Agentes</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">18 agentes especialistas de SEO (open-source, MIT). Cada um êÂ© um <code class="text-amber-400">.md</code> que define um especialista focado para vocêÂª delegar uma tarefa especêÂ­fica ê¢â¬â têÂ©cnico, conteêÂºdo, schema, local, backlinks, performance e mais. Clique em qualquer card para abrir a definiêÂ§êÂ£o do agente.</p>
 </div>
 </header>
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="conteudo">
 <!-- O QUE E UM AGENTE -->
 <section class="mb-12">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<h2 class="text-lg font-bold mb-2">ðŸ§­ O que Ã© um agente / como usar</h2>
-<p class="text-sm text-neutral-400 max-w-3xl mb-3">Um <strong class="text-amber-400">agente</strong> Ã© um especialista com escopo e instruÃ§Ãµes prÃ³prias, que vocÃª aciona para uma tarefa focada â€” o Claude principal delega o trabalho, o agente devolve um relatÃ³rio, e o contexto principal fica limpo. Ã‰ a base para rodar vÃ¡rias tarefas em paralelo (subagentes).</p>
+<h2 class="text-lg font-bold mb-2">ê°Å¸Â§Â­ O que êÂ© um agente / como usar</h2>
+<p class="text-sm text-neutral-400 max-w-3xl mb-3">Um <strong class="text-amber-400">agente</strong> êÂ© um especialista com escopo e instruêÂ§êÂµes prêÂ³prias, que vocêÂª aciona para uma tarefa focada ê¢â¬â o Claude principal delega o trabalho, o agente devolve um relatêÂ³rio, e o contexto principal fica limpo. êâ° a base para rodar vêÂ¡rias tarefas em paralelo (subagentes).</p>
 <ul class="text-sm text-neutral-300 space-y-1 list-disc pl-5 max-w-3xl">
-<li><strong>DefiniÃ§Ã£o:</strong> cada arquivo <code class="text-amber-400">.md</code> abaixo descreve um agente (papel, quando acionar, ferramentas).</li>
-<li><strong>Instalar/usar:</strong> use o conteÃºdo como referÃªncia para criar/instalar agentes no seu fluxo, ou peÃ§a ao Claude para "rodar o agente <em>seo-technical</em> neste site".</li>
-<li><strong>Em paralelo:</strong> combine vÃ¡rios (ex.: tÃ©cnico + conteÃºdo + schema) para uma auditoria completa â€” veja o prompt <strong class="text-amber-400">P16</strong> no Banco de Prompts.</li>
+<li><strong>DefiniêÂ§êÂ£o:</strong> cada arquivo <code class="text-amber-400">.md</code> abaixo descreve um agente (papel, quando acionar, ferramentas).</li>
+<li><strong>Instalar/usar:</strong> use o conteêÂºdo como referêÂªncia para criar/instalar agentes no seu fluxo, ou peêÂ§a ao Claude para "rodar o agente <em>seo-technical</em> neste site".</li>
+<li><strong>Em paralelo:</strong> combine vêÂ¡rios (ex.: têÂ©cnico + conteêÂºdo + schema) para uma auditoria completa ê¢â¬â veja o prompt <strong class="text-amber-400">P16</strong> no Banco de Prompts.</li>
 </ul>
 </div>
 </section>
@@ -166,50 +166,50 @@
 <section class="mb-12">
 <h2 class="text-2xl font-bold mb-6">18 agentes de SEO</h2>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-backlinks.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-backlinks</h3><p class="text-xs text-neutral-400 mt-1">Analista de backlinks com fontes grÃ¡tis + pagas; merge ponderado por confianÃ§a.</p></a>
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-cluster.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-cluster</h3><p class="text-xs text-neutral-400 mt-1">ClusterizaÃ§Ã£o semÃ¢ntica via overlap de SERP; arquitetura hub-and-spoke.</p></a>
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-content.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-content</h3><p class="text-xs text-neutral-400 mt-1">Revisor de conteÃºdo: E-E-A-T, legibilidade, profundidade e thin-content.</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-backlinks.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-backlinks</h3><p class="text-xs text-neutral-400 mt-1">Analista de backlinks com fontes grêÂ¡tis + pagas; merge ponderado por confianêÂ§a.</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-cluster.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-cluster</h3><p class="text-xs text-neutral-400 mt-1">ClusterizaêÂ§êÂ£o semêÂ¢ntica via overlap de SERP; arquitetura hub-and-spoke.</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-content.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-content</h3><p class="text-xs text-neutral-400 mt-1">Revisor de conteêÂºdo: E-E-A-T, legibilidade, profundidade e thin-content.</p></a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-dataforseo.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-dataforseo</h3><p class="text-xs text-neutral-400 mt-1">Analista de dados DataForSEO: SERP, keywords, backlinks e on-page ao vivo.</p></a>
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-drift.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-drift</h3><p class="text-xs text-neutral-400 mt-1">Captura baselines e compara snapshots para detectar regressÃµes com severidade.</p></a>
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-ecommerce.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-ecommerce</h3><p class="text-xs text-neutral-400 mt-1">SEO de e-commerce: schema de produto, Shopping/Amazon e gaps de preÃ§o.</p></a>
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-flow.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-flow</h3><p class="text-xs text-neutral-400 mt-1">Analista do framework FLOW: aplica prompts da etapa e devolve saÃ­da estruturada.</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-drift.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-drift</h3><p class="text-xs text-neutral-400 mt-1">Captura baselines e compara snapshots para detectar regressêÂµes com severidade.</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-ecommerce.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-ecommerce</h3><p class="text-xs text-neutral-400 mt-1">SEO de e-commerce: schema de produto, Shopping/Amazon e gaps de preêÂ§o.</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-flow.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-flow</h3><p class="text-xs text-neutral-400 mt-1">Analista do framework FLOW: aplica prompts da etapa e devolve saêÂ­da estruturada.</p></a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-geo.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-geo</h3><p class="text-xs text-neutral-400 mt-1">Especialista em busca por IA (GEO): crawler de IA, llms.txt e citabilidade.</p></a>
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-google.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-google</h3><p class="text-xs text-neutral-400 mt-1">Analista das APIs do Google: CWV via CrUX, indexaÃ§Ã£o via GSC, trÃ¡fego via GA4.</p></a>
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-image-gen.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-image-gen</h3><p class="text-xs text-neutral-400 mt-1">Audita imagens OG/sociais e planeja a geraÃ§Ã£o com prompts (nÃ£o gera sozinho).</p></a>
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-local.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-local</h3><p class="text-xs text-neutral-400 mt-1">SEO local: GBP, NAP, citaÃ§Ãµes, reviews, schema local e pÃ¡ginas de localizaÃ§Ã£o.</p></a>
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-maps.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-maps</h3><p class="text-xs text-neutral-400 mt-1">InteligÃªncia de Maps: geo-grid de rank, auditoria de GBP e verificaÃ§Ã£o de NAP.</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-google.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-google</h3><p class="text-xs text-neutral-400 mt-1">Analista das APIs do Google: CWV via CrUX, indexaêÂ§êÂ£o via GSC, trêÂ¡fego via GA4.</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-image-gen.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-image-gen</h3><p class="text-xs text-neutral-400 mt-1">Audita imagens OG/sociais e planeja a geraêÂ§êÂ£o com prompts (nêÂ£o gera sozinho).</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-local.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-local</h3><p class="text-xs text-neutral-400 mt-1">SEO local: GBP, NAP, citaêÂ§êÂµes, reviews, schema local e pêÂ¡ginas de localizaêÂ§êÂ£o.</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-maps.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-maps</h3><p class="text-xs text-neutral-400 mt-1">InteligêÂªncia de Maps: geo-grid de rank, auditoria de GBP e verificaêÂ§êÂ£o de NAP.</p></a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-performance.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-performance</h3><p class="text-xs text-neutral-400 mt-1">Mede e avalia Core Web Vitals e a performance de carregamento.</p></a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-schema.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-schema</h3><p class="text-xs text-neutral-400 mt-1">Expert em schema: detecta, valida e gera Schema.org em JSON-LD.</p></a>
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-sitemap.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-sitemap</h3><p class="text-xs text-neutral-400 mt-1">Arquiteto de sitemap: valida XML, gera novos com templates e impÃµe gates.</p></a>
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-sxo.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-sxo</h3><p class="text-xs text-neutral-400 mt-1">SXO: analisa SERPs ao contrÃ¡rio, detecta mismatch e pontua por persona.</p></a>
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-technical.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-technical</h3><p class="text-xs text-neutral-400 mt-1">Especialista tÃ©cnico: crawl, indexaÃ§Ã£o, seguranÃ§a, URL, mobile, CWV e JS.</p></a>
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-visual.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-visual</h3><p class="text-xs text-neutral-400 mt-1">Analista visual: screenshots, render mobile e anÃ¡lise do above-the-fold (Playwright).</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-sitemap.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-sitemap</h3><p class="text-xs text-neutral-400 mt-1">Arquiteto de sitemap: valida XML, gera novos com templates e impêÂµe gates.</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-sxo.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-sxo</h3><p class="text-xs text-neutral-400 mt-1">SXO: analisa SERPs ao contrêÂ¡rio, detecta mismatch e pontua por persona.</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-technical.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-technical</h3><p class="text-xs text-neutral-400 mt-1">Especialista têÂ©cnico: crawl, indexaêÂ§êÂ£o, seguranêÂ§a, URL, mobile, CWV e JS.</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-4 transition-all block" href="../../biblioteca/agentes/seo/seo-visual.md"><h3 class="font-semibold text-sm group-hover:text-amber-400 transition-colors">seo-visual</h3><p class="text-xs text-neutral-400 mt-1">Analista visual: screenshots, render mobile e anêÂ¡lise do above-the-fold (Playwright).</p></a>
 </div>
 </section>
 <!-- AGENTE OPEN-SOURCE -->
 <section class="mb-4">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<h2 class="text-lg font-bold mb-2">ðŸŒ Agente pessoal open-source</h2>
-<p class="text-sm text-neutral-400 max-w-3xl mb-3">Para um "sistema operacional" de agente pessoal completo e open-source, veja o <strong class="text-amber-400">Hermes</strong> â€” um agente que vocÃª pode rodar e estender por conta prÃ³pria.</p>
-<a class="inline-flex items-center gap-1 text-amber-400 text-sm font-semibold hover:underline" href="https://github.com/NousResearch/hermes-agent" rel="noopener" target="_blank">github.com/NousResearch/hermes-agent â†’</a>
-<a class="mt-4 block text-amber-400 text-sm font-semibold hover:underline" href="../../biblioteca/ATTRIBUTION.md">Ver crÃ©ditos e licenÃ§as completas (ATTRIBUTION.md) â†’</a>
+<h2 class="text-lg font-bold mb-2">ê°Å¸ÅÂ Agente pessoal open-source</h2>
+<p class="text-sm text-neutral-400 max-w-3xl mb-3">Para um "sistema operacional" de agente pessoal completo e open-source, veja o <strong class="text-amber-400">Hermes</strong> ê¢â¬â um agente que vocêÂª pode rodar e estender por conta prêÂ³pria.</p>
+<a class="inline-flex items-center gap-1 text-amber-400 text-sm font-semibold hover:underline" href="https://github.com/NousResearch/hermes-agent" rel="noopener" target="_blank">github.com/NousResearch/hermes-agent ê¢â â</a>
+<a class="mt-4 block text-amber-400 text-sm font-semibold hover:underline" href="../../biblioteca/ATTRIBUTION.md">Ver crêÂ©ditos e licenêÂ§as completas (ATTRIBUTION.md) ê¢â â</a>
 </div>
 </section>
 <!-- NAVEGACAO -->
 <div class="flex flex-col sm:flex-row gap-4 mt-10">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="modulo-4-2.html">â† Skills</a>
-<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="index.html">Voltar Ã  Biblioteca â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="modulo-4-2.html">ê¢â Â Skills</a>
+<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="index.html">Voltar êÂ  Biblioteca ê¢â â</a>
 </div>
 </main>
 <footer class="border-t border-dark-600 py-8 mt-16">
-<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Claude Code na PrÃ¡tica â€” <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p></div>
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Claude Code na PrêÂ¡tica ê¢â¬â <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p></div>
 </footer>
 <script>
     (function(){ var tt=document.getElementById('theme-toggle'); if(!tt) return; var di=document.getElementById('theme-toggle-dark-icon'), li=document.getElementById('theme-toggle-light-icon'), html=document.documentElement;
       function sync(){ if(html.classList.contains('dark')){ li&&li.classList.remove('hidden'); di&&di.classList.add('hidden'); } else { di&&di.classList.remove('hidden'); li&&li.classList.add('hidden'); } }
-      sync(); tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}'); p.theme=dark?'ARCKHÉ-dark':'claro'; localStorage.setItem('ARCKHÉ.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
+      sync(); tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHê.prefs')||'{}'); p.theme=dark?'ARCKHê-dark':'claro'; localStorage.setItem('ARCKHê.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
   </script>
 <script src="../../assets/learn.js"></script>
-<script>if (window.ARCKHÉ && typeof window.ARCKHÉ.init==='function'){ window.ARCKHÉ.init(); }</script>
+<script>if (window.ARCKHê && typeof window.ARCKHê.init==='function'){ window.ARCKHê.init(); }</script>
 </body>
 </html>

@@ -4,29 +4,29 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-na-pratica" name="ARCKHÉ-course"/>
-<title>2.4 Design Systems: interfaces profesionales desde el primer intento | Claude Code na PrÃ¡tica</title>
+<meta content="claude-na-pratica" name="ARCKHê-course"/>
+<title>2.4 Design Systems: interfaces profesionales desde el primer intento | Claude Code na PrêÂ¡tica</title>
 <!-- ANTI-FOUC: bloqueante, SEPARADO, antes do Tailwind/learn.css -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){ var r={}; for (var x in o) r[x]=o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHê-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var THEMES = { 'ARCKHê-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'emerald');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
+      s.setProperty('--ARCKHê-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
       var fam = p.font==='system' ? 'system-ui,-apple-system,"Segoe UI",Roboto,sans-serif' : (p.font==='leitura' ? '"Atkinson Hyperlegible","Inter",system-ui,sans-serif' : '"Inter",system-ui,sans-serif');
       s.setProperty('--font-body', fam);
@@ -43,8 +43,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
-<!-- Manifesto do curso (IDÃŠNTICO em TODA pagina) -->
-<script data-ARCKHÉ-manifest="" type="application/json">
+<!-- Manifesto do curso (IDêÅ NTICO em TODA pagina) -->
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "claude-na-pratica",
     "tracks": [
@@ -79,7 +79,7 @@
     .dark body { background-color: #111827; }
     .topic-explanation { display: none; }
     .topic-explanation.active { display: block; }
-    section[data-ARCKHÉ-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
+    section[data-ARCKHê-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
     .skip { position:absolute; left:-999px; top:0; z-index:100; }
     .skip:focus { left:8px; top:8px; background:#111827; color:#fff; padding:8px 12px; border-radius:8px; }
 
@@ -126,7 +126,7 @@
     }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha2/modulo-2-4.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha2/modulo-2-4.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-2-4.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha2/modulo-2-4.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha2/modulo-2-4.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-2-4.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="skip" href="#conteudo">Saltar al contenido</a>
 <!-- NAV -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -134,20 +134,20 @@
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">âš¡</span>
-<span class="font-bold text-lg hidden sm:inline">Claude Code en la prÃ¡ctica</span>
+<span class="text-2xl">ê¢Å¡Â¡</span>
+<span class="font-bold text-lg hidden sm:inline">Claude Code en la prêÂ¡ctica</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-blue-400 bg-blue-500/10" href="index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Construir</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Operar y ganar</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Biblioteca</span></a>
-<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHÉ-journey-open="" title="Mi recorrido" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden lg:inline">Recorrido</span>
-<span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHê-journey-open="" title="Mi recorrido" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden lg:inline">Recorrido</span>
+<span aria-hidden="true" class="ARCKHê-journey-badge hidden"></span>
 </button>
 <button aria-label="Alternar entre tema claro y oscuro" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle" title="Tema claro/oscuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -158,31 +158,31 @@
 </div>
 </nav>
 <!-- BREADCRUMB -->
-<nav aria-label="Ruta de navegaciÃ³n" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Ruta de navegaciêÂ³n" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
 <a class="hover:text-blue-400" href="../../index.html">Inicio</a>
 <span>/</span>
 <a class="hover:text-blue-400" href="index.html">Construir</a>
 <span>/</span>
-<span class="text-blue-400">MÃ³dulo 2.4</span>
+<span class="text-blue-400">MêÂ³dulo 2.4</span>
 </div>
 </nav>
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 2.4</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸŽ¨ Design Systems: interfaces que parecen profesionales Â«desde el primer momentoÂ»</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">El diseÃ±o se convirtiÃ³ en cÃ³digo. En este mÃ³dulo codificas las reglas del buen diseÃ±o en un sistema reutilizable y usas skills para generar pantallas, marcas y presentaciones que ya nacen con aspecto de producto real.</p>
+<span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MêâDULO 2.4</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸Å½Â¨ Design Systems: interfaces que parecen profesionales êÂ«desde el primer momentoêÂ»</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">El diseêÂ±o se convirtiêÂ³ en cêÂ³digo. En este mêÂ³dulo codificas las reglas del buen diseêÂ±o en un sistema reutilizable y usas skills para generar pantallas, marcas y presentaciones que ya nacen con aspecto de producto real.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">6</div><div class="text-xs text-neutral-400">Temas</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">~55</div><div class="text-xs text-neutral-400">Minutos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Inter.</div><div class="text-xs text-neutral-400">Nivel</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">PrÃ¡ctica</div><div class="text-xs text-neutral-400">Tipo</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">PrêÂ¡ctica</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 <!-- Medidor de progresso do modulo -->
 <div class="mt-6 max-w-2xl">
-<div aria-label="Progreso del mÃ³dulo 2.4" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter" data-ARCKHÉ-meter="modulo:2-4" role="progressbar">
-<span class="ARCKHÉ-meter-pct" data-ARCKHÉ-meter-pct="">0%</span> <span class="ARCKHÉ-meter-count text-neutral-400 text-sm" data-ARCKHÉ-meter-frac="">0 de 6</span>
+<div aria-label="Progreso del mêÂ³dulo 2.4" aria-valuemax="100" aria-valuemin="0" class="ARCKHê-meter" data-ARCKHê-meter="modulo:2-4" role="progressbar">
+<span class="ARCKHê-meter-pct" data-ARCKHê-meter-pct="">0%</span> <span class="ARCKHê-meter-count text-neutral-400 text-sm" data-ARCKHê-meter-frac="">0 de 6</span>
 </div>
 </div>
 </div>
@@ -190,21 +190,21 @@
 <!-- CONTEUDO + TOC -->
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[220px_1fr] lg:gap-10" id="conteudo">
 <!-- TOC sticky -->
-<nav aria-label="Ãndice de la pÃ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-3">SecciÃ³n <span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">6</span></p>
+<nav aria-label="êÂndice de la pêÂ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-3">SecciêÂ³n <span class="ARCKHê-toc-pos">1</span> de <span class="ARCKHê-toc-total">6</span></p>
 <ul class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-1">1. El diseÃ±o se convirtiÃ³ en cÃ³digo</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-2">2. Codificar el buen diseÃ±o</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-3">3. Skills de diseÃ±o</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-4">4. Extraer identidad</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-5">5. ImÃ¡genes, animaciÃ³n y 3D</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-6">6. Tu sistema de diseÃ±o</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-1">1. El diseêÂ±o se convirtiêÂ³ en cêÂ³digo</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-2">2. Codificar el buen diseêÂ±o</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-3">3. Skills de diseêÂ±o</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-4">4. Extraer identidad</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-5">5. ImêÂ¡genes, animaciêÂ³n y 3D</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-6">6. Tu sistema de diseêÂ±o</a></li>
 </ul>
 </nav>
-<div class="ARCKHÉ-prose">
+<div class="ARCKHê-prose">
 <!-- SVG modelo mental -->
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 mb-10 overflow-hidden">
-<svg aria-label="El diseÃ±o genÃ©rico de IA pasa por un filtro de reglas codificadas (proporciÃ³n, espaciado, contraste, jerarquÃ­a) y se convierte en una pantalla que se entiende de un vistazo en 3 segundos" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
+<svg aria-label="El diseêÂ±o genêÂ©rico de IA pasa por un filtro de reglas codificadas (proporciêÂ³n, espaciado, contraste, jerarquêÂ­a) y se convierte en una pantalla que se entiende de un vistazo en 3 segundos" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
 <defs>
 <lineargradient id="m24-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#60a5fa"></stop><stop offset="1" stop-color="#3b82f6"></stop></lineargradient>
 <filter height="180%" id="m24-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -223,149 +223,149 @@
 <rect fill="#0e1b26" height="104" rx="14" stroke="#38bdf8" stroke-width="2" width="216" x="392" y="58"></rect>
 <text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="500" y="80">Flujo de reglas</text>
 <g fill="#9ad6ff" font-family="Inter,sans-serif" font-size="11">
-<text text-anchor="middle" x="500" y="102">âŸ¡ proporciÃ³n Â· â–¦ espaciado</text>
-<text text-anchor="middle" x="500" y="120">â— contraste Â· â˜° jerarquÃ­a</text>
-<text text-anchor="middle" x="500" y="138">â£ espacio en blanco generoso</text>
+<text text-anchor="middle" x="500" y="102">ê¢Å¸Â¡ proporciêÂ³n êÂ· ê¢âÂ¦ espaciado</text>
+<text text-anchor="middle" x="500" y="120">ê¢âÂ contraste êÂ· ê¢ËÂ° jerarquêÂ­a</text>
+<text text-anchor="middle" x="500" y="138">ê¢ÂÂ£ espacio en blanco generoso</text>
 </g>
 <!-- seta para a tela -->
 <path d="M608,110 L786,110" fill="none" marker-end="url(#m24-ahc)" opacity="0.7" stroke="#60a5fa" stroke-width="2"></path>
-<!-- tela glanceÃ¡vel -->
+<!-- tela glanceêÂ¡vel -->
 <g filter="url(#m24-glow)"><rect fill="#0e1622" height="120" rx="14" stroke="#60a5fa" stroke-width="2.5" width="172" x="792" y="50"></rect></g>
 <g class="wf-a"><rect fill="#3b82f6" height="14" opacity="0.85" rx="4" width="120" x="812" y="68"></rect></g>
 <g class="wf-a"><rect fill="#60a5fa" height="8" opacity="0.6" rx="3" width="78" x="812" y="92"></rect></g>
 <g class="wf-a"><rect fill="#0e1b26" height="22" rx="7" stroke="#38bdf8" stroke-width="1.6" width="64" x="812" y="120"></rect></g>
-<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="878" y="160">se entiende de un vistazo en 3s âœ“</text>
-<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="500" y="200">del gusto a la regla: el buen diseÃ±o se convierte en un sistema que la IA reproduce</text>
+<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="878" y="160">se entiende de un vistazo en 3s ê¢Åâ</text>
+<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="500" y="200">del gusto a la regla: el buen diseêÂ±o se convierte en un sistema que la IA reproduce</text>
 </svg>
 </div>
 <h2 class="text-2xl font-bold mb-6">Contenido detallado</h2>
 <!-- TOPICO 1 -->
-<section class="mb-16" data-ARCKHÉ-module="2-4" data-ARCKHÉ-topic="modulo-2-4#topico-1" data-ARCKHÉ-track="2" id="topico-1">
+<section class="mb-16" data-ARCKHê-module="2-4" data-ARCKHê-topic="modulo-2-4#topico-1" data-ARCKHê-track="2" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">1</span>
-<h2 class="text-2xl font-bold">ðŸ§© El diseÃ±o se convirtiÃ³ en cÃ³digo: el cambio de superficie</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â© El diseêÂ±o se convirtiêÂ³ en cêÂ³digo: el cambio de superficie</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-4-t1-p1">Durante mÃ¡s de 20 aÃ±os, el diseÃ±o vivÃ­a en otra app: dibujabas en un editor y un equipo reconstruÃ­a eso en cÃ³digo, en otro lugar. Hoy, la superficie de diseÃ±o <strong class="text-blue-400">es el propio cÃ³digo</strong>. Lo describes, el agente genera la interfaz directamente en HTML/CSS y tÃº iteras ahÃ­ mismo.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-4-t1-p1">Durante mêÂ¡s de 20 aêÂ±os, el diseêÂ±o vivêÂ­a en otra app: dibujabas en un editor y un equipo reconstruêÂ­a eso en cêÂ³digo, en otro lugar. Hoy, la superficie de diseêÂ±o <strong class="text-blue-400">es el propio cêÂ³digo</strong>. Lo describes, el agente genera la interfaz directamente en HTML/CSS y têÂº iteras ahêÂ­ mismo.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">El reconocimiento de que ahora la interfaz nace en el cÃ³digo y que el agente es quien la diseÃ±a segÃºn lo que describes.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Quien entiende esto deja de tratar el diseÃ±o como una Â«etapa separadaÂ» y empieza a iterar lo visual y el cÃ³digo en el mismo lugar â€” mucho mÃ¡s rÃ¡pido.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Superficie de diseÃ±o = cÃ³digo Â· iteraciÃ³n en el mismo entorno Â· diseÃ±o como sistema, no como acto aislado.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">El reconocimiento de que ahora la interfaz nace en el cêÂ³digo y que el agente es quien la diseêÂ±a segêÂºn lo que describes.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Quien entiende esto deja de tratar el diseêÂ±o como una êÂ«etapa separadaêÂ» y empieza a iterar lo visual y el cêÂ³digo en el mismo lugar ê¢â¬â mucho mêÂ¡s rêÂ¡pido.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Superficie de diseêÂ±o = cêÂ³digo êÂ· iteraciêÂ³n en el mismo entorno êÂ· diseêÂ±o como sistema, no como acto aislado.</p></div>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ðŸ”</span> DÃ³nde vive el diseÃ±o â€” antes y ahora</h3>
+<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ</span> DêÂ³nde vive el diseêÂ±o ê¢â¬â antes y ahora</h3>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>Antes: diseÃ±o en la app de prototipos â†’ ingenierÃ­a lo reconstruye en cÃ³digo â†’ dos fuentes de verdad.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>Ahora: describes en Claude Code â†’ genera HTML/CSS â†’ lo ajustas al instante, en el mismo lugar.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>El ciclo "diseÃ±ar â†’ entregar â†’ reconstruir" se convirtiÃ³ en un Ãºnico ciclo de conversaciÃ³n.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span>Antes: diseêÂ±o en la app de prototipos ê¢â â ingenierêÂ­a lo reconstruye en cêÂ³digo ê¢â â dos fuentes de verdad.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span>Ahora: describes en Claude Code ê¢â â genera HTML/CSS ê¢â â lo ajustas al instante, en el mismo lugar.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span>El ciclo "diseêÂ±ar ê¢â â entregar ê¢â â reconstruir" se convirtiêÂ³ en un êÂºnico ciclo de conversaciêÂ³n.</span></li>
 </ul>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âš ï¸</span> El talÃ³n de Aquiles</h3>
-<p class="text-neutral-300 text-sm">La IA, por defecto, es <strong>deficiente en diseÃ±o</strong>. No "siente" quÃ© es bonito ni sabe <em>por quÃ©</em> una buena pantalla es buena. Si solo pides Â«hazlo bonitoÂ», recibes el visual genÃ©rico de siempre. El resto del mÃ³dulo resuelve exactamente eso.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê¢Å¡Â ê¯Â¸Â</span> El talêÂ³n de Aquiles</h3>
+<p class="text-neutral-300 text-sm">La IA, por defecto, es <strong>deficiente en diseêÂ±o</strong>. No "siente" quêÂ© es bonito ni sabe <em>por quêÂ©</em> una buena pantalla es buena. Si solo pides êÂ«hazlo bonitoêÂ», recibes el visual genêÂ©rico de siempre. El resto del mêÂ³dulo resuelve exactamente eso.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-ARCKHÉ-module="2-4" data-ARCKHÉ-topic="modulo-2-4#topico-2" data-ARCKHÉ-track="2" id="topico-2">
+<section class="mb-16" data-ARCKHê-module="2-4" data-ARCKHê-topic="modulo-2-4#topico-2" data-ARCKHê-track="2" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">2</span>
-<h2 class="text-2xl font-bold">ðŸŽ¯ Codificar el Â«buen diseÃ±oÂ» â€” la idea que lo desbloquea todo</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Å½Â¯ Codificar el êÂ«buen diseêÂ±oêÂ» ê¢â¬â la idea que lo desbloquea todo</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-4-t2-p1">El giro del mÃ³dulo cabe en una frase: <strong class="text-blue-400">si codificamos quÃ© es un buen diseÃ±o, la IA lo reproduce de forma confiable</strong>. El buen diseÃ±o tiene reglas: proporciÃ³n, espaciado, contraste, jerarquÃ­a. Cuando se convierten en un archivo que el agente lee y sigue, la calidad deja de ser cuestiÃ³n de suerte y pasa a ser un sistema.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-4-t2-p1">El giro del mêÂ³dulo cabe en una frase: <strong class="text-blue-400">si codificamos quêÂ© es un buen diseêÂ±o, la IA lo reproduce de forma confiable</strong>. El buen diseêÂ±o tiene reglas: proporciêÂ³n, espaciado, contraste, jerarquêÂ­a. Cuando se convierten en un archivo que el agente lee y sigue, la calidad deja de ser cuestiêÂ³n de suerte y pasa a ser un sistema.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Escribir, en un archivo que el agente lee, las reglas objetivas que hacen que una pantalla sea buena.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Es lo que diferencia una Â«pÃ¡gina genÃ©rica de IAÂ» de Â«esto parece un producto de verdadÂ».</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Carga cognitiva (se lee en ~3 s) Â· espacio en blanco Â· proporciÃ³n entre textos Â· espacios iguales Â· nada pegado a los bordes.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Escribir, en un archivo que el agente lee, las reglas objetivas que hacen que una pantalla sea buena.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Es lo que diferencia una êÂ«pêÂ¡gina genêÂ©rica de IAêÂ» de êÂ«esto parece un producto de verdadêÂ».</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Carga cognitiva (se lee en ~3 s) êÂ· espacio en blanco êÂ· proporciêÂ³n entre textos êÂ· espacios iguales êÂ· nada pegado a los bordes.</p></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
-<h4 class="font-bold text-blue-400 mb-4">âœ“ Las reglas que hacen que Â«parezca profesionalÂ»</h4>
+<h4 class="font-bold text-blue-400 mb-4">ê¢Åâ Las reglas que hacen que êÂ«parezca profesionalêÂ»</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Se puede captar de un vistazo en ~3 s (sistema 1, no sistema 2).</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Mucho espacio en blanco y espacios iguales entre los elementos.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>ProporciÃ³n consistente entre tamaÃ±os de texto (jerarquÃ­a).</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Espacio para respirar: nada pegado a los bordes.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢Åâ</span><span>Se puede captar de un vistazo en ~3 s (sistema 1, no sistema 2).</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢Åâ</span><span>Mucho espacio en blanco y espacios iguales entre los elementos.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢Åâ</span><span>ProporciêÂ³n consistente entre tamaêÂ±os de texto (jerarquêÂ­a).</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢Åâ</span><span>Espacio para respirar: nada pegado a los bordes.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— Lo que Â«delataÂ» la falta de profesionalismo</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ Lo que êÂ«delataêÂ» la falta de profesionalismo</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Demasiado texto: desaparece la lectura de 3 s.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Elementos pegados al borde de la pantalla.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Espacios desiguales y tamaÃ±os de fuente aleatorios.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>"Hazlo bonito" sin ninguna regla cargada.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Demasiado texto: desaparece la lectura de 3 s.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Elementos pegados al borde de la pantalla.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Espacios desiguales y tamaêÂ±os de fuente aleatorios.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>"Hazlo bonito" sin ninguna regla cargada.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ“</span> La proporciÃ³n Ã¡urea como atajo</h3>
-<p class="text-neutral-300 text-sm">Los sitios de "nivel Apple" no son bonitos por casualidad: la proporciÃ³n entre tamaÃ±os de texto, los espacios uniformes y el margen de respiraciÃ³n siguen una proporciÃ³n (~1,618). Y la IA es un <strong>pasante con un CI de 500</strong>: es capaz, pero sin la guÃ­a adecuada Â«se come los crayonesÂ». Dale la guÃ­a y entregarÃ¡ un trabajo de nivel sÃ©nior.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ</span> La proporciêÂ³n êÂ¡urea como atajo</h3>
+<p class="text-neutral-300 text-sm">Los sitios de "nivel Apple" no son bonitos por casualidad: la proporciêÂ³n entre tamaêÂ±os de texto, los espacios uniformes y el margen de respiraciêÂ³n siguen una proporciêÂ³n (~1,618). Y la IA es un <strong>pasante con un CI de 500</strong>: es capaz, pero sin la guêÂ­a adecuada êÂ«se come los crayonesêÂ». Dale la guêÂ­a y entregarêÂ¡ un trabajo de nivel sêÂ©nior.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-ARCKHÉ-module="2-4" data-ARCKHÉ-topic="modulo-2-4#topico-3" data-ARCKHÉ-track="2" id="topico-3">
+<section class="mb-16" data-ARCKHê-module="2-4" data-ARCKHê-topic="modulo-2-4#topico-3" data-ARCKHê-track="2" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">3</span>
-<h2 class="text-2xl font-bold">ðŸ–¼ï¸ Skills de diseÃ±o â€” open-design y power-design</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ¼ê¯Â¸Â Skills de diseêÂ±o ê¢â¬â open-design y power-design</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-4-t3-p1">Un buen diseÃ±ador tiene <strong class="text-blue-400">muchos colores en el pincel</strong>. AquÃ­ tus "colores" son las skills. Dos forman los cimientos: <strong class="text-blue-400">open-design</strong> (un estudio local para crear sistemas de marca) y <strong class="text-blue-400">power-design</strong> (reglas universales que el agente carga antes de crear diapositivas y pantallas).</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-4-t3-p1">Un buen diseêÂ±ador tiene <strong class="text-blue-400">muchos colores en el pincel</strong>. AquêÂ­ tus "colores" son las skills. Dos forman los cimientos: <strong class="text-blue-400">open-design</strong> (un estudio local para crear sistemas de marca) y <strong class="text-blue-400">power-design</strong> (reglas universales que el agente carga antes de crear diapositivas y pantallas).</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">open-design = UI local de cÃ³digo abierto con ejemplos listos y soporte para varios modelos. power-design = repositorio de reglas (carga cognitiva, espacio en blanco, proporciÃ³n, jerarquÃ­a).</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">open-design aporta versatilidad y coherencia de marca; power-design ofrece presentaciones y pantallas de Â«nivel AppleÂ» sin que seas diseÃ±ador.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">UI local Â· sistemas de diseÃ±o Â· elecciÃ³n del agente de cÃ³digo Â· ~3 s para entender Â· ~10 palabras por pantalla como lÃ­mite.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">open-design = UI local de cêÂ³digo abierto con ejemplos listos y soporte para varios modelos. power-design = repositorio de reglas (carga cognitiva, espacio en blanco, proporciêÂ³n, jerarquêÂ­a).</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">open-design aporta versatilidad y coherencia de marca; power-design ofrece presentaciones y pantallas de êÂ«nivel AppleêÂ» sin que seas diseêÂ±ador.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">UI local êÂ· sistemas de diseêÂ±o êÂ· elecciêÂ³n del agente de cêÂ³digo êÂ· ~3 s para entender êÂ· ~10 palabras por pantalla como lêÂ­mite.</p></div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
-<h3 class="text-lg font-semibold mb-4 flex items-center"><span class="mr-2">ðŸªœ</span> Paso a paso â€” open-design (estudio local)</h3>
+<h3 class="text-lg font-semibold mb-4 flex items-center"><span class="mr-2">ê°Å¸ÂªÅ</span> Paso a paso ê¢â¬â open-design (estudio local)</h3>
 <ol class="space-y-3 text-neutral-300 text-sm list-decimal list-inside">
 <li>En Claude Code, pide que <strong>clonar el repositorio</strong> del open-design y abrir el proyecto.</li>
-<li>Pide que <strong>instalar dependencias y ejecutar</strong> la aplicaciÃ³n (abre su propia interfaz).</li>
-<li>En la UI, <strong>elige tu agente</strong> de cÃ³digo (p. ej., Claude Code) y completa la configuraciÃ³n.</li>
-<li>Usa un <strong>ejemplo de la galerÃ­a</strong> (dashboard, kanban) como base y crea tu sistema de diseÃ±o.</li>
+<li>Pide que <strong>instalar dependencias y ejecutar</strong> la aplicaciêÂ³n (abre su propia interfaz).</li>
+<li>En la UI, <strong>elige tu agente</strong> de cêÂ³digo (p. ej., Claude Code) y completa la configuraciêÂ³n.</li>
+<li>Usa un <strong>ejemplo de la galerêÂ­a</strong> (dashboard, kanban) como base y crea tu sistema de diseêÂ±o.</li>
 </ol>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
 <p class="text-sm text-neutral-400 mb-2">Cargar power-design antes de construir</p>
-<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Clone o repositÃ³rio do power-design, instale e estude todas as regras de design.
-Antes de construir qualquer tela, aplique: cognitive load baixo (legÃ­vel em ~3 s),
-white space generoso, nada encostando nas bordas e proporÃ§Ã£o consistente entre tamanhos de texto.</pre>
+<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Clone o repositêÂ³rio do power-design, instale e estude todas as regras de design.
+Antes de construir qualquer tela, aplique: cognitive load baixo (legêÂ­vel em ~3 s),
+white space generoso, nada encostando nas bordas e proporêÂ§êÂ£o consistente entre tamanhos de texto.</pre>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-ARCKHÉ-module="2-4" data-ARCKHÉ-topic="modulo-2-4#topico-4" data-ARCKHÉ-track="2" id="topico-4">
+<section class="mb-16" data-ARCKHê-module="2-4" data-ARCKHê-topic="modulo-2-4#topico-4" data-ARCKHê-track="2" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">4</span>
-<h2 class="text-2xl font-bold">ðŸ” Extraer la identidad visual â€” design-language-skill</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ Extraer la identidad visual ê¢â¬â design-language-skill</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-4-t4-p1">El corazÃ³n del mÃ³dulo: <strong class="text-blue-400">extraer, no copiar</strong>. SeÃ±alas una referencia que admiras y la design-language-skill genera un <em>blueprint</em> â€” paleta, fuentes, escala, espaciado, scaffold de layout: para volver a aplicarlos en tu proyecto, con identidad propia.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-4-t4-p1">El corazêÂ³n del mêÂ³dulo: <strong class="text-blue-400">extraer, no copiar</strong>. SeêÂ±alas una referencia que admiras y la design-language-skill genera un <em>blueprint</em> ê¢â¬â paleta, fuentes, escala, espaciado, scaffold de layout: para volver a aplicarlos en tu proyecto, con identidad propia.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Una skill que, a partir de un sitio/captura de pantalla, genera un blueprint de diseÃ±o (colores, fuentes, escala, espaciado, diseÃ±o).</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Es el atajo para que tu proyecto tenga Â«la vibraÂ» de excelentes referencias. <strong>ExtracciÃ³n â‰  copia</strong>: capturas el <em>por quÃ©</em>, no el cÃ³digo ajeno.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">ExtracciÃ³n de marca Â· blueprint/tokens de diseÃ±o Â· scaffold de layout Â· mÃºltiples ejes (color, tipografÃ­a, espaciado, ritmo).</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Una skill que, a partir de un sitio/captura de pantalla, genera un blueprint de diseêÂ±o (colores, fuentes, escala, espaciado, diseêÂ±o).</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Es el atajo para que tu proyecto tenga êÂ«la vibraêÂ» de excelentes referencias. <strong>ExtracciêÂ³n ê¢â°Â  copia</strong>: capturas el <em>por quêÂ©</em>, no el cêÂ³digo ajeno.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">ExtracciêÂ³n de marca êÂ· blueprint/tokens de diseêÂ±o êÂ· scaffold de layout êÂ· mêÂºltiples ejes (color, tipografêÂ­a, espaciado, ritmo).</p></div>
 </div>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Indica la referencia</h4><p class="text-neutral-300 text-sm">Instala la skill y dile al agente cuÃ¡l es el sitio de referencia y a quÃ© se dedica tu negocio.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Indica la referencia</h4><p class="text-neutral-300 text-sm">Instala la skill y dile al agente cuêÂ¡l es el sitio de referencia y a quêÂ© se dedica tu negocio.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">2</span></div>
@@ -373,184 +373,184 @@ white space generoso, nada encostando nas bordas e proporÃ§Ã£o consistente e
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Construye e itera</h4><p class="text-neutral-300 text-sm">Pide la pantalla aplicando el blueprint y refÃ­nala con comentarios breves: "mÃ¡s espacio aquÃ­", "logo en la esquina inferior izquierda".</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Construye e itera</h4><p class="text-neutral-300 text-sm">Pide la pantalla aplicando el blueprint y refêÂ­nala con comentarios breves: "mêÂ¡s espacio aquêÂ­", "logo en la esquina inferior izquierda".</p></div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸš«</span> La lÃ­nea roja</h3>
-<p class="text-neutral-300 text-sm">Intentar reproducir el <strong>cÃ³digo</strong> de la referencia genera desorden y problemas de derechos de autor. Extrae la <em>lenguaje</em> de diseÃ±o (color, fuente, espaciado, ritmo) â€” no el cÃ³digo. Identidad propia, vibra inspirada.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸Å¡Â«</span> La lêÂ­nea roja</h3>
+<p class="text-neutral-300 text-sm">Intentar reproducir el <strong>cêÂ³digo</strong> de la referencia genera desorden y problemas de derechos de autor. Extrae la <em>lenguaje</em> de diseêÂ±o (color, fuente, espaciado, ritmo) ê¢â¬â no el cêÂ³digo. Identidad propia, vibra inspirada.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-ARCKHÉ-module="2-4" data-ARCKHÉ-topic="modulo-2-4#topico-5" data-ARCKHÉ-track="2" id="topico-5">
+<section class="mb-16" data-ARCKHê-module="2-4" data-ARCKHê-topic="modulo-2-4#topico-5" data-ARCKHê-track="2" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">5</span>
-<h2 class="text-2xl font-bold">ðŸŽ¬ ImÃ¡genes con IA, animaciÃ³n y 3D â€” el acabado</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Å½Â¬ ImêÂ¡genes con IA, animaciêÂ³n y 3D ê¢â¬â el acabado</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-4-t5-p1">Con la base lista, lo visual lo eleva todo: imÃ¡genes con IA (incluso con <strong class="text-blue-400">texto en la imagen</strong>) para hÃ©roes y recursos de marca, ademÃ¡s de loops sutiles y elementos 3D que aportan refinamiento. AtenciÃ³n: esto es <strong class="text-blue-400">acabado, no cimientos</strong> â€” viene al final.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-4-t5-p1">Con la base lista, lo visual lo eleva todo: imêÂ¡genes con IA (incluso con <strong class="text-blue-400">texto en la imagen</strong>) para hêÂ©roes y recursos de marca, ademêÂ¡s de loops sutiles y elementos 3D que aportan refinamiento. AtenciêÂ³n: esto es <strong class="text-blue-400">acabado, no cimientos</strong> ê¢â¬â viene al final.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">GeneraciÃ³n y ediciÃ³n de imÃ¡genes con IA para ilustrar pantallas, y animaciones de fondo + recursos 3D que aÃ±aden profundidad.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">La imagen adecuada eleva cualquier interfaz, y generar 20 variaciones con el mismo estilo ahorra horas.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Referencia de estilo Â· ediciÃ³n guiada para Â«encajarÂ» en el fondo Â· lote consistente Â· fotograma inicial = fotograma final Â· preferir 4K Â· 3D como refinamiento.</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">GeneraciêÂ³n y ediciêÂ³n de imêÂ¡genes con IA para ilustrar pantallas, y animaciones de fondo + recursos 3D que aêÂ±aden profundidad.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">La imagen adecuada eleva cualquier interfaz, y generar 20 variaciones con el mismo estilo ahorra horas.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Referencia de estilo êÂ· ediciêÂ³n guiada para êÂ«encajarêÂ» en el fondo êÂ· lote consistente êÂ· fotograma inicial = fotograma final êÂ· preferir 4K êÂ· 3D como refinamiento.</p></div>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ðŸ–Œï¸</span> Flujo prÃ¡ctico de lo visual</h3>
+<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ê°Å¸âÅê¯Â¸Â</span> Flujo prêÂ¡ctico de lo visual</h3>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span><strong>Imagen:</strong> genera la base describiendo el estilo; si no contrasta con el fondo, pÃ­dele al agente que <em>escribir un prompt de ediciÃ³n</em> (posiciÃ³n, contraste, encuadre) y ajusta.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span><strong>Lote:</strong> usa una imagen como referencia y genera 20 variaciones coherentes (misma paleta, iluminaciÃ³n y lenguaje).</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span><strong>Ciclo:</strong> garantiza el mismo cuadro inicial y final; genera varias veces hasta que la uniÃ³n quede limpia.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span><strong>3D:</strong> los assets (p. ej., vÃ­a Spline) se incorporan como detalle de acabado, validados en alta resoluciÃ³n.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span><strong>Imagen:</strong> genera la base describiendo el estilo; si no contrasta con el fondo, pêÂ­dele al agente que <em>escribir un prompt de ediciêÂ³n</em> (posiciêÂ³n, contraste, encuadre) y ajusta.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span><strong>Lote:</strong> usa una imagen como referencia y genera 20 variaciones coherentes (misma paleta, iluminaciêÂ³n y lenguaje).</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span><strong>Ciclo:</strong> garantiza el mismo cuadro inicial y final; genera varias veces hasta que la uniêÂ³n quede limpia.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span><strong>3D:</strong> los assets (p. ej., vêÂ­a Spline) se incorporan como detalle de acabado, validados en alta resoluciêÂ³n.</span></li>
 </ul>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
 <p class="text-sm text-neutral-400 mb-2">Generar una imagen principal al estilo de la marca</p>
-<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Genera una imagen principal al estilo de esta marca: [paleta y descripciÃ³n].
-Si no contrasta con el fondo, escribe un prompt de ediciÃ³n para ajustar el contraste y la posiciÃ³n,
+<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Genera una imagen principal al estilo de esta marca: [paleta y descripciêÂ³n].
+Si no contrasta con el fondo, escribe un prompt de ediciêÂ³n para ajustar el contraste y la posiciêÂ³n,
 de modo que la imagen encaje perfectamente con el fondo del sitio.</pre>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-ARCKHÉ-module="2-4" data-ARCKHÉ-topic="modulo-2-4#topico-6" data-ARCKHÉ-track="2" id="topico-6">
+<section class="mb-16" data-ARCKHê-module="2-4" data-ARCKHê-topic="modulo-2-4#topico-6" data-ARCKHê-track="2" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">6</span>
-<h2 class="text-2xl font-bold">ðŸ§± Tu sistema de diseÃ±o reutilizable</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â± Tu sistema de diseêÂ±o reutilizable</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-4-t6-p1">Todo converge aquÃ­. Piensa en <strong class="text-blue-400">piezas de Lego universales</strong>: el espaciado, las fuentes, las proporciones y los colores son bloques estandarizados. ConsolÃ­dalos en un sistema de diseÃ±o <strong class="text-blue-400">tu</strong> â€” tokens, marca, componentes, que el agente reutiliza en cada proyecto.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-4-t6-p1">Todo converge aquêÂ­. Piensa en <strong class="text-blue-400">piezas de Lego universales</strong>: el espaciado, las fuentes, las proporciones y los colores son bloques estandarizados. ConsolêÂ­dalos en un sistema de diseêÂ±o <strong class="text-blue-400">tu</strong> ê¢â¬â tokens, marca, componentes, que el agente reutiliza en cada proyecto.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Consolidar la paleta, la tipografÃ­a, el espaciado, los componentes y las reglas en un sistema de diseÃ±o reutilizable.</p></div>
-<div><span class="text-blue-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">La consistencia se vuelve la norma. Dejas de volver a decidir los colores y las fuentes en cada pantalla.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Design tokens Â· biblioteca de componentes Â· brand kit Â· reutilizaciÃ³n entre proyectos Â· paleta por significado (azul = confianza/datos).</p></div>
+<div><span class="text-blue-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Consolidar la paleta, la tipografêÂ­a, el espaciado, los componentes y las reglas en un sistema de diseêÂ±o reutilizable.</p></div>
+<div><span class="text-blue-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">La consistencia se vuelve la norma. Dejas de volver a decidir los colores y las fuentes en cada pantalla.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Design tokens êÂ· biblioteca de componentes êÂ· brand kit êÂ· reutilizaciêÂ³n entre proyectos êÂ· paleta por significado (azul = confianza/datos).</p></div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
-<h3 class="text-lg font-semibold mb-4 flex items-center"><span class="mr-2">ðŸªœ</span> Paso a paso â€” consolidar el sistema</h3>
+<h3 class="text-lg font-semibold mb-4 flex items-center"><span class="mr-2">ê°Å¸ÂªÅ</span> Paso a paso ê¢â¬â consolidar el sistema</h3>
 <ol class="space-y-3 text-neutral-300 text-sm list-decimal list-inside">
-<li>Define <strong>paleta</strong> (usa una plataforma de paletas como referencia) y <strong>tipografÃ­a</strong>.</li>
+<li>Define <strong>paleta</strong> (usa una plataforma de paletas como referencia) y <strong>tipografêÂ­a</strong>.</li>
 <li>Registra <strong>tokens y reglas</strong> en un archivo que el agente pueda leer en cualquier proyecto.</li>
 <li>Con cada nueva pantalla, <strong>haz referencia a este design system</strong> para mantener la coherencia.</li>
 </ol>
 </div>
 <details class="bg-dark-800 border border-dark-600 rounded-xl p-5 mb-6">
-<summary class="cursor-pointer font-semibold text-blue-400">Profundiza (opcional): por quÃ© elegir el color segÃºn su significado</summary>
-<p class="text-neutral-300 text-sm mt-3">El color no es solo estÃ©tica: es mensaje. El azul transmite confianza y densidad de datos; por eso muchos dashboards y productos SaaS son azules. Elegir la paleta segÃºn el significado de tu negocio (y no segÃºn el gusto del dÃ­a) es lo que hace que el sistema perdure entre proyectos.</p>
+<summary class="cursor-pointer font-semibold text-blue-400">Profundiza (opcional): por quêÂ© elegir el color segêÂºn su significado</summary>
+<p class="text-neutral-300 text-sm mt-3">El color no es solo estêÂ©tica: es mensaje. El azul transmite confianza y densidad de datos; por eso muchos dashboards y productos SaaS son azules. Elegir la paleta segêÂºn el significado de tu negocio (y no segêÂºn el gusto del dêÂ­a) es lo que hace que el sistema perdure entre proyectos.</p>
 </details>
 <!-- Checagem leve opcional -->
-<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-2-4#q1">
-<p class="font-medium mb-4">AutoevaluaciÃ³n (opcional): Â¿por quÃ© codificar reglas de diseÃ±o mejora el resultado de la IA?</p>
-<div class="ARCKHÉ-check-options space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">Porque la IA "siente" la belleza y solo necesita permiso para usarla.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Porque el buen diseÃ±o tiene reglas objetivas; convertidas en un archivo, la IA las reproduce con consistencia.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Porque basta con pedir "hazlo bonito" si lo repites varias veces.</button>
+<div class="ARCKHê-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHê-check="modulo-2-4#q1">
+<p class="font-medium mb-4">AutoevaluaciêÂ³n (opcional): êÂ¿por quêÂ© codificar reglas de diseêÂ±o mejora el resultado de la IA?</p>
+<div class="ARCKHê-check-options space-y-2">
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="0" type="button">Porque la IA "siente" la belleza y solo necesita permiso para usarla.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="1" type="button">Porque el buen diseêÂ±o tiene reglas objetivas; convertidas en un archivo, la IA las reproduce con consistencia.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="2" type="button">Porque basta con pedir "hazlo bonito" si lo repites varias veces.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHê-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- EXEMPLO PRATICO -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">ðŸ› ï¸ Ejemplo prÃ¡ctico guiado</h2>
-<p class="text-neutral-300 text-sm mb-6"><strong>Objetivo:</strong> crear una landing de 1 secciÃ³n (hero) que parezca profesional desde la primera generaciÃ³n, con una identidad extraÃ­da de una referencia y un recurso visual coherente.</p>
+<h2 class="text-2xl font-bold mb-6">ê°Å¸âºÂ ê¯Â¸Â Ejemplo prêÂ¡ctico guiado</h2>
+<p class="text-neutral-300 text-sm mb-6"><strong>Objetivo:</strong> crear una landing de 1 secciêÂ³n (hero) que parezca profesional desde la primera generaciêÂ³n, con una identidad extraêÂ­da de una referencia y un recurso visual coherente.</p>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <ol class="space-y-3 text-neutral-300 text-sm list-decimal list-inside">
-<li><strong>Prepara el terreno.</strong> Abre Claude Code en una carpeta de proyecto vacÃ­a.</li>
-<li><strong>Carga las reglas.</strong> "Clona power-design, instÃ¡lalo y estudia todas las reglas antes de construir."</li>
+<li><strong>Prepara el terreno.</strong> Abre Claude Code en una carpeta de proyecto vacêÂ­a.</li>
+<li><strong>Carga las reglas.</strong> "Clona power-design, instêÂ¡lalo y estudia todas las reglas antes de construir."</li>
 <li><strong>Extrae la identidad.</strong> Con la design-language-skill, indica la referencia y tu tema; recibe el blueprint.</li>
-<li><strong>Construye el hero.</strong> "Crea una landing de 1 secciÃ³n aplicando el blueprint y las reglas de power-design. Propuesta de valor en una frase, mucho espacio en blanco, nada pegado a los bordes."</li>
-<li><strong>Agrega el diseÃ±o visual.</strong> Genera la imagen principal al estilo de la marca; si no contrasta, pide un prompt de ediciÃ³n.</li>
-<li><strong>Refina con comentarios breves.</strong> "Iguala los espacios; proporciÃ³n entre el tÃ­tulo y el subtÃ­tulo; logo en la esquina inferior izquierda."</li>
-<li><strong>Valida los 3 segundos.</strong> Mira la pantalla durante 3 s: Â¿entiendes de quÃ© se trata? Si es asÃ­, pasÃ³ la prueba.</li>
+<li><strong>Construye el hero.</strong> "Crea una landing de 1 secciêÂ³n aplicando el blueprint y las reglas de power-design. Propuesta de valor en una frase, mucho espacio en blanco, nada pegado a los bordes."</li>
+<li><strong>Agrega el diseêÂ±o visual.</strong> Genera la imagen principal al estilo de la marca; si no contrasta, pide un prompt de ediciêÂ³n.</li>
+<li><strong>Refina con comentarios breves.</strong> "Iguala los espacios; proporciêÂ³n entre el têÂ­tulo y el subtêÂ­tulo; logo en la esquina inferior izquierda."</li>
+<li><strong>Valida los 3 segundos.</strong> Mira la pantalla durante 3 s: êÂ¿entiendes de quêÂ© se trata? Si es asêÂ­, pasêÂ³ la prueba.</li>
 </ol>
 <div class="mt-5 bg-blue-900/20 rounded-lg border border-blue-500/30 p-4">
-<p class="text-neutral-300 text-sm"><span class="text-blue-400 font-semibold">Criterio de calidad:</span> jerarquÃ­a clara, espacio en los bordes, propuesta de valor en una frase y coherencia entre texto, color e imagen.</p>
+<p class="text-neutral-300 text-sm"><span class="text-blue-400 font-semibold">Criterio de calidad:</span> jerarquêÂ­a clara, espacio en los bordes, propuesta de valor en una frase y coherencia entre texto, color e imagen.</p>
 </div>
 </div>
 </section>
 <!-- EXERCICIOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âœï¸ Ejercicios</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂê¯Â¸Â Ejercicios</h2>
 <div class="space-y-4">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. Plano de marca <span class="text-xs text-neutral-500">(fÃ¡cil)</span></h3><p class="text-neutral-300 text-sm">Elige un sitio que admires y extrae el blueprint con la design-language-skill. <span class="text-blue-400">Ã‰xito:</span> archivo con color, tipografÃ­a, espaciado y una observaciÃ³n sobre jerarquÃ­a.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Diapositiva fÃ¡cil de leer de un vistazo <span class="text-xs text-neutral-500">(fÃ¡cil)</span></h3><p class="text-neutral-300 text-sm">Con power-design, genera una diapositiva sobre un tema tuyo. <span class="text-blue-400">Ã‰xito:</span> se entiende en ~3 s, mÃ¡x. ~10 palabras, mÃ¡rgenes con espacio visible.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Hero con una imagen coherente <span class="text-xs text-neutral-500">(medio)</span></h3><p class="text-neutral-300 text-sm">Construye un hero de 1 secciÃ³n y agrega una imagen generada por IA con el estilo de la marca. <span class="text-blue-400">Ã‰xito:</span> la imagen contrasta bien y la propuesta de valor estÃ¡ en una frase.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. Bucle sutil <span class="text-xs text-neutral-500">(medio)</span></h3><p class="text-neutral-300 text-sm">Genera una animaciÃ³n de fondo en bucle (start frame = end frame). <span class="text-blue-400">Ã‰xito:</span> sin un "salto" visible en la uniÃ³n y en alta resoluciÃ³n.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. Sistema de diseÃ±o mÃ­nimo <span class="text-xs text-neutral-500">(medio)</span></h3><p class="text-neutral-300 text-sm">Consolida la paleta + la tipografÃ­a + 2 componentes en un archivo y genera una segunda pantalla que lo use como referencia. <span class="text-blue-400">Ã‰xito:</span> las dos pantallas parecen de la misma marca sin redefinir colores ni fuentes.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. Plano de marca <span class="text-xs text-neutral-500">(fêÂ¡cil)</span></h3><p class="text-neutral-300 text-sm">Elige un sitio que admires y extrae el blueprint con la design-language-skill. <span class="text-blue-400">êâ°xito:</span> archivo con color, tipografêÂ­a, espaciado y una observaciêÂ³n sobre jerarquêÂ­a.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Diapositiva fêÂ¡cil de leer de un vistazo <span class="text-xs text-neutral-500">(fêÂ¡cil)</span></h3><p class="text-neutral-300 text-sm">Con power-design, genera una diapositiva sobre un tema tuyo. <span class="text-blue-400">êâ°xito:</span> se entiende en ~3 s, mêÂ¡x. ~10 palabras, mêÂ¡rgenes con espacio visible.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Hero con una imagen coherente <span class="text-xs text-neutral-500">(medio)</span></h3><p class="text-neutral-300 text-sm">Construye un hero de 1 secciêÂ³n y agrega una imagen generada por IA con el estilo de la marca. <span class="text-blue-400">êâ°xito:</span> la imagen contrasta bien y la propuesta de valor estêÂ¡ en una frase.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. Bucle sutil <span class="text-xs text-neutral-500">(medio)</span></h3><p class="text-neutral-300 text-sm">Genera una animaciêÂ³n de fondo en bucle (start frame = end frame). <span class="text-blue-400">êâ°xito:</span> sin un "salto" visible en la uniêÂ³n y en alta resoluciêÂ³n.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. Sistema de diseêÂ±o mêÂ­nimo <span class="text-xs text-neutral-500">(medio)</span></h3><p class="text-neutral-300 text-sm">Consolida la paleta + la tipografêÂ­a + 2 componentes en un archivo y genera una segunda pantalla que lo use como referencia. <span class="text-blue-400">êâ°xito:</span> las dos pantallas parecen de la misma marca sin redefinir colores ni fuentes.</p></div>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âŒ¨ï¸ Prompts listos</h2>
-<p class="text-neutral-300 text-sm mb-6">Ãšsalos como punto de partida. Cuando el canÃ³nico estÃ© en inglÃ©s (para pegarlo en la referencia original), se incluye el original. La base de datos completa estÃ¡ en <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Biblioteca â†’ Prompts</a>.</p>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂ¨ê¯Â¸Â Prompts listos</h2>
+<p class="text-neutral-300 text-sm mb-6">êÅ¡salos como punto de partida. Cuando el canêÂ³nico estêÂ© en inglêÂ©s (para pegarlo en la referencia original), se incluye el original. La base de datos completa estêÂ¡ en <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Biblioteca ê¢â â Prompts</a>.</p>
 <div class="space-y-5">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Cargar y estudiar reglas de diseÃ±o (power-design)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Clone o repositÃ³rio do power-design, instale e estude todas as regras de design.
-Antes de construir qualquer tela, aplique: cognitive load baixo (legÃ­vel em ~3 segundos),
-white space generoso, nada encostando nas bordas e proporÃ§Ã£o consistente entre tamanhos de texto.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Extraer la identidad visual (design-language-skill) â€” canÃ³nico</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Usa la design-language-skill con esta referencia: [URL ou captura de pantalla]
-Mi negocio es: [descripciÃ³n en 1 frase].
-Genera un blueprint de diseÃ±o con paleta, tipografÃ­a, escala de tamaÃ±os, espaciado y un scaffold de layout.
-No copies el cÃ³digo de la referencia: extrae el porquÃ© del diseÃ±o.</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">Extract this website's design identity (palette, typography, scale, spacing, layout scaffold)
-into a reusable blueprint. Do not copy the code â€” capture why the design works,
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Cargar y estudiar reglas de diseêÂ±o (power-design)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Clone o repositêÂ³rio do power-design, instale e estude todas as regras de design.
+Antes de construir qualquer tela, aplique: cognitive load baixo (legêÂ­vel em ~3 segundos),
+white space generoso, nada encostando nas bordas e proporêÂ§êÂ£o consistente entre tamanhos de texto.</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Extraer la identidad visual (design-language-skill) ê¢â¬â canêÂ³nico</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Usa la design-language-skill con esta referencia: [URL ou captura de pantalla]
+Mi negocio es: [descripciêÂ³n en 1 frase].
+Genera un blueprint de diseêÂ±o con paleta, tipografêÂ­a, escala de tamaêÂ±os, espaciado y un scaffold de layout.
+No copies el cêÂ³digo de la referencia: extrae el porquêÂ© del diseêÂ±o.</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">Extract this website's design identity (palette, typography, scale, spacing, layout scaffold)
+into a reusable blueprint. Do not copy the code ê¢â¬â capture why the design works,
 then rebuild a new hero section applying universal design rules (cognitive load, white space, proportion).</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Construir el hero aplicando el blueprint</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Crie uma landing de 1 seÃ§Ã£o (hero) aplicando o blueprint extraÃ­do e as regras do power-design.
-Proposta de valor em uma frase. Pouco texto. Muito respiro. Hierarquia clara entre tÃ­tulo e subtÃ­tulo.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Consolidar el sistema de diseÃ±o reutilizable</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Consolida un sistema de diseÃ±o reutilizable: paleta, tipografÃ­a, espaciado, tokens y componentes base.
-GuÃ¡rdalo en un archivo que puedas leer en cualquier proyecto futuro para mantener la consistencia.</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Construir el hero aplicando el blueprint</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Crie uma landing de 1 seêÂ§êÂ£o (hero) aplicando o blueprint extraêÂ­do e as regras do power-design.
+Proposta de valor em uma frase. Pouco texto. Muito respiro. Hierarquia clara entre têÂ­tulo e subtêÂ­tulo.</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Consolidar el sistema de diseêÂ±o reutilizable</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Consolida un sistema de diseêÂ±o reutilizable: paleta, tipografêÂ­a, espaciado, tokens y componentes base.
+GuêÂ¡rdalo en un archivo que puedas leer en cualquier proyecto futuro para mantener la consistencia.</pre></div>
 </div>
 </section>
 <!-- ERROS COMUNS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âš ï¸ Errores comunes</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢Å¡Â ê¯Â¸Â Errores comunes</h2>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Pedir Â«hazlo bonitoÂ» sin reglas.</strong> Sin un sistema de diseÃ±o cargado, la IA entrega un aspecto genÃ©rico. Siempre referencia las reglas (power-design) y/o un blueprint.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Copiar en vez de extraer.</strong> Reproducir el cÃ³digo de referencia genera desorden. Extrae la <em>lenguaje</em> de diseÃ±o, no el cÃ³digo.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Demasiado texto en pantalla.</strong> Las pantallas profesionales se pueden recorrer de un vistazo. Si las llenas de texto, se rompe la lectura de 3 s. Recorta palabras.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Ignorar los espacios en blanco y los bordes.</strong> Los elementos pegados al borde y los espacios desiguales denotan falta de profesionalismo. Deja suficiente espacio y mantÃ©n los espacios iguales.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Tratar el 3D/la animaciÃ³n como base.</strong> El mayor retorno estÃ¡ en el sistema de diseÃ±o (color, tipografÃ­a, proporciÃ³n). El 3D y los loops son el acabado: dÃ©jalos para el final.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Pedir êÂ«hazlo bonitoêÂ» sin reglas.</strong> Sin un sistema de diseêÂ±o cargado, la IA entrega un aspecto genêÂ©rico. Siempre referencia las reglas (power-design) y/o un blueprint.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Copiar en vez de extraer.</strong> Reproducir el cêÂ³digo de referencia genera desorden. Extrae la <em>lenguaje</em> de diseêÂ±o, no el cêÂ³digo.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Demasiado texto en pantalla.</strong> Las pantallas profesionales se pueden recorrer de un vistazo. Si las llenas de texto, se rompe la lectura de 3 s. Recorta palabras.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Ignorar los espacios en blanco y los bordes.</strong> Los elementos pegados al borde y los espacios desiguales denotan falta de profesionalismo. Deja suficiente espacio y mantêÂ©n los espacios iguales.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Tratar el 3D/la animaciêÂ³n como base.</strong> El mayor retorno estêÂ¡ en el sistema de diseêÂ±o (color, tipografêÂ­a, proporciêÂ³n). El 3D y los loops son el acabado: dêÂ©jalos para el final.</span></li>
 </ul>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-blue-900/40 via-dark-800 to-dark-800 rounded-xl border border-blue-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumen del mÃ³dulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Åâ¦</span> Resumen del mêÂ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong>El diseÃ±o se convirtiÃ³ en cÃ³digo</strong><span class="text-neutral-400"> â€” la interfaz nace en el cÃ³digo y tÃº iteras en el mismo lugar.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong>Codificar el buen diseÃ±o</strong><span class="text-neutral-400"> â€” la proporciÃ³n, el espaciado, el contraste y la jerarquÃ­a se convierten en reglas que la IA reproduce.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong>Skills y extracciÃ³n</strong><span class="text-neutral-400"> â€” open-design, power-design y design-language-skill (extraer â‰  copiar).</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong>Acabado y sistema</strong><span class="text-neutral-400"> â€” imÃ¡genes/animaciÃ³n/3D al final; todo consolidado en un sistema de diseÃ±o reutilizable.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong>El diseêÂ±o se convirtiêÂ³ en cêÂ³digo</strong><span class="text-neutral-400"> ê¢â¬â la interfaz nace en el cêÂ³digo y têÂº iteras en el mismo lugar.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong>Codificar el buen diseêÂ±o</strong><span class="text-neutral-400"> ê¢â¬â la proporciêÂ³n, el espaciado, el contraste y la jerarquêÂ­a se convierten en reglas que la IA reproduce.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong>Skills y extracciêÂ³n</strong><span class="text-neutral-400"> ê¢â¬â open-design, power-design y design-language-skill (extraer ê¢â°Â  copiar).</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong>Acabado y sistema</strong><span class="text-neutral-400"> ê¢â¬â imêÂ¡genes/animaciêÂ³n/3D al final; todo consolidado en un sistema de diseêÂ±o reutilizable.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-blue-400 mb-3">Lista de verificaciÃ³n de finalizaciÃ³n</h3>
+<h3 class="font-semibold text-blue-400 mb-3">Lista de verificaciêÂ³n de finalizaciêÂ³n</h3>
 <ul class="space-y-2 text-sm text-neutral-300">
-<li>â˜ EntendÃ­ que el diseÃ±o se convirtiÃ³ en cÃ³digo y por quÃ© codificar reglas mejora la IA.</li>
-<li>â˜ CarguÃ© un conjunto de reglas de diseÃ±o (power-design) antes de empezar a construir.</li>
-<li>â˜ Extraje un blueprint de una referencia con la design-language-skill (sin copiar cÃ³digo).</li>
-<li>â˜ ConstruÃ­ una pantalla que se entiende de un vistazo en ~3 segundos, con espacio en blanco y bordes respetados.</li>
-<li>â˜ AÃ±adÃ­ una imagen coherente con la marca (contraste y estilo adecuados).</li>
-<li>â˜ ConsolidÃ© un sistema de diseÃ±o reutilizable (tokens, paleta, tipografÃ­a, componentes).</li>
-<li>â˜ GenerÃ© una segunda pantalla reutilizando el design system y manteniendo la coherencia.</li>
+<li>ê¢ËÂ EntendêÂ­ que el diseêÂ±o se convirtiêÂ³ en cêÂ³digo y por quêÂ© codificar reglas mejora la IA.</li>
+<li>ê¢ËÂ CarguêÂ© un conjunto de reglas de diseêÂ±o (power-design) antes de empezar a construir.</li>
+<li>ê¢ËÂ Extraje un blueprint de una referencia con la design-language-skill (sin copiar cêÂ³digo).</li>
+<li>ê¢ËÂ ConstruêÂ­ una pantalla que se entiende de un vistazo en ~3 segundos, con espacio en blanco y bordes respetados.</li>
+<li>ê¢ËÂ AêÂ±adêÂ­ una imagen coherente con la marca (contraste y estilo adecuados).</li>
+<li>ê¢ËÂ ConsolidêÂ© un sistema de diseêÂ±o reutilizable (tokens, paleta, tipografêÂ­a, componentes).</li>
+<li>ê¢ËÂ GenerêÂ© una segunda pantalla reutilizando el design system y manteniendo la coherencia.</li>
 </ul>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
 <h3 class="font-semibold text-blue-400 mb-2">Siguiente ruta:</h3>
-<p class="text-neutral-300">Ruta 3 â€” Operar y Ganar dinero: 3.1 â€” Agente personal siempre activo. Terminas la Ruta 2 sabiendo construir con calidad; ahora es momento de operar y monetizar.</p>
+<p class="text-neutral-300">Ruta 3 ê¢â¬â Operar y Ganar dinero: 3.1 ê¢â¬â Agente personal siempre activo. Terminas la Ruta 2 sabiendo construir con calidad; ahora es momento de operar y monetizar.</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Volver a la ruta</a>
-<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="../trilha3/modulo-3-1.html">Siguiente ruta â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Volver a la ruta</a>
+<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="../trilha3/modulo-3-1.html">Siguiente ruta ê¢â â</a>
 </div>
 </div>
 </section>
@@ -559,7 +559,7 @@ GuÃ¡rdalo en un archivo que puedas leer en cualquier proyecto futuro para mant
 <!-- FOOTER -->
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Claude Code en la prÃ¡ctica â€” <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>Claude Code en la prêÂ¡ctica ê¢â¬â <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <!-- SCRIPTS: nucleo v1 -->
@@ -568,7 +568,7 @@ GuÃ¡rdalo en un archivo que puedas leer en cualquier proyecto futuro para mant
     (function(){ var tt=document.getElementById('theme-toggle'); if(!tt) return; var di=document.getElementById('theme-toggle-dark-icon'), li=document.getElementById('theme-toggle-light-icon'), html=document.documentElement;
       function sync(){ if(html.classList.contains('dark')){ li&&li.classList.remove('hidden'); di&&di.classList.add('hidden'); } else { di&&di.classList.remove('hidden'); li&&li.classList.add('hidden'); } }
       sync();
-      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}'); p.theme=dark?'ARCKHÉ-dark':'claro'; localStorage.setItem('ARCKHÉ.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
+      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHê.prefs')||'{}'); p.theme=dark?'ARCKHê-dark':'claro'; localStorage.setItem('ARCKHê.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
     function openModal(id){ var m=document.getElementById(id); if(m){ m.classList.remove('hidden'); document.body.style.overflow='hidden'; } }
     function closeModal(){ document.querySelectorAll('.modal').forEach(function(m){ m.classList.add('hidden'); }); document.body.style.overflow='auto'; }
     document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
@@ -576,19 +576,19 @@ GuÃ¡rdalo en un archivo que puedas leer en cualquier proyecto futuro para mant
 <!-- Camada de aprendizagem -->
 <script>
     window.addEventListener('DOMContentLoaded', function(){
-      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
-        ARCKHÉ.registerCheck('modulo-2-4#q1', {
+      if (window.ARCKHê && ARCKHê.registerCheck) {
+        ARCKHê.registerCheck('modulo-2-4#q1', {
           answer: 1,
           explain: {
-            0: 'A IA nÃ£o "sente" beleza â€” Ã© justamente por isso que ela precisa das regras escritas.',
-            1: 'Isso! Bom design tem regras objetivas; viradas em arquivo que o agente lÃª, a qualidade vira sistema.',
-            2: '"FaÃ§a bonito" sem regras gera o visual genÃ©rico de sempre, por mais que se repita.'
+            0: 'A IA nêÂ£o "sente" beleza ê¢â¬â êÂ© justamente por isso que ela precisa das regras escritas.',
+            1: 'Isso! Bom design tem regras objetivas; viradas em arquivo que o agente lêÂª, a qualidade vira sistema.',
+            2: '"FaêÂ§a bonito" sem regras gera o visual genêÂ©rico de sempre, por mais que se repita.'
           }
         });
       }
     });
   </script>
 <script src="../../../assets/learn.js"></script>
-<script>if (window.ARCKHÉ && typeof window.ARCKHÉ.init==='function'){ window.ARCKHÉ.init(); }</script>
+<script>if (window.ARCKHê && typeof window.ARCKHê.init==='function'){ window.ARCKHê.init(); }</script>
 </body>
 </html>

@@ -4,28 +4,28 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-na-pratica" name="ARCKHÉ-course"/>
-<title>Banco de Prompts | Biblioteca Â· Claude Code na PrÃ¡tica</title>
+<meta content="claude-na-pratica" name="ARCKHê-course"/>
+<title>Banco de Prompts | Biblioteca êÂ· Claude Code na PrêÂ¡tica</title>
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){ var r={}; for (var x in o) r[x]=o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHê-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var THEMES = { 'ARCKHê-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'emerald');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
+      s.setProperty('--ARCKHê-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
       var fam = p.font==='system' ? 'system-ui,-apple-system,"Segoe UI",Roboto,sans-serif' : (p.font==='leitura' ? '"Atkinson Hyperlegible","Inter",system-ui,sans-serif' : '"Inter",system-ui,sans-serif');
       s.setProperty('--font-body', fam);
@@ -42,7 +42,7 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
-<script data-ARCKHÉ-manifest="" type="application/json">
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "claude-na-pratica",
     "tracks": [
@@ -109,23 +109,23 @@
     .prompt-pre { max-height: 22rem; overflow:auto; }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha4/modulo-4-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha4/modulo-4-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-4-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha4/modulo-4-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha4/modulo-4-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-4-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="skip" href="#conteudo">Saltar al contenido</a>
 <!-- NAV -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
-<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">âš¡</span><span class="font-bold text-lg hidden sm:inline">Claude Code en la prÃ¡ctica</span></a>
+<a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">ê¢Å¡Â¡</span><span class="font-bold text-lg hidden sm:inline">Claude Code en la prêÂ¡ctica</span></a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Construir</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Operar y ganar</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-amber-400 bg-amber-500/10" href="index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Biblioteca</span></a>
-<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHÉ-journey-open="" title="Mi recorrido" type="button"><span aria-hidden="true">â—·</span><span class="hidden lg:inline">Recorrido</span><span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span></button>
+<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHê-journey-open="" title="Mi recorrido" type="button"><span aria-hidden="true">ê¢âÂ·</span><span class="hidden lg:inline">Recorrido</span><span aria-hidden="true" class="ARCKHê-journey-badge hidden"></span></button>
 <button aria-label="Alternar entre tema claro y oscuro" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle" title="Tema claro/oscuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
@@ -136,7 +136,7 @@
 </nav>
 <!-- BREADCRUMB -->
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
-<nav aria-label="Ruta de navegaciÃ³n" class="text-sm text-neutral-500">
+<nav aria-label="Ruta de navegaciêÂ³n" class="text-sm text-neutral-500">
 <a class="hover:text-amber-400" href="../../index.html">Inicio</a>
 <span class="mx-2">/</span>
 <a class="hover:text-amber-400" href="index.html">Biblioteca</a>
@@ -147,24 +147,24 @@
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">BIBLIOTECA Â· CATÃLOGO</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">âŒ¨ï¸ Banco de Prompts</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">48 prompts en portuguÃ©s brasileÃ±o (P01â€“P48), listos para pegar en Claude Code. Donde haya personalizaciÃ³n, cambia los campos <code class="text-amber-400">[ENTRE COLCHETES]</code>. Los marcados <span class="text-amber-400 font-semibold">CANÃ“NICO</span> conservan la redacciÃ³n original. Usa el botÃ³n <strong class="text-amber-400">Copiar</strong> en cada tarjeta.</p>
-<a class="mt-5 inline-flex items-center gap-2 px-4 py-2 bg-amber-600 hover:bg-amber-500 text-white rounded-lg text-sm font-semibold transition-colors" download="" href="../../../biblioteca/prompts/banco-de-prompts.md">â¬‡ Descargar la base de datos completa (.md)</a>
+<span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">BIBLIOTECA êÂ· CATêÂLOGO</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê¢ÅÂ¨ê¯Â¸Â Banco de Prompts</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">48 prompts en portuguêÂ©s brasileêÂ±o (P01ê¢â¬âP48), listos para pegar en Claude Code. Donde haya personalizaciêÂ³n, cambia los campos <code class="text-amber-400">[ENTRE COLCHETES]</code>. Los marcados <span class="text-amber-400 font-semibold">CANêâNICO</span> conservan la redacciêÂ³n original. Usa el botêÂ³n <strong class="text-amber-400">Copiar</strong> en cada tarjeta.</p>
+<a class="mt-5 inline-flex items-center gap-2 px-4 py-2 bg-amber-600 hover:bg-amber-500 text-white rounded-lg text-sm font-semibold transition-colors" download="" href="../../../biblioteca/prompts/banco-de-prompts.md">ê¢Â¬â¡ Descargar la base de datos completa (.md)</a>
 </div>
 </header>
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="conteudo">
 <!-- INDICE DE CATEGORIAS -->
 <section class="mb-12">
-<h2 class="text-2xl font-bold mb-6">CategorÃ­as</h2>
+<h2 class="text-2xl font-bold mb-6">CategorêÂ­as</h2>
 <div class="flex flex-wrap gap-2">
-<a class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-amber-500/10 text-amber-400 hover:bg-amber-500/30 transition-colors" href="#cat-setup">ConfiguraciÃ³n (4)</a>
+<a class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-amber-500/10 text-amber-400 hover:bg-amber-500/30 transition-colors" href="#cat-setup">ConfiguraciêÂ³n (4)</a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-amber-500/10 text-amber-400 hover:bg-amber-500/30 transition-colors" href="#cat-memoria">Memoria (7)</a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-amber-500/10 text-amber-400 hover:bg-amber-500/30 transition-colors" href="#cat-power">Funciones avanzadas (8)</a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-amber-500/10 text-amber-400 hover:bg-amber-500/30 transition-colors" href="#cat-website">Sitio web (8)</a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-amber-500/10 text-amber-400 hover:bg-amber-500/30 transition-colors" href="#cat-apps">Apps (5)</a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-amber-500/10 text-amber-400 hover:bg-amber-500/30 transition-colors" href="#cat-build">Build Anything (4)</a>
-<a class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-amber-500/10 text-amber-400 hover:bg-amber-500/30 transition-colors" href="#cat-design">Sistemas de diseÃ±o (3)</a>
+<a class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-amber-500/10 text-amber-400 hover:bg-amber-500/30 transition-colors" href="#cat-design">Sistemas de diseêÂ±o (3)</a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-amber-500/10 text-amber-400 hover:bg-amber-500/30 transition-colors" href="#cat-agente">Agente personal (3)</a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-amber-500/10 text-amber-400 hover:bg-amber-500/30 transition-colors" href="#cat-compliance">Cumplimiento (4)</a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold bg-amber-500/10 text-amber-400 hover:bg-amber-500/30 transition-colors" href="#cat-os">Panel / OS (2)</a>
@@ -173,293 +173,293 @@
 </section>
 <!-- ===== SETUP ===== -->
 <section class="mb-12" id="cat-setup">
-<h2 class="text-2xl font-bold mb-2">ðŸ›¡ï¸ ConfiguraciÃ³n</h2>
-<p class="text-neutral-400 text-sm mb-6">Fundamentos y primer contacto: instalar, validar, conectar y enseÃ±ar el tono.</p>
+<h2 class="text-2xl font-bold mb-2">ê°Å¸âºÂ¡ê¯Â¸Â ConfiguraciêÂ³n</h2>
+<p class="text-neutral-400 text-sm mb-6">Fundamentos y primer contacto: instalar, validar, conectar y enseêÂ±ar el tono.</p>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P01</span></div>
 <h3 class="font-semibold mb-1">Instalar Claude Code</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> primera instalaciÃ³n en una mÃ¡quina nueva.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Â¡Hola! Quiero que instales Claude Code en mi computadora e instales tambiÃ©n cualquier otra dependencia necesaria para ejecutarlo aquÃ­. Cuando termines, avÃ­same.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> primera instalaciêÂ³n en una mêÂ¡quina nueva.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">êÂ¡Hola! Quiero que instales Claude Code en mi computadora e instales tambiêÂ©n cualquier otra dependencia necesaria para ejecutarlo aquêÂ­. Cuando termines, avêÂ­same.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P02</span></div>
-<h3 class="font-semibold mb-1">Prueba de creaciÃ³n de archivos</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> validar que Claude puede crear carpetas/archivos en tu sistema.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">CrÃ©ame una carpeta llamada "cafe-gelado" en mi escritorio y escribe dos archivos dentro: uno llamado "por-que-cafe-e-otimo" y otro "por-que-cafe-nao-e-otimo".</pre>
+<h3 class="font-semibold mb-1">Prueba de creaciêÂ³n de archivos</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> validar que Claude puede crear carpetas/archivos en tu sistema.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">CrêÂ©ame una carpeta llamada "cafe-gelado" en mi escritorio y escribe dos archivos dentro: uno llamado "por-que-cafe-e-otimo" y otro "por-que-cafe-nao-e-otimo".</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P03</span></div>
-<h3 class="font-semibold mb-1">Conectar/reconectar GitHub vÃ­a CLI</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> cuando se perdiÃ³ la conexiÃ³n con GitHub o nunca se estableciÃ³.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quiero que puedas acceder a mis repositorios de GitHub. ConÃ©ctate a GitHub por CLI y confÃ­rmalo. Si no estÃ¡s conectado, actualiza/restablece la conexiÃ³n, por favor.</pre>
+<h3 class="font-semibold mb-1">Conectar/reconectar GitHub vêÂ­a CLI</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> cuando se perdiêÂ³ la conexiêÂ³n con GitHub o nunca se estableciêÂ³.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quiero que puedas acceder a mis repositorios de GitHub. ConêÂ©ctate a GitHub por CLI y confêÂ­rmalo. Si no estêÂ¡s conectado, actualiza/restablece la conexiêÂ³n, por favor.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P04</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
-<h3 class="font-semibold mb-1">Estilo de comunicaciÃ³n (instrucciones para Claude)</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> configurar cÃ³mo Claude te habla (va en CLAUDE.md / system).</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Tom direto e informal â€” nada de enrolaÃ§Ã£o, nada de "corporativÃªs". Sem bullet points a menos que eu peÃ§a. Sem travessÃµes (entrega de texto de IA). Nunca use palavras de preenchimento como "certamente", "com certeza", "Ã³tima pergunta" ou "fico feliz em ajudar". Mantenha o texto direto e focado em resultado, nÃ£o em features. Antecipe problemas (olhe alÃ©m das curvas), desafie meu raciocÃ­nio, seja NÃƒO-bajulador (nÃ£o concorde com tudo que eu disser) e seja mÃ¡ximo em busca da verdade. Eu sou: [INSERIR 2 FRASES sobre vocÃª/seu trabalho].</pre>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P04</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
+<h3 class="font-semibold mb-1">Estilo de comunicaciêÂ³n (instrucciones para Claude)</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> configurar cêÂ³mo Claude te habla (va en CLAUDE.md / system).</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Tom direto e informal ê¢â¬â nada de enrolaêÂ§êÂ£o, nada de "corporativêÂªs". Sem bullet points a menos que eu peêÂ§a. Sem travessêÂµes (entrega de texto de IA). Nunca use palavras de preenchimento como "certamente", "com certeza", "êÂ³tima pergunta" ou "fico feliz em ajudar". Mantenha o texto direto e focado em resultado, nêÂ£o em features. Antecipe problemas (olhe alêÂ©m das curvas), desafie meu raciocêÂ­nio, seja NêÆO-bajulador (nêÂ£o concorde com tudo que eu disser) e seja mêÂ¡ximo em busca da verdade. Eu sou: [INSERIR 2 FRASES sobre vocêÂª/seu trabalho].</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 </div>
 </section>
 <!-- ===== MEMORIA ===== -->
 <section class="mb-12" id="cat-memoria">
-<h2 class="text-2xl font-bold mb-2">ðŸ§  Memoria</h2>
+<h2 class="text-2xl font-bold mb-2">ê°Å¸Â§Â  Memoria</h2>
 <p class="text-neutral-400 text-sm mb-6">Organizar el contexto en baldes, un CLAUDE.md por proyecto y memoria de largo plazo.</p>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P05</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
-<h3 class="font-semibold mb-1">Organizar la vida en Â«baldesÂ» (buckets)</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> estructurar memoria a corto plazo a partir de todo lo que haces.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Con base en todo lo que sabes sobre mÃ­ y en todo lo que hago, quiero que organices mi vida en seis a ocho categorÃ­as.</pre>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P05</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
+<h3 class="font-semibold mb-1">Organizar la vida en êÂ«baldesêÂ» (buckets)</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> estructurar memoria a corto plazo a partir de todo lo que haces.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Con base en todo lo que sabes sobre mêÂ­ y en todo lo que hago, quiero que organices mi vida en seis a ocho categorêÂ­as.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P06</span></div>
 <h3 class="font-semibold mb-1">Materializar los contenedores en carpetas con CLAUDE.md</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> convertir los baldes en una estructura real de carpetas.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">CrÃ©ame estas seis a ocho carpetas en mi escritorio, cada una con un archivo CLAUDE.md dentro.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> convertir los baldes en una estructura real de carpetas.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">CrêÂ©ame estas seis a ocho carpetas en mi escritorio, cada una con un archivo CLAUDE.md dentro.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P07</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P07</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
 <h3 class="font-semibold mb-1">Completar el CLAUDE.md por proyecto (briefing)</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> documentar el contexto completo de cada carpeta/proyecto.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Adicione um CLAUDE.md em cada uma dessas pastas e depois me faÃ§a perguntas sobre cada projeto, para eu te dar o briefing completo. Para cada projeto capture: o que Ã© a pasta; qual Ã© o objetivo (ex.: "maximizar o valor que cada pessoa recebe, crescer a base"); por que ele existe; o stack; as decisÃµes (ex.: "nada de posts gerados por IA"); um mapa de memÃ³ria; e referÃªncias.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> documentar el contexto completo de cada carpeta/proyecto.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Adicione um CLAUDE.md em cada uma dessas pastas e depois me faêÂ§a perguntas sobre cada projeto, para eu te dar o briefing completo. Para cada projeto capture: o que êÂ© a pasta; qual êÂ© o objetivo (ex.: "maximizar o valor que cada pessoa recebe, crescer a base"); por que ele existe; o stack; as decisêÂµes (ex.: "nada de posts gerados por IA"); um mapa de memêÂ³ria; e referêÂªncias.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P08</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
-<h3 class="font-semibold mb-1">Regla de Â«guardar memoriaÂ» en el CLAUDE.md</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> definir dÃ³nde guardar las conversaciones cuando pidas Â«guardar/wrap upÂ».</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quando eu pedir explicitamente para salvar, guardar, "fechar" (wrap up) ou lembrar a conversa, salve aqui: [INSERIR LOCAL DA PASTA/WIKI]. HaverÃ¡ uma subpasta relevante para o tema â€” escolha a subpasta correta e adicione essa informaÃ§Ã£o nela. (Adicione isto na seÃ§Ã£o de memÃ³ria do CLAUDE.md.)</pre>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P08</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
+<h3 class="font-semibold mb-1">Regla de êÂ«guardar memoriaêÂ» en el CLAUDE.md</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> definir dêÂ³nde guardar las conversaciones cuando pidas êÂ«guardar/wrap upêÂ».</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quando eu pedir explicitamente para salvar, guardar, "fechar" (wrap up) ou lembrar a conversa, salve aqui: [INSERIR LOCAL DA PASTA/WIKI]. HaverêÂ¡ uma subpasta relevante para o tema ê¢â¬â escolha a subpasta correta e adicione essa informaêÂ§êÂ£o nela. (Adicione isto na seêÂ§êÂ£o de memêÂ³ria do CLAUDE.md.)</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P09</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P09</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
 <h3 class="font-semibold mb-1">Skill de cierre para el segundo cerebro</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> al final de cualquier conversaciÃ³n, guardar lo esencial en la wiki correcta.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">EscrÃ­beme una skill de "wrap-up": cuando estÃ© teniendo cualquier conversaciÃ³n con cualquier modelo en mi computadora, debe captar la esencia de esa conversaciÃ³n y guardarla en el wiki pertinente dentro de mi vault de notas. DespuÃ©s, cambia el nombre de la skill a "wrap-up".</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> al final de cualquier conversaciêÂ³n, guardar lo esencial en la wiki correcta.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">EscrêÂ­beme una skill de "wrap-up": cuando estêÂ© teniendo cualquier conversaciêÂ³n con cualquier modelo en mi computadora, debe captar la esencia de esa conversaciêÂ³n y guardarla en el wiki pertinente dentro de mi vault de notas. DespuêÂ©s, cambia el nombre de la skill a "wrap-up".</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P10</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P10</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
 <h3 class="font-semibold mb-1">Skill "Ask" (consulta a la wiki)</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> responder preguntas consultando tu segundo cerebro local.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Tengo en mi escritorio una carpeta de vault de notas con todo lo que hago. Crea una skill llamada "ask". Siempre que te haga una pregunta relacionada con cualquier cosa que hago, consulta esa base de datos si es relevante para dar una respuesta especÃ­fica y sigue todas las instrucciones que haya dentro.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> responder preguntas consultando tu segundo cerebro local.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Tengo en mi escritorio una carpeta de vault de notas con todo lo que hago. Crea una skill llamada "ask". Siempre que te haga una pregunta relacionada con cualquier cosa que hago, consulta esa base de datos si es relevante para dar una respuesta especêÂ­fica y sigue todas las instrucciones que haya dentro.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P11</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P11</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
 <h3 class="font-semibold mb-1">Memoria a largo plazo con Pinecone</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> vectorizar la wiki y tener skills vectoriales de wrap-up/ask.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Construye para mÃ­ una skill con Pinecone. Te darÃ© una API key de Pinecone. Vectoriza todo lo que existe dentro de mi carpeta [INSERTAR] y almacÃ©nalo en Pinecone (crea un Ã­ndice/vault si no existe). DespuÃ©s construye una skill de wrap-up: cuando la active, toma toda la esencia de la conversaciÃ³n y guÃ¡rdala en una carpeta especÃ­fica dentro de Pinecone. Agrega una segunda skill, "ask Pinecone": cuando te lo pida, consulta esa base de datos y trÃ¡eme la informaciÃ³n.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> vectorizar la wiki y tener skills vectoriales de wrap-up/ask.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Construye para mêÂ­ una skill con Pinecone. Te darêÂ© una API key de Pinecone. Vectoriza todo lo que existe dentro de mi carpeta [INSERTAR] y almacêÂ©nalo en Pinecone (crea un êÂ­ndice/vault si no existe). DespuêÂ©s construye una skill de wrap-up: cuando la active, toma toda la esencia de la conversaciêÂ³n y guêÂ¡rdala en una carpeta especêÂ­fica dentro de Pinecone. Agrega una segunda skill, "ask Pinecone": cuando te lo pida, consulta esa base de datos y trêÂ¡eme la informaciêÂ³n.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 </div>
 </section>
 <!-- ===== POWER FEATURES ===== -->
 <section class="mb-12" id="cat-power">
-<h2 class="text-2xl font-bold mb-2">âš¡ Funciones avanzadas</h2>
-<p class="text-neutral-400 text-sm mb-6">Skills, MCP y subagentes â€” empaquetar procesos y trabajar en paralelo.</p>
+<h2 class="text-2xl font-bold mb-2">ê¢Å¡Â¡ Funciones avanzadas</h2>
+<p class="text-neutral-400 text-sm mb-6">Skills, MCP y subagentes ê¢â¬â empaquetar procesos y trabajar en paralelo.</p>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P12</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P12</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
 <h3 class="font-semibold mb-1">Crear una skill a partir de una API</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> empaquetar un proceso repetible (p. ej., un acortador de URL) como skill.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quero criar uma skill com vocÃª. O processo Ã©: eu te dou [INSERIR ENTRADA, ex.: uma URL] e vocÃª [INSERIR AÃ‡ÃƒO, ex.: converte em um link curto via Bitly]. (Se jÃ¡ existir uma skill parecida e vocÃª quiser um build limpo, apague-a primeiro.) Me avise quando estiver pronto para a minha API key. Em seguida, com essa API key, construa a skill.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> empaquetar un proceso repetible (p. ej., un acortador de URL) como skill.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quero criar uma skill com vocêÂª. O processo êÂ©: eu te dou [INSERIR ENTRADA, ex.: uma URL] e vocêÂª [INSERIR Aêâ¡êÆO, ex.: converte em um link curto via Bitly]. (Se jêÂ¡ existir uma skill parecida e vocêÂª quiser um build limpo, apague-a primeiro.) Me avise quando estiver pronto para a minha API key. Em seguida, com essa API key, construa a skill.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P13</span></div>
 <h3 class="font-semibold mb-1">Inspeccionar una skill del marketplace</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> evaluar una skill antes de adoptarla.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">HÃ¡blame de la skill [INSERTAR NOMBRE, ej.: brand guidelines] â€” quiero entender quÃ© hace y despuÃ©s quiero probarla y descubrir si funciona.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> evaluar una skill antes de adoptarla.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">HêÂ¡blame de la skill [INSERTAR NOMBRE, ej.: brand guidelines] ê¢â¬â quiero entender quêÂ© hace y despuêÂ©s quiero probarla y descubrir si funciona.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P14</span></div>
 <h3 class="font-semibold mb-1">Exportar skills para portabilidad</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> llevar tus skills a otro entorno/modelo.</p>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> llevar tus skills a otro entorno/modelo.</p>
 <pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Guarda todas mis skills en mi escritorio, en una carpeta "Claude skills", con instrucciones y todos los detalles de cada skill, para que pueda llevarlas a otro entorno.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P15</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P15</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
 <h3 class="font-semibold mb-1">Crear un MCP local a partir de una API</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> exponer una API (ej.: YouTube Data) como herramientas de Claude.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quiero crear un MCP de [INSERTAR SERVICIO, ej.: YouTube]. Ya tienes una API key de [INSERTAR SERVICIO] en este sistema. Primero, dame una lista de las funcionalidades disponibles. DespuÃ©s, construye para mÃ­ un MCP local, el mÃ¡s Ãºtil para mÃ­ segÃºn todo lo que sabes sobre mÃ­. A continuaciÃ³n, adelante y constrÃºyelo.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> exponer una API (ej.: YouTube Data) como herramientas de Claude.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quiero crear un MCP de [INSERTAR SERVICIO, ej.: YouTube]. Ya tienes una API key de [INSERTAR SERVICIO] en este sistema. Primero, dame una lista de las funcionalidades disponibles. DespuêÂ©s, construye para mêÂ­ un MCP local, el mêÂ¡s êÂºtil para mêÂ­ segêÂºn todo lo que sabes sobre mêÂ­. A continuaciêÂ³n, adelante y constrêÂºyelo.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P16</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P16</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
 <h3 class="font-semibold mb-1">Tres subagentes con veredicto condensado</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> investigaciÃ³n paralela desde mÃºltiples perspectivas con una Ãºnica sÃ­ntesis.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quero que vocÃª pesquise sobre [INSERIR TEMA] e crie trÃªs subagentes. O subagente 1 olha do ponto de vista de [INSERIR Ã‚NGULO 1]. O agente 2, da perspectiva de [INSERIR Ã‚NGULO 2]. O agente 3, de um Ã¢ngulo holÃ­stico/todos-os-lados [INSERIR Ã‚NGULO 3]. Seu trabalho Ã© olhar todos e me dar uma visÃ£o condensada, rodando o mÃ¡ximo de iteraÃ§Ãµes possÃ­vel.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> investigaciêÂ³n paralela desde mêÂºltiples perspectivas con una êÂºnica sêÂ­ntesis.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quero que vocêÂª pesquise sobre [INSERIR TEMA] e crie trêÂªs subagentes. O subagente 1 olha do ponto de vista de [INSERIR êâNGULO 1]. O agente 2, da perspectiva de [INSERIR êâNGULO 2]. O agente 3, de um êÂ¢ngulo holêÂ­stico/todos-os-lados [INSERIR êâNGULO 3]. Seu trabalho êÂ© olhar todos e me dar uma visêÂ£o condensada, rodando o mêÂ¡ximo de iteraêÂ§êÂµes possêÂ­vel.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P17</span></div>
-<h3 class="font-semibold mb-1">Rutina para redactar correos electrÃ³nicos</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> automatizar respuestas de la bandeja de entrada.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quiero que revises todos mis correos de la bandeja de entrada y, para cualquiera que no tenga respuesta ni borrador y estÃ© sin leer, redactes una respuesta.</pre>
+<h3 class="font-semibold mb-1">Rutina para redactar correos electrêÂ³nicos</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> automatizar respuestas de la bandeja de entrada.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quiero que revises todos mis correos de la bandeja de entrada y, para cualquiera que no tenga respuesta ni borrador y estêÂ© sin leer, redactes una respuesta.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P18</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
-<h3 class="font-semibold mb-1">Flujo de trabajo de consulta al cliente (activador vÃ­a API)</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> responder a los leads que llegan por el sitio web.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Vas a recibir informaciÃ³n de un cliente que solicitÃ³ mis servicios a travÃ©s de mi sitio web. Toma su correo electrÃ³nico y redacta una respuesta. DespuÃ©s, agenda una cita en un horario conveniente entre las 9:00 y las 17:00 segÃºn mi zona horaria.</pre>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P18</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
+<h3 class="font-semibold mb-1">Flujo de trabajo de consulta al cliente (activador vêÂ­a API)</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> responder a los leads que llegan por el sitio web.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Vas a recibir informaciêÂ³n de un cliente que solicitêÂ³ mis servicios a travêÂ©s de mi sitio web. Toma su correo electrêÂ³nico y redacta una respuesta. DespuêÂ©s, agenda una cita en un horario conveniente entre las 9:00 y las 17:00 segêÂºn mi zona horaria.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P19</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
-<h3 class="font-semibold mb-1">Ciclo de crÃ­tica con modelo externo</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> crÃ­tica y refinamiento con una segunda opiniÃ³n.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Crea un agente de crÃ­tica y revisa tÃº mismo el trabajo. Cuando termines, trae [INSERIR MODELO EXTERNO] con una perspectiva fresca para comprobarlo.</pre>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P19</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
+<h3 class="font-semibold mb-1">Ciclo de crêÂ­tica con modelo externo</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> crêÂ­tica y refinamiento con una segunda opiniêÂ³n.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Crea un agente de crêÂ­tica y revisa têÂº mismo el trabajo. Cuando termines, trae [INSERIR MODELO EXTERNO] con una perspectiva fresca para comprobarlo.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 </div>
 </section>
 <!-- ===== WEBSITE ===== -->
 <section class="mb-12" id="cat-website">
-<h2 class="text-2xl font-bold mb-2">ðŸŒ Sitio web</h2>
-<p class="text-neutral-400 text-sm mb-6">Desde la investigaciÃ³n de la competencia hasta el SEO, UI/UX y la revisiÃ³n crÃ­tica del sitio.</p>
+<h2 class="text-2xl font-bold mb-2">ê°Å¸ÅÂ Sitio web</h2>
+<p class="text-neutral-400 text-sm mb-6">Desde la investigaciêÂ³n de la competencia hasta el SEO, UI/UX y la revisiêÂ³n crêÂ­tica del sitio.</p>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P20</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
-<h3 class="font-semibold mb-1">InvestigaciÃ³n de la competencia con matriz de evaluaciÃ³n</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> mapear y clasificar a los mejores competidores antes de construir.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quero criar um site para [INSERIR NEGÃ“CIO], que [INSERIR DESCRIÃ‡ÃƒO]. Use a conexÃ£o do Firecrawl e encontre os melhores/mais bem-sucedidos [INSERIR CATEGORIA]. Vou operar em [INSERIR GEOGRAFIA] (mas pode ser internacional). Identifique uma lista grande e depois o top 5 â€” pode avaliar do jeito que quiser (Google reviews, ranqueamento de SEO, etc.). Desenvolva uma matriz de julgamento para avaliar isso. Entregue um relatÃ³rio dos cinco e uma anÃ¡lise profunda do que os cinco melhores tÃªm em comum que os cinco piores nÃ£o tÃªm, para usarmos esses princÃ­pios. Me faÃ§a as perguntas que precisar para clarear o entendimento.</pre>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P20</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
+<h3 class="font-semibold mb-1">InvestigaciêÂ³n de la competencia con matriz de evaluaciêÂ³n</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> mapear y clasificar a los mejores competidores antes de construir.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quero criar um site para [INSERIR NEGêâCIO], que [INSERIR DESCRIêâ¡êÆO]. Use a conexêÂ£o do Firecrawl e encontre os melhores/mais bem-sucedidos [INSERIR CATEGORIA]. Vou operar em [INSERIR GEOGRAFIA] (mas pode ser internacional). Identifique uma lista grande e depois o top 5 ê¢â¬â pode avaliar do jeito que quiser (Google reviews, ranqueamento de SEO, etc.). Desenvolva uma matriz de julgamento para avaliar isso. Entregue um relatêÂ³rio dos cinco e uma anêÂ¡lise profunda do que os cinco melhores têÂªm em comum que os cinco piores nêÂ£o têÂªm, para usarmos esses princêÂ­pios. Me faêÂ§a as perguntas que precisar para clarear o entendimento.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P21</span></div>
 <h3 class="font-semibold mb-1">Interiorizar el briefing antes de construir</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> despuÃ©s de guardar la investigaciÃ³n en un <code class="text-amber-400">melhores-principios.md</code> en el proyecto.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">FamiliarÃ­zate con el documento de mejores principios de la izquierda. Vamos a construir juntos un sitio que sea [INSERIR TIPO]. AvÃ­same cuando hayas entendido el briefing y entonces comenzamos.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> despuêÂ©s de guardar la investigaciêÂ³n en un <code class="text-amber-400">melhores-principios.md</code> en el proyecto.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">FamiliarêÂ­zate con el documento de mejores principios de la izquierda. Vamos a construir juntos un sitio que sea [INSERIR TIPO]. AvêÂ­same cuando hayas entendido el briefing y entonces comenzamos.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P22</span></div>
-<h3 class="font-semibold mb-1">Construir el sitio inspirÃ¡ndose en un repo/HTML</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> usar un design system o HTML descargado como inspiraciÃ³n visual.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Construa um site para [INSERIR TIPO] usando os melhores-princÃ­pios Ã  esquerda, mas com a inspiraÃ§Ã£o de design deste repo do GitHub: [INSERIR URL DO REPO]. (Alternativa: use como inspiraÃ§Ã£o o HTML que eu acabei de baixar no computador.)</pre>
+<h3 class="font-semibold mb-1">Construir el sitio inspirêÂ¡ndose en un repo/HTML</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> usar un design system o HTML descargado como inspiraciêÂ³n visual.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Construa um site para [INSERIR TIPO] usando os melhores-princêÂ­pios êÂ  esquerda, mas com a inspiraêÂ§êÂ£o de design deste repo do GitHub: [INSERIR URL DO REPO]. (Alternativa: use como inspiraêÂ§êÂ£o o HTML que eu acabei de baixar no computador.)</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P23</span></div>
 <h3 class="font-semibold mb-1">Versiones en paralelo en carpetas numeradas</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> generar 2-3 variaciones del mismo sitio y elegir la mejor.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Crie uma pasta Ã  esquerda chamada "[INSERIR NÃšMERO]" e coloque seus designs dentro. (Repita com outros agentes/terminais para ter 2-3 sites em pastas diferentes.) Quando terminar: abra para mim em um localhost.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> generar 2-3 variaciones del mismo sitio y elegir la mejor.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Crie uma pasta êÂ  esquerda chamada "[INSERIR NêÅ¡MERO]" e coloque seus designs dentro. (Repita com outros agentes/terminais para ter 2-3 sites em pastas diferentes.) Quando terminar: abra para mim em um localhost.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P24</span></div>
-<h3 class="font-semibold mb-1">Guardar la API key y generar imÃ¡genes de la secciÃ³n</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> guardar una clave de forma segura y generar imÃ¡genes (hero, etc.).</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Guarda esta API key en mi computadora de forma segura, para que puedas acceder a ella en el futuro. DespuÃ©s genera imÃ¡genes hermosas de [INSERTAR TIPO] â€”o imÃ¡genes que consideres relevantesâ€” para esta secciÃ³n que estÃ¡s implementando aquÃ­.</pre>
+<h3 class="font-semibold mb-1">Guardar la API key y generar imêÂ¡genes de la secciêÂ³n</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> guardar una clave de forma segura y generar imêÂ¡genes (hero, etc.).</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Guarda esta API key en mi computadora de forma segura, para que puedas acceder a ella en el futuro. DespuêÂ©s genera imêÂ¡genes hermosas de [INSERTAR TIPO] ê¢â¬âo imêÂ¡genes que consideres relevantesê¢â¬â para esta secciêÂ³n que estêÂ¡s implementando aquêÂ­.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P25</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
-<h3 class="font-semibold mb-1">OptimizaciÃ³n SEO a partir de un repo</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> investigar palabras clave y aplicar SEO equilibrando atenciÃ³n y conversiÃ³n.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quiero mejorar el SEO de esta pÃ¡gina. Primero, entiende cuÃ¡les son las keywords para las que quiero posicionarme en esta pÃ¡gina: busca un equilibrio entre captar la atenciÃ³n, convertir esa atenciÃ³n y el posicionamiento SEO. Usa todos los insights de este repo de GitHub para hacerlo realidad: [INSERTAR URL DEL REPO DE SEO]. Al terminar, dame una lista detallada con marcas verdes de lo que hiciste, explicando cada mejora; despuÃ©s publÃ­calo en GitHub y Vercel.</pre>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P25</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
+<h3 class="font-semibold mb-1">OptimizaciêÂ³n SEO a partir de un repo</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> investigar palabras clave y aplicar SEO equilibrando atenciêÂ³n y conversiêÂ³n.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quiero mejorar el SEO de esta pêÂ¡gina. Primero, entiende cuêÂ¡les son las keywords para las que quiero posicionarme en esta pêÂ¡gina: busca un equilibrio entre captar la atenciêÂ³n, convertir esa atenciêÂ³n y el posicionamiento SEO. Usa todos los insights de este repo de GitHub para hacerlo realidad: [INSERTAR URL DEL REPO DE SEO]. Al terminar, dame una lista detallada con marcas verdes de lo que hiciste, explicando cada mejora; despuêÂ©s publêÂ­calo en GitHub y Vercel.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P26</span></div>
 <h3 class="font-semibold mb-1">Aplicar a fondo los principios de UI/UX</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> refinar un sitio web existente con una lista de verificaciÃ³n de diseÃ±o (en paralelo al SEO).</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quero usar este repo para melhorar este site â€” Ã© sobre UI e UX. Olhe todos os melhores princÃ­pios e aplique-os sem dÃ³ ao meu site real. Vou ter um agente separado cuidando do SEO, entÃ£o parte do texto pode mudar no caminho.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> refinar un sitio web existente con una lista de verificaciêÂ³n de diseêÂ±o (en paralelo al SEO).</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quero usar este repo para melhorar este site ê¢â¬â êÂ© sobre UI e UX. Olhe todos os melhores princêÂ­pios e aplique-os sem dêÂ³ ao meu site real. Vou ter um agente separado cuidando do SEO, entêÂ£o parte do texto pode mudar no caminho.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P27</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
-<h3 class="font-semibold mb-1">RevisiÃ³n crÃ­tica/adversarial del sitio</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> en una ventana limpia, encontrar inconsistencias de copy/diseÃ±o/UX.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quiero que actÃºes como una persona muy exigente y crÃ­tica. Recorre el sitio y encuentra inconsistencias, textos que no tienen sentido, mal diseÃ±o, y devuÃ©lveme una lista de ideas clasificadas en crÃ­tico, alto, medio y bajo. No hace falta que inventes errores crÃ­ticos donde no los haya, pero revÃ­salo de verdad para ayudarme a mejorar, para que este sitio sea lo mÃ¡s eficaz, honesto y bien diseÃ±ado posible. Incluye cualquier repo de GitHub que consideres necesario.</pre>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P27</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
+<h3 class="font-semibold mb-1">RevisiêÂ³n crêÂ­tica/adversarial del sitio</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> en una ventana limpia, encontrar inconsistencias de copy/diseêÂ±o/UX.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quiero que actêÂºes como una persona muy exigente y crêÂ­tica. Recorre el sitio y encuentra inconsistencias, textos que no tienen sentido, mal diseêÂ±o, y devuêÂ©lveme una lista de ideas clasificadas en crêÂ­tico, alto, medio y bajo. No hace falta que inventes errores crêÂ­ticos donde no los haya, pero revêÂ­salo de verdad para ayudarme a mejorar, para que este sitio sea lo mêÂ¡s eficaz, honesto y bien diseêÂ±ado posible. Incluye cualquier repo de GitHub que consideres necesario.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 </div>
 </section>
 <!-- ===== APPS ===== -->
 <section class="mb-12" id="cat-apps">
-<h2 class="text-2xl font-bold mb-2">ðŸ“¦ Apps</h2>
-<p class="text-neutral-400 text-sm mb-6">Backend autenticado, pagos, rate limit y copy de conversiÃ³n.</p>
+<h2 class="text-2xl font-bold mb-2">ê°Å¸âÂ¦ Apps</h2>
+<p class="text-neutral-400 text-sm mb-6">Backend autenticado, pagos, rate limit y copy de conversiêÂ³n.</p>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P28</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P28</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
 <h3 class="font-semibold mb-1">Formulario de captura de leads</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> agregar un lead magnet con preguntas y guardar los datos en la base de datos.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Adicione um formulÃ¡rio de captura de e-mail. PeÃ§a o nome, o e-mail e mais uma pergunta â€” algo como "quanto dinheiro vocÃª estÃ¡ faturando", com cinco opÃ§Ãµes de R$0 atÃ© R$1 milhÃ£o+. Depois adicione mais uma: "qual Ã© o maior problema que vocÃª tem agora?". Quando estiver pronto, salve todas essas informaÃ§Ãµes no Supabase.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> agregar un lead magnet con preguntas y guardar los datos en la base de datos.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Adicione um formulêÂ¡rio de captura de e-mail. PeêÂ§a o nome, o e-mail e mais uma pergunta ê¢â¬â algo como "quanto dinheiro vocêÂª estêÂ¡ faturando", com cinco opêÂ§êÂµes de R$0 atêÂ© R$1 milhêÂ£o+. Depois adicione mais uma: "qual êÂ© o maior problema que vocêÂª tem agora?". Quando estiver pronto, salve todas essas informaêÂ§êÂµes no Supabase.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P29</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
-<h3 class="font-semibold mb-1">Registro, inicio de sesiÃ³n y dashboard autenticado</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> construir un backend autenticado con un panel de valor.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Agora quero uma seÃ§Ã£o de cadastro e login, toda autenticada e gerenciada no Supabase. O usuÃ¡rio cria conta e entra. Ao entrar, quero ver o site dele em um dashboard lindo, no mesmo estilo do site. Mostre mÃ©tricas diferentes, raspe alguns dados do site dele com um script em background, rode anÃ¡lise de SEO (procure repos no GitHub que faÃ§am isso) e deixe essa pÃ¡gina o mais valiosa humanamente possÃ­vel â€” tudo autenticado e conectado ao Supabase.</pre>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P29</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
+<h3 class="font-semibold mb-1">Registro, inicio de sesiêÂ³n y dashboard autenticado</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> construir un backend autenticado con un panel de valor.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Agora quero uma seêÂ§êÂ£o de cadastro e login, toda autenticada e gerenciada no Supabase. O usuêÂ¡rio cria conta e entra. Ao entrar, quero ver o site dele em um dashboard lindo, no mesmo estilo do site. Mostre mêÂ©tricas diferentes, raspe alguns dados do site dele com um script em background, rode anêÂ¡lise de SEO (procure repos no GitHub que faêÂ§am isso) e deixe essa pêÂ¡gina o mais valiosa humanamente possêÂ­vel ê¢â¬â tudo autenticado e conectado ao Supabase.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P30</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
-<h3 class="font-semibold mb-1">IntegraciÃ³n de pagos con Stripe</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> agregar planes pagos (standard/premium) a la app.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quero integrar o Stripe. No dashboard quero uma seÃ§Ã£o com cores: standard e premium. O premium Ã© [INSERIR PREÃ‡O] por mÃªs. Me guie no setup do Stripe da forma mais sucinta possÃ­vel, conferindo a documentaÃ§Ã£o mais recente, com instruÃ§Ãµes claras e nada mais longas que o necessÃ¡rio. Eu te dou os arquivos necessÃ¡rios. Seu objetivo Ã© exigir o mÃ­nimo de mim e, ao mesmo tempo, deixar tudo o mais seguro possÃ­vel.</pre>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P30</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
+<h3 class="font-semibold mb-1">IntegraciêÂ³n de pagos con Stripe</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> agregar planes pagos (standard/premium) a la app.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quero integrar o Stripe. No dashboard quero uma seêÂ§êÂ£o com cores: standard e premium. O premium êÂ© [INSERIR PREêâ¡O] por mêÂªs. Me guie no setup do Stripe da forma mais sucinta possêÂ­vel, conferindo a documentaêÂ§êÂ£o mais recente, com instruêÂ§êÂµes claras e nada mais longas que o necessêÂ¡rio. Eu te dou os arquivos necessêÂ¡rios. Seu objetivo êÂ© exigir o mêÂ­nimo de mim e, ao mesmo tempo, deixar tudo o mais seguro possêÂ­vel.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P31</span></div>
-<h3 class="font-semibold mb-1">Enrutamiento de modelos + lÃ­mite de solicitudes (OpenRouter)</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> controlar el costo de las funciones de IA de la app.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Para as features de IA, use a API key do OpenRouter. Use o modelo Sonnet atÃ© o usuÃ¡rio atingir no mÃ¡ximo 10 mensagens por dia; a partir daÃ­, caia para um modelo mais barato. Implemente rate limits para nÃ£o dar abuso e fique de olho no gasto total de crÃ©ditos.</pre>
+<h3 class="font-semibold mb-1">Enrutamiento de modelos + lêÂ­mite de solicitudes (OpenRouter)</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> controlar el costo de las funciones de IA de la app.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Para as features de IA, use a API key do OpenRouter. Use o modelo Sonnet atêÂ© o usuêÂ¡rio atingir no mêÂ¡ximo 10 mensagens por dia; a partir daêÂ­, caia para um modelo mais barato. Implemente rate limits para nêÂ£o dar abuso e fique de olho no gasto total de crêÂ©ditos.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P32</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
-<h3 class="font-semibold mb-1">Copy de conversiÃ³n mediante subagentes</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> investigaciÃ³n profunda de copy de conversiÃ³n, sintetizada de forma crÃ­tica.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Inicia algunos subagentes. Investiga a fondo las mejores prÃ¡cticas de copy para este tipo de sitio, con el objetivo de convertir. Mira quÃ© sitios estÃ¡n destacando en este segmento, quÃ© podemos aprender y cÃ³mo mejorar nuestro copy para que sea lo mÃ¡s eficaz posible. Usa varios subagentes; analiza crÃ­ticamente sus aportes y sintetÃ­zalos para generar un buen resultado. SÃ© minucioso y detallado, pero no sobreanalices.</pre>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P32</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
+<h3 class="font-semibold mb-1">Copy de conversiêÂ³n mediante subagentes</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> investigaciêÂ³n profunda de copy de conversiêÂ³n, sintetizada de forma crêÂ­tica.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Inicia algunos subagentes. Investiga a fondo las mejores prêÂ¡cticas de copy para este tipo de sitio, con el objetivo de convertir. Mira quêÂ© sitios estêÂ¡n destacando en este segmento, quêÂ© podemos aprender y cêÂ³mo mejorar nuestro copy para que sea lo mêÂ¡s eficaz posible. Usa varios subagentes; analiza crêÂ­ticamente sus aportes y sintetêÂ­zalos para generar un buen resultado. SêÂ© minucioso y detallado, pero no sobreanalices.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 </div>
 </section>
 <!-- ===== BUILD ANYTHING ===== -->
 <section class="mb-12" id="cat-build">
-<h2 class="text-2xl font-bold mb-2">ðŸ§© Build Anything</h2>
-<p class="text-neutral-400 text-sm mb-6">ExtracciÃ³n de leads, dashboards de datos y metaprompts para desbloquear.</p>
+<h2 class="text-2xl font-bold mb-2">ê°Å¸Â§Â© Build Anything</h2>
+<p class="text-neutral-400 text-sm mb-6">ExtracciêÂ³n de leads, dashboards de datos y metaprompts para desbloquear.</p>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P33</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
-<h3 class="font-semibold mb-1">ExtracciÃ³n de leads (Apify)</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> armar una lista de prospectos para prospecciÃ³n.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quiero llegar a [INSERTAR NICHO] que estÃ©n en [INSERTAR LUGAR]. Usa Apify â€” encuentra el mejor actor/ejemplo que puedas â€” y trÃ¡eme, de cada uno: nombre, correo electrÃ³nico, redes sociales que encuentres y un dato interesante. TrÃ¡eme [INSERTAR NÃšMERO, ej.: 10] para que pueda conversar con ellos. Pon todo en un HTML bonito para que pueda verlo.</pre>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P33</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
+<h3 class="font-semibold mb-1">ExtracciêÂ³n de leads (Apify)</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> armar una lista de prospectos para prospecciêÂ³n.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quiero llegar a [INSERTAR NICHO] que estêÂ©n en [INSERTAR LUGAR]. Usa Apify ê¢â¬â encuentra el mejor actor/ejemplo que puedas ê¢â¬â y trêÂ¡eme, de cada uno: nombre, correo electrêÂ³nico, redes sociales que encuentres y un dato interesante. TrêÂ¡eme [INSERTAR NêÅ¡MERO, ej.: 10] para que pueda conversar con ellos. Pon todo en un HTML bonito para que pueda verlo.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P34</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P34</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
 <h3 class="font-semibold mb-1">Dashboard de contenido "outlier"</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> descubrir contenido viral/fuera de lo comÃºn de un nicho con mÃ©tricas.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quiero un dashboard que haga lo siguiente. Resultado que quiero obtener: entender cuÃ¡les son los outliers â€” el contenido que se estÃ¡ volviendo viral ahora â€” y, a partir de eso, saber cuÃ¡ntas visualizaciones tuvo, los Â«me gustaÂ», los comentarios, la interacciÃ³n, la duraciÃ³n y cuÃ¡ndo se publicÃ³. Quiero poder organizarlo por outlier. Y quiero saber quÃ© creadores seguir; ademÃ¡s, sugiÃ©reme algunos.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> descubrir contenido viral/fuera de lo comêÂºn de un nicho con mêÂ©tricas.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quiero un dashboard que haga lo siguiente. Resultado que quiero obtener: entender cuêÂ¡les son los outliers ê¢â¬â el contenido que se estêÂ¡ volviendo viral ahora ê¢â¬â y, a partir de eso, saber cuêÂ¡ntas visualizaciones tuvo, los êÂ«me gustaêÂ», los comentarios, la interacciêÂ³n, la duraciêÂ³n y cuêÂ¡ndo se publicêÂ³. Quiero poder organizarlo por outlier. Y quiero saber quêÂ© creadores seguir; ademêÂ¡s, sugiêÂ©reme algunos.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P35</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P35</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
 <h3 class="font-semibold mb-1">Metaprompt de "cuello de botella" para desbloquear</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> cuando no sabes la soluciÃ³n y quieres pensar el problema en conjunto.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Esto es lo que intento lograr: [INSERTAR OBJETIVO]. Hazme preguntas para aclarar mis intenciones. Y este es el resultado deseado: [INSERTAR RESULTADO]. Â¿CÃ³mo deberÃ­a analizar mejor el problema? DespuÃ©s pensemos juntos en la soluciÃ³n.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> cuando no sabes la soluciêÂ³n y quieres pensar el problema en conjunto.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Esto es lo que intento lograr: [INSERTAR OBJETIVO]. Hazme preguntas para aclarar mis intenciones. Y este es el resultado deseado: [INSERTAR RESULTADO]. êÂ¿CêÂ³mo deberêÂ­a analizar mejor el problema? DespuêÂ©s pensemos juntos en la soluciêÂ³n.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P36</span></div>
 <h3 class="font-semibold mb-1">Validar/enriquecer correos mediante API</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> limpiar una lista de leads antes del outreach.</p>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> limpiar una lista de leads antes del outreach.</p>
 <pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Use a API key do [INSERIR VERIFICADOR DE E-MAIL] e valide todos os e-mails desta lista para mim. API key: [INSERIR].</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
@@ -467,159 +467,159 @@
 </section>
 <!-- ===== DESIGN SYSTEMS ===== -->
 <section class="mb-12" id="cat-design">
-<h2 class="text-2xl font-bold mb-2">ðŸŽ¨ Design Systems</h2>
-<p class="text-neutral-400 text-sm mb-6">DiseÃ±o como cÃ³digo: clonar un framework, generar presentaciones al estilo de una marca.</p>
+<h2 class="text-2xl font-bold mb-2">ê°Å¸Å½Â¨ Design Systems</h2>
+<p class="text-neutral-400 text-sm mb-6">DiseêÂ±o como cêÂ³digo: clonar un framework, generar presentaciones al estilo de una marca.</p>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P37</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
-<h3 class="font-semibold mb-1">ConfiguraciÃ³n del framework de diseÃ±o (clonar y aprender)</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> iniciar un sistema de diseÃ±o como cÃ³digo para slides/sitios web.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quiero crear diapositivas hermosas. Usa el repo de abajo: instÃ¡lalo, clÃ³nalo, aprende todo sobre Ã©l y luego dame algunos ejemplos de marcas que podrÃ­a usar para crear diapositivas bonitas. [INSERTAR URL DEL REPO DEL SISTEMA DE DISEÃ‘O]</pre>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P37</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
+<h3 class="font-semibold mb-1">ConfiguraciêÂ³n del framework de diseêÂ±o (clonar y aprender)</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> iniciar un sistema de diseêÂ±o como cêÂ³digo para slides/sitios web.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Quiero crear diapositivas hermosas. Usa el repo de abajo: instêÂ¡lalo, clêÂ³nalo, aprende todo sobre êÂ©l y luego dame algunos ejemplos de marcas que podrêÂ­a usar para crear diapositivas bonitas. [INSERTAR URL DEL REPO DEL SISTEMA DE DISEêâO]</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P38</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
-<h3 class="font-semibold mb-1">Deck al estilo de una marca + imÃ¡genes</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> generar una presentaciÃ³n alineada con la marca de referencia.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Vamos a crear un deck de [INSERIR N] pÃ¡ginas sobre [INSERIR MARCA]. Ve al sitio de la marca para obtener algunos assets y usa mi API key de [INSERIR GERADOR DE IMAGEM] para generar algunas imÃ¡genes que encajen perfectamente con el estilo de marca, como consideres adecuado.</pre>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P38</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
+<h3 class="font-semibold mb-1">Deck al estilo de una marca + imêÂ¡genes</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> generar una presentaciêÂ³n alineada con la marca de referencia.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Vamos a crear un deck de [INSERIR N] pêÂ¡ginas sobre [INSERIR MARCA]. Ve al sitio de la marca para obtener algunos assets y usa mi API key de [INSERIR GERADOR DE IMAGEM] para generar algunas imêÂ¡genes que encajen perfectamente con el estilo de marca, como consideres adecuado.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P39</span></div>
-<h3 class="font-semibold mb-1">Ejecutar la skill de extracciÃ³n de marca</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> definir los colores, las fuentes, el espaciado y el diseÃ±o de una marca.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Baixe isto, descompacte e siga as instruÃ§Ãµes. (A skill vai te perguntar qual Ã© a marca/site e do que Ã© o seu negÃ³cio, e entÃ£o gerar um design blueprint capturando espaÃ§amento, cores, fontes e princÃ­pios de layout.)</pre>
+<h3 class="font-semibold mb-1">Ejecutar la skill de extracciêÂ³n de marca</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> definir los colores, las fuentes, el espaciado y el diseêÂ±o de una marca.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Baixe isto, descompacte e siga as instruêÂ§êÂµes. (A skill vai te perguntar qual êÂ© a marca/site e do que êÂ© o seu negêÂ³cio, e entêÂ£o gerar um design blueprint capturando espaêÂ§amento, cores, fontes e princêÂ­pios de layout.)</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 </div>
 </section>
 <!-- ===== AGENTE PESSOAL ===== -->
 <section class="mb-12" id="cat-agente">
-<h2 class="text-2xl font-bold mb-2">ðŸ¤– Agente personal</h2>
+<h2 class="text-2xl font-bold mb-2">ê°Å¸Â¤â Agente personal</h2>
 <p class="text-neutral-400 text-sm mb-6">El "sistema operativo" de agentes: instalar, planificar objetivos y hacer copias de seguridad.</p>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P40</span></div>
 <h3 class="font-semibold mb-1">Instalar el sistema operativo de agentes</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> subir el paquete del agente personal (zip) y configurarlo.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Acabei de baixar este sistema operacional. Abra-o e siga as instruÃ§Ãµes, e fique Ã  disposiÃ§Ã£o para me ajudar a configurar se for preciso. (Tudo que ele precisa para se configurar e se conectar a este computador estÃ¡ no CLAUDE.md dentro do pacote.)</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> subir el paquete del agente personal (zip) y configurarlo.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Acabei de baixar este sistema operacional. Abra-o e siga as instruêÂ§êÂµes, e fique êÂ  disposiêÂ§êÂ£o para me ajudar a configurar se for preciso. (Tudo que ele precisa para se configurar e se conectar a este computador estêÂ¡ no CLAUDE.md dentro do pacote.)</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P41</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P41</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
 <h3 class="font-semibold mb-1">Centro de control: planificar metas</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> descomponer una meta de mediano plazo en pasos accionables.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Esto es el "mission control": planificaciÃ³n de metas a mediano y largo plazo. Mi meta a mediano plazo es: [INSERTAR META, p. ej.: "llegar a 500 suscriptores" o "lanzar una lista de correo con 1.000 personas"]. Conversa conmigo sobre todo y luego divide esta meta en aproximadamente 4 a 10 prompts individuales y secuenciales; indica cuÃ¡les debes ejecutar tÃº (la IA) y cuÃ¡les debo ejecutar yo, y prepara una hoja de ruta atractiva que pueda seguir paso a paso.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> descomponer una meta de mediano plazo en pasos accionables.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Esto es el "mission control": planificaciêÂ³n de metas a mediano y largo plazo. Mi meta a mediano plazo es: [INSERTAR META, p. ej.: "llegar a 500 suscriptores" o "lanzar una lista de correo con 1.000 personas"]. Conversa conmigo sobre todo y luego divide esta meta en aproximadamente 4 a 10 prompts individuales y secuenciales; indica cuêÂ¡les debes ejecutar têÂº (la IA) y cuêÂ¡les debo ejecutar yo, y prepara una hoja de ruta atractiva que pueda seguir paso a paso.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P42</span></div>
 <h3 class="font-semibold mb-1">Backup diario del agente en GitHub</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> proteger toda la configuraciÃ³n/memoria del agente.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">ConÃ©ctate a GitHub y haz una copia de seguridad diaria de todo este sistema, todos los dÃ­as, para que â€”si algo sale mal en mi computadora o cometo un errorâ€” podamos volver atrÃ¡s en el tiempo y restaurarlo.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> proteger toda la configuraciêÂ³n/memoria del agente.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">ConêÂ©ctate a GitHub y haz una copia de seguridad diaria de todo este sistema, todos los dêÂ­as, para que ê¢â¬âsi algo sale mal en mi computadora o cometo un errorê¢â¬â podamos volver atrêÂ¡s en el tiempo y restaurarlo.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 </div>
 </section>
 <!-- ===== COMPLIANCE ===== -->
 <section class="mb-12" id="cat-compliance">
-<h2 class="text-2xl font-bold mb-2">ðŸ” Cumplimiento</h2>
+<h2 class="text-2xl font-bold mb-2">ê°Å¸âÂ Cumplimiento</h2>
 <p class="text-neutral-400 text-sm mb-6">Seguridad, costo de la API y verificaciones de estado para mantener el sistema en funcionamiento.</p>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P43</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanÃ³nico</span></div>
+<div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P43</span><span class="text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 font-semibold">CanêÂ³nico</span></div>
 <h3 class="font-semibold mb-1">Red team de seguridad ofensiva (megaprompt)</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> auditar la seguridad de un codebase/proyecto antes de producciÃ³n.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">VocÃª Ã© um engenheiro sÃªnior de seguranÃ§a ofensiva contratado para fazer red-team neste codebase. Seu trabalho Ã© invadir, exfiltrar dados e quebrar o negÃ³cio. Seja paranoico e minucioso â€” nÃ£o assuma nada. MÃ©todo: percorra o repositÃ³rio inteiro de forma sistemÃ¡tica. Para cada arquivo que ler, pergunte: "Se eu fosse um atacante que jÃ¡ tem acesso de leitura, o que eu faria com isto?". SuperfÃ­cies de ataque a cobrir: segredos e credenciais; seguranÃ§a de banco (ex.: Supabase) e autorizaÃ§Ã£o; LLM / prompt injection; webhooks; dependÃªncias e cadeia de suprimentos; logging e exposiÃ§Ã£o. SaÃ­da: achados ordenados por severidade, o caminho do exploit e a correÃ§Ã£o concreta de cada um. NÃ£o escreva um scanner â€” recomende poucos scanners open-source consagrados (ex.: Gitleaks, Semgrep, Trivy), diga quais trÃªs adicionar ao meu pre-commit, e assuma que isso barra ~80% dos problemas.</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> auditar la seguridad de un codebase/proyecto antes de producciêÂ³n.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">VocêÂª êÂ© um engenheiro sêÂªnior de seguranêÂ§a ofensiva contratado para fazer red-team neste codebase. Seu trabalho êÂ© invadir, exfiltrar dados e quebrar o negêÂ³cio. Seja paranoico e minucioso ê¢â¬â nêÂ£o assuma nada. MêÂ©todo: percorra o repositêÂ³rio inteiro de forma sistemêÂ¡tica. Para cada arquivo que ler, pergunte: "Se eu fosse um atacante que jêÂ¡ tem acesso de leitura, o que eu faria com isto?". SuperfêÂ­cies de ataque a cobrir: segredos e credenciais; seguranêÂ§a de banco (ex.: Supabase) e autorizaêÂ§êÂ£o; LLM / prompt injection; webhooks; dependêÂªncias e cadeia de suprimentos; logging e exposiêÂ§êÂ£o. SaêÂ­da: achados ordenados por severidade, o caminho do exploit e a correêÂ§êÂ£o concreta de cada um. NêÂ£o escreva um scanner ê¢â¬â recomende poucos scanners open-source consagrados (ex.: Gitleaks, Semgrep, Trivy), diga quais trêÂªs adicionar ao meu pre-commit, e assuma que isso barra ~80% dos problemas.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P44</span></div>
 <h3 class="font-semibold mb-1">Clave de API desde la terminal (fuera del chat)</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> evitar pegar una API key en el registro de Claude.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Crie um comando de terminal para eu atualizar a minha API key de [INSERIR SERVIÃ‡O]. (Depois rode esse comando vocÃª mesmo no terminal, de modo que o Claude nunca veja a chave em si.)</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> evitar pegar una API key en el registro de Claude.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Crie um comando de terminal para eu atualizar a minha API key de [INSERIR SERVIêâ¡O]. (Depois rode esse comando vocêÂª mesmo no terminal, de modo que o Claude nunca veja a chave em si.)</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P45</span></div>
-<h3 class="font-semibold mb-1">LÃ­mite fijo de gasto en API</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> evitar pÃ©rdidas si se filtra una clave.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Para cualquier API de costo variable, define un lÃ­mite de gasto fijo y estricto. Configura la API key con un costo total que yo acepte y define la frecuencia de renovaciÃ³n. Limita el gasto antes de limitar el riesgo.</pre>
+<h3 class="font-semibold mb-1">LêÂ­mite fijo de gasto en API</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> evitar pêÂ©rdidas si se filtra una clave.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Para cualquier API de costo variable, define un lêÂ­mite de gasto fijo y estricto. Configura la API key con un costo total que yo acepte y define la frecuencia de renovaciêÂ³n. Limita el gasto antes de limitar el riesgo.</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P46</span></div>
-<h3 class="font-semibold mb-1">Mapa de verificaciÃ³n del estado del sistema</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> garantizar que el sistema siga funcionando con el tiempo.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Pense no meu sistema inteiro e em toda a jornada do usuÃ¡rio, e defina quais devem ser os health checks â€” o que um sistema funcional teria. Escreva isso como testes para eu saber que continua funcionando. Inclua a checagem de logs de erro e do lado financeiro/pagamentos (ex.: Stripe).</pre>
+<h3 class="font-semibold mb-1">Mapa de verificaciêÂ³n del estado del sistema</h3>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> garantizar que el sistema siga funcionando con el tiempo.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Pense no meu sistema inteiro e em toda a jornada do usuêÂ¡rio, e defina quais devem ser os health checks ê¢â¬â o que um sistema funcional teria. Escreva isso como testes para eu saber que continua funcionando. Inclua a checagem de logs de erro e do lado financeiro/pagamentos (ex.: Stripe).</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 </div>
 </section>
 <!-- ===== PAINEL / OS ===== -->
 <section class="mb-12" id="cat-os">
-<h2 class="text-2xl font-bold mb-2">ðŸ–¥ï¸ Panel / OS</h2>
+<h2 class="text-2xl font-bold mb-2">ê°Å¸âÂ¥ê¯Â¸Â Panel / OS</h2>
 <p class="text-neutral-400 text-sm mb-6">Ampliar el sistema operativo de agentes con nuevas herramientas y fuentes.</p>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P47</span></div>
 <h3 class="font-semibold mb-1">Agregar una herramienta desconocida al OS</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> cuando el agente personal no detectÃ³ una de tus herramientas.</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Uso [INSERIR FERRAMENTA/SISTEMA] y no lo veo en el sistema operativo. Â¿Puedes agregarlo aquÃ­ por mÃ­?</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> cuando el agente personal no detectêÂ³ una de tus herramientas.</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Uso [INSERIR FERRAMENTA/SISTEMA] y no lo veo en el sistema operativo. êÂ¿Puedes agregarlo aquêÂ­ por mêÂ­?</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
 <div class="flex items-center justify-between mb-1"><span class="text-amber-400 font-bold text-sm">P48</span></div>
 <h3 class="font-semibold mb-1">Consultar una base de conocimiento mediante un agente</h3>
-<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuÃ¡ndo usar:</span> el agente busca/crea notebooks en una herramienta externa (p. ej., NotebookLM).</p>
-<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Tienes la skill de NotebookLM en "pantheon"; mantenla totalmente actualizada. Ve a mi NotebookLM, encuentra la Ãºltima infografÃ­a que generÃ© y luego crea un cuaderno nuevo sobre [INSERTAR TEMA].</pre>
+<p class="text-xs text-neutral-400 mb-3"><span class="text-amber-400 font-semibold">CuêÂ¡ndo usar:</span> el agente busca/crea notebooks en una herramienta externa (p. ej., NotebookLM).</p>
+<pre class="prompt-pre font-mono text-xs bg-dark-700/50 rounded-lg p-3 whitespace-pre-wrap text-neutral-300">Tienes la skill de NotebookLM en "pantheon"; mantenla totalmente actualizada. Ve a mi NotebookLM, encuentra la êÂºltima infografêÂ­a que generêÂ© y luego crea un cuaderno nuevo sobre [INSERTAR TEMA].</pre>
 <button class="mt-3 px-3 py-1.5 text-xs bg-dark-600 hover:bg-amber-500/30 rounded-lg transition-colors" onclick="copyPrompt(this)">Copiar</button>
 </div>
 </div>
 </section>
 <!-- ===== SLASH COMMANDS ===== -->
 <section class="mb-12" id="cat-slash">
-<h2 class="text-2xl font-bold mb-2">âŒ˜ Slash commands y comandos triviales</h2>
+<h2 class="text-2xl font-bold mb-2">ê¢ÅË Slash commands y comandos triviales</h2>
 <p class="text-neutral-400 text-sm mb-6">No son prompts, pero forman parte del flujo de trabajo.</p>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm text-neutral-300">
-<li><code class="text-amber-400">/init</code> (effort alto) â€” hacer que Claude entienda todo el codebase.</li>
-<li><code class="text-amber-400">/clear</code> â€” reiniciar la conversaciÃ³n (evitar "context rot").</li>
-<li><code class="text-amber-400">/context</code> â€” inspeccionar el uso de la ventana de contexto.</li>
-<li><code class="text-amber-400">/compact</code> â€” comprimir el contexto manteniendo lo esencial.</li>
-<li><code class="text-amber-400">/model</code> â€” cambiar entre Opus / Sonnet / Haiku.</li>
-<li><code class="text-amber-400">/cost</code> â€” ver el gasto de tokens de la sesiÃ³n.</li>
-<li><code class="text-amber-400">/agents</code> â€” gestionar subagentes.</li>
-<li><code class="text-amber-400">/memory</code> â€” abrir/editar los archivos de memoria (CLAUDE.md).</li>
-<li><code class="text-amber-400">/&lt;nome-da-skill&gt;</code> â€” invocar una skill.</li>
-<li><code class="text-amber-400">/newbot</code> (BotFather de Telegram) â€” crear un bot para el agente personal.</li>
+<li><code class="text-amber-400">/init</code> (effort alto) ê¢â¬â hacer que Claude entienda todo el codebase.</li>
+<li><code class="text-amber-400">/clear</code> ê¢â¬â reiniciar la conversaciêÂ³n (evitar "context rot").</li>
+<li><code class="text-amber-400">/context</code> ê¢â¬â inspeccionar el uso de la ventana de contexto.</li>
+<li><code class="text-amber-400">/compact</code> ê¢â¬â comprimir el contexto manteniendo lo esencial.</li>
+<li><code class="text-amber-400">/model</code> ê¢â¬â cambiar entre Opus / Sonnet / Haiku.</li>
+<li><code class="text-amber-400">/cost</code> ê¢â¬â ver el gasto de tokens de la sesiêÂ³n.</li>
+<li><code class="text-amber-400">/agents</code> ê¢â¬â gestionar subagentes.</li>
+<li><code class="text-amber-400">/memory</code> ê¢â¬â abrir/editar los archivos de memoria (CLAUDE.md).</li>
+<li><code class="text-amber-400">/&lt;nome-da-skill&gt;</code> ê¢â¬â invocar una skill.</li>
+<li><code class="text-amber-400">/newbot</code> (BotFather de Telegram) ê¢â¬â crear un bot para el agente personal.</li>
 </ul>
 </div>
 </section>
 <!-- NAVEGACAO -->
 <div class="flex flex-col sm:flex-row gap-4 mt-10">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Volver a la Biblioteca</a>
-<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="modulo-4-2.html">Siguiente: Skills â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Volver a la Biblioteca</a>
+<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="modulo-4-2.html">Siguiente: Skills ê¢â â</a>
 </div>
 </main>
 <footer class="border-t border-dark-600 py-8 mt-16">
-<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Claude Code en la prÃ¡ctica â€” <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p></div>
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Claude Code en la prêÂ¡ctica ê¢â¬â <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p></div>
 </footer>
 <script>
     function copyPrompt(btn){
       var card = btn.closest('.bg-dark-800'); if(!card) return;
       var pre = card.querySelector('pre'); if(!pre) return;
       var txt = pre.innerText;
-      function done(){ var o=btn.textContent; btn.textContent='Copiado âœ“'; setTimeout(function(){ btn.textContent=o; }, 1600); }
+      function done(){ var o=btn.textContent; btn.textContent='Copiado ê¢Åâ'; setTimeout(function(){ btn.textContent=o; }, 1600); }
       if (navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(done, function(){ fallback(txt, done); }); }
       else { fallback(txt, done); }
     }
     function fallback(txt, done){ try{ var ta=document.createElement('textarea'); ta.value=txt; ta.style.position='fixed'; ta.style.left='-9999px'; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta); done(); }catch(e){} }
     (function(){ var tt=document.getElementById('theme-toggle'); if(!tt) return; var di=document.getElementById('theme-toggle-dark-icon'), li=document.getElementById('theme-toggle-light-icon'), html=document.documentElement;
       function sync(){ if(html.classList.contains('dark')){ li&&li.classList.remove('hidden'); di&&di.classList.add('hidden'); } else { di&&di.classList.remove('hidden'); li&&li.classList.add('hidden'); } }
-      sync(); tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}'); p.theme=dark?'ARCKHÉ-dark':'claro'; localStorage.setItem('ARCKHÉ.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
+      sync(); tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHê.prefs')||'{}'); p.theme=dark?'ARCKHê-dark':'claro'; localStorage.setItem('ARCKHê.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
   </script>
 <script src="../../../assets/learn.js"></script>
-<script>if (window.ARCKHÉ && typeof window.ARCKHÉ.init==='function'){ window.ARCKHÉ.init(); }</script>
+<script>if (window.ARCKHê && typeof window.ARCKHê.init==='function'){ window.ARCKHê.init(); }</script>
 </body>
 </html>

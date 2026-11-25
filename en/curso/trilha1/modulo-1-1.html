@@ -4,29 +4,29 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-na-pratica" name="ARCKHÉ-course"/>
+<meta content="claude-na-pratica" name="ARCKHê-course"/>
 <title>1.1 Welcome: imagine and build | Claude Code in Practice</title>
 <!-- ANTI-FOUC: bloqueante, SEPARADO, antes do Tailwind/learn.css -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){ var r={}; for (var x in o) r[x]=o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHê-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var THEMES = { 'ARCKHê-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'emerald');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
+      s.setProperty('--ARCKHê-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
       var fam = p.font==='system' ? 'system-ui,-apple-system,"Segoe UI",Roboto,sans-serif' : (p.font==='leitura' ? '"Atkinson Hyperlegible","Inter",system-ui,sans-serif' : '"Inter",system-ui,sans-serif');
       s.setProperty('--font-body', fam);
@@ -43,8 +43,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
-<!-- Manifesto do curso (IDÃŠNTICO em TODA pagina) -->
-<script data-ARCKHÉ-manifest="" type="application/json">
+<!-- Manifesto do curso (IDêÅ NTICO em TODA pagina) -->
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "claude-na-pratica",
     "tracks": [
@@ -79,7 +79,7 @@
     .dark body { background-color: #111827; }
     .topic-explanation { display: none; }
     .topic-explanation.active { display: block; }
-    section[data-ARCKHÉ-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
+    section[data-ARCKHê-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
     .skip { position:absolute; left:-999px; top:0; z-index:100; }
     .skip:focus { left:8px; top:8px; background:#111827; color:#fff; padding:8px 12px; border-radius:8px; }
 
@@ -126,7 +126,7 @@
     }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/modulo-1-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-1-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha1/modulo-1-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/modulo-1-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-1-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha1/modulo-1-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip" href="#conteudo">Skip to content</a>
 <!-- NAV -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -134,20 +134,20 @@
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">âš¡</span>
+<span class="text-2xl">ê¢Å¡Â¡</span>
 <span class="font-bold text-lg hidden sm:inline">Claude Code in Practice</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentals</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Build</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Operate &amp; Profit</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Library</span></a>
-<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHÉ-journey-open="" title="My journey" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden lg:inline">Journey</span>
-<span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHê-journey-open="" title="My journey" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden lg:inline">Journey</span>
+<span aria-hidden="true" class="ARCKHê-journey-badge hidden"></span>
 </button>
 <button aria-label="Toggle light/dark theme" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle" title="Light/dark theme">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -171,7 +171,7 @@
 <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MODULE 1.1</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸŒ… Welcome: if you can imagine it, you can build it</h1>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸Åâ¦ Welcome: if you can imagine it, you can build it</h1>
 <p class="text-lg text-neutral-400 max-w-3xl">The opening lesson. Here, you learn what Claude Code is, adopt the mindset that drives the entire course, and leave with a study plan that fits your routine.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">Topics</div></div>
@@ -181,8 +181,8 @@
 </div>
 <!-- Medidor de progresso do modulo -->
 <div class="mt-6 max-w-2xl">
-<div aria-label="Module 1.1 progress" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter" data-ARCKHÉ-meter="modulo:1-1" role="progressbar">
-<span class="ARCKHÉ-meter-pct" data-ARCKHÉ-meter-pct="">0%</span> <span class="ARCKHÉ-meter-count text-neutral-400 text-sm" data-ARCKHÉ-meter-frac="">0 of 6</span>
+<div aria-label="Module 1.1 progress" aria-valuemax="100" aria-valuemin="0" class="ARCKHê-meter" data-ARCKHê-meter="modulo:1-1" role="progressbar">
+<span class="ARCKHê-meter-pct" data-ARCKHê-meter-pct="">0%</span> <span class="ARCKHê-meter-count text-neutral-400 text-sm" data-ARCKHê-meter-frac="">0 of 6</span>
 </div>
 </div>
 </div>
@@ -190,18 +190,18 @@
 <!-- CONTEUDO + TOC -->
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[220px_1fr] lg:gap-10" id="conteudo">
 <!-- TOC sticky -->
-<nav aria-label="Page index" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-3">Section <span class="ARCKHÉ-toc-pos">1</span> of <span class="ARCKHÉ-toc-total">6</span></p>
+<nav aria-label="Page index" class="hidden lg:block sticky top-24 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-3">Section <span class="ARCKHê-toc-pos">1</span> of <span class="ARCKHê-toc-total">6</span></p>
 <ul class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-1">1. The world has changed</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-2">2. Imagine â†’ build</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-3">3. What Claude Code Is</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-4">4. Build, donâ€™t just study</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-5">5. The 3 tracks</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-6">6. How to study</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-1">1. The world has changed</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-2">2. Imagine ê¢â â build</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-3">3. What Claude Code Is</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-4">4. Build, donê¢â¬â¢t just study</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-5">5. The 3 tracks</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-6">6. How to study</a></li>
 </ul>
 </nav>
-<div class="ARCKHÉ-prose">
+<div class="ARCKHê-prose">
 <!-- SVG modelo mental -->
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-10 overflow-hidden">
 <svg aria-label="An idea in your head passes through Claude Code and becomes a website, app, and automation, eliminating the no-code layer" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
@@ -215,14 +215,14 @@
 <rect fill="url(#m11-grid)" height="220" width="1000" x="0" y="0"></rect>
 <!-- ideia -->
 <g filter="url(#m11-glow)"><rect fill="#0e2018" height="64" rx="14" stroke="url(#m11-grad)" stroke-width="2.5" width="170" x="36" y="78"></rect></g>
-<text fill="#34d399" font-family="Inter,sans-serif" font-size="18" font-weight="600" text-anchor="middle" x="121" y="104">ðŸ’¡ Your idea</text>
+<text fill="#34d399" font-family="Inter,sans-serif" font-size="18" font-weight="600" text-anchor="middle" x="121" y="104">ê°Å¸âÂ¡ Your idea</text>
 <text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="121" y="124">in Portuguese</text>
 <!-- seta para o code -->
 <path d="M206,110 L430,110" fill="none" marker-end="url(#m11-ah)" opacity="0.7" stroke="#34d399" stroke-width="2"></path>
 <!-- claude code -->
 <rect fill="#0e1b26" height="60" rx="12" stroke="#38bdf8" stroke-width="2" width="190" x="430" y="80"></rect>
 <text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="525" y="106">Claude Code</text>
-<text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="11.5" text-anchor="middle" x="525" y="126">write Â· test Â· fix</text>
+<text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="11.5" text-anchor="middle" x="525" y="126">write êÂ· test êÂ· fix</text>
 <!-- saidas -->
 <g fill="none" opacity="0.5" stroke="#38bdf8" stroke-width="1.8">
 <path d="M620,110 C720,110 740,52 812,52" marker-end="url(#m11-ahc)"></path>
@@ -230,124 +230,124 @@
 <path d="M620,110 C720,110 740,168 812,168" marker-end="url(#m11-ahc)"></path>
 </g>
 <g font-family="Inter,sans-serif" font-size="13" font-weight="600">
-<g class="wf-a"><rect fill="#0e2018" height="32" rx="9" stroke="#34d399" stroke-width="2" width="150" x="812" y="36"></rect><text fill="#9fe7c9" text-anchor="middle" x="887" y="57">ðŸŒ website</text></g>
-<g class="wf-a"><rect fill="#0e2018" height="32" rx="9" stroke="#34d399" stroke-width="2" width="150" x="812" y="94"></rect><text fill="#9fe7c9" text-anchor="middle" x="887" y="115">ðŸ“± app</text></g>
-<g class="wf-a"><rect fill="#0e2018" height="32" rx="9" stroke="#34d399" stroke-width="2" width="150" x="812" y="152"></rect><text fill="#9fe7c9" text-anchor="middle" x="887" y="173">âš™ï¸ automation</text></g>
+<g class="wf-a"><rect fill="#0e2018" height="32" rx="9" stroke="#34d399" stroke-width="2" width="150" x="812" y="36"></rect><text fill="#9fe7c9" text-anchor="middle" x="887" y="57">ê°Å¸ÅÂ website</text></g>
+<g class="wf-a"><rect fill="#0e2018" height="32" rx="9" stroke="#34d399" stroke-width="2" width="150" x="812" y="94"></rect><text fill="#9fe7c9" text-anchor="middle" x="887" y="115">ê°Å¸âÂ± app</text></g>
+<g class="wf-a"><rect fill="#0e2018" height="32" rx="9" stroke="#34d399" stroke-width="2" width="150" x="812" y="152"></rect><text fill="#9fe7c9" text-anchor="middle" x="887" y="173">ê¢Å¡â¢ê¯Â¸Â automation</text></g>
 </g>
-<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="525" y="196">the "no-code layer" is goneâ€”you go straight from idea to code</text>
+<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="525" y="196">the "no-code layer" is goneê¢â¬âyou go straight from idea to code</text>
 </svg>
 </div>
 <h2 class="text-2xl font-bold mb-6">Detailed content</h2>
 <!-- TOPICO 1 -->
-<section class="mb-16" data-ARCKHÉ-module="1-1" data-ARCKHÉ-topic="modulo-1-1#topico-1" data-ARCKHÉ-track="1" id="topico-1">
+<section class="mb-16" data-ARCKHê-module="1-1" data-ARCKHê-topic="modulo-1-1#topico-1" data-ARCKHê-track="1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">1</span>
-<h2 class="text-2xl font-bold">ðŸŒ… The world has changed: why this is possible now</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Åâ¦ The world has changed: why this is possible now</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t1-p1">The biggest shift in skills in your professional life has already happened â€” and almost no one has noticed. Today, <strong class="text-emerald-400">describe an idea in Portuguese</strong> is enough to build it in software. What used to require years of study now fits in a conversation.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-1-t1-p1">The biggest shift in skills in your professional life has already happened ê¢â¬â and almost no one has noticed. Today, <strong class="text-emerald-400">describe an idea in Portuguese</strong> is enough to build it in software. What used to require years of study now fits in a conversation.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
 <div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">A moment when natural language turns into code. You say what you want; the machine builds it.</p></div>
-<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">The barrier to entry is down. Those who understand this first get ahead â€” and you don't have to be "into technology."</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Natural language â†’ code Â· lower barrier to entry Â· transferable skill.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">The barrier to entry is down. Those who understand this first get ahead ê¢â¬â and you don't have to be "into technology."</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Natural language ê¢â â code êÂ· lower barrier to entry êÂ· transferable skill.</p></div>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ðŸ“Š</span> What changed in practice</h3>
+<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ê°Å¸âÅ </span> What changed in practice</h3>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>Before: for a website, you had to hire someone or study for months.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>Now: you describe the site and review the result in an afternoon.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>The bottleneck is no longer â€œknowing how to codeâ€; itâ€™s â€œknowing how to describe things well.â€</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span>Before: for a website, you had to hire someone or study for months.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span>Now: you describe the site and review the result in an afternoon.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span>The bottleneck is no longer ê¢â¬Åknowing how to codeê¢â¬Â; itê¢â¬â¢s ê¢â¬Åknowing how to describe things well.ê¢â¬Â</span></li>
 </ul>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-ARCKHÉ-module="1-1" data-ARCKHÉ-topic="modulo-1-1#topico-2" data-ARCKHÉ-track="1" id="topico-2">
+<section class="mb-16" data-ARCKHê-module="1-1" data-ARCKHê-topic="modulo-1-1#topico-2" data-ARCKHê-track="1" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">2</span>
-<h2 class="text-2xl font-bold">ðŸ§  The â€œIf You Can Imagine It, You Can Build Itâ€ Mindset</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â  The ê¢â¬ÅIf You Can Imagine It, You Can Build Itê¢â¬Â Mindset</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t2-p1">The phrase sounds motivational, but it's technical. Instead of thinking "I wouldn't know how to do this," you start asking <strong class="text-emerald-400">"how would I describe this so the machine can build it?"</strong>. Your imagination becomes the project specification.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-1-t2-p1">The phrase sounds motivational, but it's technical. Instead of thinking "I wouldn't know how to do this," you start asking <strong class="text-emerald-400">"how would I describe this so the machine can build it?"</strong>. Your imagination becomes the project specification.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
 <div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">The mindset of treating your ideas as executable projects, not distant dreams.</p></div>
-<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">The biggest obstacle for beginners isnâ€™t technicalâ€”itâ€™s believing â€œthis isnâ€™t for me.â€ This mindset unlocks action.</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Imagination as specification Â· from uncertainty to description Â· youâ€™re the project director.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">The biggest obstacle for beginners isnê¢â¬â¢t technicalê¢â¬âitê¢â¬â¢s believing ê¢â¬Åthis isnê¢â¬â¢t for me.ê¢â¬Â This mindset unlocks action.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Imagination as specification êÂ· from uncertainty to description êÂ· youê¢â¬â¢re the project director.</p></div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Practical tip</h3>
-<p class="text-neutral-300 text-sm">When you hit â€œI donâ€™t know how to do this,â€ mentally rewrite it as a question: <em>"how would I describe this in 3 sentences?"</em>. Most ideas become buildable with just this shift.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Practical tip</h3>
+<p class="text-neutral-300 text-sm">When you hit ê¢â¬ÅI donê¢â¬â¢t know how to do this,ê¢â¬Â mentally rewrite it as a question: <em>"how would I describe this in 3 sentences?"</em>. Most ideas become buildable with just this shift.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-ARCKHÉ-module="1-1" data-ARCKHÉ-topic="modulo-1-1#topico-3" data-ARCKHÉ-track="1" id="topico-3">
+<section class="mb-16" data-ARCKHê-module="1-1" data-ARCKHê-topic="modulo-1-1#topico-3" data-ARCKHê-track="1" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">3</span>
-<h2 class="text-2xl font-bold">ðŸ¤– What Claude Code Is (and Isnâ€™t)</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â¤â What Claude Code Is (and Isnê¢â¬â¢t)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t3-p1">Claude Code is an assistant that lives in the <strong class="text-emerald-400">terminal</strong> (the computerâ€™s â€œblack screenâ€) and writes, runs, and fixes code based on your text instructions. Itâ€™s no longer another no-code tool: itâ€™s the layer underneath all of them.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-1-t3-p1">Claude Code is an assistant that lives in the <strong class="text-emerald-400">terminal</strong> (the computerê¢â¬â¢s ê¢â¬Åblack screenê¢â¬Â) and writes, runs, and fixes code based on your text instructions. Itê¢â¬â¢s no longer another no-code tool: itê¢â¬â¢s the layer underneath all of them.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">A coding agent that talks with you and iterates: writes â†’ tests â†’ fixes.</p></div>
+<div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">A coding agent that talks with you and iterates: writes ê¢â â tests ê¢â â fixes.</p></div>
 <div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Understanding what the tool actually does prevents false expectations and shows why it's more powerful than the "boxes."</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Terminal Â· coding agent Â· iteration Â· abstraction layer.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Terminal êÂ· coding agent êÂ· iteration êÂ· abstraction layer.</p></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">âœ“ What Claude Code IS</h4>
+<h4 class="font-bold text-emerald-400 mb-4">ê¢Åâ What Claude Code IS</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>A partner that writes real code from text.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Able to create websites, apps, scripts, and automations.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Flexible: goes straight to the source, with no â€œlittle boxâ€ ceiling.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>A partner that writes real code from text.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Able to create websites, apps, scripts, and automations.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Flexible: goes straight to the source, with no ê¢â¬Ålittle boxê¢â¬Â ceiling.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— What it is NOT</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ What it is NOT</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>A magic button that guesses what you want.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>A tool "just for programmers".</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>One more visual layer like n8n or Makeâ€”it sits one level below.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>A magic button that guesses what you want.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>A tool "just for programmers".</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>One more visual layer like n8n or Makeê¢â¬âit sits one level below.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸªœ</span> Why go straight to the code</h3>
-<p class="text-neutral-300 text-sm">No-code tools are â€œlayers of abstractionâ€â€”they hide the code behind a visual interface, but they have a ceiling. Claude Code skips the little box and keeps the simplicity of conversation: fewer middlemen, greater reach.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸ÂªÅ</span> Why go straight to the code</h3>
+<p class="text-neutral-300 text-sm">No-code tools are ê¢â¬Ålayers of abstractionê¢â¬Âê¢â¬âthey hide the code behind a visual interface, but they have a ceiling. Claude Code skips the little box and keeps the simplicity of conversation: fewer middlemen, greater reach.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-ARCKHÉ-module="1-1" data-ARCKHÉ-topic="modulo-1-1#topico-4" data-ARCKHÉ-track="1" id="topico-4">
+<section class="mb-16" data-ARCKHê-module="1-1" data-ARCKHê-topic="modulo-1-1#topico-4" data-ARCKHê-track="1" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">4</span>
-<h2 class="text-2xl font-bold">ðŸ› ï¸ Build, Donâ€™t Just Study</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âºÂ ê¯Â¸Â Build, Donê¢â¬â¢t Just Study</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t4-p1">This course is hands-on. You leave each track with <strong class="text-emerald-400">something ready</strong> â€” a website, an app, an automationâ€”not a head full of disconnected theory.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-1-t4-p1">This course is hands-on. You leave each track with <strong class="text-emerald-400">something ready</strong> ê¢â¬â a website, an app, an automationê¢â¬ânot a head full of disconnected theory.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
 <div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">The philosophy of learning by building real things, with project-based assessment.</p></div>
 <div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Knowledge that becomes a project sticks; loose knowledge evaporates. And you leave with a portfolio.</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Learn by doing Â· project as the assessment Â· no filler.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Learn by doing êÂ· project as the assessment êÂ· no filler.</p></div>
 </div>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Read / watch the topic</h4><p class="text-neutral-300 text-sm">Understand the core idea. Don't memorize itâ€”understand it.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Read / watch the topic</h4><p class="text-neutral-300 text-sm">Understand the core idea. Don't memorize itê¢â¬âunderstand it.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">2</span></div>
@@ -359,129 +359,129 @@
 </div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-ARCKHÉ-module="1-1" data-ARCKHÉ-topic="modulo-1-1#topico-5" data-ARCKHÉ-track="1" id="topico-5">
+<section class="mb-16" data-ARCKHê-module="1-1" data-ARCKHê-topic="modulo-1-1#topico-5" data-ARCKHê-track="1" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">5</span>
-<h2 class="text-2xl font-bold">ðŸ—ºï¸ Overview of the 3 tracks</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂºê¯Â¸Â Overview of the 3 tracks</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t5-p1">The course is organized into three progressive tracks. Each builds on the previous one. See the map before you set out <strong class="text-emerald-400">reduces anxiety</strong> and helps you choose your pace.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-1-t5-p1">The course is organized into three progressive tracks. Each builds on the previous one. See the map before you set out <strong class="text-emerald-400">reduces anxiety</strong> and helps you choose your pace.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Three tracks: Fundamentals, Build, and Operate &amp; Earn â€” plus the Resource Library.</p></div>
+<div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Three tracks: Fundamentals, Build, and Operate &amp; Earn ê¢â¬â plus the Resource Library.</p></div>
 <div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Knowing where everything is gives you a map to return to and consult when you need it.</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Track 1 Fundamentals Â· Track 2 Build Â· Track 3 Operate &amp; Earn Â· Library.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Track 1 Fundamentals êÂ· Track 2 Build êÂ· Track 3 Operate &amp; Earn êÂ· Library.</p></div>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all" href="index.html"><div class="text-emerald-400 font-bold text-sm mb-1">Track 1</div><h4 class="font-semibold group-hover:text-emerald-400 transition-colors">ðŸ§± Fundamentals</h4><p class="text-xs text-neutral-400 mt-1">Install, configure, and operate safely.</p></a>
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all" href="../trilha2/index.html"><div class="text-blue-400 font-bold text-sm mb-1">Track 2</div><h4 class="font-semibold group-hover:text-blue-400 transition-colors">ðŸš€ Build</h4><p class="text-xs text-neutral-400 mt-1">From zero to a live website, then apps.</p></a>
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-5 transition-all" href="../trilha3/index.html"><div class="text-purple-400 font-bold text-sm mb-1">Track 3</div><h4 class="font-semibold group-hover:text-purple-400 transition-colors">ðŸ“ˆ Operate &amp; Profit</h4><p class="text-xs text-neutral-400 mt-1">Memory, personal agent, security, and revenue.</p></a>
-<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-5 transition-all" href="../trilha4/index.html"><div class="text-amber-400 font-bold text-sm mb-1">Library</div><h4 class="font-semibold group-hover:text-amber-400 transition-colors">ðŸ“š Resources</h4><p class="text-xs text-neutral-400 mt-1">Ready-to-use prompt, skill, and agent library.</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all" href="index.html"><div class="text-emerald-400 font-bold text-sm mb-1">Track 1</div><h4 class="font-semibold group-hover:text-emerald-400 transition-colors">ê°Å¸Â§Â± Fundamentals</h4><p class="text-xs text-neutral-400 mt-1">Install, configure, and operate safely.</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all" href="../trilha2/index.html"><div class="text-blue-400 font-bold text-sm mb-1">Track 2</div><h4 class="font-semibold group-hover:text-blue-400 transition-colors">ê°Å¸Å¡â¬ Build</h4><p class="text-xs text-neutral-400 mt-1">From zero to a live website, then apps.</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-5 transition-all" href="../trilha3/index.html"><div class="text-purple-400 font-bold text-sm mb-1">Track 3</div><h4 class="font-semibold group-hover:text-purple-400 transition-colors">ê°Å¸âË Operate &amp; Profit</h4><p class="text-xs text-neutral-400 mt-1">Memory, personal agent, security, and revenue.</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-5 transition-all" href="../trilha4/index.html"><div class="text-amber-400 font-bold text-sm mb-1">Library</div><h4 class="font-semibold group-hover:text-amber-400 transition-colors">ê°Å¸âÅ¡ Resources</h4><p class="text-xs text-neutral-400 mt-1">Ready-to-use prompt, skill, and agent library.</p></a>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-ARCKHÉ-module="1-1" data-ARCKHÉ-topic="modulo-1-1#topico-6" data-ARCKHÉ-track="1" id="topico-6">
+<section class="mb-16" data-ARCKHê-module="1-1" data-ARCKHê-topic="modulo-1-1#topico-6" data-ARCKHê-track="1" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">6</span>
-<h2 class="text-2xl font-bold">ðŸ“š How to study this course</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÅ¡ How to study this course</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-1-t6-p1">Start from the beginning. Focus fully. Do the exercises before moving on. The â€œlittle tricksâ€ that seem optional are <strong class="text-emerald-400">exactly where the gain lies</strong>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-1-t6-p1">Start from the beginning. Focus fully. Do the exercises before moving on. The ê¢â¬Ålittle tricksê¢â¬Â that seem optional are <strong class="text-emerald-400">exactly where the gain lies</strong>.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
 <div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">A simple method: sequence, deep focus, and practice before moving on.</p></div>
-<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Skipping steps â€œyou think you already knowâ€ creates gaps youâ€™ll feel later.</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Sequence Â· focus Â· practice Â· living course (updated material).</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Skipping steps ê¢â¬Åyou think you already knowê¢â¬Â creates gaps youê¢â¬â¢ll feel later.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Sequence êÂ· focus êÂ· practice êÂ· living course (updated material).</p></div>
 </div>
 <details class="bg-dark-800 border border-dark-600 rounded-xl p-5 mb-6">
 <summary class="cursor-pointer font-semibold text-emerald-400">Going deeper (optional): why short sessions win</summary>
-<p class="text-neutral-300 text-sm mt-3">Marathon sessions are tiring and donâ€™t help you retain what you learn. Sessions of 25â€“30 minutes, a few times a week, build consistencyâ€”and consistency beats a single day of heroic effort. Use the "My journey" tracker to see your progress each session.</p>
+<p class="text-neutral-300 text-sm mt-3">Marathon sessions are tiring and donê¢â¬â¢t help you retain what you learn. Sessions of 25ê¢â¬â30 minutes, a few times a week, build consistencyê¢â¬âand consistency beats a single day of heroic effort. Use the "My journey" tracker to see your progress each session.</p>
 </details>
 <!-- Checagem leve opcional -->
-<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-1-1#q1">
+<div class="ARCKHê-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHê-check="modulo-1-1#q1">
 <p class="font-medium mb-4">Self-check (optional): which phrase best sums up how to talk to Claude Code?</p>
-<div class="ARCKHÉ-check-options space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">Memorize secret commands and type them quickly.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Clearly describe what you want, in Portuguese.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Click buttons in a visual interface.</button>
+<div class="ARCKHê-check-options space-y-2">
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="0" type="button">Memorize secret commands and type them quickly.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="1" type="button">Clearly describe what you want, in Portuguese.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="2" type="button">Click buttons in a visual interface.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHê-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- EXERCICIOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âœï¸ Exercises</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂê¯Â¸Â Exercises</h2>
 <div class="space-y-4">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. The anchor phrase <span class="text-xs text-neutral-500">(easy)</span></h3><p class="text-neutral-300 text-sm">Write what "if you can imagine it, you can build it" means in your context. <span class="text-emerald-400">Criterion:</span> give a concrete example of your own.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Abstraction hunt <span class="text-xs text-neutral-500">(easy)</span></h3><p class="text-neutral-300 text-sm">In 2â€“3 lines, explain the difference between a no-code tool and going straight to code. <span class="text-emerald-400">Criterion:</span> uses "abstraction layer" correctly.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Abstraction hunt <span class="text-xs text-neutral-500">(easy)</span></h3><p class="text-neutral-300 text-sm">In 2ê¢â¬â3 lines, explain the difference between a no-code tool and going straight to code. <span class="text-emerald-400">Criterion:</span> uses "abstraction layer" correctly.</p></div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Your Specification <span class="text-xs text-neutral-500">(medium)</span></h3><p class="text-neutral-300 text-sm">Describe one of your projects in 3 sentences. <span class="text-emerald-400">Criterion:</span> no sentence uses a vague word (beautiful, easy, fast) without a concrete detail alongside it.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. Study plan <span class="text-xs text-neutral-500">(medium)</span></h3><p class="text-neutral-300 text-sm">Decide when and how much youâ€™ll study over the next 2 weeks. <span class="text-emerald-400">Criterion:</span> has a real date, time, and duration.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. Study plan <span class="text-xs text-neutral-500">(medium)</span></h3><p class="text-neutral-300 text-sm">Decide when and how much youê¢â¬â¢ll study over the next 2 weeks. <span class="text-emerald-400">Criterion:</span> has a real date, time, and duration.</p></div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. Focus environment <span class="text-xs text-neutral-500">(medium)</span></h3><p class="text-neutral-300 text-sm">Set up your space: put your phone away, keep just one tab open, and have water nearby. <span class="text-emerald-400">Criterion:</span> 25 minutes without checking your phone.</p></div>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âŒ¨ï¸ Ready-to-use prompts</h2>
-<p class="text-neutral-300 text-sm mb-6">You won't run these yet (installation is in the next module). They show the <strong class="text-emerald-400">tone</strong> from a good instruction: clear, in Portuguese, saying <em>what</em> e <em>for whom</em>. The complete bank is at <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Library â†’ Prompts</a>.</p>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂ¨ê¯Â¸Â Ready-to-use prompts</h2>
+<p class="text-neutral-300 text-sm mb-6">You won't run these yet (installation is in the next module). They show the <strong class="text-emerald-400">tone</strong> from a good instruction: clear, in Portuguese, saying <em>what</em> e <em>for whom</em>. The complete bank is at <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Library ê¢â â Prompts</a>.</p>
 <div class="space-y-5">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Explanation at your level</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Explain in Portuguese, as if I had never programmed, what Claude Code is and what it's for. Use an everyday analogy. No more than 5 sentences.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Vague idea â†’ specification (canonical)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">I'll describe an idea that's still a little vague. Your task is to ask me 5 short questions, one at a time, to turn this idea into a clear, buildable specification. My idea: [describe it here].</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">I'll describe a still-vague idea. Your job is to ask me 5 short questions, one at a time, to turn it into a clear, buildable spec. My idea: [describe here].</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Personal study plan</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Sou iniciante total, sem experiÃªncia em programaÃ§Ã£o. Quero aprender a construir software descrevendo o que quero em portuguÃªs. Monte um plano de estudo de 2 semanas, realista, com sessÃµes curtas. Comece pelo mais bÃ¡sico.</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Vague idea ê¢â â specification (canonical)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">I'll describe an idea that's still a little vague. Your task is to ask me 5 short questions, one at a time, to turn this idea into a clear, buildable specification. My idea: [describe it here].</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">I'll describe a still-vague idea. Your job is to ask me 5 short questions, one at a time, to turn it into a clear, buildable spec. My idea: [describe here].</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Personal study plan</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Sou iniciante total, sem experiêÂªncia em programaêÂ§êÂ£o. Quero aprender a construir software descrevendo o que quero em portuguêÂªs. Monte um plano de estudo de 2 semanas, realista, com sessêÂµes curtas. Comece pelo mais bêÂ¡sico.</pre></div>
 </div>
 </section>
 <!-- ERROS COMUNS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âš ï¸ Common errors</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢Å¡Â ê¯Â¸Â Common errors</h2>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>"This isnâ€™t for me; Iâ€™m not tech-savvy."</strong> The #1 blocker â€” and itâ€™s false. The prerequisite is willingness, not a degree.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Skip the beginning â€œbecause it seems basic.â€</strong> The small tricks in the first lessons are where the gains come from later.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Study without building.</strong> Watching without doing the exercises creates the illusion that you know how.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Wait for a â€œmagic command.â€</strong> The result comes from clear descriptions, not secret formulas.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Wanting to learn everything at once.</strong> Short, regular sessions beat heroic effort.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>"This isnê¢â¬â¢t for me; Iê¢â¬â¢m not tech-savvy."</strong> The #1 blocker ê¢â¬â and itê¢â¬â¢s false. The prerequisite is willingness, not a degree.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Skip the beginning ê¢â¬Åbecause it seems basic.ê¢â¬Â</strong> The small tricks in the first lessons are where the gains come from later.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Study without building.</strong> Watching without doing the exercises creates the illusion that you know how.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Wait for a ê¢â¬Åmagic command.ê¢â¬Â</strong> The result comes from clear descriptions, not secret formulas.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Wanting to learn everything at once.</strong> Short, regular sessions beat heroic effort.</span></li>
 </ul>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-emerald-900/40 via-dark-800 to-dark-800 rounded-xl border border-emerald-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Module summary</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Åâ¦</span> Module summary</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>What Claude Code is</strong><span class="text-neutral-400"> â€” an agent in the terminal that writes, tests, and fixes code based on your text.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>The mindset</strong><span class="text-neutral-400"> â€” imagining is specifying; youâ€™re the director, not the builder.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>The map</strong><span class="text-neutral-400"> â€” 3 progressive tracks + a resource library.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>How to study</strong><span class="text-neutral-400"> â€” from the beginning, with focus and practice before moving on.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>What Claude Code is</strong><span class="text-neutral-400"> ê¢â¬â an agent in the terminal that writes, tests, and fixes code based on your text.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>The mindset</strong><span class="text-neutral-400"> ê¢â¬â imagining is specifying; youê¢â¬â¢re the director, not the builder.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>The map</strong><span class="text-neutral-400"> ê¢â¬â 3 progressive tracks + a resource library.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>How to study</strong><span class="text-neutral-400"> ê¢â¬â from the beginning, with focus and practice before moving on.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
 <h3 class="font-semibold text-emerald-400 mb-3">Completion checklist</h3>
 <ul class="space-y-2 text-sm text-neutral-300">
-<li>â˜ I can explain in one sentence what Claude Code is.</li>
-<li>â˜ I understand the difference between no-code and going straight to code.</li>
-<li>â˜ I internalized â€œif I can imagine it, I can build itâ€ with an example of my own.</li>
-<li>â˜ I know the 3 tracks and know where to start.</li>
-<li>â˜ I wrote my first specification (an idea in 3 concrete sentences).</li>
-<li>â˜ I defined my study plan (day, time, duration).</li>
+<li>ê¢ËÂ I can explain in one sentence what Claude Code is.</li>
+<li>ê¢ËÂ I understand the difference between no-code and going straight to code.</li>
+<li>ê¢ËÂ I internalized ê¢â¬Åif I can imagine it, I can build itê¢â¬Â with an example of my own.</li>
+<li>ê¢ËÂ I know the 3 tracks and know where to start.</li>
+<li>ê¢ËÂ I wrote my first specification (an idea in 3 concrete sentences).</li>
+<li>ê¢ËÂ I defined my study plan (day, time, duration).</li>
 </ul>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
 <h3 class="font-semibold text-emerald-400 mb-2">Next module:</h3>
-<p class="text-neutral-300">1.2 â€” Fundamentals and Setup: from zero to your first command in Claude Code</p>
+<p class="text-neutral-300">1.2 ê¢â¬â Fundamentals and Setup: from zero to your first command in Claude Code</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Back to the track</a>
-<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-2.html">Next module â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Back to the track</a>
+<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-2.html">Next module ê¢â â</a>
 </div>
 </div>
 </section>
@@ -490,7 +490,7 @@
 <!-- FOOTER -->
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Claude Code in Practice â€” <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>Claude Code in Practice ê¢â¬â <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <!-- SCRIPTS: nucleo v1 -->
@@ -499,7 +499,7 @@
     (function(){ var tt=document.getElementById('theme-toggle'); if(!tt) return; var di=document.getElementById('theme-toggle-dark-icon'), li=document.getElementById('theme-toggle-light-icon'), html=document.documentElement;
       function sync(){ if(html.classList.contains('dark')){ li&&li.classList.remove('hidden'); di&&di.classList.add('hidden'); } else { di&&di.classList.remove('hidden'); li&&li.classList.add('hidden'); } }
       sync();
-      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}'); p.theme=dark?'ARCKHÉ-dark':'claro'; localStorage.setItem('ARCKHÉ.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
+      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHê.prefs')||'{}'); p.theme=dark?'ARCKHê-dark':'claro'; localStorage.setItem('ARCKHê.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
     function openModal(id){ var m=document.getElementById(id); if(m){ m.classList.remove('hidden'); document.body.style.overflow='hidden'; } }
     function closeModal(){ document.querySelectorAll('.modal').forEach(function(m){ m.classList.add('hidden'); }); document.body.style.overflow='auto'; }
     document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
@@ -507,19 +507,19 @@
 <!-- Camada de aprendizagem -->
 <script>
     window.addEventListener('DOMContentLoaded', function(){
-      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
-        ARCKHÉ.registerCheck('modulo-1-1#q1', {
+      if (window.ARCKHê && ARCKHê.registerCheck) {
+        ARCKHê.registerCheck('modulo-1-1#q1', {
           answer: 1,
           explain: {
-            0: 'NÃ£o hÃ¡ comandos secretos â€” o que conta Ã© a clareza da descriÃ§Ã£o.',
-            1: 'Isso! VocÃª descreve o quÃª e para quem; o Claude Code escreve o cÃ³digo.',
-            2: 'Isso Ã© no-code. O Claude Code vai direto ao cÃ³digo, conversando.'
+            0: 'NêÂ£o hêÂ¡ comandos secretos ê¢â¬â o que conta êÂ© a clareza da descriêÂ§êÂ£o.',
+            1: 'Isso! VocêÂª descreve o quêÂª e para quem; o Claude Code escreve o cêÂ³digo.',
+            2: 'Isso êÂ© no-code. O Claude Code vai direto ao cêÂ³digo, conversando.'
           }
         });
       }
     });
   </script>
 <script src="../../../assets/learn.js"></script>
-<script>if (window.ARCKHÉ && typeof window.ARCKHÉ.init==='function'){ window.ARCKHÉ.init(); }</script>
+<script>if (window.ARCKHê && typeof window.ARCKHê.init==='function'){ window.ARCKHê.init(); }</script>
 </body>
 </html>

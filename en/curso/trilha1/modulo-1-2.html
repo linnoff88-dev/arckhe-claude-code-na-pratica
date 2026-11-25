@@ -4,29 +4,29 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-na-pratica" name="ARCKHÉ-course"/>
+<meta content="claude-na-pratica" name="ARCKHê-course"/>
 <title>1.2 Fundamentals and Setup: from zero to your first command | Claude Code in Practice</title>
 <!-- ANTI-FOUC: bloqueante, SEPARADO, antes do Tailwind/learn.css -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){ var r={}; for (var x in o) r[x]=o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHê-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var THEMES = { 'ARCKHê-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'emerald');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
+      s.setProperty('--ARCKHê-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
       var fam = p.font==='system' ? 'system-ui,-apple-system,"Segoe UI",Roboto,sans-serif' : (p.font==='leitura' ? '"Atkinson Hyperlegible","Inter",system-ui,sans-serif' : '"Inter",system-ui,sans-serif');
       s.setProperty('--font-body', fam);
@@ -43,8 +43,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
-<!-- Manifesto do curso (IDÃŠNTICO em TODA pagina) -->
-<script data-ARCKHÉ-manifest="" type="application/json">
+<!-- Manifesto do curso (IDêÅ NTICO em TODA pagina) -->
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "claude-na-pratica",
     "tracks": [
@@ -79,7 +79,7 @@
     .dark body { background-color: #111827; }
     .topic-explanation { display: none; }
     .topic-explanation.active { display: block; }
-    section[data-ARCKHÉ-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
+    section[data-ARCKHê-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
     .skip { position:absolute; left:-999px; top:0; z-index:100; }
     .skip:focus { left:8px; top:8px; background:#111827; color:#fff; padding:8px 12px; border-radius:8px; }
 
@@ -126,7 +126,7 @@
     }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/modulo-1-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-1-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha1/modulo-1-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha1/modulo-1-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-1-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../../es/curso/trilha1/modulo-1-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip" href="#conteudo">Skip to content</a>
 <!-- NAV -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -134,20 +134,20 @@
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">âš¡</span>
+<span class="text-2xl">ê¢Å¡Â¡</span>
 <span class="font-bold text-lg hidden sm:inline">Claude Code in Practice</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentals</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Build</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Operate &amp; Profit</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Library</span></a>
-<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHÉ-journey-open="" title="My journey" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden lg:inline">Journey</span>
-<span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHê-journey-open="" title="My journey" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden lg:inline">Journey</span>
+<span aria-hidden="true" class="ARCKHê-journey-badge hidden"></span>
 </button>
 <button aria-label="Toggle light/dark theme" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle" title="Light/dark theme">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -171,7 +171,7 @@
 <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MODULE 1.2</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ›¡ï¸ Fundamentals and Setup: from Zero to Your First Command</h1>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸âºÂ¡ê¯Â¸Â Fundamentals and Setup: from Zero to Your First Command</h1>
 <p class="text-lg text-neutral-400 max-w-3xl">The hands-on lesson. You install Claude Code, understand the difference between the model and the environment, learn to protect your context, and give your first command that creates real files on your computer.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">Topics</div></div>
@@ -181,8 +181,8 @@
 </div>
 <!-- Medidor de progresso do modulo -->
 <div class="mt-6 max-w-2xl">
-<div aria-label="Module 1.2 progress" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter" data-ARCKHÉ-meter="modulo:1-2" role="progressbar">
-<span class="ARCKHÉ-meter-pct" data-ARCKHÉ-meter-pct="">0%</span> <span class="ARCKHÉ-meter-count text-neutral-400 text-sm" data-ARCKHÉ-meter-frac="">0 of 6</span>
+<div aria-label="Module 1.2 progress" aria-valuemax="100" aria-valuemin="0" class="ARCKHê-meter" data-ARCKHê-meter="modulo:1-2" role="progressbar">
+<span class="ARCKHê-meter-pct" data-ARCKHê-meter-pct="">0%</span> <span class="ARCKHê-meter-count text-neutral-400 text-sm" data-ARCKHê-meter-frac="">0 of 6</span>
 </div>
 </div>
 </div>
@@ -190,18 +190,18 @@
 <!-- CONTEUDO + TOC -->
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[220px_1fr] lg:gap-10" id="conteudo">
 <!-- TOC sticky -->
-<nav aria-label="Page index" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-3">Section <span class="ARCKHÉ-toc-pos">1</span> of <span class="ARCKHÉ-toc-total">6</span></p>
+<nav aria-label="Page index" class="hidden lg:block sticky top-24 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-3">Section <span class="ARCKHê-toc-pos">1</span> of <span class="ARCKHê-toc-total">6</span></p>
 <ul class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-1">1. Model x Environment</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-2">2. Installing</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-3">3. The Interface</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-4">4. Permission modes</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-5">5. Context window</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-6">6. Slash commands &amp; plan</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-1">1. Model x Environment</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-2">2. Installing</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-3">3. The Interface</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-4">4. Permission modes</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-5">5. Context window</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-6">6. Slash commands &amp; plan</a></li>
 </ul>
 </nav>
-<div class="ARCKHÉ-prose">
+<div class="ARCKHê-prose">
 <!-- SVG modelo x ambiente -->
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-10 overflow-hidden">
 <svg aria-label="On the left, the model, the intelligent brain; on the right, the environment or IDE, the armor that gives the model a body; below, a context window bar that goes from green to red, showing context decay as the conversation grows" class="w-full h-auto" role="img" viewbox="0 0 1000 260">
@@ -218,7 +218,7 @@
 <circle cx="125" cy="98" fill="none" r="30" stroke="#34d399" stroke-width="2.4"></circle>
 <path class="wf-a" d="M108,88 C112,80 138,80 142,88 C150,92 150,108 142,112 C138,120 112,120 108,112 C100,108 100,92 108,88 Z" fill="none" stroke="#34d399" stroke-width="2"></path>
 <text fill="#34d399" font-family="Inter,sans-serif" font-size="20" font-weight="700" text-anchor="middle" x="220" y="92">MODEL</text>
-<text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="220" y="116">the brain Â· the intelligence</text>
+<text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="220" y="116">the brain êÂ· the intelligence</text>
 <!-- seta cerebro entra na armadura -->
 <path d="M330,100 L430,100" fill="none" marker-end="url(#m12-ah)" opacity="0.8" stroke="#34d399" stroke-width="2.2"></path>
 <text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="380" y="88">goes into the</text>
@@ -231,81 +231,81 @@
 <line x1="565" x2="580" y1="74" y2="100"></line>
 </g>
 <text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="18" font-weight="700" text-anchor="middle" x="650" y="92">ENVIRONMENT</text>
-<text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="650" y="114">the armor Â· IDE</text>
+<text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="650" y="114">the armor êÂ· IDE</text>
 <!-- saidas/acoes da armadura -->
 <g font-family="Inter,sans-serif" font-size="12" font-weight="600">
-<g class="wf-a"><rect fill="#0e2018" height="30" rx="8" stroke="#34d399" stroke-width="1.8" width="190" x="770" y="46"></rect><text fill="#9fe7c9" text-anchor="middle" x="865" y="66">ðŸ“ reads and creates files</text></g>
-<g class="wf-a"><rect fill="#0e2018" height="30" rx="8" stroke="#34d399" stroke-width="1.8" width="190" x="770" y="84"></rect><text fill="#9fe7c9" text-anchor="middle" x="865" y="104">âš™ï¸ runs commands</text></g>
-<g class="wf-a"><rect fill="#0e2018" height="30" rx="8" stroke="#34d399" stroke-width="1.8" width="190" x="770" y="122"></rect><text fill="#9fe7c9" text-anchor="middle" x="865" y="142">ðŸ”Œ connects tools</text></g>
+<g class="wf-a"><rect fill="#0e2018" height="30" rx="8" stroke="#34d399" stroke-width="1.8" width="190" x="770" y="46"></rect><text fill="#9fe7c9" text-anchor="middle" x="865" y="66">ê°Å¸âÂ reads and creates files</text></g>
+<g class="wf-a"><rect fill="#0e2018" height="30" rx="8" stroke="#34d399" stroke-width="1.8" width="190" x="770" y="84"></rect><text fill="#9fe7c9" text-anchor="middle" x="865" y="104">ê¢Å¡â¢ê¯Â¸Â runs commands</text></g>
+<g class="wf-a"><rect fill="#0e2018" height="30" rx="8" stroke="#34d399" stroke-width="1.8" width="190" x="770" y="122"></rect><text fill="#9fe7c9" text-anchor="middle" x="865" y="142">ê°Å¸âÅ connects tools</text></g>
 </g>
 <!-- barra janela de contexto -->
 <text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="13" font-weight="600" x="40" y="200">Context window</text>
 <rect fill="#0e2018" height="22" rx="11" stroke="#34d399" stroke-width="1.4" width="920" x="40" y="210"></rect>
 <rect fill="url(#m12-rot)" height="18" opacity="0.85" rx="9" width="916" x="42" y="212"></rect>
-<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="500" y="252">context rot â€” performance declines as the conversation grows Â· golden rule: one task, one window</text>
+<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="500" y="252">context rot ê¢â¬â performance declines as the conversation grows êÂ· golden rule: one task, one window</text>
 </svg>
 </div>
 <h2 class="text-2xl font-bold mb-6">Detailed content</h2>
 <!-- TOPICO 1 -->
-<section class="mb-16" data-ARCKHÉ-module="1-2" data-ARCKHÉ-topic="modulo-1-2#topico-1" data-ARCKHÉ-track="1" id="topico-1">
+<section class="mb-16" data-ARCKHê-module="1-2" data-ARCKHê-topic="modulo-1-2#topico-1" data-ARCKHê-track="1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">1</span>
-<h2 class="text-2xl font-bold">ðŸ›¡ï¸ Model vs. Environment â€” Iron Manâ€™s Armor</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âºÂ¡ê¯Â¸Â Model vs. Environment ê¢â¬â Iron Manê¢â¬â¢s Armor</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t1-p1">Claude Code brings AI to <strong class="text-emerald-400">inside your computer</strong>, instead of just chatting with it on a website. Think of it this way: the <strong class="text-emerald-400">the model is Tony Stark</strong> (the brain, the intelligence) and the <strong class="text-emerald-400">the environment is the Iron Man suit</strong> â€” the body that lets the brain read files, run commands, and actually work with things.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-2-t1-p1">Claude Code brings AI to <strong class="text-emerald-400">inside your computer</strong>, instead of just chatting with it on a website. Think of it this way: the <strong class="text-emerald-400">the model is Tony Stark</strong> (the brain, the intelligence) and the <strong class="text-emerald-400">the environment is the Iron Man suit</strong> ê¢â¬â the body that lets the brain read files, run commands, and actually work with things.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">The model is the intelligence; the environment (or IDE) is where that intelligence actsâ€”reading, executing, and creating things on your machine.</p></div>
+<div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">The model is the intelligence; the environment (or IDE) is where that intelligence actsê¢â¬âreading, executing, and creating things on your machine.</p></div>
 <div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Without this concept, everything feels like confusing magic. With it, you understand why the same AI runs in different places and why choosing the environment matters.</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Model Â· environment Â· IDE Â· "one task, one window".</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Model êÂ· environment êÂ· IDE êÂ· "one task, one window".</p></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">âœ“ The model (Tony Stark)</h4>
+<h4 class="font-bold text-emerald-400 mb-4">ê¢Åâ The model (Tony Stark)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Itâ€™s the brain: it reasons, writes, and decides.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Alone, itâ€™s brilliant, but it canâ€™t act in the world.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>You can switch models without switching environments.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Itê¢â¬â¢s the brain: it reasons, writes, and decides.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Alone, itê¢â¬â¢s brilliant, but it canê¢â¬â¢t act in the world.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>You can switch models without switching environments.</span></li>
 </ul>
 </div>
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">âœ“ The environment (the armor / IDE)</h4>
+<h4 class="font-bold text-emerald-400 mb-4">ê¢Åâ The environment (the armor / IDE)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Gives the model â€œformâ€: reads and creates files.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Runs commands and connects other tools.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>There are several â€œsuits of armorâ€â€”you can switch whenever you want.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Gives the model ê¢â¬Åformê¢â¬Â: reads and creates files.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Runs commands and connects other tools.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>There are several ê¢â¬Åsuits of armorê¢â¬Âê¢â¬âyou can switch whenever you want.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Donâ€™t get stuck on the term "IDE"</h3>
-<p class="text-neutral-300 text-sm">IDE stands for â€œintegrated development environment.â€ For now, think of an IDE simply as <em>"the place where the assistant works"</em>. Nothing else.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Donê¢â¬â¢t get stuck on the term "IDE"</h3>
+<p class="text-neutral-300 text-sm">IDE stands for ê¢â¬Åintegrated development environment.ê¢â¬Â For now, think of an IDE simply as <em>"the place where the assistant works"</em>. Nothing else.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-ARCKHÉ-module="1-2" data-ARCKHÉ-topic="modulo-1-2#topico-2" data-ARCKHÉ-track="1" id="topico-2">
+<section class="mb-16" data-ARCKHê-module="1-2" data-ARCKHê-topic="modulo-1-2#topico-2" data-ARCKHê-track="1" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">2</span>
-<h2 class="text-2xl font-bold">ðŸ’» Installing Claude Code</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ» Installing Claude Code</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t2-p1">Time to take AI out of the browser and put it on your machine. Installation is a prerequisite for everything: <strong class="text-emerald-400">without installing, thereâ€™s no practice</strong>. An important note before you begin â€” Claude Code requires <strong class="text-emerald-400">paid plan</strong>; the free plan doesn't include it.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-2-t2-p1">Time to take AI out of the browser and put it on your machine. Installation is a prerequisite for everything: <strong class="text-emerald-400">without installing, thereê¢â¬â¢s no practice</strong>. An important note before you begin ê¢â¬â Claude Code requires <strong class="text-emerald-400">paid plan</strong>; the free plan doesn't include it.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
 <div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Download and install the official Claude Code app and connect your account.</p></div>
-<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Itâ€™s the required starting point. Everything that follows assumes the app is installed and youâ€™re logged in.</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Installation Â· sign in with your Claude account Â· paid plan required.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Itê¢â¬â¢s the required starting point. Everything that follows assumes the app is installed and youê¢â¬â¢re logged in.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Installation êÂ· sign in with your Claude account êÂ· paid plan required.</p></div>
 </div>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Visit the official website</h4><p class="text-neutral-300 text-sm">Open <a class="text-sky-400 hover:text-sky-300" href="https://claude.com/claude-code" target="_blank">claude.com/claude-code</a> â€” the official installation source.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Visit the official website</h4><p class="text-neutral-300 text-sm">Open <a class="text-sky-400 hover:text-sky-300" href="https://claude.com/claude-code" target="_blank">claude.com/claude-code</a> ê¢â¬â the official installation source.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">2</span></div>
@@ -313,7 +313,7 @@
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Install and open the app</h4><p class="text-neutral-300 text-sm">Follow your systemâ€™s standard installer and open the app.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Install and open the app</h4><p class="text-neutral-300 text-sm">Follow your systemê¢â¬â¢s standard installer and open the app.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">4</span></div>
@@ -321,228 +321,228 @@
 </div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-ARCKHÉ-module="1-2" data-ARCKHÉ-topic="modulo-1-2#topico-3" data-ARCKHÉ-track="1" id="topico-3">
+<section class="mb-16" data-ARCKHê-module="1-2" data-ARCKHê-topic="modulo-1-2#topico-3" data-ARCKHê-track="1" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">3</span>
-<h2 class="text-2xl font-bold">ðŸ§­ The Interface Inside</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â­ The Interface Inside</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t3-p1">Before giving commands, get to know the screen. Knowing <strong class="text-emerald-400">where each button is</strong> prevents you from getting stuck right at the start: conversation history, model selector, permission mode, usage indicator, and context window.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-2-t3-p1">Before giving commands, get to know the screen. Knowing <strong class="text-emerald-400">where each button is</strong> prevents you from getting stuck right at the start: conversation history, model selector, permission mode, usage indicator, and context window.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
 <div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">A tour of the screen: conversation panel, model selector, plan usage indicator, and context window.</p></div>
 <div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Finding the controls is what gets you past "I don't even know where to start."</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Conversation panel Â· model selector Â· usage indicator Â· context window Â· microphone Â· attach files.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Conversation panel êÂ· model selector êÂ· usage indicator êÂ· context window êÂ· microphone êÂ· attach files.</p></div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ”Ž</span> Where to look first</h3>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÅ½</span> Where to look first</h3>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-primary mt-0.5">â€¢</span><span>Project history usually sits on one side of the screen.</span></li>
-<li class="flex items-start space-x-2"><span class="text-primary mt-0.5">â€¢</span><span>The model selector and permission mode are near the typing box.</span></li>
-<li class="flex items-start space-x-2"><span class="text-primary mt-0.5">â€¢</span><span>The plan and context usage indicator appears next to the message field.</span></li>
+<li class="flex items-start space-x-2"><span class="text-primary mt-0.5">ê¢â¬Â¢</span><span>Project history usually sits on one side of the screen.</span></li>
+<li class="flex items-start space-x-2"><span class="text-primary mt-0.5">ê¢â¬Â¢</span><span>The model selector and permission mode are near the typing box.</span></li>
+<li class="flex items-start space-x-2"><span class="text-primary mt-0.5">ê¢â¬Â¢</span><span>The plan and context usage indicator appears next to the message field.</span></li>
 </ul>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-ARCKHÉ-module="1-2" data-ARCKHÉ-topic="modulo-1-2#topico-4" data-ARCKHÉ-track="1" id="topico-4">
+<section class="mb-16" data-ARCKHê-module="1-2" data-ARCKHê-topic="modulo-1-2#topico-4" data-ARCKHê-track="1" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">4</span>
-<h2 class="text-2xl font-bold">ðŸ” Permission modes</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ Permission modes</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t4-p1">The permission mode controls <strong class="text-emerald-400">how much freedom you give the assistant</strong> â€” how much it can do on its own without asking you. Itâ€™s your safety lock: too much freedom too soon is a recipe for surprises.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-2-t4-p1">The permission mode controls <strong class="text-emerald-400">how much freedom you give the assistant</strong> ê¢â¬â how much it can do on its own without asking you. Itê¢â¬â¢s your safety lock: too much freedom too soon is a recipe for surprises.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
 <div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">How much the assistant acts on its own, from most cautious to boldest.</p></div>
-<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Itâ€™s the difference between experimenting with peace of mind and accidentally messing up important files.</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Four modes: ask before acting Â· accept edits Â· plan mode Â· ignore permissions.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Itê¢â¬â¢s the difference between experimenting with peace of mind and accidentally messing up important files.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Four modes: ask before acting êÂ· accept edits êÂ· plan mode êÂ· ignore permissions.</p></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">âœ“ Safe to get started</h4>
+<h4 class="font-bold text-emerald-400 mb-4">ê¢Åâ Safe to get started</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span><strong>Ask first:</strong> confirms every edit and every command. Ideal for unfamiliar projects.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span><strong>Accept edits:</strong> edits on its own, but still asks before running sensitive commands. <em>Recommended for getting started.</em></span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span><strong>Plan mode:</strong> doesn't execute; it thinks and proposes a plan first.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span><strong>Ask first:</strong> confirms every edit and every command. Ideal for unfamiliar projects.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span><strong>Accept edits:</strong> edits on its own, but still asks before running sensitive commands. <em>Recommended for getting started.</em></span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span><strong>Plan mode:</strong> doesn't execute; it thinks and proposes a plan first.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— Dangerous for beginners</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ Dangerous for beginners</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span><strong>Ignore permissions:</strong> doesn't ask anything. Powerful and dangerous.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Use only in an isolated environment, when you know exactly what you're doing.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Never on a "real" computer with important data.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span><strong>Ignore permissions:</strong> doesn't ask anything. Powerful and dangerous.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Use only in an isolated environment, when you know exactly what you're doing.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Never on a "real" computer with important data.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Pro tip</h3>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Pro tip</h3>
 <p class="text-neutral-300 text-sm">Start at <strong class="text-emerald-400">"accept edits"</strong>. It's safe enough to build fluency without having to approve every step, while still protecting you on the most sensitive commands.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-ARCKHÉ-module="1-2" data-ARCKHÉ-topic="modulo-1-2#topico-5" data-ARCKHÉ-track="1" id="topico-5">
+<section class="mb-16" data-ARCKHê-module="1-2" data-ARCKHê-topic="modulo-1-2#topico-5" data-ARCKHê-track="1" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">5</span>
-<h2 class="text-2xl font-bold">ðŸ§  Context Window and â€œRotâ€</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â  Context Window and ê¢â¬ÅRotê¢â¬Â</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t5-p1">Imagine a brilliant person with an extremely high IQ, but with <strong class="text-emerald-400">amnesia</strong>. The context window is how much of the conversation the model can remember accurately. The longer the conversation, the worse it remembers â€” a phenomenon called <strong class="text-emerald-400">"context rot"</strong> (context rot). Hence the golden rule: <strong class="text-emerald-400">one task, one window</strong>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-2-t5-p1">Imagine a brilliant person with an extremely high IQ, but with <strong class="text-emerald-400">amnesia</strong>. The context window is how much of the conversation the model can remember accurately. The longer the conversation, the worse it remembers ê¢â¬â a phenomenon called <strong class="text-emerald-400">"context rot"</strong> (context rot). Hence the golden rule: <strong class="text-emerald-400">one task, one window</strong>.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">The limit on how much of the conversation the model remembers wellâ€”and why long conversations reduce quality.</p></div>
-<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Managing context separates those who get reliable results from those who receive â€œconfidently wrongâ€ answers.</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Context window Â· tokens Â· context rot Â· hallucination Â· "one task, one window".</p></div>
+<div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">The limit on how much of the conversation the model remembers wellê¢â¬âand why long conversations reduce quality.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Managing context separates those who get reliable results from those who receive ê¢â¬Åconfidently wrongê¢â¬Â answers.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Context window êÂ· tokens êÂ· context rot êÂ· hallucination êÂ· "one task, one window".</p></div>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ðŸ“Š</span> In practice: watch out for hallucinations</h3>
+<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ê°Å¸âÅ </span> In practice: watch out for hallucinations</h3>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>The model can <strong>hallucinate</strong> (make things up with conviction) between ~1% and ~10% of the time.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>It performs worse in long conversationsâ€”the fuller the window, the greater the risk.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>Protect your context: start a new conversation for each task.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span>The model can <strong>hallucinate</strong> (make things up with conviction) between ~1% and ~10% of the time.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span>It performs worse in long conversationsê¢â¬âthe fuller the window, the greater the risk.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span>Protect your context: start a new conversation for each task.</span></li>
 </ul>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
 <p class="text-sm text-neutral-400 mb-2">Quick context hygiene</p>
-<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">/context     # vÃª quanto da janela jÃ¡ foi usada
+<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">/context     # vêÂª quanto da janela jêÂ¡ foi usada
 /compact     # resume a conversa, preservando o essencial
-/clear       # zera tudo e comeÃ§a do zero (refresh total)</pre>
+/clear       # zera tudo e comeêÂ§a do zero (refresh total)</pre>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-ARCKHÉ-module="1-2" data-ARCKHÉ-topic="modulo-1-2#topico-6" data-ARCKHÉ-track="1" id="topico-6">
+<section class="mb-16" data-ARCKHê-module="1-2" data-ARCKHê-topic="modulo-1-2#topico-6" data-ARCKHê-track="1" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">6</span>
-<h2 class="text-2xl font-bold">âŒ¨ï¸ Slash commands and plan mode</h2>
+<h2 class="text-2xl font-bold">ê¢ÅÂ¨ê¯Â¸Â Slash commands and plan mode</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>I have a question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t6-p1">Slash commands are commands you type with <strong class="text-emerald-400">/</strong> that control the conversation and context â€” your everyday hygiene tools. And for larger tasks, there's the <strong class="text-emerald-400">plan mode</strong>: the assistant reasons and proposes a plan <em>before</em> before running anything.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-2-t6-p1">Slash commands are commands you type with <strong class="text-emerald-400">/</strong> that control the conversation and context ê¢â¬â your everyday hygiene tools. And for larger tasks, there's the <strong class="text-emerald-400">plan mode</strong>: the assistant reasons and proposes a plan <em>before</em> before running anything.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Quick commands to clean up, summarize, measure, and switch thingsâ€”plus a mode that plans before acting.</p></div>
+<div><span class="text-emerald-400 font-semibold">What it is:</span><p class="text-neutral-300 text-sm">Quick commands to clean up, summarize, measure, and switch thingsê¢â¬âplus a mode that plans before acting.</p></div>
 <div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Save time and tokens, and plan mode reduces errors and rework on difficult tasks.</p></div>
-<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm"><code>/clear</code> Â· <code>/compact</code> Â· <code>/context</code> Â· <code>/model</code> Â· <code>/cost</code> Â· <code>/init</code> Â· <code>/memory</code> Â· plan mode Â· declared intent.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm"><code>/clear</code> êÂ· <code>/compact</code> êÂ· <code>/context</code> êÂ· <code>/model</code> êÂ· <code>/cost</code> êÂ· <code>/init</code> êÂ· <code>/memory</code> êÂ· plan mode êÂ· declared intent.</p></div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
 <p class="text-sm text-neutral-400 mb-2">Essential everyday commands</p>
-<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">/clear     apaga a conversa e comeÃ§a do zero
+<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">/clear     apaga a conversa e comeêÂ§a do zero
 /compact   resume a conversa preservando o essencial
-/context   mostra quanto da janela jÃ¡ foi usada
+/context   mostra quanto da janela jêÂ¡ foi usada
 /model     troca o modelo em uso
-/cost      mostra uso de tokens e custo da sessÃ£o
+/cost      mostra uso de tokens e custo da sessêÂ£o
 /init      pede para o assistente conhecer a pasta/projeto
-/memory    abre e edita os arquivos de memÃ³ria (CLAUDE.md)</pre>
+/memory    abre e edita os arquivos de memêÂ³ria (CLAUDE.md)</pre>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ—ºï¸</span> The trick that works in plan mode</h3>
-<p class="text-neutral-300 text-sm">Always state your real intent. Something like: <em>"My stated intention is X. Iâ€™m asking you for this because what I want to be true is ___."</em> Making your intent explicit greatly improves the response.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂºê¯Â¸Â</span> The trick that works in plan mode</h3>
+<p class="text-neutral-300 text-sm">Always state your real intent. Something like: <em>"My stated intention is X. Iê¢â¬â¢m asking you for this because what I want to be true is ___."</em> Making your intent explicit greatly improves the response.</p>
 </div>
 <details class="bg-dark-800 border border-dark-600 rounded-xl p-5 mb-6">
 <summary class="cursor-pointer font-semibold text-emerald-400">Going deeper (optional): /compact vs /clear</summary>
-<p class="text-neutral-300 text-sm mt-3">Use <code>/clear</code> when you switch tasks completely â€” you want a clean slate. Use <code>/compact</code> when you're still on the same task, but the conversation has gone on too long: it summarizes what matters (decisions and objective) and frees up space without losing the thread. Small difference, big impact on quality.</p>
+<p class="text-neutral-300 text-sm mt-3">Use <code>/clear</code> when you switch tasks completely ê¢â¬â you want a clean slate. Use <code>/compact</code> when you're still on the same task, but the conversation has gone on too long: it summarizes what matters (decisions and objective) and frees up space without losing the thread. Small difference, big impact on quality.</p>
 </details>
 <!-- Checagem leve opcional -->
-<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-1-2#q1">
+<div class="ARCKHê-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHê-check="modulo-1-2#q1">
 <p class="font-medium mb-4">Self-check (optional): you finished a task and are about to start another, very different one. Which command should you use?</p>
-<div class="ARCKHÉ-check-options space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button"><code>/cost</code> â€” to see how much Iâ€™ve spent so far.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button"><code>/clear</code> â€” to reset and start the new task in a clean window.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">None â€” Iâ€™ll stay in the same conversation to save time.</button>
+<div class="ARCKHê-check-options space-y-2">
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="0" type="button"><code>/cost</code> ê¢â¬â to see how much Iê¢â¬â¢ve spent so far.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="1" type="button"><code>/clear</code> ê¢â¬â to reset and start the new task in a clean window.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="2" type="button">None ê¢â¬â Iê¢â¬â¢ll stay in the same conversation to save time.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHê-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span></button>
 </div>
 </section>
 <!-- EXERCICIOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âœï¸ Exercises</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂê¯Â¸Â Exercises</h2>
 <div class="space-y-4">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. Installation complete <span class="text-xs text-neutral-500">(easy)</span></h3><p class="text-neutral-300 text-sm">Install Claude Code and sign in. <span class="text-emerald-400">Criterion:</span> the app opens connected to your account, and you can send a message.</p></div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. First file <span class="text-xs text-neutral-500">(easy)</span></h3><p class="text-neutral-300 text-sm">Ask the AI to create a folder with two files <code>.md</code> (as in the guided example). <span class="text-emerald-400">Criterion:</span> the folder and both files exist on the computer and have content.</p></div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Context Hygiene <span class="text-xs text-neutral-500">(medium)</span></h3><p class="text-neutral-300 text-sm">Start a conversation, run <code>/context</code>, then <code>/clear</code>, and run <code>/context</code> again. <span class="text-emerald-400">Criterion:</span> you see the context drop to near zero after the <code>/clear</code>.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. Plan mode <span class="text-xs text-neutral-500">(medium)</span></h3><p class="text-neutral-300 text-sm">Enable plan mode and ask for a plan to "organize my Downloads folder"â€”without executing it. <span class="text-emerald-400">Criterion:</span> the assistant returns a step-by-step plan without changing anything.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. Plan mode <span class="text-xs text-neutral-500">(medium)</span></h3><p class="text-neutral-300 text-sm">Enable plan mode and ask for a plan to "organize my Downloads folder"ê¢â¬âwithout executing it. <span class="text-emerald-400">Criterion:</span> the assistant returns a step-by-step plan without changing anything.</p></div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. Declared intent <span class="text-xs text-neutral-500">(medium)</span></h3><p class="text-neutral-300 text-sm">Redo exercise 4, including "My stated intention is...". <span class="text-emerald-400">Criterion:</span> the plan visibly aligns more closely with what you want.</p></div>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âŒ¨ï¸ Ready-to-use prompts</h2>
-<p class="text-neutral-300 text-sm mb-6">Now you can run these for real. They cover everything from the first file to plan mode and context hygiene. The complete collection is in the <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Library â†’ Prompts</a>.</p>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂ¨ê¯Â¸Â Ready-to-use prompts</h2>
+<p class="text-neutral-300 text-sm mb-6">Now you can run these for real. They cover everything from the first file to plan mode and context hygiene. The complete collection is in the <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Library ê¢â â Prompts</a>.</p>
 <div class="space-y-5">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Your first command (creates files)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Create a folder called "cafe-gelado" on my desktop and write two
 .md files inside: "por-que-cafe-e-otimo.md" and "por-que-cafe-nao-e-otimo.md".
 Three short sentences in each.</pre></div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Plan mode, no execution</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">My Downloads folder is a mess. Without running anything yet, give me a
-step-by-step PLAN to organize it by file type. Iâ€™ll approve it before you take action.</pre></div>
+step-by-step PLAN to organize it by file type. Iê¢â¬â¢ll approve it before you take action.</pre></div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Declared intent (canonical)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">My stated intention is: I want to understand, not just receive something ready-made.
 Explain what the Claude Code "context window" is in 3 simple sentences,
 as if I had never programmed before.</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">My stated intention is ___. I'm asking you to do this because the thing I want
 to be true is ___.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Get familiar with a project</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Familiarize-se com esta pasta (rode a inicializaÃ§Ã£o) e me diga, em 5 bullets,
-para que serve este projeto e quais sÃ£o os arquivos mais importantes.</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Get familiar with a project</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Familiarize-se com esta pasta (rode a inicializaêÂ§êÂ£o) e me diga, em 5 bullets,
+para que serve este projeto e quais sêÂ£o os arquivos mais importantes.</pre></div>
 </div>
 </section>
 <!-- ERROS COMUNS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âš ï¸ Common errors</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢Å¡Â ê¯Â¸Â Common errors</h2>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Thinking the free plan is enough.</strong> Thatâ€™s not enough â€” Claude Code requires a paid plan. Without one, you can install it but canâ€™t use it.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Let the conversation turn into a monster.</strong> Mixing ten tasks into one window leads to context rot. Use <code>/clear</code> between tasks.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Start with â€œignore permissions.â€</strong> On a real computer, that means asking it to delete or mess something up. Start with "accept edits".</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Blindly trust.</strong> The model can hallucinate. Review important resultsâ€”especially in long conversations.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Fill the <code>CLAUDE.md</code> of text.</strong> More than ~200 words starts to clutter the context. Keep it short and direct.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Thinking the free plan is enough.</strong> Thatê¢â¬â¢s not enough ê¢â¬â Claude Code requires a paid plan. Without one, you can install it but canê¢â¬â¢t use it.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Let the conversation turn into a monster.</strong> Mixing ten tasks into one window leads to context rot. Use <code>/clear</code> between tasks.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Start with ê¢â¬Åignore permissions.ê¢â¬Â</strong> On a real computer, that means asking it to delete or mess something up. Start with "accept edits".</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Blindly trust.</strong> The model can hallucinate. Review important resultsê¢â¬âespecially in long conversations.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Fill the <code>CLAUDE.md</code> of text.</strong> More than ~200 words starts to clutter the context. Keep it short and direct.</span></li>
 </ul>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-emerald-900/40 via-dark-800 to-dark-800 rounded-xl border border-emerald-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Module summary</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Åâ¦</span> Module summary</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>Model x environment</strong><span class="text-neutral-400"> â€” the model is the brain (Tony Stark); the environment/IDE is the armor that lets it act.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>Installation and paid plan</strong><span class="text-neutral-400"> â€” download it from the official site, sign in with your account, and confirm the paid plan.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>Permissions and context</strong><span class="text-neutral-400"> â€” start with "accept edits" and protect the context window from degradation.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>Slash commands and plan mode</strong><span class="text-neutral-400"> â€” /clear, /compact, /context, and planning before acting, with the intention stated.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>Model x environment</strong><span class="text-neutral-400"> ê¢â¬â the model is the brain (Tony Stark); the environment/IDE is the armor that lets it act.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>Installation and paid plan</strong><span class="text-neutral-400"> ê¢â¬â download it from the official site, sign in with your account, and confirm the paid plan.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>Permissions and context</strong><span class="text-neutral-400"> ê¢â¬â start with "accept edits" and protect the context window from degradation.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>Slash commands and plan mode</strong><span class="text-neutral-400"> ê¢â¬â /clear, /compact, /context, and planning before acting, with the intention stated.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
 <h3 class="font-semibold text-emerald-400 mb-3">Completion checklist</h3>
 <ul class="space-y-2 text-sm text-neutral-300">
-<li>â˜ Claude Code is installed and connected to my account (paid plan).</li>
-<li>â˜ I understand the difference between the model (Tony Stark) and the environment/IDE (the armor).</li>
-<li>â˜ I can locate the model selector, permission mode, usage indicator, and context window.</li>
-<li>â˜ I created my first folder and files by asking AI.</li>
-<li>â˜ I used /context, /clear, and /compact at least once.</li>
-<li>â˜ I tried plan mode with a stated intent.</li>
-<li>â˜ I know that â€œone task, one windowâ€ is the golden rule.</li>
+<li>ê¢ËÂ Claude Code is installed and connected to my account (paid plan).</li>
+<li>ê¢ËÂ I understand the difference between the model (Tony Stark) and the environment/IDE (the armor).</li>
+<li>ê¢ËÂ I can locate the model selector, permission mode, usage indicator, and context window.</li>
+<li>ê¢ËÂ I created my first folder and files by asking AI.</li>
+<li>ê¢ËÂ I used /context, /clear, and /compact at least once.</li>
+<li>ê¢ËÂ I tried plan mode with a stated intent.</li>
+<li>ê¢ËÂ I know that ê¢â¬Åone task, one windowê¢â¬Â is the golden rule.</li>
 </ul>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
 <h3 class="font-semibold text-emerald-400 mb-2">Next module:</h3>
-<p class="text-neutral-300">1.3 â€” Memory system: how CLAUDE.md gives the assistant lasting context</p>
+<p class="text-neutral-300">1.3 ê¢â¬â Memory system: how CLAUDE.md gives the assistant lasting context</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Back to the track</a>
-<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-3.html">Next module â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Back to the track</a>
+<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-3.html">Next module ê¢â â</a>
 </div>
 </div>
 </section>
@@ -551,7 +551,7 @@ para que serve este projeto e quais sÃ£o os arquivos mais importantes.</pre></
 <!-- FOOTER -->
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Claude Code in Practice â€” <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>Claude Code in Practice ê¢â¬â <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <!-- SCRIPTS: nucleo v1 -->
@@ -560,7 +560,7 @@ para que serve este projeto e quais sÃ£o os arquivos mais importantes.</pre></
     (function(){ var tt=document.getElementById('theme-toggle'); if(!tt) return; var di=document.getElementById('theme-toggle-dark-icon'), li=document.getElementById('theme-toggle-light-icon'), html=document.documentElement;
       function sync(){ if(html.classList.contains('dark')){ li&&li.classList.remove('hidden'); di&&di.classList.add('hidden'); } else { di&&di.classList.remove('hidden'); li&&li.classList.add('hidden'); } }
       sync();
-      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}'); p.theme=dark?'ARCKHÉ-dark':'claro'; localStorage.setItem('ARCKHÉ.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
+      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHê.prefs')||'{}'); p.theme=dark?'ARCKHê-dark':'claro'; localStorage.setItem('ARCKHê.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
     function openModal(id){ var m=document.getElementById(id); if(m){ m.classList.remove('hidden'); document.body.style.overflow='hidden'; } }
     function closeModal(){ document.querySelectorAll('.modal').forEach(function(m){ m.classList.add('hidden'); }); document.body.style.overflow='auto'; }
     document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
@@ -568,11 +568,11 @@ para que serve este projeto e quais sÃ£o os arquivos mais importantes.</pre></
 <!-- Camada de aprendizagem -->
 <script>
     window.addEventListener('DOMContentLoaded', function(){
-      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
-        ARCKHÉ.registerCheck('modulo-1-2#q1', {
+      if (window.ARCKHê && ARCKHê.registerCheck) {
+        ARCKHê.registerCheck('modulo-1-2#q1', {
           answer: 1,
           explain: {
-            0: '/cost mostra o gasto, mas nÃ£o prepara uma janela limpa para a nova tarefa.',
+            0: '/cost mostra o gasto, mas nêÂ£o prepara uma janela limpa para a nova tarefa.',
             1: 'Isso! Tarefa nova, janela nova. /clear zera o contexto e evita o apodrecimento.',
             2: 'Continuar na mesma conversa mistura tarefas e leva ao apodrecimento de contexto.'
           }
@@ -581,6 +581,6 @@ para que serve este projeto e quais sÃ£o os arquivos mais importantes.</pre></
     });
   </script>
 <script src="../../../assets/learn.js"></script>
-<script>if (window.ARCKHÉ && typeof window.ARCKHÉ.init==='function'){ window.ARCKHÉ.init(); }</script>
+<script>if (window.ARCKHê && typeof window.ARCKHê.init==='function'){ window.ARCKHê.init(); }</script>
 </body>
 </html>

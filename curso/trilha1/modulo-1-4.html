@@ -4,29 +4,29 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-na-pratica" name="ARCKHÉ-course"/>
-<title>1.4 Power Features: turbine seu fluxo | Claude Code na PrÃ¡tica</title>
+<meta content="claude-na-pratica" name="ARCKHê-course"/>
+<title>1.4 Power Features: turbine seu fluxo | Claude Code na PrêÂ¡tica</title>
 <!-- ANTI-FOUC: bloqueante, SEPARADO, antes do Tailwind/learn.css -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){ var r={}; for (var x in o) r[x]=o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHê-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var THEMES = { 'ARCKHê-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'emerald');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
+      s.setProperty('--ARCKHê-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
       var fam = p.font==='system' ? 'system-ui,-apple-system,"Segoe UI",Roboto,sans-serif' : (p.font==='leitura' ? '"Atkinson Hyperlegible","Inter",system-ui,sans-serif' : '"Inter",system-ui,sans-serif');
       s.setProperty('--font-body', fam);
@@ -43,8 +43,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../assets/learn.css" rel="stylesheet"/>
-<!-- Manifesto do curso (IDÃŠNTICO em TODA pagina) -->
-<script data-ARCKHÉ-manifest="" type="application/json">
+<!-- Manifesto do curso (IDêÅ NTICO em TODA pagina) -->
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "claude-na-pratica",
     "tracks": [
@@ -79,7 +79,7 @@
     .dark body { background-color: #111827; }
     .topic-explanation { display: none; }
     .topic-explanation.active { display: block; }
-    section[data-ARCKHÉ-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
+    section[data-ARCKHê-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
     .skip { position:absolute; left:-999px; top:0; z-index:100; }
     .skip:focus { left:8px; top:8px; background:#111827; color:#fff; padding:8px 12px; border-radius:8px; }
 
@@ -126,28 +126,28 @@
     }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-1-4.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha1/modulo-1-4.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha1/modulo-1-4.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
-<a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-1-4.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha1/modulo-1-4.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha1/modulo-1-4.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<a class="skip" href="#conteudo">Pular para o conteêÂºdo</a>
 <!-- NAV -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">âš¡</span>
-<span class="font-bold text-lg hidden sm:inline">Claude Code na PrÃ¡tica</span>
+<span class="text-2xl">ê¢Å¡Â¡</span>
+<span class="font-bold text-lg hidden sm:inline">Claude Code na PrêÂ¡tica</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Construir</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Operar &amp; Lucrar</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Biblioteca</span></a>
-<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHÉ-journey-open="" title="Minha jornada" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden lg:inline">Jornada</span>
-<span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHê-journey-open="" title="Minha jornada" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden lg:inline">Jornada</span>
+<span aria-hidden="true" class="ARCKHê-journey-badge hidden"></span>
 </button>
 <button aria-label="Alternar tema claro/escuro" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle" title="Tema claro/escuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -158,31 +158,31 @@
 </div>
 </nav>
 <!-- BREADCRUMB -->
-<nav aria-label="Trilha de navegaÃ§Ã£o" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Trilha de navegaêÂ§êÂ£o" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
-<a class="hover:text-emerald-400" href="../../index.html">InÃ­cio</a>
+<a class="hover:text-emerald-400" href="../../index.html">InêÂ­cio</a>
 <span>/</span>
 <a class="hover:text-emerald-400" href="index.html">Fundamentos</a>
 <span>/</span>
-<span class="text-emerald-400">MÃ³dulo 1.4</span>
+<span class="text-emerald-400">MêÂ³dulo 1.4</span>
 </div>
 </nav>
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 1.4</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">âš¡ Power Features: do assistente solitÃ¡rio ao time turbinado</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">A aula que transforma o Claude Code de "ajudante" em "equipe". Slash commands, gestÃ£o de contexto, skills, MCP, subagentes em paralelo e o loop de crÃ­tica â€” os recursos que multiplicam seu resultado.</p>
+<span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MêâDULO 1.4</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê¢Å¡Â¡ Power Features: do assistente solitêÂ¡rio ao time turbinado</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">A aula que transforma o Claude Code de "ajudante" em "equipe". Slash commands, gestêÂ£o de contexto, skills, MCP, subagentes em paralelo e o loop de crêÂ­tica ê¢â¬â os recursos que multiplicam seu resultado.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">TÃ³picos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">TêÂ³picos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">~60</div><div class="text-xs text-neutral-400">Minutos</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Inter.</div><div class="text-xs text-neutral-400">NÃ­vel</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">PrÃ¡tica</div><div class="text-xs text-neutral-400">Tipo</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Inter.</div><div class="text-xs text-neutral-400">NêÂ­vel</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">PrêÂ¡tica</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 <!-- Medidor de progresso do modulo -->
 <div class="mt-6 max-w-2xl">
-<div aria-label="Progresso do mÃ³dulo 1.4" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter" data-ARCKHÉ-meter="modulo:1-4" role="progressbar">
-<span class="ARCKHÉ-meter-pct" data-ARCKHÉ-meter-pct="">0%</span> <span class="ARCKHÉ-meter-count text-neutral-400 text-sm" data-ARCKHÉ-meter-frac="">0 de 6</span>
+<div aria-label="Progresso do mêÂ³dulo 1.4" aria-valuemax="100" aria-valuemin="0" class="ARCKHê-meter" data-ARCKHê-meter="modulo:1-4" role="progressbar">
+<span class="ARCKHê-meter-pct" data-ARCKHê-meter-pct="">0%</span> <span class="ARCKHê-meter-count text-neutral-400 text-sm" data-ARCKHê-meter-frac="">0 de 6</span>
 </div>
 </div>
 </div>
@@ -190,21 +190,21 @@
 <!-- CONTEUDO + TOC -->
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[220px_1fr] lg:gap-10" id="conteudo">
 <!-- TOC sticky -->
-<nav aria-label="Ãndice da pÃ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-3">SeÃ§Ã£o <span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">6</span></p>
+<nav aria-label="êÂndice da pêÂ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-3">SeêÂ§êÂ£o <span class="ARCKHê-toc-pos">1</span> de <span class="ARCKHê-toc-total">6</span></p>
 <ul class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-1">1. Slash commands</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-2">2. Contexto e tokens</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-3">3. Skills</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-4">4. MCP</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-5">5. Subagentes</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-6">6. Loop de crÃ­tica</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-1">1. Slash commands</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-2">2. Contexto e tokens</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-3">3. Skills</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-4">4. MCP</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-5">5. Subagentes</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-6">6. Loop de crêÂ­tica</a></li>
 </ul>
 </nav>
-<div class="ARCKHÉ-prose">
-<!-- SVG orquestraÃ§Ã£o / fan-out -->
+<div class="ARCKHê-prose">
+<!-- SVG orquestraêÂ§êÂ£o / fan-out -->
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-10 overflow-hidden">
-<svg aria-label="O Claude Code no centro orquestra cinco power features: slash commands, skills, MCP, subagentes em paralelo e loop de crÃ­tica, sobre uma barra de contexto controlada por /clear" class="w-full h-auto" role="img" viewbox="0 0 1000 300">
+<svg aria-label="O Claude Code no centro orquestra cinco power features: slash commands, skills, MCP, subagentes em paralelo e loop de crêÂ­tica, sobre uma barra de contexto controlada por /clear" class="w-full h-auto" role="img" viewbox="0 0 1000 300">
 <defs>
 <lineargradient id="m14-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#34d399"></stop><stop offset="1" stop-color="#10b981"></stop></lineargradient>
 <filter height="180%" id="m14-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -215,7 +215,7 @@
 <rect fill="url(#m14-grid)" height="300" width="1000" x="0" y="0"></rect>
 <!-- nucleo Claude Code -->
 <g filter="url(#m14-glow)"><rect fill="#0e2018" height="64" rx="16" stroke="url(#m14-grad)" stroke-width="2.8" width="188" x="406" y="96"></rect></g>
-<text fill="#34d399" font-family="Inter,sans-serif" font-size="18" font-weight="700" text-anchor="middle" x="500" y="124">âš¡ Claude Code</text>
+<text fill="#34d399" font-family="Inter,sans-serif" font-size="18" font-weight="700" text-anchor="middle" x="500" y="124">ê¢Å¡Â¡ Claude Code</text>
 <text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="11.5" text-anchor="middle" x="500" y="144">orquestrador do time</text>
 <!-- raios para os 5 features (fan-out) -->
 <g fill="none" opacity="0.55" stroke="#38bdf8" stroke-width="1.8">
@@ -233,9 +233,9 @@
 <!-- caixas dos features -->
 <g font-family="Inter,sans-serif" font-size="12.5" font-weight="600">
 <g class="wf-a"><rect fill="#0e1b26" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="128" x="40" y="36"></rect><text fill="#bfe6ff" text-anchor="middle" x="104" y="57">/ slash commands</text></g>
-<g class="wf-a"><rect fill="#0e1b26" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="128" x="104" y="92"></rect><text fill="#bfe6ff" text-anchor="middle" x="168" y="113">ðŸŽ¯ skills</text></g>
-<g class="wf-a"><rect fill="#0e1b26" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="128" x="768" y="92"></rect><text fill="#bfe6ff" text-anchor="middle" x="832" y="113">ðŸ”Œ MCP</text></g>
-<g class="wf-a"><rect fill="#0e1b26" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="128" x="832" y="36"></rect><text fill="#bfe6ff" text-anchor="middle" x="896" y="57">ðŸ” crÃ­tica</text></g>
+<g class="wf-a"><rect fill="#0e1b26" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="128" x="104" y="92"></rect><text fill="#bfe6ff" text-anchor="middle" x="168" y="113">ê°Å¸Å½Â¯ skills</text></g>
+<g class="wf-a"><rect fill="#0e1b26" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="128" x="768" y="92"></rect><text fill="#bfe6ff" text-anchor="middle" x="832" y="113">ê°Å¸âÅ MCP</text></g>
+<g class="wf-a"><rect fill="#0e1b26" height="32" rx="9" stroke="#38bdf8" stroke-width="2" width="128" x="832" y="36"></rect><text fill="#bfe6ff" text-anchor="middle" x="896" y="57">ê°Å¸âÂ crêÂ­tica</text></g>
 </g>
 <!-- subagentes circulos -->
 <g font-family="Inter,sans-serif" font-size="11" font-weight="600">
@@ -248,198 +248,198 @@
 <rect fill="#0e1b26" height="14" rx="7" stroke="#374151" stroke-width="1.4" width="800" x="40" y="270"></rect>
 <rect fill="url(#m14-grad)" height="10" opacity="0.7" rx="5" width="300" x="42" y="272"></rect>
 <text fill="#6b7280" font-family="Inter,sans-serif" font-size="10.5" x="40" y="266">contexto (janela finita)</text>
-<g><rect fill="#0e2018" height="22" rx="7" stroke="#34d399" stroke-width="2" width="104" x="856" y="266"></rect><text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="908" y="281">/clear â†º</text></g>
+<g><rect fill="#0e2018" height="22" rx="7" stroke="#34d399" stroke-width="2" width="104" x="856" y="266"></rect><text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="908" y="281">/clear ê¢â Âº</text></g>
 </svg>
 </div>
-<h2 class="text-2xl font-bold mb-6">ConteÃºdo detalhado</h2>
+<h2 class="text-2xl font-bold mb-6">ConteêÂºdo detalhado</h2>
 <!-- TOPICO 1 -->
-<section class="mb-16" data-ARCKHÉ-module="1-4" data-ARCKHÉ-topic="modulo-1-4#topico-1" data-ARCKHÉ-track="1" id="topico-1">
+<section class="mb-16" data-ARCKHê-module="1-4" data-ARCKHê-topic="modulo-1-4#topico-1" data-ARCKHê-track="1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">1</span>
-<h2 class="text-2xl font-bold">âš¡ Slash commands: atalhos que economizam tempo</h2>
+<h2 class="text-2xl font-bold">ê¢Å¡Â¡ Slash commands: atalhos que economizam tempo</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-4-t1-p1">VocÃª digita <code class="text-emerald-400 font-mono">/</code> e uma lista de aÃ§Ãµes aparece na hora. SÃ£o os <strong class="text-emerald-400">slash commands</strong> â€” a forma mais barata de controlar o estado da sua sessÃ£o. Dois sÃ£o indispensÃ¡veis daqui pra frente: <code class="text-emerald-400 font-mono">/context</code> mostra quanto da janela de contexto jÃ¡ foi usada, e <code class="text-emerald-400 font-mono">/clear</code> zera a conversa e comeÃ§a do zero.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-4-t1-p1">VocêÂª digita <code class="text-emerald-400 font-mono">/</code> e uma lista de aêÂ§êÂµes aparece na hora. SêÂ£o os <strong class="text-emerald-400">slash commands</strong> ê¢â¬â a forma mais barata de controlar o estado da sua sessêÂ£o. Dois sêÂ£o indispensêÂ¡veis daqui pra frente: <code class="text-emerald-400 font-mono">/context</code> mostra quanto da janela de contexto jêÂ¡ foi usada, e <code class="text-emerald-400 font-mono">/clear</code> zera a conversa e comeêÂ§a do zero.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">AÃ§Ãµes rÃ¡pidas embutidas no Claude Code, disparadas ao digitar <code class="font-mono text-emerald-400">/</code>. Pense em atalhos de teclado, mas em texto.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">SÃ£o a maneira mais barata de gerenciar a sessÃ£o. Saber o que ocupa espaÃ§o e quando zerar evita queda de qualidade.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm"><code class="font-mono text-emerald-400">/clear</code> = abrir uma aba nova (contexto fresco) Â· comandos personalizados Â· skills viram comandos ao serem instaladas.</p></div>
+<div><span class="text-emerald-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm">AêÂ§êÂµes rêÂ¡pidas embutidas no Claude Code, disparadas ao digitar <code class="font-mono text-emerald-400">/</code>. Pense em atalhos de teclado, mas em texto.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">SêÂ£o a maneira mais barata de gerenciar a sessêÂ£o. Saber o que ocupa espaêÂ§o e quando zerar evita queda de qualidade.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm"><code class="font-mono text-emerald-400">/clear</code> = abrir uma aba nova (contexto fresco) êÂ· comandos personalizados êÂ· skills viram comandos ao serem instaladas.</p></div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
-<p class="text-sm text-neutral-400 mb-2">Os dois comandos que vocÃª mais vai usar neste mÃ³dulo</p>
-<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">/context     # quanto da janela jÃ¡ foi consumido
-/clear       # zera a conversa â€” igual a abrir uma aba nova
-/            # abre a lista de todos os comandos disponÃ­veis</pre>
+<p class="text-sm text-neutral-400 mb-2">Os dois comandos que vocêÂª mais vai usar neste mêÂ³dulo</p>
+<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">/context     # quanto da janela jêÂ¡ foi consumido
+/clear       # zera a conversa ê¢â¬â igual a abrir uma aba nova
+/            # abre a lista de todos os comandos disponêÂ­veis</pre>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Dica prÃ¡tica</h3>
-<p class="text-neutral-300 text-sm">VÃ¡rias skills aparecem como slash commands quando instaladas. Quando estiver na dÃºvida sobre o que tem disponÃ­vel, digite sÃ³ <code class="font-mono text-emerald-400">/</code> e role a lista â€” Ã© o seu "menu" da sessÃ£o.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Dica prêÂ¡tica</h3>
+<p class="text-neutral-300 text-sm">VêÂ¡rias skills aparecem como slash commands quando instaladas. Quando estiver na dêÂºvida sobre o que tem disponêÂ­vel, digite sêÂ³ <code class="font-mono text-emerald-400">/</code> e role a lista ê¢â¬â êÂ© o seu "menu" da sessêÂ£o.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-ARCKHÉ-module="1-4" data-ARCKHÉ-topic="modulo-1-4#topico-2" data-ARCKHÉ-track="1" id="topico-2">
+<section class="mb-16" data-ARCKHê-module="1-4" data-ARCKHê-topic="modulo-1-4#topico-2" data-ARCKHê-track="1" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">2</span>
-<h2 class="text-2xl font-bold">ðŸ§  Contexto e tokens: o penhasco invisÃ­vel</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â  Contexto e tokens: o penhasco invisêÂ­vel</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-4-t2-p1">Toda conversa tem um penhasco. Quanto mais longa, pior o desempenho â€” fenÃ´meno chamado <strong class="text-emerald-400">context rot</strong>. Ã‰ o erro nÂº 1 de iniciante: usar a mesma janela o dia inteiro. Gerenciar contexto Ã© exatamente o que separa um resultado bom de um medÃ­ocre.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-4-t2-p1">Toda conversa tem um penhasco. Quanto mais longa, pior o desempenho ê¢â¬â fenêÂ´meno chamado <strong class="text-emerald-400">context rot</strong>. êâ° o erro nêÂº 1 de iniciante: usar a mesma janela o dia inteiro. Gerenciar contexto êÂ© exatamente o que separa um resultado bom de um medêÂ­ocre.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm"><em>Context rot</em> Ã© a queda de desempenho conforme a conversa cresce. Mais histÃ³rico empilhado, mais o modelo se perde.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Contexto Ã© um recurso finito. Quem o trata como descartÃ¡vel mantÃ©m a qualidade alta tarefa apÃ³s tarefa.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Uma tarefa, uma janela Â· terminou, descarte (<code class="font-mono text-emerald-400">/clear</code>) Â· <code class="font-mono text-emerald-400">/context</code> para enxergar o consumo Â· modelo certo para a tarefa.</p></div>
+<div><span class="text-emerald-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm"><em>Context rot</em> êÂ© a queda de desempenho conforme a conversa cresce. Mais histêÂ³rico empilhado, mais o modelo se perde.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Contexto êÂ© um recurso finito. Quem o trata como descartêÂ¡vel mantêÂ©m a qualidade alta tarefa apêÂ³s tarefa.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Uma tarefa, uma janela êÂ· terminou, descarte (<code class="font-mono text-emerald-400">/clear</code>) êÂ· <code class="font-mono text-emerald-400">/context</code> para enxergar o consumo êÂ· modelo certo para a tarefa.</p></div>
 </div>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Abra e meÃ§a</h4><p class="text-neutral-300 text-sm">Rode <code class="font-mono text-emerald-400">/context</code> no comeÃ§o para ver o uso atual da janela.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Abra e meêÂ§a</h4><p class="text-neutral-300 text-sm">Rode <code class="font-mono text-emerald-400">/context</code> no comeêÂ§o para ver o uso atual da janela.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">FaÃ§a uma tarefa focada</h4><p class="text-neutral-300 text-sm">Uma tarefa pequena e bem delimitada. NÃ£o misture cinco assuntos na mesma janela.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">FaêÂ§a uma tarefa focada</h4><p class="text-neutral-300 text-sm">Uma tarefa pequena e bem delimitada. NêÂ£o misture cinco assuntos na mesma janela.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Terminou? Descarte</h4><p class="text-neutral-300 text-sm">Rode <code class="font-mono text-emerald-400">/clear</code> antes de comeÃ§ar algo novo. Contexto fresco, qualidade preservada.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Terminou? Descarte</h4><p class="text-neutral-300 text-sm">Rode <code class="font-mono text-emerald-400">/clear</code> antes de comeêÂ§ar algo novo. Contexto fresco, qualidade preservada.</p></div>
 </div>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ðŸ“Š</span> Modelo certo para a tarefa certa</h3>
+<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ê°Å¸âÅ </span> Modelo certo para a tarefa certa</h3>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>Nem tudo exige o modelo mais pesado â€” tarefas simples rodam bem em modelos mais leves.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>Usar o modelo leve no que Ã© simples poupa custo e escala melhor.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">â€¢</span><span>Guarde o modelo mais forte para o raciocÃ­nio difÃ­cil e a revisÃ£o crÃ­tica.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span>Nem tudo exige o modelo mais pesado ê¢â¬â tarefas simples rodam bem em modelos mais leves.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span>Usar o modelo leve no que êÂ© simples poupa custo e escala melhor.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400 mt-0.5">ê¢â¬Â¢</span><span>Guarde o modelo mais forte para o raciocêÂ­nio difêÂ­cil e a revisêÂ£o crêÂ­tica.</span></li>
 </ul>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-ARCKHÉ-module="1-4" data-ARCKHÉ-topic="modulo-1-4#topico-3" data-ARCKHÉ-track="1" id="topico-3">
+<section class="mb-16" data-ARCKHê-module="1-4" data-ARCKHê-topic="modulo-1-4#topico-3" data-ARCKHê-track="1" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">3</span>
-<h2 class="text-2xl font-bold">ðŸŽ¯ Skills: o caderno de receitas do especialista</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Å½Â¯ Skills: o caderno de receitas do especialista</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-4-t3-p1">Uma <strong class="text-emerald-400">skill</strong> Ã© um conjunto de instruÃ§Ãµes â€” um arquivo <code class="font-mono text-emerald-400">SKILL.md</code> com nome, descriÃ§Ã£o e passo a passo â€” que o Claude carrega sozinho quando a tarefa combina. Sem skill, o modelo improvisa; com skill, ele segue uma receita testada e entrega sempre o mesmo padrÃ£o de qualidade.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-4-t3-p1">Uma <strong class="text-emerald-400">skill</strong> êÂ© um conjunto de instruêÂ§êÂµes ê¢â¬â um arquivo <code class="font-mono text-emerald-400">SKILL.md</code> com nome, descriêÂ§êÂ£o e passo a passo ê¢â¬â que o Claude carrega sozinho quando a tarefa combina. Sem skill, o modelo improvisa; com skill, ele segue uma receita testada e entrega sempre o mesmo padrêÂ£o de qualidade.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Um procedimento reutilizÃ¡vel empacotado num <code class="font-mono text-emerald-400">SKILL.md</code>. PeÃ§a "monte uma apresentaÃ§Ã£o" e a skill de apresentaÃ§Ã£o entra em aÃ§Ã£o sem vocÃª citÃ¡-la pelo nome.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Skills sÃ£o "a ciÃªncia por trÃ¡s do output". Toda tarefa que vocÃª repete vira candidata a skill â€” vocÃª codifica uma vez e colhe o padrÃ£o para sempre.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">A skill Ã© descoberta pela <strong>descriÃ§Ã£o</strong> (o gatilho) Â· confira o que existe digitando <code class="font-mono text-emerald-400">/</code> + nome Â· trÃªs peÃ§as: nome, descriÃ§Ã£o, conteÃºdo.</p></div>
+<div><span class="text-emerald-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm">Um procedimento reutilizêÂ¡vel empacotado num <code class="font-mono text-emerald-400">SKILL.md</code>. PeêÂ§a "monte uma apresentaêÂ§êÂ£o" e a skill de apresentaêÂ§êÂ£o entra em aêÂ§êÂ£o sem vocêÂª citêÂ¡-la pelo nome.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Skills sêÂ£o "a ciêÂªncia por trêÂ¡s do output". Toda tarefa que vocêÂª repete vira candidata a skill ê¢â¬â vocêÂª codifica uma vez e colhe o padrêÂ£o para sempre.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">A skill êÂ© descoberta pela <strong>descriêÂ§êÂ£o</strong> (o gatilho) êÂ· confira o que existe digitando <code class="font-mono text-emerald-400">/</code> + nome êÂ· trêÂªs peêÂ§as: nome, descriêÂ§êÂ£o, conteêÂºdo.</p></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">âœ“ Skill bem feita</h4>
+<h4 class="font-bold text-emerald-400 mb-4">ê¢Åâ Skill bem feita</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>DescriÃ§Ã£o clara do <em>quando</em> usar â€” Ã© o que faz a skill "acender" na hora certa.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Procedimento curto e direto, fÃ¡cil de seguir.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Testada: vocÃª pede a tarefa e a skill dispara sozinha.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>DescriêÂ§êÂ£o clara do <em>quando</em> usar ê¢â¬â êÂ© o que faz a skill "acender" na hora certa.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Procedimento curto e direto, fêÂ¡cil de seguir.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Testada: vocêÂª pede a tarefa e a skill dispara sozinha.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— Skill que nÃ£o acende</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ Skill que nêÂ£o acende</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>DescriÃ§Ã£o vaga ou genÃ©rica â€” o Claude nunca sabe quando aplicar.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Passo a passo longo e confuso, cheio de exceÃ§Ã£o.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Nunca testada â€” vocÃª sÃ³ descobre que nÃ£o dispara na hora H.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>DescriêÂ§êÂ£o vaga ou genêÂ©rica ê¢â¬â o Claude nunca sabe quando aplicar.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Passo a passo longo e confuso, cheio de exceêÂ§êÂ£o.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Nunca testada ê¢â¬â vocêÂª sêÂ³ descobre que nêÂ£o dispara na hora H.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
-<p class="text-sm text-neutral-400 mb-2">Construir a sua skill do zero â€” peÃ§a assim</p>
-<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Vamos criar uma skill para padronizar meu resumo de reuniÃ£o.
-Comece pela DESCRIÃ‡ÃƒO (quando ela deve ser usada),
+<p class="text-sm text-neutral-400 mb-2">Construir a sua skill do zero ê¢â¬â peêÂ§a assim</p>
+<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Vamos criar uma skill para padronizar meu resumo de reuniêÂ£o.
+Comece pela DESCRIêâ¡êÆO (quando ela deve ser usada),
 depois o passo a passo. Entregue como um SKILL.md pronto para revisar.</pre>
 </div>
 <details class="bg-dark-800 border border-dark-600 rounded-xl p-5 mb-6">
-<summary class="cursor-pointer font-semibold text-emerald-400">Indo mais fundo (opcional): a descriÃ§Ã£o Ã© tudo</summary>
-<p class="text-neutral-300 text-sm mt-3">O Claude escolhe a skill lendo a <strong>descriÃ§Ã£o</strong>, nÃ£o o corpo. Uma descriÃ§Ã£o genÃ©rica ("ajuda com textos") raramente dispara; uma especÃ­fica ("use quando o usuÃ¡rio pedir um resumo de reuniÃ£o com decisÃµes e prÃ³ximos passos") acende na hora certa. Capriche nela como se fosse o gatilho â€” porque Ã©.</p>
+<summary class="cursor-pointer font-semibold text-emerald-400">Indo mais fundo (opcional): a descriêÂ§êÂ£o êÂ© tudo</summary>
+<p class="text-neutral-300 text-sm mt-3">O Claude escolhe a skill lendo a <strong>descriêÂ§êÂ£o</strong>, nêÂ£o o corpo. Uma descriêÂ§êÂ£o genêÂ©rica ("ajuda com textos") raramente dispara; uma especêÂ­fica ("use quando o usuêÂ¡rio pedir um resumo de reuniêÂ£o com decisêÂµes e prêÂ³ximos passos") acende na hora certa. Capriche nela como se fosse o gatilho ê¢â¬â porque êÂ©.</p>
 </details>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-ARCKHÉ-module="1-4" data-ARCKHÉ-topic="modulo-1-4#topico-4" data-ARCKHÉ-track="1" id="topico-4">
+<section class="mb-16" data-ARCKHê-module="1-4" data-ARCKHê-topic="modulo-1-4#topico-4" data-ARCKHê-track="1" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">4</span>
-<h2 class="text-2xl font-bold">ðŸ”Œ MCP: a tomada universal</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÅ MCP: a tomada universal</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-4-t4-p1">O <strong class="text-emerald-400">Model Context Protocol (MCP)</strong> Ã© um padrÃ£o aberto que deixa o modelo conversar com APIs e serviÃ§os sem vocÃª escrever a integraÃ§Ã£o. Uma API Ã© um manual tÃ©cnico que mÃ¡quinas usam para falar com mÃ¡quinas; o MCP Ã© o <strong class="text-emerald-400">adaptador padronizado</strong> por cima dela. VocÃª nÃ£o programa a "cola" â€” lista o servidor MCP e pede em portuguÃªs.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-4-t4-p1">O <strong class="text-emerald-400">Model Context Protocol (MCP)</strong> êÂ© um padrêÂ£o aberto que deixa o modelo conversar com APIs e serviêÂ§os sem vocêÂª escrever a integraêÂ§êÂ£o. Uma API êÂ© um manual têÂ©cnico que mêÂ¡quinas usam para falar com mêÂ¡quinas; o MCP êÂ© o <strong class="text-emerald-400">adaptador padronizado</strong> por cima dela. VocêÂª nêÂ£o programa a "cola" ê¢â¬â lista o servidor MCP e pede em portuguêÂªs.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Um padrÃ£o aberto (anunciado pela Anthropic no fim de 2024) que dÃ¡ ao Claude uma janela para suas ferramentas: e-mail, dados, scrapers, serviÃ§os.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Em vez de decorar endpoints e escrever cÃ³digo de integraÃ§Ã£o, vocÃª conversa com a ferramenta. Hoje quase toda ferramenta sÃ©ria tem um servidor MCP.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">API = mÃ¡quina-para-mÃ¡quina Â· MCP = invÃ³lucro que expÃµe sÃ³ o necessÃ¡rio Â· MCP local mantÃ©m sua chave na sua mÃ¡quina, sem intermediÃ¡rio.</p></div>
+<div><span class="text-emerald-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm">Um padrêÂ£o aberto (anunciado pela Anthropic no fim de 2024) que dêÂ¡ ao Claude uma janela para suas ferramentas: e-mail, dados, scrapers, serviêÂ§os.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Em vez de decorar endpoints e escrever cêÂ³digo de integraêÂ§êÂ£o, vocêÂª conversa com a ferramenta. Hoje quase toda ferramenta sêÂ©ria tem um servidor MCP.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">API = mêÂ¡quina-para-mêÂ¡quina êÂ· MCP = invêÂ³lucro que expêÂµe sêÂ³ o necessêÂ¡rio êÂ· MCP local mantêÂ©m sua chave na sua mêÂ¡quina, sem intermediêÂ¡rio.</p></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">âœ“ Com MCP</h4>
+<h4 class="font-bold text-emerald-400 mb-4">ê¢Åâ Com MCP</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>VocÃª pede em portuguÃªs: "puxe meus Ãºltimos e-mails nÃ£o lidos".</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>A chave fica em variÃ¡vel de ambiente, nunca no chat.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Um padrÃ£o sÃ³ serve para qualquer ferramenta com servidor MCP.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>VocêÂª pede em portuguêÂªs: "puxe meus êÂºltimos e-mails nêÂ£o lidos".</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>A chave fica em variêÂ¡vel de ambiente, nunca no chat.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Um padrêÂ£o sêÂ³ serve para qualquer ferramenta com servidor MCP.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— Sem MCP (API crua)</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ Sem MCP (API crua)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>VocÃª decora endpoints e escreve a "cola" de integraÃ§Ã£o na mÃ£o.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Risco de colar chave no lugar errado.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Cada serviÃ§o, um cÃ³digo diferente para manter.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>VocêÂª decora endpoints e escreve a "cola" de integraêÂ§êÂ£o na mêÂ£o.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Risco de colar chave no lugar errado.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Cada serviêÂ§o, um cêÂ³digo diferente para manter.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
-<p class="text-sm text-neutral-400 mb-2">Criar um MCP local (exemplo: serviÃ§o de vÃ­deo) â€” peÃ§a assim</p>
-<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Quero criar um MCP local para [SERVIÃ‡O].
-A chave de API jÃ¡ estÃ¡ como variÃ¡vel de ambiente.
-Liste as funcionalidades disponÃ­veis, escolha as mais Ãºteis pro meu uso
-e crie o MCP local. No fim, explique como chamÃ¡-lo em conversa.</pre>
+<p class="text-sm text-neutral-400 mb-2">Criar um MCP local (exemplo: serviêÂ§o de vêÂ­deo) ê¢â¬â peêÂ§a assim</p>
+<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Quero criar um MCP local para [SERVIêâ¡O].
+A chave de API jêÂ¡ estêÂ¡ como variêÂ¡vel de ambiente.
+Liste as funcionalidades disponêÂ­veis, escolha as mais êÂºteis pro meu uso
+e crie o MCP local. No fim, explique como chamêÂ¡-lo em conversa.</pre>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ”’</span> Chave nunca no chat</h3>
-<p class="text-neutral-300 text-sm">A chave de API mora em variÃ¡vel de ambiente local â€” nunca colada na conversa nem em arquivo versionado. Um MCP local roda direto na sua mÃ¡quina e mantÃ©m a chave ali, longe de qualquer intermediÃ¡rio.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸ââ</span> Chave nunca no chat</h3>
+<p class="text-neutral-300 text-sm">A chave de API mora em variêÂ¡vel de ambiente local ê¢â¬â nunca colada na conversa nem em arquivo versionado. Um MCP local roda direto na sua mêÂ¡quina e mantêÂ©m a chave ali, longe de qualquer intermediêÂ¡rio.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-ARCKHÉ-module="1-4" data-ARCKHÉ-topic="modulo-1-4#topico-5" data-ARCKHÉ-track="1" id="topico-5">
+<section class="mb-16" data-ARCKHê-module="1-4" data-ARCKHê-topic="modulo-1-4#topico-5" data-ARCKHê-track="1" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">5</span>
-<h2 class="text-2xl font-bold">ðŸ‘¥ Subagentes: delegar para terminar mais rÃ¡pido</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ¥ Subagentes: delegar para terminar mais rêÂ¡pido</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-4-t5-p1">Em vez de um trabalhador fazendo tudo em sequÃªncia, vocÃª abre uma <strong class="text-emerald-400">equipe</strong>. <strong class="text-emerald-400">Subagentes</strong> sÃ£o agentes disparados para tarefas separadas, cada um com sua prÃ³pria janela de contexto. Trabalho independente roda em paralelo e termina antes.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-4-t5-p1">Em vez de um trabalhador fazendo tudo em sequêÂªncia, vocêÂª abre uma <strong class="text-emerald-400">equipe</strong>. <strong class="text-emerald-400">Subagentes</strong> sêÂ£o agentes disparados para tarefas separadas, cada um com sua prêÂ³pria janela de contexto. Trabalho independente roda em paralelo e termina antes.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">A paralelizaÃ§Ã£o: vÃ¡rios agentes trabalhando ao mesmo tempo, cada um com contexto prÃ³prio.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Ã“timo para pesquisa multi-Ã¢ngulo e para quebrar um projeto em frentes. O que Ã© independente termina mais cedo.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Delegue partes que nÃ£o dependem uma da outra Â· cada subagente devolve sÃ³ a conclusÃ£o (nÃ£o o histÃ³rico bruto) Â· isso protege o seu contexto principal.</p></div>
+<div><span class="text-emerald-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm">A paralelizaêÂ§êÂ£o: vêÂ¡rios agentes trabalhando ao mesmo tempo, cada um com contexto prêÂ³prio.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">êâtimo para pesquisa multi-êÂ¢ngulo e para quebrar um projeto em frentes. O que êÂ© independente termina mais cedo.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Delegue partes que nêÂ£o dependem uma da outra êÂ· cada subagente devolve sêÂ³ a conclusêÂ£o (nêÂ£o o histêÂ³rico bruto) êÂ· isso protege o seu contexto principal.</p></div>
 </div>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Divida em partes independentes</h4><p class="text-neutral-300 text-sm">Quebre a tarefa em frentes que nÃ£o dependem uma da outra (X, Y, Z).</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Divida em partes independentes</h4><p class="text-neutral-300 text-sm">Quebre a tarefa em frentes que nêÂ£o dependem uma da outra (X, Y, Z).</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Dispare os subagentes</h4><p class="text-neutral-300 text-sm">"Crie trÃªs subagentes â€” um analisa X, outro Y, outro Z." Cada um devolve sÃ³ as conclusÃµes.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Dispare os subagentes</h4><p class="text-neutral-300 text-sm">"Crie trêÂªs subagentes ê¢â¬â um analisa X, outro Y, outro Z." Cada um devolve sêÂ³ as conclusêÂµes.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">3</span></div>
@@ -447,160 +447,160 @@ e crie o MCP local. No fim, explique como chamÃ¡-lo em conversa.</pre>
 </div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
-<p class="text-sm text-neutral-400 mb-2">Fan-out em paralelo â€” peÃ§a assim</p>
-<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">FaÃ§a [TAREFA]. Crie trÃªs subagentes independentes:
-- subagente 1: analisa [Ã¢ngulo X]
-- subagente 2: analisa [Ã¢ngulo Y]
-- subagente 3: analisa [Ã¢ngulo Z]
-Cada um devolve sÃ³ as conclusÃµes. Depois consolide num quadro comparativo.</pre>
+<p class="text-sm text-neutral-400 mb-2">Fan-out em paralelo ê¢â¬â peêÂ§a assim</p>
+<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">FaêÂ§a [TAREFA]. Crie trêÂªs subagentes independentes:
+- subagente 1: analisa [êÂ¢ngulo X]
+- subagente 2: analisa [êÂ¢ngulo Y]
+- subagente 3: analisa [êÂ¢ngulo Z]
+Cada um devolve sêÂ³ as conclusêÂµes. Depois consolide num quadro comparativo.</pre>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-ARCKHÉ-module="1-4" data-ARCKHÉ-topic="modulo-1-4#topico-6" data-ARCKHÉ-track="1" id="topico-6">
+<section class="mb-16" data-ARCKHê-module="1-4" data-ARCKHê-topic="modulo-1-4#topico-6" data-ARCKHê-track="1" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">6</span>
-<h2 class="text-2xl font-bold">ðŸ” Loop de crÃ­tica: um cria, outro revisa</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ Loop de crêÂ­tica: um cria, outro revisa</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-4-t6-p1">"O Claude avalia o trabalho do Claude." Pedir para <strong class="text-emerald-400">criar</strong> Ã© uma coisa; pedir para <strong class="text-emerald-400">revisar</strong> Ã© outra completamente diferente â€” e melhora muito o resultado. A revisÃ£o automÃ¡tica pega erros que o autor nÃ£o vÃª.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-4-t6-p1">"O Claude avalia o trabalho do Claude." Pedir para <strong class="text-emerald-400">criar</strong> êÂ© uma coisa; pedir para <strong class="text-emerald-400">revisar</strong> êÂ© outra completamente diferente ê¢â¬â e melhora muito o resultado. A revisêÂ£o automêÂ¡tica pega erros que o autor nêÂ£o vêÂª.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Um fluxo onde um agente cria o entregÃ¡vel e outro assume o papel de revisor crÃ­tico, apontando furos e devolvendo a versÃ£o corrigida.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">RevisÃ£o pega o que o autor nÃ£o enxerga. VocÃª pode atÃ© usar um modelo diferente como revisor, trazendo um segundo ponto de vista.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Separe os papÃ©is (autor x crÃ­tico) Â· peÃ§a a crÃ­tica de forma explÃ­cita Â· itere uma ou duas rodadas Â· outras CLIs de modelos podem entrar como revisores externos.</p></div>
+<div><span class="text-emerald-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm">Um fluxo onde um agente cria o entregêÂ¡vel e outro assume o papel de revisor crêÂ­tico, apontando furos e devolvendo a versêÂ£o corrigida.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">RevisêÂ£o pega o que o autor nêÂ£o enxerga. VocêÂª pode atêÂ© usar um modelo diferente como revisor, trazendo um segundo ponto de vista.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Separe os papêÂ©is (autor x crêÂ­tico) êÂ· peêÂ§a a crêÂ­tica de forma explêÂ­cita êÂ· itere uma ou duas rodadas êÂ· outras CLIs de modelos podem entrar como revisores externos.</p></div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
-<p class="text-sm text-neutral-400 mb-2">Mudar de papel para revisar â€” peÃ§a assim</p>
-<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">VocÃª acabou de criar [ENTREGÃVEL]. Agora mude de papel:
-seja um revisor crÃ­tico e rigoroso. Aponte furos, vieses e o que faltou.
-Em seguida entregue a versÃ£o final corrigida.</pre>
+<p class="text-sm text-neutral-400 mb-2">Mudar de papel para revisar ê¢â¬â peêÂ§a assim</p>
+<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">VocêÂª acabou de criar [ENTREGêÂVEL]. Agora mude de papel:
+seja um revisor crêÂ­tico e rigoroso. Aponte furos, vieses e o que faltou.
+Em seguida entregue a versêÂ£o final corrigida.</pre>
 </div>
 <details class="bg-dark-800 border border-dark-600 rounded-xl p-5 mb-6">
-<summary class="cursor-pointer font-semibold text-emerald-400">Indo mais fundo (opcional): por que separar os papÃ©is funciona</summary>
-<p class="text-neutral-300 text-sm mt-3">Quando o mesmo agente cria e julga na mesma respirada, ele tende a defender o prÃ³prio rascunho. Ao pedir explicitamente "agora seja o crÃ­tico", vocÃª reseta a postura: o objetivo passa a ser achar problemas, nÃ£o justificar escolhas. Uma ou duas rodadas costumam bastar â€” mais que isso vira rendimento decrescente.</p>
+<summary class="cursor-pointer font-semibold text-emerald-400">Indo mais fundo (opcional): por que separar os papêÂ©is funciona</summary>
+<p class="text-neutral-300 text-sm mt-3">Quando o mesmo agente cria e julga na mesma respirada, ele tende a defender o prêÂ³prio rascunho. Ao pedir explicitamente "agora seja o crêÂ­tico", vocêÂª reseta a postura: o objetivo passa a ser achar problemas, nêÂ£o justificar escolhas. Uma ou duas rodadas costumam bastar ê¢â¬â mais que isso vira rendimento decrescente.</p>
 </details>
 <!-- Checagem leve opcional -->
-<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-1-4#q1">
-<p class="font-medium mb-4">Auto-checagem (opcional): qual Ã© o melhor jeito de evitar o <em>context rot</em>?</p>
-<div class="ARCKHÉ-check-options space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">Usar a mesma janela o dia inteiro para "nÃ£o perder o histÃ³rico".</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Uma tarefa por janela e rodar <code class="font-mono">/clear</code> ao terminar.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Trocar sempre para o modelo mais pesado disponÃ­vel.</button>
+<div class="ARCKHê-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHê-check="modulo-1-4#q1">
+<p class="font-medium mb-4">Auto-checagem (opcional): qual êÂ© o melhor jeito de evitar o <em>context rot</em>?</p>
+<div class="ARCKHê-check-options space-y-2">
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="0" type="button">Usar a mesma janela o dia inteiro para "nêÂ£o perder o histêÂ³rico".</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="1" type="button">Uma tarefa por janela e rodar <code class="font-mono">/clear</code> ao terminar.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="2" type="button">Trocar sempre para o modelo mais pesado disponêÂ­vel.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHê-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- EXEMPLO PRATICO GUIADO -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">ðŸ§ª Exemplo prÃ¡tico guiado: mini-pesquisa "onde morar"</h2>
-<p class="text-neutral-300 text-sm mb-6">Vamos juntar <strong class="text-emerald-400">skills + subagentes + loop de crÃ­tica</strong> numa tarefa real â€” e ver a gestÃ£o de contexto na prÃ¡tica.</p>
+<h2 class="text-2xl font-bold mb-6">ê°Å¸Â§Âª Exemplo prêÂ¡tico guiado: mini-pesquisa "onde morar"</h2>
+<p class="text-neutral-300 text-sm mb-6">Vamos juntar <strong class="text-emerald-400">skills + subagentes + loop de crêÂ­tica</strong> numa tarefa real ê¢â¬â e ver a gestêÂ£o de contexto na prêÂ¡tica.</p>
 <div class="space-y-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">SessÃ£o limpa</h4><p class="text-neutral-300 text-sm">Rode <code class="font-mono text-emerald-400">/clear</code> e depois <code class="font-mono text-emerald-400">/context</code> para confirmar que estÃ¡ zerado.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">SessêÂ£o limpa</h4><p class="text-neutral-300 text-sm">Rode <code class="font-mono text-emerald-400">/clear</code> e depois <code class="font-mono text-emerald-400">/context</code> para confirmar que estêÂ¡ zerado.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Dispare subagentes</h4><p class="text-neutral-300 text-sm">"Pesquise o melhor lugar para viver. TrÃªs subagentes: financeiro/tributÃ¡rio, qualidade de vida, clima e seguranÃ§a. Cada um devolve sÃ³ as conclusÃµes."</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Dispare subagentes</h4><p class="text-neutral-300 text-sm">"Pesquise o melhor lugar para viver. TrêÂªs subagentes: financeiro/tributêÂ¡rio, qualidade de vida, clima e seguranêÂ§a. Cada um devolve sêÂ³ as conclusêÂµes."</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Consolide</h4><p class="text-neutral-300 text-sm">Quando os trÃªs voltarem, peÃ§a ao agente principal um quadro comparativo.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Consolide</h4><p class="text-neutral-300 text-sm">Quando os trêÂªs voltarem, peêÂ§a ao agente principal um quadro comparativo.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">4</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Loop de crÃ­tica</h4><p class="text-neutral-300 text-sm">"Agora aja como revisor crÃ­tico: aponte furos, vieses e o que faltou. Depois entregue a versÃ£o final corrigida."</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Loop de crêÂ­tica</h4><p class="text-neutral-300 text-sm">"Agora aja como revisor crêÂ­tico: aponte furos, vieses e o que faltou. Depois entregue a versêÂ£o final corrigida."</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">5</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Verifique o contexto</h4><p class="text-neutral-300 text-sm">Rode <code class="font-mono text-emerald-400">/context</code>. Note o quanto a janela cresceu â€” e por que vai querer <code class="font-mono text-emerald-400">/clear</code> antes da prÃ³xima tarefa.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Verifique o contexto</h4><p class="text-neutral-300 text-sm">Rode <code class="font-mono text-emerald-400">/context</code>. Note o quanto a janela cresceu ê¢â¬â e por que vai querer <code class="font-mono text-emerald-400">/clear</code> antes da prêÂ³xima tarefa.</p></div>
 </div>
 </div>
 </section>
 <!-- EXERCICIOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âœï¸ ExercÃ­cios</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂê¯Â¸Â ExercêÂ­cios</h2>
 <div class="space-y-4">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. Higiene de contexto <span class="text-xs text-neutral-500">(fÃ¡cil)</span></h3><p class="text-neutral-300 text-sm">Rode <code class="font-mono text-emerald-400">/context</code>, faÃ§a uma tarefa curta, rode <code class="font-mono text-emerald-400">/context</code> de novo e depois <code class="font-mono text-emerald-400">/clear</code>. <span class="text-emerald-400">CritÃ©rio:</span> vocÃª sabe dizer quanto a tarefa consumiu e a janela volta ao zero apÃ³s o <code class="font-mono text-emerald-400">/clear</code>.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Usar uma skill pronta <span class="text-xs text-neutral-500">(mÃ©dio)</span></h3><p class="text-neutral-300 text-sm">Instale uma coleÃ§Ã£o de skills de fonte confiÃ¡vel, confirme uma skill com <code class="font-mono text-emerald-400">/</code> + nome e use-a numa tarefa real. <span class="text-emerald-400">CritÃ©rio:</span> a skill aparece na lista e produz output no padrÃ£o dela.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Sua primeira skill <span class="text-xs text-neutral-500">(mÃ©dio)</span></h3><p class="text-neutral-300 text-sm">Crie uma skill para uma tarefa que vocÃª repete (ex.: padronizar resumo de reuniÃ£o). <span class="text-emerald-400">CritÃ©rio:</span> ao pedir a tarefa, a skill Ã© acionada e o resultado sai consistente.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. MCP local <span class="text-xs text-neutral-500">(mÃ©dio)</span></h3><p class="text-neutral-300 text-sm">Conecte uma ferramenta que vocÃª usa via MCP (com a chave no ambiente). <span class="text-emerald-400">CritÃ©rio:</span> vocÃª chama a ferramenta em portuguÃªs, sem escrever endpoint, e a chave nunca apareceu no chat.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. CrÃ­tico em paralelo <span class="text-xs text-neutral-500">(difÃ­cil)</span></h3><p class="text-neutral-300 text-sm">PeÃ§a uma criaÃ§Ã£o qualquer, depois dispare um subagente revisor para criticÃ¡-la e devolver a versÃ£o final. <span class="text-emerald-400">CritÃ©rio:</span> a versÃ£o final corrige pelo menos um problema apontado na crÃ­tica.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. Higiene de contexto <span class="text-xs text-neutral-500">(fêÂ¡cil)</span></h3><p class="text-neutral-300 text-sm">Rode <code class="font-mono text-emerald-400">/context</code>, faêÂ§a uma tarefa curta, rode <code class="font-mono text-emerald-400">/context</code> de novo e depois <code class="font-mono text-emerald-400">/clear</code>. <span class="text-emerald-400">CritêÂ©rio:</span> vocêÂª sabe dizer quanto a tarefa consumiu e a janela volta ao zero apêÂ³s o <code class="font-mono text-emerald-400">/clear</code>.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Usar uma skill pronta <span class="text-xs text-neutral-500">(mêÂ©dio)</span></h3><p class="text-neutral-300 text-sm">Instale uma coleêÂ§êÂ£o de skills de fonte confiêÂ¡vel, confirme uma skill com <code class="font-mono text-emerald-400">/</code> + nome e use-a numa tarefa real. <span class="text-emerald-400">CritêÂ©rio:</span> a skill aparece na lista e produz output no padrêÂ£o dela.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Sua primeira skill <span class="text-xs text-neutral-500">(mêÂ©dio)</span></h3><p class="text-neutral-300 text-sm">Crie uma skill para uma tarefa que vocêÂª repete (ex.: padronizar resumo de reuniêÂ£o). <span class="text-emerald-400">CritêÂ©rio:</span> ao pedir a tarefa, a skill êÂ© acionada e o resultado sai consistente.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. MCP local <span class="text-xs text-neutral-500">(mêÂ©dio)</span></h3><p class="text-neutral-300 text-sm">Conecte uma ferramenta que vocêÂª usa via MCP (com a chave no ambiente). <span class="text-emerald-400">CritêÂ©rio:</span> vocêÂª chama a ferramenta em portuguêÂªs, sem escrever endpoint, e a chave nunca apareceu no chat.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. CrêÂ­tico em paralelo <span class="text-xs text-neutral-500">(difêÂ­cil)</span></h3><p class="text-neutral-300 text-sm">PeêÂ§a uma criaêÂ§êÂ£o qualquer, depois dispare um subagente revisor para criticêÂ¡-la e devolver a versêÂ£o final. <span class="text-emerald-400">CritêÂ©rio:</span> a versêÂ£o final corrige pelo menos um problema apontado na crêÂ­tica.</p></div>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âŒ¨ï¸ Prompts prontos</h2>
-<p class="text-neutral-300 text-sm mb-6">Quatro instruÃ§Ãµes para acionar os power features. Use-as como ponto de partida e adapte ao seu caso. O banco completo estÃ¡ na <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Biblioteca â†’ Prompts</a>.</p>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂ¨ê¯Â¸Â Prompts prontos</h2>
+<p class="text-neutral-300 text-sm mb-6">Quatro instruêÂ§êÂµes para acionar os power features. Use-as como ponto de partida e adapte ao seu caso. O banco completo estêÂ¡ na <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Biblioteca ê¢â â Prompts</a>.</p>
 <div class="space-y-5">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Verificar e limpar contexto</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Antes de comeÃ§armos, me diga: o que estÃ¡ ocupando minha janela de contexto agora?
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Verificar e limpar contexto</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Antes de comeêÂ§armos, me diga: o que estêÂ¡ ocupando minha janela de contexto agora?
 Se passar de metade, sugira o que descartar. (equivalente a /context)</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Criar uma skill do zero (canÃ´nico)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Quero criar uma skill para [TAREFA QUE REPITO].
-Primeiro escreva a DESCRIÃ‡ÃƒO (quando esta skill deve ser usada).
-Depois o passo a passo que vocÃª deve seguir toda vez.
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Criar uma skill do zero (canêÂ´nico)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Quero criar uma skill para [TAREFA QUE REPITO].
+Primeiro escreva a DESCRIêâ¡êÆO (quando esta skill deve ser usada).
+Depois o passo a passo que vocêÂª deve seguir toda vez.
 Entregue como um SKILL.md pronto para eu revisar.</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">I want to create a skill for [REPEATED TASK].
 First write the DESCRIPTION (when this skill should trigger).
 Then the step-by-step you must follow every time.
 Output it as a ready-to-review SKILL.md.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Disparar subagentes em paralelo</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">FaÃ§a [TAREFA]. Crie trÃªs subagentes independentes:
-- subagente 1: analisa [Ã¢ngulo X]
-- subagente 2: analisa [Ã¢ngulo Y]
-- subagente 3: analisa [Ã¢ngulo Z]
-Cada um devolve sÃ³ as conclusÃµes. Depois consolide num quadro comparativo.</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Disparar subagentes em paralelo</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">FaêÂ§a [TAREFA]. Crie trêÂªs subagentes independentes:
+- subagente 1: analisa [êÂ¢ngulo X]
+- subagente 2: analisa [êÂ¢ngulo Y]
+- subagente 3: analisa [êÂ¢ngulo Z]
+Cada um devolve sêÂ³ as conclusêÂµes. Depois consolide num quadro comparativo.</pre></div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Auditar uma skill de terceiros antes de instalar</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Vou instalar esta skill de terceiros. Leia o SKILL.md, me diga em bullets
 o que ela executa, que acessos ela pede e qualquer sinal de risco.
-SÃ³ recomende usar se for seguro.</pre></div>
+SêÂ³ recomende usar se for seguro.</pre></div>
 </div>
 </section>
 <!-- ERROS COMUNS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âš ï¸ Erros comuns</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢Å¡Â ê¯Â¸Â Erros comuns</h2>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Usar a mesma janela o dia todo.</strong> Conversa longa = <em>context rot</em> = queda de qualidade. Uma tarefa por janela; <code class="font-mono">/clear</code> ao terminar.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Instalar skill de fonte duvidosa.</strong> Skill Ã© cÃ³digo que roda na sua mÃ¡quina. Leia o <code class="font-mono">SKILL.md</code> e instale sÃ³ de fonte confiÃ¡vel.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Colar chaves de API no chat.</strong> Chaves ficam em variÃ¡veis de ambiente locais, nunca no corpo da conversa nem em arquivos versionados.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Pular a revisÃ£o.</strong> Aceitar o primeiro rascunho sem um loop de crÃ­tica deixa erros passarem. Criar e revisar sÃ£o passos diferentes.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Paralelizar tarefas dependentes.</strong> Subagentes brilham em trabalho independente. Se a parte B depende da A, rodar em paralelo sÃ³ gera retrabalho.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Usar a mesma janela o dia todo.</strong> Conversa longa = <em>context rot</em> = queda de qualidade. Uma tarefa por janela; <code class="font-mono">/clear</code> ao terminar.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Instalar skill de fonte duvidosa.</strong> Skill êÂ© cêÂ³digo que roda na sua mêÂ¡quina. Leia o <code class="font-mono">SKILL.md</code> e instale sêÂ³ de fonte confiêÂ¡vel.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Colar chaves de API no chat.</strong> Chaves ficam em variêÂ¡veis de ambiente locais, nunca no corpo da conversa nem em arquivos versionados.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Pular a revisêÂ£o.</strong> Aceitar o primeiro rascunho sem um loop de crêÂ­tica deixa erros passarem. Criar e revisar sêÂ£o passos diferentes.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Paralelizar tarefas dependentes.</strong> Subagentes brilham em trabalho independente. Se a parte B depende da A, rodar em paralelo sêÂ³ gera retrabalho.</span></li>
 </ul>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-emerald-900/40 via-dark-800 to-dark-800 rounded-xl border border-emerald-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumo do mÃ³dulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Åâ¦</span> Resumo do mêÂ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>Slash commands e contexto</strong><span class="text-neutral-400"> â€” <code class="font-mono">/context</code> mede, <code class="font-mono">/clear</code> zera; uma tarefa por janela vence o <em>context rot</em>.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>Skills</strong><span class="text-neutral-400"> â€” o caderno de receitas: padronizam o output; a descriÃ§Ã£o Ã© o gatilho. VocÃª pode usar prontas ou criar as suas.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>MCP</strong><span class="text-neutral-400"> â€” a tomada universal: conversa com ferramentas externas sem cÃ³digo de integraÃ§Ã£o, com a chave no ambiente.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>Subagentes e loop de crÃ­tica</strong><span class="text-neutral-400"> â€” delegue em paralelo e separe autor de crÃ­tico para multiplicar velocidade e qualidade.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>Slash commands e contexto</strong><span class="text-neutral-400"> ê¢â¬â <code class="font-mono">/context</code> mede, <code class="font-mono">/clear</code> zera; uma tarefa por janela vence o <em>context rot</em>.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>Skills</strong><span class="text-neutral-400"> ê¢â¬â o caderno de receitas: padronizam o output; a descriêÂ§êÂ£o êÂ© o gatilho. VocêÂª pode usar prontas ou criar as suas.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>MCP</strong><span class="text-neutral-400"> ê¢â¬â a tomada universal: conversa com ferramentas externas sem cêÂ³digo de integraêÂ§êÂ£o, com a chave no ambiente.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>Subagentes e loop de crêÂ­tica</strong><span class="text-neutral-400"> ê¢â¬â delegue em paralelo e separe autor de crêÂ­tico para multiplicar velocidade e qualidade.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-emerald-400 mb-3">Checklist de conclusÃ£o</h3>
+<h3 class="font-semibold text-emerald-400 mb-3">Checklist de conclusêÂ£o</h3>
 <ul class="space-y-2 text-sm text-neutral-300">
-<li>â˜ Sei usar <code class="font-mono">/context</code> e <code class="font-mono">/clear</code> e entendo o que Ã© <em>context rot</em>.</li>
-<li>â˜ Instalei e usei uma skill pronta de fonte confiÃ¡vel.</li>
-<li>â˜ Criei pelo menos uma skill do zero (nome + descriÃ§Ã£o + passo a passo).</li>
-<li>â˜ Conectei uma ferramenta externa via MCP, com a chave no ambiente.</li>
-<li>â˜ Disparei subagentes em paralelo e consolidei os resultados.</li>
-<li>â˜ Rodei um loop de crÃ­tica (criar â†’ revisar â†’ versÃ£o final).</li>
-<li>â˜ Consigo escolher o modelo adequado para tarefas simples x complexas.</li>
+<li>ê¢ËÂ Sei usar <code class="font-mono">/context</code> e <code class="font-mono">/clear</code> e entendo o que êÂ© <em>context rot</em>.</li>
+<li>ê¢ËÂ Instalei e usei uma skill pronta de fonte confiêÂ¡vel.</li>
+<li>ê¢ËÂ Criei pelo menos uma skill do zero (nome + descriêÂ§êÂ£o + passo a passo).</li>
+<li>ê¢ËÂ Conectei uma ferramenta externa via MCP, com a chave no ambiente.</li>
+<li>ê¢ËÂ Disparei subagentes em paralelo e consolidei os resultados.</li>
+<li>ê¢ËÂ Rodei um loop de crêÂ­tica (criar ê¢â â revisar ê¢â â versêÂ£o final).</li>
+<li>ê¢ËÂ Consigo escolher o modelo adequado para tarefas simples x complexas.</li>
 </ul>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-emerald-400 mb-2">ðŸŽ‰ Fim da Trilha 1!</h3>
-<p class="text-neutral-300">VocÃª concluiu os Fundamentos. <strong>PrÃ³xima trilha: Construir</strong> â€” comece pelo mÃ³dulo 2.1, do website do zero ao deploy.</p>
+<h3 class="font-semibold text-emerald-400 mb-2">ê°Å¸Å½â° Fim da Trilha 1!</h3>
+<p class="text-neutral-300">VocêÂª concluiu os Fundamentos. <strong>PrêÂ³xima trilha: Construir</strong> ê¢â¬â comece pelo mêÂ³dulo 2.1, do website do zero ao deploy.</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Voltar para a trilha</a>
-<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="../trilha2/modulo-2-1.html">PrÃ³xima trilha: Construir â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Voltar para a trilha</a>
+<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="../trilha2/modulo-2-1.html">PrêÂ³xima trilha: Construir ê¢â â</a>
 </div>
 </div>
 </section>
@@ -609,7 +609,7 @@ SÃ³ recomende usar se for seguro.</pre></div>
 <!-- FOOTER -->
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Claude Code na PrÃ¡tica â€” <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>Claude Code na PrêÂ¡tica ê¢â¬â <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <!-- SCRIPTS: nucleo v1 -->
@@ -618,7 +618,7 @@ SÃ³ recomende usar se for seguro.</pre></div>
     (function(){ var tt=document.getElementById('theme-toggle'); if(!tt) return; var di=document.getElementById('theme-toggle-dark-icon'), li=document.getElementById('theme-toggle-light-icon'), html=document.documentElement;
       function sync(){ if(html.classList.contains('dark')){ li&&li.classList.remove('hidden'); di&&di.classList.add('hidden'); } else { di&&di.classList.remove('hidden'); li&&li.classList.add('hidden'); } }
       sync();
-      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}'); p.theme=dark?'ARCKHÉ-dark':'claro'; localStorage.setItem('ARCKHÉ.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
+      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHê.prefs')||'{}'); p.theme=dark?'ARCKHê-dark':'claro'; localStorage.setItem('ARCKHê.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
     function openModal(id){ var m=document.getElementById(id); if(m){ m.classList.remove('hidden'); document.body.style.overflow='hidden'; } }
     function closeModal(){ document.querySelectorAll('.modal').forEach(function(m){ m.classList.add('hidden'); }); document.body.style.overflow='auto'; }
     document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
@@ -626,19 +626,19 @@ SÃ³ recomende usar se for seguro.</pre></div>
 <!-- Camada de aprendizagem -->
 <script>
     window.addEventListener('DOMContentLoaded', function(){
-      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
-        ARCKHÉ.registerCheck('modulo-1-4#q1', {
+      if (window.ARCKHê && ARCKHê.registerCheck) {
+        ARCKHê.registerCheck('modulo-1-4#q1', {
           answer: 1,
           explain: {
-            0: 'Ã‰ justamente o erro nÂº 1 â€” a mesma janela o dia inteiro acumula context rot e derruba a qualidade.',
-            1: 'Isso! Uma tarefa por janela e /clear ao terminar mantÃ©m o contexto fresco e o resultado consistente.',
-            2: 'NÃ£o Ã© sobre o modelo mais pesado â€” tarefas simples rodam bem em modelos leves; o que importa Ã© gerenciar a janela.'
+            0: 'êâ° justamente o erro nêÂº 1 ê¢â¬â a mesma janela o dia inteiro acumula context rot e derruba a qualidade.',
+            1: 'Isso! Uma tarefa por janela e /clear ao terminar mantêÂ©m o contexto fresco e o resultado consistente.',
+            2: 'NêÂ£o êÂ© sobre o modelo mais pesado ê¢â¬â tarefas simples rodam bem em modelos leves; o que importa êÂ© gerenciar a janela.'
           }
         });
       }
     });
   </script>
 <script src="../../assets/learn.js"></script>
-<script>if (window.ARCKHÉ && typeof window.ARCKHÉ.init==='function'){ window.ARCKHÉ.init(); }</script>
+<script>if (window.ARCKHê && typeof window.ARCKHê.init==='function'){ window.ARCKHê.init(); }</script>
 </body>
 </html>

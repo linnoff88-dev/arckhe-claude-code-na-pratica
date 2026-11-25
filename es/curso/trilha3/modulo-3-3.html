@@ -4,29 +4,29 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-na-pratica" name="ARCKHÉ-course"/>
-<title>3.3 MonetizaciÃ³n: convierte la habilidad en ingresos | Claude Code na PrÃ¡tica</title>
+<meta content="claude-na-pratica" name="ARCKHê-course"/>
+<title>3.3 MonetizaciêÂ³n: convierte la habilidad en ingresos | Claude Code na PrêÂ¡tica</title>
 <!-- ANTI-FOUC: bloqueante, SEPARADO, antes do Tailwind/learn.css -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'purple' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'purple' };
       function clone(o){ var r={}; for (var x in o) r[x]=o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHê-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var THEMES = { 'ARCKHê-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'purple');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
+      s.setProperty('--ARCKHê-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
       var fam = p.font==='system' ? 'system-ui,-apple-system,"Segoe UI",Roboto,sans-serif' : (p.font==='leitura' ? '"Atkinson Hyperlegible","Inter",system-ui,sans-serif' : '"Inter",system-ui,sans-serif');
       s.setProperty('--font-body', fam);
@@ -43,8 +43,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../../assets/learn.css" rel="stylesheet"/>
-<!-- Manifesto do curso (IDÃŠNTICO em TODA pagina) -->
-<script data-ARCKHÉ-manifest="" type="application/json">
+<!-- Manifesto do curso (IDêÅ NTICO em TODA pagina) -->
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "claude-na-pratica",
     "tracks": [
@@ -79,7 +79,7 @@
     .dark body { background-color: #111827; }
     .topic-explanation { display: none; }
     .topic-explanation.active { display: block; }
-    section[data-ARCKHÉ-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
+    section[data-ARCKHê-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
     .skip { position:absolute; left:-999px; top:0; z-index:100; }
     .skip:focus { left:8px; top:8px; background:#111827; color:#fff; padding:8px 12px; border-radius:8px; }
 
@@ -126,7 +126,7 @@
     }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha3/modulo-3-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha3/modulo-3-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-3-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../../curso/trilha3/modulo-3-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../../en/curso/trilha3/modulo-3-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-3-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="skip" href="#conteudo">Saltar al contenido</a>
 <!-- NAV -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -134,20 +134,20 @@
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">âš¡</span>
-<span class="font-bold text-lg hidden sm:inline">Claude Code en la prÃ¡ctica</span>
+<span class="text-2xl">ê¢Å¡Â¡</span>
+<span class="font-bold text-lg hidden sm:inline">Claude Code en la prêÂ¡ctica</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Construir</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-purple-400 bg-purple-500/10" href="index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Operar y ganar</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Biblioteca</span></a>
-<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHÉ-journey-open="" title="Mi recorrido" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden lg:inline">Recorrido</span>
-<span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHê-journey-open="" title="Mi recorrido" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden lg:inline">Recorrido</span>
+<span aria-hidden="true" class="ARCKHê-journey-badge hidden"></span>
 </button>
 <button aria-label="Alternar entre tema claro y oscuro" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle" title="Tema claro/oscuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -158,31 +158,31 @@
 </div>
 </nav>
 <!-- BREADCRUMB -->
-<nav aria-label="Ruta de navegaciÃ³n" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Ruta de navegaciêÂ³n" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
 <a class="hover:text-purple-400" href="../../index.html">Inicio</a>
 <span>/</span>
 <a class="hover:text-purple-400" href="index.html">Operar y ganar</a>
 <span>/</span>
-<span class="text-purple-400">MÃ³dulo 3.3</span>
+<span class="text-purple-400">MêÂ³dulo 3.3</span>
 </div>
 </nav>
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 3.3</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ’¼ MonetizaciÃ³n: convertir la habilidad en ingresos</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">AquÃ­ hablamos de <strong class="text-purple-400">modelos de ingresos</strong>, no de promesas de ganancias. AprenderÃ¡s a encontrar el cuello de botella adecuado, estructurar servicios, fijar precios con criterio, prospectar con respeto y cobrar de manera profesional con Stripe. NingÃºn monto aquÃ­ estÃ¡ garantizado: el resultado depende de la ejecuciÃ³n, el mercado y la constancia.</p>
+<span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">MêâDULO 3.3</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸âÂ¼ MonetizaciêÂ³n: convertir la habilidad en ingresos</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">AquêÂ­ hablamos de <strong class="text-purple-400">modelos de ingresos</strong>, no de promesas de ganancias. AprenderêÂ¡s a encontrar el cuello de botella adecuado, estructurar servicios, fijar precios con criterio, prospectar con respeto y cobrar de manera profesional con Stripe. NingêÂºn monto aquêÂ­ estêÂ¡ garantizado: el resultado depende de la ejecuciêÂ³n, el mercado y la constancia.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">6</div><div class="text-xs text-neutral-400">Temas</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">~50</div><div class="text-xs text-neutral-400">Minutos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">Inter.</div><div class="text-xs text-neutral-400">Nivel</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">PrÃ¡ctico</div><div class="text-xs text-neutral-400">Tipo</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">PrêÂ¡ctico</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 <!-- Medidor de progresso do modulo -->
 <div class="mt-6 max-w-2xl">
-<div aria-label="Progreso del mÃ³dulo 3.3" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter" data-ARCKHÉ-meter="modulo:3-3" role="progressbar">
-<span class="ARCKHÉ-meter-pct" data-ARCKHÉ-meter-pct="">0%</span> <span class="ARCKHÉ-meter-count text-neutral-400 text-sm" data-ARCKHÉ-meter-frac="">0 de 6</span>
+<div aria-label="Progreso del mêÂ³dulo 3.3" aria-valuemax="100" aria-valuemin="0" class="ARCKHê-meter" data-ARCKHê-meter="modulo:3-3" role="progressbar">
+<span class="ARCKHê-meter-pct" data-ARCKHê-meter-pct="">0%</span> <span class="ARCKHê-meter-count text-neutral-400 text-sm" data-ARCKHê-meter-frac="">0 de 6</span>
 </div>
 </div>
 </div>
@@ -190,21 +190,21 @@
 <!-- CONTEUDO + TOC -->
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[220px_1fr] lg:gap-10" id="conteudo">
 <!-- TOC sticky -->
-<nav aria-label="Ãndice de la pÃ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-3">SecciÃ³n <span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">6</span></p>
+<nav aria-label="êÂndice de la pêÂ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-3">SecciêÂ³n <span class="ARCKHê-toc-pos">1</span> de <span class="ARCKHê-toc-total">6</span></p>
 <ul class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-purple-400" href="#topico-1">1. Encuentra la restricciÃ³n</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-purple-400" href="#topico-2">2. MÃ¡s â†’ mejor â†’ nuevo</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-purple-400" href="#topico-3">3. La escalera de ofertas</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-purple-400" href="#topico-4">4. Fijar precios segÃºn el valor</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-purple-400" href="#topico-5">5. Prospecta con respeto</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-purple-400" href="#topico-6">6. Entregar y cobrar (Stripe)</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-purple-400" href="#topico-1">1. Encuentra la restricciêÂ³n</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-purple-400" href="#topico-2">2. MêÂ¡s ê¢â â mejor ê¢â â nuevo</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-purple-400" href="#topico-3">3. La escalera de ofertas</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-purple-400" href="#topico-4">4. Fijar precios segêÂºn el valor</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-purple-400" href="#topico-5">5. Prospecta con respeto</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-purple-400" href="#topico-6">6. Entregar y cobrar (Stripe)</a></li>
 </ul>
 </nav>
-<div class="ARCKHÉ-prose">
+<div class="ARCKHê-prose">
 <!-- SVG escada + loop de melhoria -->
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-10 overflow-hidden">
-<svg aria-label="Una escalera de tres peldaÃ±os â€”AuditorÃ­a, ConstrucciÃ³n y Retainerâ€” avanza hacia la restricciÃ³n del negocio, junto a un ciclo continuo MÃ¡s, Mejor, Nuevo, IA, Medir que se reinicia" class="w-full h-auto" role="img" viewbox="0 0 1000 260">
+<svg aria-label="Una escalera de tres peldaêÂ±os ê¢â¬âAuditorêÂ­a, ConstrucciêÂ³n y Retainerê¢â¬â avanza hacia la restricciêÂ³n del negocio, junto a un ciclo continuo MêÂ¡s, Mejor, Nuevo, IA, Medir que se reinicia" class="w-full h-auto" role="img" viewbox="0 0 1000 260">
 <defs>
 <lineargradient id="m33-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#c084fc"></stop><stop offset="1" stop-color="#a855f7"></stop></lineargradient>
 <filter height="180%" id="m33-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -220,20 +220,20 @@
 <rect fill="#1a1230" height="44" rx="10" stroke="url(#m33-grad)" stroke-width="2.5" width="180" x="300" y="62"></rect>
 </g>
 <g font-family="Inter,sans-serif" font-size="14" font-weight="600">
-<text fill="#d8b4fe" text-anchor="middle" x="150" y="205">ðŸ” AuditorÃ­a</text>
-<text fill="#d8b4fe" text-anchor="middle" x="270" y="147">ðŸ§± ConstrucciÃ³n</text>
-<text fill="#d8b4fe" text-anchor="middle" x="390" y="89">ðŸ” Retainer</text>
+<text fill="#d8b4fe" text-anchor="middle" x="150" y="205">ê°Å¸âÂ AuditorêÂ­a</text>
+<text fill="#d8b4fe" text-anchor="middle" x="270" y="147">ê°Å¸Â§Â± ConstrucciêÂ³n</text>
+<text fill="#d8b4fe" text-anchor="middle" x="390" y="89">ê°Å¸âÂ Retainer</text>
 </g>
-<!-- alvo (restriÃ§Ã£o) no topo + seta -->
+<!-- alvo (restriêÂ§êÂ£o) no topo + seta -->
 <g filter="url(#m33-glow)"><circle cx="540" cy="50" fill="none" r="20" stroke="#c084fc" stroke-width="2.5"></circle><circle cx="540" cy="50" fill="none" r="10" stroke="#c084fc" stroke-width="2"></circle><circle cx="540" cy="50" fill="#c084fc" r="3"></circle></g>
 <path d="M450,62 L518,53" fill="none" marker-end="url(#m33-ah)" opacity="0.8" stroke="#c084fc" stroke-width="2"></path>
-<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="540" y="92">la restricciÃ³n (el negocio primero)</text>
+<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="540" y="92">la restricciêÂ³n (el negocio primero)</text>
 <!-- loop de melhoria -->
 <g font-family="Inter,sans-serif" font-size="13" font-weight="600">
-<g class="wf-a"><rect fill="#1a1230" height="30" rx="9" stroke="#c084fc" stroke-width="2" width="110" x="640" y="40"></rect><text fill="#d8b4fe" text-anchor="middle" x="695" y="60">MÃS</text></g>
+<g class="wf-a"><rect fill="#1a1230" height="30" rx="9" stroke="#c084fc" stroke-width="2" width="110" x="640" y="40"></rect><text fill="#d8b4fe" text-anchor="middle" x="695" y="60">MêÂS</text></g>
 <g class="wf-a"><rect fill="#1a1230" height="30" rx="9" stroke="#c084fc" stroke-width="2" width="110" x="780" y="40"></rect><text fill="#d8b4fe" text-anchor="middle" x="835" y="60">MEJOR</text></g>
 <g class="wf-a"><rect fill="#1a1230" height="30" rx="9" stroke="#c084fc" stroke-width="2" width="110" x="780" y="110"></rect><text fill="#d8b4fe" text-anchor="middle" x="835" y="130">NUEVO</text></g>
-<g class="wf-a"><rect fill="#0e1b26" height="30" rx="9" stroke="#38bdf8" stroke-width="2" width="110" x="640" y="110"></rect><text fill="#bfe6ff" text-anchor="middle" x="695" y="130">IA Â· MEDIR</text></g>
+<g class="wf-a"><rect fill="#0e1b26" height="30" rx="9" stroke="#38bdf8" stroke-width="2" width="110" x="640" y="110"></rect><text fill="#bfe6ff" text-anchor="middle" x="695" y="130">IA êÂ· MEDIR</text></g>
 </g>
 <g fill="none" opacity="0.6" stroke="#38bdf8" stroke-width="1.8">
 <path d="M750,55 L778,55" marker-end="url(#m33-ahc)"></path>
@@ -241,264 +241,264 @@
 <path d="M780,125 L752,125" marker-end="url(#m33-ahc)"></path>
 <path d="M695,108 C695,86 695,80 695,72" marker-end="url(#m33-ahc)"></path>
 </g>
-<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="765" y="180">el loop se reinicia: surge una restricciÃ³n mayor, vuelve a empezar</text>
+<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="765" y="180">el loop se reinicia: surge una restricciêÂ³n mayor, vuelve a empezar</text>
 </svg>
 </div>
 <h2 class="text-2xl font-bold mb-6">Contenido detallado</h2>
 <!-- TOPICO 1 -->
-<section class="mb-16" data-ARCKHÉ-module="3-3" data-ARCKHÉ-topic="modulo-3-3#topico-1" data-ARCKHÉ-track="3" id="topico-1">
+<section class="mb-16" data-ARCKHê-module="3-3" data-ARCKHê-topic="modulo-3-3#topico-1" data-ARCKHê-track="3" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">1</span>
-<h2 class="text-2xl font-bold">ðŸŽ¯ Encuentra la restricciÃ³n antes de abrir Claude Code</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Å½Â¯ Encuentra la restricciêÂ³n antes de abrir Claude Code</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-3-t1-p1">En cualquier operaciÃ³n existe <strong class="text-purple-400">uno</strong> cuello de botella que limita el resultado total. Optimizar todo lo que <em>no</em> el cuello de botella no cambia el resultado final. Antes de aplicar IA, necesitas saber dÃ³nde apuntar; si no, te conviertes en alguien Â«ocupado pero estancadoÂ»: mucho movimiento, pero la aguja no avanza.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-3-t1-p1">En cualquier operaciêÂ³n existe <strong class="text-purple-400">uno</strong> cuello de botella que limita el resultado total. Optimizar todo lo que <em>no</em> el cuello de botella no cambia el resultado final. Antes de aplicar IA, necesitas saber dêÂ³nde apuntar; si no, te conviertes en alguien êÂ«ocupado pero estancadoêÂ»: mucho movimiento, pero la aguja no avanza.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Definir, con una pregunta, el Ãºnico cuello de botella que mÃ¡s limita los ingresos hoy.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">La IA es una palanca de alto impacto; el resultado depende de <em>dÃ³nde</em> seÃ±alas, no cuÃ¡nto produces.</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">TeorÃ­a de las restricciones Â· pregunta de los 3 meses Â· "negocio primero, IA despuÃ©s".</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Definir, con una pregunta, el êÂºnico cuello de botella que mêÂ¡s limita los ingresos hoy.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">La IA es una palanca de alto impacto; el resultado depende de <em>dêÂ³nde</em> seêÂ±alas, no cuêÂ¡nto produces.</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">TeorêÂ­a de las restricciones êÂ· pregunta de los 3 meses êÂ· "negocio primero, IA despuêÂ©s".</p></div>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ðŸ­</span> AnalogÃ­a de la fÃ¡brica de autos</h3>
-<p class="text-neutral-300 text-sm">Una ensambladora fabrica 100 neumÃ¡ticos y pinta 500 piezas al dÃ­a, pero solo ensambla <strong>un motor por dÃ­a</strong>. No importa cuÃ¡ntos neumÃ¡ticos mÃ¡s fabrique: la fÃ¡brica entrega <strong>un auto por dÃ­a</strong>, porque la restricciÃ³n es el motor. Para crecer, trabajas en el motor, no en los neumÃ¡ticos.</p>
+<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ê°Å¸ÂÂ­</span> AnalogêÂ­a de la fêÂ¡brica de autos</h3>
+<p class="text-neutral-300 text-sm">Una ensambladora fabrica 100 neumêÂ¡ticos y pinta 500 piezas al dêÂ­a, pero solo ensambla <strong>un motor por dêÂ­a</strong>. No importa cuêÂ¡ntos neumêÂ¡ticos mêÂ¡s fabrique: la fêÂ¡brica entrega <strong>un auto por dêÂ­a</strong>, porque la restricciêÂ³n es el motor. Para crecer, trabajas en el motor, no en los neumêÂ¡ticos.</p>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ”®</span> La pregunta de la bola de cristal</h3>
-<p class="text-neutral-300 text-sm">Mira <strong>tres meses</strong> adelante. Si <strong>una sola cosa</strong> pudiera ser cierto en ese plazo y volviera irrelevante todo lo demÃ¡s, Â¿cuÃ¡l serÃ­a? "Tengo un flujo constante de clientes calificados." "Mis cancelaciones bajaron casi a cero." Esa respuesta es tu restricciÃ³n: ahÃ­ deben enfocarse la IA y tu tiempo.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ®</span> La pregunta de la bola de cristal</h3>
+<p class="text-neutral-300 text-sm">Mira <strong>tres meses</strong> adelante. Si <strong>una sola cosa</strong> pudiera ser cierto en ese plazo y volviera irrelevante todo lo demêÂ¡s, êÂ¿cuêÂ¡l serêÂ­a? "Tengo un flujo constante de clientes calificados." "Mis cancelaciones bajaron casi a cero." Esa respuesta es tu restricciêÂ³n: ahêÂ­ deben enfocarse la IA y tu tiempo.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-ARCKHÉ-module="3-3" data-ARCKHÉ-topic="modulo-3-3#topico-2" data-ARCKHÉ-track="3" id="topico-2">
+<section class="mb-16" data-ARCKHê-module="3-3" data-ARCKHê-topic="modulo-3-3#topico-2" data-ARCKHê-track="3" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">2</span>
-<h2 class="text-2xl font-bold">ðŸ” El ciclo: mÃ¡s â†’ mejor â†’ nuevo</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ El ciclo: mêÂ¡s ê¢â â mejor ê¢â â nuevo</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-3-t2-p1">Una vez encontrada la restricciÃ³n, siempre sigues la misma secuencia. El orden importa: solo abre un <strong class="text-purple-400">canal nuevo</strong> despuÃ©s de agotar el Â«mÃ¡sÂ» y el Â«mejorÂ». Antes de eso, un canal nuevo dispersa â€” tener varios frentes simultÃ¡neos suele retrasar, no acelerar.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-3-t2-p1">Una vez encontrada la restricciêÂ³n, siempre sigues la misma secuencia. El orden importa: solo abre un <strong class="text-purple-400">canal nuevo</strong> despuêÂ©s de agotar el êÂ«mêÂ¡sêÂ» y el êÂ«mejorêÂ». Antes de eso, un canal nuevo dispersa ê¢â¬â tener varios frentes simultêÂ¡neos suele retrasar, no acelerar.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Un ciclo de mejora: <code>restriÃ§Ã£o â†’ mais â†’ melhor â†’ novo â†’ IA acelera â†’ medir â†’ recomeÃ§a</code>.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Crecer a partir de lo que ya funciona es el camino mÃ¡s rÃ¡pido y econÃ³mico; no exige reinventar nada.</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Volumen Â· calidad Â· canal nuevo al final Â· enfoque en una oferta/un cliente.</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Un ciclo de mejora: <code>restriêÂ§êÂ£o ê¢â â mais ê¢â â melhor ê¢â â novo ê¢â â IA acelera ê¢â â medir ê¢â â recomeêÂ§a</code>.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Crecer a partir de lo que ya funciona es el camino mêÂ¡s rêÂ¡pido y econêÂ³mico; no exige reinventar nada.</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Volumen êÂ· calidad êÂ· canal nuevo al final êÂ· enfoque en una oferta/un cliente.</p></div>
 </div>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">+</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">MÃ¡s â€” duplica lo que ya funciona</h4><p class="text-neutral-300 text-sm">Â¿Ya consigues clientes por recomendaciÃ³n? Pide el doble de recomendaciones. Â¿Ya publicas 3 contenidos por semana? Intenta publicar 6. PregÃºntate: "Â¿quÃ© me impide duplicar esto?" y elimina ese obstÃ¡culo.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">MêÂ¡s ê¢â¬â duplica lo que ya funciona</h4><p class="text-neutral-300 text-sm">êÂ¿Ya consigues clientes por recomendaciêÂ³n? Pide el doble de recomendaciones. êÂ¿Ya publicas 3 contenidos por semana? Intenta publicar 6. PregêÂºntate: "êÂ¿quêÂ© me impide duplicar esto?" y elimina ese obstêÂ¡culo.</p></div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">â†‘</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Mejor â€” mejora la calidad de lo mismo</h4><p class="text-neutral-300 text-sm">Cuando no puedas hacer mÃ¡s, hazlo mejor: un gancho mÃ¡s atractivo, una oferta mÃ¡s clara, una entrega mÃ¡s pulida. Cada semana separa los mejores y peores resultados y pregÃºntate quÃ© tienen en comÃºn los mejores.</p></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">ê¢â â</span></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Mejor ê¢â¬â mejora la calidad de lo mismo</h4><p class="text-neutral-300 text-sm">Cuando no puedas hacer mêÂ¡s, hazlo mejor: un gancho mêÂ¡s atractivo, una oferta mêÂ¡s clara, una entrega mêÂ¡s pulida. Cada semana separa los mejores y peores resultados y pregêÂºntate quêÂ© tienen en comêÂºn los mejores.</p></div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">â˜…</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Nuevo: despuÃ©s, un canal nuevo</h4><p class="text-neutral-300 text-sm">Â¿Agotaste mÃ¡s opciones y mejores? Entonces sÃ­, abre una nueva lÃ­nea de trabajo. Es la etapa que mÃ¡s tienta a adelantarse y la que mÃ¡s dispersa cuando llega fuera de tiempo.</p></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">ê¢Ëâ¦</span></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Nuevo: despuêÂ©s, un canal nuevo</h4><p class="text-neutral-300 text-sm">êÂ¿Agotaste mêÂ¡s opciones y mejores? Entonces sêÂ­, abre una nueva lêÂ­nea de trabajo. Es la etapa que mêÂ¡s tienta a adelantarse y la que mêÂ¡s dispersa cuando llega fuera de tiempo.</p></div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Por quÃ© "una sola cosa"</h3>
-<p class="text-neutral-300 text-sm">Como referencia de mercado (no como promesa de ingresos): puedes construir un negocio sÃ³lido enfocÃ¡ndote en <strong>una</strong> oferta para <strong>uno</strong> tipo de cliente, en vez de atender cinco al mismo tiempo. El enfoque acelera; la dispersiÃ³n retrasa.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Por quêÂ© "una sola cosa"</h3>
+<p class="text-neutral-300 text-sm">Como referencia de mercado (no como promesa de ingresos): puedes construir un negocio sêÂ³lido enfocêÂ¡ndote en <strong>una</strong> oferta para <strong>uno</strong> tipo de cliente, en vez de atender cinco al mismo tiempo. El enfoque acelera; la dispersiêÂ³n retrasa.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-ARCKHÉ-module="3-3" data-ARCKHÉ-topic="modulo-3-3#topico-3" data-ARCKHÉ-track="3" id="topico-3">
+<section class="mb-16" data-ARCKHê-module="3-3" data-ARCKHê-topic="modulo-3-3#topico-3" data-ARCKHê-track="3" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">3</span>
-<h2 class="text-2xl font-bold">ðŸ©º La escalera: auditorÃ­a â†’ construcciÃ³n â†’ retainer</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â©Âº La escalera: auditorêÂ­a ê¢â â construcciêÂ³n ê¢â â retainer</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-3-t3-p1">No ofrezcas un proyecto grande de entrada. Empieza con una <strong class="text-purple-400">oferta inicial pequeÃ±a y de pago</strong> â€” una auditorÃ­a. El cliente paga poco, percibe el valor y queda mucho mÃ¡s dispuesto a asumir un compromiso mayor despuÃ©s. El sitio suele ser la puerta de entrada: visible, Ãºtil y rÃ¡pido de entregar con Claude Code.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-3-t3-p1">No ofrezcas un proyecto grande de entrada. Empieza con una <strong class="text-purple-400">oferta inicial pequeêÂ±a y de pago</strong> ê¢â¬â una auditorêÂ­a. El cliente paga poco, percibe el valor y queda mucho mêÂ¡s dispuesto a asumir un compromiso mayor despuêÂ©s. El sitio suele ser la puerta de entrada: visible, êÂºtil y rêÂ¡pido de entregar con Claude Code.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Una secuencia de ofertas que aumenta el compromiso: diagnÃ³stico pagado â†’ entrega â†’ recurrencia.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Quien entrega un sitio difÃ­cilmente se convierte en Â«la persona del sitioÂ»: se convierte en Â«la persona de IAÂ» a quien el cliente consulta para todo.</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Oferta inicial Â· puerta de entrada Â· de ejecutor a socio Â· convertir en producto lo que se repite.</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Una secuencia de ofertas que aumenta el compromiso: diagnêÂ³stico pagado ê¢â â entrega ê¢â â recurrencia.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Quien entrega un sitio difêÂ­cilmente se convierte en êÂ«la persona del sitioêÂ»: se convierte en êÂ«la persona de IAêÂ» a quien el cliente consulta para todo.</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Oferta inicial êÂ· puerta de entrada êÂ· de ejecutor a socio êÂ· convertir en producto lo que se repite.</p></div>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-purple-400 font-bold text-sm mb-1">Nivel 1</div><h4 class="font-semibold">ðŸ” AuditorÃ­a</h4><p class="text-xs text-neutral-400 mt-1">DiagnÃ³stico pagado y acotado. Mapea la restricciÃ³n con los nÃºmeros del cliente.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-purple-400 font-bold text-sm mb-1">Nivel 2</div><h4 class="font-semibold">ðŸ§± ConstrucciÃ³n</h4><p class="text-xs text-neutral-400 mt-1">La entrega: un sitio, landing o automatizaciÃ³n simple, bueno y rÃ¡pido, que aborda la restricciÃ³n.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-purple-400 font-bold text-sm mb-1">Nivel 3</div><h4 class="font-semibold">ðŸ” Retainer</h4><p class="text-xs text-neutral-400 mt-1">Recurrencia: mejoras y nuevas automatizaciones como Â«la persona de IAÂ» del cliente.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-purple-400 font-bold text-sm mb-1">Nivel 1</div><h4 class="font-semibold">ê°Å¸âÂ AuditorêÂ­a</h4><p class="text-xs text-neutral-400 mt-1">DiagnêÂ³stico pagado y acotado. Mapea la restricciêÂ³n con los nêÂºmeros del cliente.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-purple-400 font-bold text-sm mb-1">Nivel 2</div><h4 class="font-semibold">ê°Å¸Â§Â± ConstrucciêÂ³n</h4><p class="text-xs text-neutral-400 mt-1">La entrega: un sitio, landing o automatizaciêÂ³n simple, bueno y rêÂ¡pido, que aborda la restricciêÂ³n.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-purple-400 font-bold text-sm mb-1">Nivel 3</div><h4 class="font-semibold">ê°Å¸âÂ Retainer</h4><p class="text-xs text-neutral-400 mt-1">Recurrencia: mejoras y nuevas automatizaciones como êÂ«la persona de IAêÂ» del cliente.</p></div>
 </div>
 <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-purple-400 mb-3 flex items-center"><span class="mr-2">ðŸ“¦</span> Al convertir en producto</h3>
-<p class="text-neutral-300 text-sm mb-3">Misma soluciÃ³n + mismo perfil + repeticiÃ³n = producto. Cuando ya hayas entregado algo parecido <strong>3+ veces</strong>, estandariza el alcance, el plazo y el precio, y convierte el trabajo a medida en un paquete cerrado con su propia lista de verificaciÃ³n. Mejor margen, menos esfuerzo por venta.</p>
-<p class="text-neutral-300 text-sm"><strong class="text-purple-400">Mapa de la escalera:</strong> AuditorÃ­a (entrada paga) â†’ ConstrucciÃ³n (entrega) â†’ Retainer (ingresos recurrentes) â†’ +1% en cada ciclo.</p>
+<h3 class="text-lg font-semibold text-purple-400 mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¦</span> Al convertir en producto</h3>
+<p class="text-neutral-300 text-sm mb-3">Misma soluciêÂ³n + mismo perfil + repeticiêÂ³n = producto. Cuando ya hayas entregado algo parecido <strong>3+ veces</strong>, estandariza el alcance, el plazo y el precio, y convierte el trabajo a medida en un paquete cerrado con su propia lista de verificaciêÂ³n. Mejor margen, menos esfuerzo por venta.</p>
+<p class="text-neutral-300 text-sm"><strong class="text-purple-400">Mapa de la escalera:</strong> AuditorêÂ­a (entrada paga) ê¢â â ConstrucciêÂ³n (entrega) ê¢â â Retainer (ingresos recurrentes) ê¢â â +1% en cada ciclo.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-ARCKHÉ-module="3-3" data-ARCKHÉ-topic="modulo-3-3#topico-4" data-ARCKHÉ-track="3" id="topico-4">
+<section class="mb-16" data-ARCKHê-module="3-3" data-ARCKHê-topic="modulo-3-3#topico-4" data-ARCKHê-track="3" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">4</span>
-<h2 class="text-2xl font-bold">ðŸ’° Fijar precios segÃºn el valor: el costo de la inacciÃ³n</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ° Fijar precios segêÂºn el valor: el costo de la inacciêÂ³n</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-3-t4-p1">El precio no se basa en tu costo, sino en el <strong class="text-purple-400">valor para el cliente</strong>. Y la forma mÃ¡s honesta de hacer visible este valor es calcular el <strong>costo de la inacciÃ³n</strong> â€” cuÃ¡nto cuesta el problema mientras no se resuelve, usando los nÃºmeros del propio cliente, nunca valores inventados.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-3-t4-p1">El precio no se basa en tu costo, sino en el <strong class="text-purple-400">valor para el cliente</strong>. Y la forma mêÂ¡s honesta de hacer visible este valor es calcular el <strong>costo de la inacciêÂ³n</strong> ê¢â¬â cuêÂ¡nto cuesta el problema mientras no se resuelve, usando los nêÂºmeros del propio cliente, nunca valores inventados.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Ancla el precio al valor generado o perdido para el cliente, no a tus horas.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Cuando el costo del problema se expresa en nÃºmeros, el precio de la soluciÃ³n empieza a tener sentido por sÃ­ solo.</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Costo de la inacciÃ³n Â· 80/20 Â· cifras del cliente Â· sin promesas de ganancias.</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Ancla el precio al valor generado o perdido para el cliente, no a tus horas.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Cuando el costo del problema se expresa en nêÂºmeros, el precio de la soluciêÂ³n empieza a tener sentido por sêÂ­ solo.</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Costo de la inacciêÂ³n êÂ· 80/20 êÂ· cifras del cliente êÂ· sin promesas de ganancias.</p></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6">
-<h4 class="font-bold text-purple-400 mb-4">âœ“ Precios basados en el valor</h4>
+<h4 class="font-bold text-purple-400 mb-4">ê¢Åâ Precios basados en el valor</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>"Â¿CuÃ¡nto ganas, en promedio, por cliente?" â†’ hace visible el costo del problema.</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>Calcula con los nÃºmeros <em>del cliente</em> ("si faltan ~10 clientes/mes...").</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>El precio es coherente con el valor, y tÃº defines el rango para tu mercado.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>"êÂ¿CuêÂ¡nto ganas, en promedio, por cliente?" ê¢â â hace visible el costo del problema.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>Calcula con los nêÂºmeros <em>del cliente</em> ("si faltan ~10 clientes/mes...").</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>El precio es coherente con el valor, y têÂº defines el rango para tu mercado.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— QuÃ© evitar</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ QuêÂ© evitar</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Prometer ganancias o un Â«retorno garantizadoÂ» â€” nunca.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Inventar cifras en el costo de la inacciÃ³n para inflar la venta.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Cobrar solo por las horas: oculta el valor real y te ata al tiempo.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Prometer ganancias o un êÂ«retorno garantizadoêÂ» ê¢â¬â nunca.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Inventar cifras en el costo de la inacciêÂ³n para inflar la venta.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Cobrar solo por las horas: oculta el valor real y te ata al tiempo.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸŽ¯</span> Expectativa realista</h3>
-<p class="text-neutral-300 text-sm">Los modelos de ingresos no son previsiones de facturaciÃ³n. Estructuras la oferta y el precio con criterio; el resultado depende de la ejecuciÃ³n, el mercado y la constancia. Hablar de esto con honestidad es parte de tu posicionamiento.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸Å½Â¯</span> Expectativa realista</h3>
+<p class="text-neutral-300 text-sm">Los modelos de ingresos no son previsiones de facturaciêÂ³n. Estructuras la oferta y el precio con criterio; el resultado depende de la ejecuciêÂ³n, el mercado y la constancia. Hablar de esto con honestidad es parte de tu posicionamiento.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-ARCKHÉ-module="3-3" data-ARCKHÉ-topic="modulo-3-3#topico-5" data-ARCKHÉ-track="3" id="topico-5">
+<section class="mb-16" data-ARCKHê-module="3-3" data-ARCKHê-topic="modulo-3-3#topico-5" data-ARCKHê-track="3" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">5</span>
-<h2 class="text-2xl font-bold">ðŸ“£ Prospectar con respeto: la atenciÃ³n es el activo</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ£ Prospectar con respeto: la atenciêÂ³n es el activo</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-3-t5-p1">Hacia donde va la atenciÃ³n, va el dinero. Los mejores clientes llegan por <strong class="text-purple-400">inbound</strong>: primero fuiste Ãºtil pÃºblicamente, ellos llegaron confiando; y quien recibe consultas negocia mejor que quien sale a buscarlas. Pero el inbound tarda; el <strong>contacto saliente respetuoso</strong> es el camino mÃ¡s rÃ¡pido al comienzo.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-3-t5-p1">Hacia donde va la atenciêÂ³n, va el dinero. Los mejores clientes llegan por <strong class="text-purple-400">inbound</strong>: primero fuiste êÂºtil pêÂºblicamente, ellos llegaron confiando; y quien recibe consultas negocia mejor que quien sale a buscarlas. Pero el inbound tarda; el <strong>contacto saliente respetuoso</strong> es el camino mêÂ¡s rêÂ¡pido al comienzo.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Construir una presencia pÃºblica (contenido/portafolio) que genere demanda con el tiempo, con prospecciÃ³n activa en paralelo.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Un cliente que llega confiando en ti cuesta menos cerrarlo y negocia mejor contigo.</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Valor Ã— alcance Â· inbound vs. outbound Â· prueba social Â· un canal sostenible.</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Construir una presencia pêÂºblica (contenido/portafolio) que genere demanda con el tiempo, con prospecciêÂ³n activa en paralelo.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Un cliente que llega confiando en ti cuesta menos cerrarlo y negocia mejor contigo.</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Valor êâ alcance êÂ· inbound vs. outbound êÂ· prueba social êÂ· un canal sostenible.</p></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
-<h4 class="font-bold text-blue-400 mb-4">ðŸ§² Inbound (genera confianza)</h4>
+<h4 class="font-bold text-blue-400 mb-4">ê°Å¸Â§Â² Inbound (genera confianza)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400">â€¢</span><span>Publica resultados reales (sitios/automatizaciones que hiciste), de forma Ãºtil y honesta.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">â€¢</span><span>Elige <strong>uno</strong> canal que realmente puedes mantener durante meses.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">â€¢</span><span>Es mÃ¡s lento de construir, pero invierte la dinÃ¡mica de poder a tu favor.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢â¬Â¢</span><span>Publica resultados reales (sitios/automatizaciones que hiciste), de forma êÂºtil y honesta.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢â¬Â¢</span><span>Elige <strong>uno</strong> canal que realmente puedes mantener durante meses.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢â¬Â¢</span><span>Es mêÂ¡s lento de construir, pero invierte la dinêÂ¡mica de poder a tu favor.</span></li>
 </ul>
 </div>
 <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6">
-<h4 class="font-bold text-purple-400 mb-4">ðŸ“¨ Outbound (rÃ¡pido al principio)</h4>
+<h4 class="font-bold text-purple-400 mb-4">ê°Å¸âÂ¨ Outbound (rêÂ¡pido al principio)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-purple-400">â€¢</span><span>DM, correo electrÃ³nico y prospecciÃ³n activa â€” respetuosos, sin spam.</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">â€¢</span><span>El camino mÃ¡s rÃ¡pido para conseguir los primeros clientes; mÃ¡s difÃ­cil de sostener.</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">â€¢</span><span>Empieza por aquÃ­ mientras construyes, poco a poco, la presencia que genera inbound.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢â¬Â¢</span><span>DM, correo electrêÂ³nico y prospecciêÂ³n activa ê¢â¬â respetuosos, sin spam.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢â¬Â¢</span><span>El camino mêÂ¡s rêÂ¡pido para conseguir los primeros clientes; mêÂ¡s difêÂ­cil de sostener.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢â¬Â¢</span><span>Empieza por aquêÂ­ mientras construyes, poco a poco, la presencia que genera inbound.</span></li>
 </ul>
 </div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-ARCKHÉ-module="3-3" data-ARCKHÉ-topic="modulo-3-3#topico-6" data-ARCKHÉ-track="3" id="topico-6">
+<section class="mb-16" data-ARCKHê-module="3-3" data-ARCKHê-topic="modulo-3-3#topico-6" data-ARCKHê-track="3" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">6</span>
-<h2 class="text-2xl font-bold">ðŸ’³ Entregar y cobrar: cadencia y Stripe</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ³ Entregar y cobrar: cadencia y Stripe</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Tengo una duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-3-t6-p1">La frecuencia del cobro cambia la retenciÃ³n. Cuanto <strong class="text-purple-400">menos frecuente</strong> el ciclo (mensual &lt; trimestral &lt; anual), mayor suele ser el tiempo de permanencia; la facturaciÃ³n semanal suele generar mÃ¡s cancelaciones. Para cobrar de forma profesional, usa el <strong>Stripe</strong>: pago Ãºnico por la auditorÃ­a, suscripciÃ³n para el retainer.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-3-t6-p1">La frecuencia del cobro cambia la retenciêÂ³n. Cuanto <strong class="text-purple-400">menos frecuente</strong> el ciclo (mensual &lt; trimestral &lt; anual), mayor suele ser el tiempo de permanencia; la facturaciêÂ³n semanal suele generar mêÂ¡s cancelaciones. Para cobrar de forma profesional, usa el <strong>Stripe</strong>: pago êÂºnico por la auditorêÂ­a, suscripciêÂ³n para el retainer.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Estructurar los cobros puntuales y recurrentes, y elegir la frecuencia que mantenga la relaciÃ³n.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">La cadencia correcta protege el valor del cliente a largo plazo; la incorrecta pierde ingresos por cancelaciones.</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Valor de vida del cliente Â· Products &amp; Prices Â· Payment Link Â· suscripciÃ³n Â· recibo automÃ¡tico.</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Estructurar los cobros puntuales y recurrentes, y elegir la frecuencia que mantenga la relaciêÂ³n.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">La cadencia correcta protege el valor del cliente a largo plazo; la incorrecta pierde ingresos por cancelaciones.</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Valor de vida del cliente êÂ· Products &amp; Prices êÂ· Payment Link êÂ· suscripciêÂ³n êÂ· recibo automêÂ¡tico.</p></div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
-<p class="text-sm text-neutral-400 mb-3">Guion de configuraciÃ³n en Stripe (usa solo la documentaciÃ³n oficial: <a class="text-sky-400 hover:text-sky-300" href="https://docs.stripe.com" target="_blank">docs.stripe.com</a>):</p>
+<p class="text-sm text-neutral-400 mb-3">Guion de configuraciêÂ³n en Stripe (usa solo la documentaciêÂ³n oficial: <a class="text-sky-400 hover:text-sky-300" href="https://docs.stripe.com" target="_blank">docs.stripe.com</a>):</p>
 <ul class="space-y-2 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-0.5">1.</span><span>Crea <strong>Products</strong> e <strong>Prices</strong>: pago Ãºnico por la auditorÃ­a, recurrente para el retainer.</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-0.5">2.</span><span>Genera un <strong>Payment Link</strong> para la auditorÃ­a y un plan de <strong>firma</strong> para la recurrencia.</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-0.5">3.</span><span>Prefiere ciclos mÃ¡s largos en el retainer; ofrece un descuento honesto por el plan anual.</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-0.5">4.</span><span>Configura el recibo automÃ¡tico y, si corresponde, un periodo de prueba y una cancelaciÃ³n claros.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-0.5">1.</span><span>Crea <strong>Products</strong> e <strong>Prices</strong>: pago êÂºnico por la auditorêÂ­a, recurrente para el retainer.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-0.5">2.</span><span>Genera un <strong>Payment Link</strong> para la auditorêÂ­a y un plan de <strong>firma</strong> para la recurrencia.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-0.5">3.</span><span>Prefiere ciclos mêÂ¡s largos en el retainer; ofrece un descuento honesto por el plan anual.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-0.5">4.</span><span>Configura el recibo automêÂ¡tico y, si corresponde, un periodo de prueba y una cancelaciêÂ³n claros.</span></li>
 </ul>
 </div>
 <details class="bg-dark-800 border border-dark-600 rounded-xl p-5 mb-6">
-<summary class="cursor-pointer font-semibold text-purple-400">Profundiza (opcional): por quÃ© los ciclos largos retienen mÃ¡s</summary>
-<p class="text-neutral-300 text-sm mt-3">Cada renovaciÃ³n es un momento de decisiÃ³n para el cliente, y cada decisiÃ³n es una oportunidad para cancelar. Menos renovaciones al aÃ±o significan menos puntos de fuga y mÃ¡s tiempo para que el valor se acumule. Por eso, el plan anual (con un descuento justo) suele retener mÃ¡s que el mensual, y el mensual mÃ¡s que el semanal.</p>
+<summary class="cursor-pointer font-semibold text-purple-400">Profundiza (opcional): por quêÂ© los ciclos largos retienen mêÂ¡s</summary>
+<p class="text-neutral-300 text-sm mt-3">Cada renovaciêÂ³n es un momento de decisiêÂ³n para el cliente, y cada decisiêÂ³n es una oportunidad para cancelar. Menos renovaciones al aêÂ±o significan menos puntos de fuga y mêÂ¡s tiempo para que el valor se acumule. Por eso, el plan anual (con un descuento justo) suele retener mêÂ¡s que el mensual, y el mensual mêÂ¡s que el semanal.</p>
 </details>
 <!-- Checagem leve opcional -->
-<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-3-3#q1">
-<p class="font-medium mb-4">AutoevaluaciÃ³n (opcional): Â¿quÃ© frecuencia de cobro suele <em>retener</em> Â¿mÃ¡s en el retainer?</p>
-<div class="ARCKHÉ-check-options space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">Cobro semanal, para garantizar el flujo de caja.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Ciclos mÃ¡s largos (mensual â†’ trimestral â†’ anual).</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Da igual: la frecuencia no afecta las cancelaciones.</button>
+<div class="ARCKHê-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHê-check="modulo-3-3#q1">
+<p class="font-medium mb-4">AutoevaluaciêÂ³n (opcional): êÂ¿quêÂ© frecuencia de cobro suele <em>retener</em> êÂ¿mêÂ¡s en el retainer?</p>
+<div class="ARCKHê-check-options space-y-2">
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="0" type="button">Cobro semanal, para garantizar el flujo de caja.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="1" type="button">Ciclos mêÂ¡s largos (mensual ê¢â â trimestral ê¢â â anual).</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="2" type="button">Da igual: la frecuencia no afecta las cancelaciones.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHê-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-purple-500/20 border border-purple-500/30 text-purple-400 hover:bg-purple-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span></button>
 </div>
 </section>
 <!-- EXEMPLO PRATICO GUIADO -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">ðŸ§­ Ejemplo prÃ¡ctico guiado</h2>
-<p class="text-neutral-300 text-sm mb-6"><strong>Escenario:</strong> proveedor de servicios local (estudio, clÃ­nica, taller) que dice "no tengo suficientes clientes".</p>
+<h2 class="text-2xl font-bold mb-6">ê°Å¸Â§Â­ Ejemplo prêÂ¡ctico guiado</h2>
+<p class="text-neutral-300 text-sm mb-6"><strong>Escenario:</strong> proveedor de servicios local (estudio, clêÂ­nica, taller) que dice "no tengo suficientes clientes".</p>
 <div class="space-y-4">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1 text-purple-400">1. ConversaciÃ³n de diagnÃ³stico (~15 min)</h3><p class="text-neutral-300 text-sm">Por quÃ© estamos conversando â†’ cuÃ¡l es el mayor problema del negocio â†’ costo de la inacciÃ³n (con las cifras del cliente) â†’ propuesta de auditorÃ­a como oferta de entrada paga y pequeÃ±a.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1 text-purple-400">2. Entrega de la auditorÃ­a</h3><p class="text-neutral-300 text-sm">Cuestionario despuÃ©s de la conversaciÃ³n â†’ llamada para presentar los hallazgos y la restricciÃ³n â†’ cierra con <strong>dos opciones</strong>: A) Mantenimiento y B) Crecimiento. El cliente elige en la llamada.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1 text-purple-400">3. ConstrucciÃ³n y retenciÃ³n</h3><p class="text-neutral-300 text-sm">Si el hallazgo es "necesita un sitio web/landing", constrÃºyelo rÃ¡pido con Claude Code (Trilha 2). PosiciÃ³nate como "la persona de IA": cierra un retainer trimestral/anual. En Stripe: auditorÃ­a como pago Ãºnico (Payment Link), retainer como suscripciÃ³n.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1 text-purple-400">1. ConversaciêÂ³n de diagnêÂ³stico (~15 min)</h3><p class="text-neutral-300 text-sm">Por quêÂ© estamos conversando ê¢â â cuêÂ¡l es el mayor problema del negocio ê¢â â costo de la inacciêÂ³n (con las cifras del cliente) ê¢â â propuesta de auditorêÂ­a como oferta de entrada paga y pequeêÂ±a.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1 text-purple-400">2. Entrega de la auditorêÂ­a</h3><p class="text-neutral-300 text-sm">Cuestionario despuêÂ©s de la conversaciêÂ³n ê¢â â llamada para presentar los hallazgos y la restricciêÂ³n ê¢â â cierra con <strong>dos opciones</strong>: A) Mantenimiento y B) Crecimiento. El cliente elige en la llamada.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1 text-purple-400">3. ConstrucciêÂ³n y retenciêÂ³n</h3><p class="text-neutral-300 text-sm">Si el hallazgo es "necesita un sitio web/landing", constrêÂºyelo rêÂ¡pido con Claude Code (Trilha 2). PosiciêÂ³nate como "la persona de IA": cierra un retainer trimestral/anual. En Stripe: auditorêÂ­a como pago êÂºnico (Payment Link), retainer como suscripciêÂ³n.</p></div>
 </div>
 </section>
 <!-- EXERCICIOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âœï¸ Ejercicios</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂê¯Â¸Â Ejercicios</h2>
 <div class="space-y-4">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. Encuentra tu restricciÃ³n <span class="text-xs text-neutral-500">(fÃ¡cil)</span></h3><p class="text-neutral-300 text-sm">Responde por escrito la pregunta de los 3 meses para tu negocio (o cliente objetivo) y escribe Â«Mi restricciÃ³n es ___Â». <span class="text-purple-400">Criterio:</span> una sola frase especÃ­fica y medible.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Plan Â«mÃ¡s â†’ mejor â†’ nuevoÂ» <span class="text-xs text-neutral-500">(medio)</span></h3><p class="text-neutral-300 text-sm">Para tu principal fuente de clientes, escribe una acciÃ³n para hacer mÃ¡s, una para hacer mejor y por quÃ© no abrirÃ¡s un canal nuevo ahora. <span class="text-purple-400">Criterio:</span> las 3 decisiones en una pÃ¡gina, con lo Â«nuevoÂ» aplazado con justificaciÃ³n.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Guion de diagnÃ³stico <span class="text-xs text-neutral-500">(medio)</span></h3><p class="text-neutral-300 text-sm">Escribe el guion de la conversaciÃ³n de 15 min para un perfil real. <span class="text-purple-400">Criterio:</span> el "costo de la inacciÃ³n" se calcula a partir de nÃºmeros del cliente, sin valores inventados.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. Encuentra tu restricciêÂ³n <span class="text-xs text-neutral-500">(fêÂ¡cil)</span></h3><p class="text-neutral-300 text-sm">Responde por escrito la pregunta de los 3 meses para tu negocio (o cliente objetivo) y escribe êÂ«Mi restricciêÂ³n es ___êÂ». <span class="text-purple-400">Criterio:</span> una sola frase especêÂ­fica y medible.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Plan êÂ«mêÂ¡s ê¢â â mejor ê¢â â nuevoêÂ» <span class="text-xs text-neutral-500">(medio)</span></h3><p class="text-neutral-300 text-sm">Para tu principal fuente de clientes, escribe una acciêÂ³n para hacer mêÂ¡s, una para hacer mejor y por quêÂ© no abrirêÂ¡s un canal nuevo ahora. <span class="text-purple-400">Criterio:</span> las 3 decisiones en una pêÂ¡gina, con lo êÂ«nuevoêÂ» aplazado con justificaciêÂ³n.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Guion de diagnêÂ³stico <span class="text-xs text-neutral-500">(medio)</span></h3><p class="text-neutral-300 text-sm">Escribe el guion de la conversaciêÂ³n de 15 min para un perfil real. <span class="text-purple-400">Criterio:</span> el "costo de la inacciêÂ³n" se calcula a partir de nêÂºmeros del cliente, sin valores inventados.</p></div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. Construye la escalera de ofertas <span class="text-xs text-neutral-500">(medio)</span></h3><p class="text-neutral-300 text-sm">Define el alcance, el plazo y el rango de precios de los 3 niveles, de acuerdo con tu mercado. <span class="text-purple-400">Criterio:</span> una tabla de 3 filas con alcance y precio definidos por ti (no copiados).</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. Cobro en Stripe (prueba) <span class="text-xs text-neutral-500">(prÃ¡ctico)</span></h3><p class="text-neutral-300 text-sm">En modo de prueba, crea un producto individual (auditorÃ­a) con Payment Link y un producto de suscripciÃ³n (retainer). <span class="text-purple-400">Criterio:</span> un enlace de pago de prueba funcionando y una suscripciÃ³n de prueba creada.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. Cobro en Stripe (prueba) <span class="text-xs text-neutral-500">(prêÂ¡ctico)</span></h3><p class="text-neutral-300 text-sm">En modo de prueba, crea un producto individual (auditorêÂ­a) con Payment Link y un producto de suscripciêÂ³n (retainer). <span class="text-purple-400">Criterio:</span> un enlace de pago de prueba funcionando y una suscripciêÂ³n de prueba creada.</p></div>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âŒ¨ï¸ Prompts listos</h2>
-<p class="text-neutral-300 text-sm mb-6">Ãšsalos con Claude Code para pasar de la teorÃ­a a la ejecuciÃ³n. El de Stripe va en <strong class="text-purple-400">inglÃ©s</strong> porque los tÃ©rminos de la API (Products, Prices, Payment Link) son canÃ³nicos. La base de datos completa estÃ¡ en la <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Biblioteca â†’ Prompts</a>.</p>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂ¨ê¯Â¸Â Prompts listos</h2>
+<p class="text-neutral-300 text-sm mb-6">êÅ¡salos con Claude Code para pasar de la teorêÂ­a a la ejecuciêÂ³n. El de Stripe va en <strong class="text-purple-400">inglêÂ©s</strong> porque los têÂ©rminos de la API (Products, Prices, Payment Link) son canêÂ³nicos. La base de datos completa estêÂ¡ en la <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Biblioteca ê¢â â Prompts</a>.</p>
 <div class="space-y-5">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Encontrar la restricciÃ³n</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">VocÃª Ã© um consultor de negÃ³cios objetivo. Vou descrever um negÃ³cio.
-FaÃ§a a pergunta: "Se uma Ãºnica coisa fosse verdade daqui a 3 meses e
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Encontrar la restricciêÂ³n</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">VocêÂª êÂ© um consultor de negêÂ³cios objetivo. Vou descrever um negêÂ³cio.
+FaêÂ§a a pergunta: "Se uma êÂºnica coisa fosse verdade daqui a 3 meses e
 tornasse o resto irrelevante, qual seria?" Em seguida, me ajude a
-transformar a resposta em UMA frase de restriÃ§Ã£o especÃ­fica e mensurÃ¡vel,
-e liste 3 formas de a IA atacar essa restriÃ§Ã£o. NegÃ³cio: [descreva]</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Guion de la conversaciÃ³n de diagnÃ³stico</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Crie um roteiro de conversa de 15 minutos para uma auditoria paga, em 4 partes:
-1) por que estamos conversando; 2) qual o maior problema do negÃ³cio;
-3) custo da inaÃ§Ã£o (calcular usando OS NÃšMEROS do cliente, nunca inventar);
+transformar a resposta em UMA frase de restriêÂ§êÂ£o especêÂ­fica e mensurêÂ¡vel,
+e liste 3 formas de a IA atacar essa restriêÂ§êÂ£o. NegêÂ³cio: [descreva]</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Guion de la conversaciêÂ³n de diagnêÂ³stico</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Crie um roteiro de conversa de 15 minutos para uma auditoria paga, em 4 partes:
+1) por que estamos conversando; 2) qual o maior problema do negêÂ³cio;
+3) custo da inaêÂ§êÂ£o (calcular usando OS NêÅ¡MEROS do cliente, nunca inventar);
 4) proposta de auditoria como oferta de entrada. Tom respeitoso, sem hype.
 Perfil de cliente: [descreva]</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Tabla de escalera de ofertas</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Monte uma tabela com os 3 degraus da minha oferta: Auditoria, ConstruÃ§Ã£o,
-Retainer. Colunas: escopo, entregÃ¡veis, prazo, cadÃªncia de cobranÃ§a,
-faixa de preÃ§o (que EU defino). Lembre que cadÃªncias mais longas tendem a
-reter mais. Deixe campos para eu preencher os preÃ§os do meu mercado.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Configurar el cobro en Stripe (EN canÃ³nico)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Help me set up Stripe billing for a services business:
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Tabla de escalera de ofertas</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Monte uma tabela com os 3 degraus da minha oferta: Auditoria, ConstruêÂ§êÂ£o,
+Retainer. Colunas: escopo, entregêÂ¡veis, prazo, cadêÂªncia de cobranêÂ§a,
+faixa de preêÂ§o (que EU defino). Lembre que cadêÂªncias mais longas tendem a
+reter mais. Deixe campos para eu preencher os preêÂ§os do meu mercado.</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Configurar el cobro en Stripe (EN canêÂ³nico)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Help me set up Stripe billing for a services business:
 - A one-time "audit" product sold via a Payment Link.
 - A recurring "retainer" product as a subscription (monthly/quarterly/annual).
 Walk me through creating Products and Prices, the Payment Link, and the
@@ -508,46 +508,46 @@ subscription, plus automatic receipts. Use only official Stripe docs
 </section>
 <!-- ERROS COMUNS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âš ï¸ Errores comunes</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢Å¡Â ê¯Â¸Â Errores comunes</h2>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Aplicar IA antes de encontrar el cuello de botella.</strong> Construir mil herramientas geniales que no toquen la restricciÃ³n. Primero el negocio, despuÃ©s la IA.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Abrir un canal nuevo demasiado pronto.</strong> Saltarte el Â«mÃ¡sÂ» y el Â«mejorÂ» y dispersarte en cinco frentes. Agota primero lo que ya funciona.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Saltar directamente a la venta grande.</strong> Pitch de alto valor sin la oferta de entrada. Sin confianza construida, la conversiÃ³n cae en picada.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Cobro semanal Â«para garantizar el flujo de cajaÂ».</strong> Una frecuencia demasiado alta aumenta las cancelaciones. En el retainer, prefiere la frecuencia mensual, trimestral o anual.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Prometer ganancias o inventar cifras.</strong> Nunca garantices ingresos ni uses valores ficticios en el "costo de la inacciÃ³n". Habla de modelos, no de resultados seguros.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Aplicar IA antes de encontrar el cuello de botella.</strong> Construir mil herramientas geniales que no toquen la restricciêÂ³n. Primero el negocio, despuêÂ©s la IA.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Abrir un canal nuevo demasiado pronto.</strong> Saltarte el êÂ«mêÂ¡sêÂ» y el êÂ«mejorêÂ» y dispersarte en cinco frentes. Agota primero lo que ya funciona.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Saltar directamente a la venta grande.</strong> Pitch de alto valor sin la oferta de entrada. Sin confianza construida, la conversiêÂ³n cae en picada.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Cobro semanal êÂ«para garantizar el flujo de cajaêÂ».</strong> Una frecuencia demasiado alta aumenta las cancelaciones. En el retainer, prefiere la frecuencia mensual, trimestral o anual.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Prometer ganancias o inventar cifras.</strong> Nunca garantices ingresos ni uses valores ficticios en el "costo de la inacciêÂ³n". Habla de modelos, no de resultados seguros.</span></li>
 </ul>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-purple-900/40 via-dark-800 to-dark-800 rounded-xl border border-purple-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumen del mÃ³dulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Åâ¦</span> Resumen del mêÂ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong>Primero el negocio, despuÃ©s la IA</strong><span class="text-neutral-400"> â€” encuentra la restricciÃ³n con la pregunta de los 3 meses antes de abrir Claude Code.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong>MÃ¡s â†’ mejor â†’ nuevo</strong><span class="text-neutral-400"> â€” agota lo que funciona antes de abrir un canal nuevo; enfÃ³cate en una oferta/un cliente.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong>La escalera</strong><span class="text-neutral-400"> â€” auditorÃ­a â†’ construcciÃ³n â†’ retainer; convierte en producto lo que se repite 3+ veces.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong>Precios segÃºn el valor + Stripe</strong><span class="text-neutral-400"> â€” costo de la inacciÃ³n con cifras del cliente; las cadencias largas retienen mÃ¡s. Sin promesas de ganancias.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">ê¢Åâ</span><div><strong>Primero el negocio, despuêÂ©s la IA</strong><span class="text-neutral-400"> ê¢â¬â encuentra la restricciêÂ³n con la pregunta de los 3 meses antes de abrir Claude Code.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">ê¢Åâ</span><div><strong>MêÂ¡s ê¢â â mejor ê¢â â nuevo</strong><span class="text-neutral-400"> ê¢â¬â agota lo que funciona antes de abrir un canal nuevo; enfêÂ³cate en una oferta/un cliente.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">ê¢Åâ</span><div><strong>La escalera</strong><span class="text-neutral-400"> ê¢â¬â auditorêÂ­a ê¢â â construcciêÂ³n ê¢â â retainer; convierte en producto lo que se repite 3+ veces.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">ê¢Åâ</span><div><strong>Precios segêÂºn el valor + Stripe</strong><span class="text-neutral-400"> ê¢â¬â costo de la inacciêÂ³n con cifras del cliente; las cadencias largas retienen mêÂ¡s. Sin promesas de ganancias.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-purple-400 mb-3">Lista de verificaciÃ³n de finalizaciÃ³n</h3>
+<h3 class="font-semibold text-purple-400 mb-3">Lista de verificaciêÂ³n de finalizaciêÂ³n</h3>
 <ul class="space-y-2 text-sm text-neutral-300">
-<li>â˜ EscribÃ­ la frase de restricciÃ³n (pregunta de los 3 meses) de mi negocio o de un cliente objetivo.</li>
-<li>â˜ DefinÃ­ una acciÃ³n para hacer mÃ¡s y otra para hacer mejor, y pospuse conscientemente lo nuevo.</li>
-<li>â˜ Tengo un guion de diagnÃ³stico con el Â«costo de la inacciÃ³nÂ» basado en cifras reales.</li>
-<li>â˜ ArmÃ© mi escalera de oferta (auditorÃ­a â†’ construcciÃ³n â†’ retainer) con alcance, plazo y precio propios.</li>
-<li>â˜ CreÃ© en Stripe (modo de prueba) un producto de pago Ãºnico con Payment Link y una suscripciÃ³n de retainer.</li>
-<li>â˜ DecidÃ­ quÃ© servicio repetido voy a convertir en un producto (o registrÃ© que todavÃ­a no hay suficiente repeticiÃ³n).</li>
-<li>â˜ ElegÃ­ un canal de atenciÃ³n sostenible e iniciÃ© outbound respetuoso en paralelo.</li>
+<li>ê¢ËÂ EscribêÂ­ la frase de restricciêÂ³n (pregunta de los 3 meses) de mi negocio o de un cliente objetivo.</li>
+<li>ê¢ËÂ DefinêÂ­ una acciêÂ³n para hacer mêÂ¡s y otra para hacer mejor, y pospuse conscientemente lo nuevo.</li>
+<li>ê¢ËÂ Tengo un guion de diagnêÂ³stico con el êÂ«costo de la inacciêÂ³nêÂ» basado en cifras reales.</li>
+<li>ê¢ËÂ ArmêÂ© mi escalera de oferta (auditorêÂ­a ê¢â â construcciêÂ³n ê¢â â retainer) con alcance, plazo y precio propios.</li>
+<li>ê¢ËÂ CreêÂ© en Stripe (modo de prueba) un producto de pago êÂºnico con Payment Link y una suscripciêÂ³n de retainer.</li>
+<li>ê¢ËÂ DecidêÂ­ quêÂ© servicio repetido voy a convertir en un producto (o registrêÂ© que todavêÂ­a no hay suficiente repeticiêÂ³n).</li>
+<li>ê¢ËÂ ElegêÂ­ un canal de atenciêÂ³n sostenible e iniciêÂ© outbound respetuoso en paralelo.</li>
 </ul>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-purple-400 mb-2">Siguiente mÃ³dulo:</h3>
-<p class="text-neutral-300">3.4 â€” Tu sistema operativo: uniendo memoria, agente, seguridad y receta en un solo flujo.</p>
+<h3 class="font-semibold text-purple-400 mb-2">Siguiente mêÂ³dulo:</h3>
+<p class="text-neutral-300">3.4 ê¢â¬â Tu sistema operativo: uniendo memoria, agente, seguridad y receta en un solo flujo.</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Volver a la ruta</a>
-<a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors" href="modulo-3-4.html">Siguiente: 3.4 â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Volver a la ruta</a>
+<a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors" href="modulo-3-4.html">Siguiente: 3.4 ê¢â â</a>
 </div>
 </div>
 </section>
@@ -556,7 +556,7 @@ subscription, plus automatic receipts. Use only official Stripe docs
 <!-- FOOTER -->
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Claude Code en la prÃ¡ctica â€” <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>Claude Code en la prêÂ¡ctica ê¢â¬â <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <!-- SCRIPTS: nucleo v1 -->
@@ -565,7 +565,7 @@ subscription, plus automatic receipts. Use only official Stripe docs
     (function(){ var tt=document.getElementById('theme-toggle'); if(!tt) return; var di=document.getElementById('theme-toggle-dark-icon'), li=document.getElementById('theme-toggle-light-icon'), html=document.documentElement;
       function sync(){ if(html.classList.contains('dark')){ li&&li.classList.remove('hidden'); di&&di.classList.add('hidden'); } else { di&&di.classList.remove('hidden'); li&&li.classList.add('hidden'); } }
       sync();
-      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}'); p.theme=dark?'ARCKHÉ-dark':'claro'; localStorage.setItem('ARCKHÉ.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
+      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHê.prefs')||'{}'); p.theme=dark?'ARCKHê-dark':'claro'; localStorage.setItem('ARCKHê.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
     function openModal(id){ var m=document.getElementById(id); if(m){ m.classList.remove('hidden'); document.body.style.overflow='hidden'; } }
     function closeModal(){ document.querySelectorAll('.modal').forEach(function(m){ m.classList.add('hidden'); }); document.body.style.overflow='auto'; }
     document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
@@ -573,19 +573,19 @@ subscription, plus automatic receipts. Use only official Stripe docs
 <!-- Camada de aprendizagem -->
 <script>
     window.addEventListener('DOMContentLoaded', function(){
-      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
-        ARCKHÉ.registerCheck('modulo-3-3#q1', {
+      if (window.ARCKHê && ARCKHê.registerCheck) {
+        ARCKHê.registerCheck('modulo-3-3#q1', {
           answer: 1,
           explain: {
-            0: 'CobranÃ§a semanal costuma gerar MAIS cancelamento â€” frequÃªncia alta vira ponto de fuga.',
-            1: 'Isso! Ciclos mais longos tÃªm menos renovaÃ§Ãµes por ano, logo menos chances de cancelar.',
-            2: 'A cadÃªncia afeta sim: quanto menos frequente, maior tende a ser a permanÃªncia.'
+            0: 'CobranêÂ§a semanal costuma gerar MAIS cancelamento ê¢â¬â frequêÂªncia alta vira ponto de fuga.',
+            1: 'Isso! Ciclos mais longos têÂªm menos renovaêÂ§êÂµes por ano, logo menos chances de cancelar.',
+            2: 'A cadêÂªncia afeta sim: quanto menos frequente, maior tende a ser a permanêÂªncia.'
           }
         });
       }
     });
   </script>
 <script src="../../../assets/learn.js"></script>
-<script>if (window.ARCKHÉ && typeof window.ARCKHÉ.init==='function'){ window.ARCKHÉ.init(); }</script>
+<script>if (window.ARCKHê && typeof window.ARCKHê.init==='function'){ window.ARCKHê.init(); }</script>
 </body>
 </html>

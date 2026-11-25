@@ -12,7 +12,7 @@
 | **Tier** | Nano Banana 2 (Flash) |
 | **Speed** | Fast - optimized for high-volume use |
 | **Aspect Ratios** | All 14 ratios (see table below) |
-| **Max Resolution** | Up to 4096Ã—4096 (4K tier) |
+| **Max Resolution** | Up to 4096ê—4096 (4K tier) |
 | **Features** | Google Search grounding (web + image), thinking levels, image-only output, extreme aspect ratios |
 | **Rate Limits (Free)** | ~10 RPM / ~500 RPD (per Google Cloud project, resets midnight Pacific) |
 | **Output Tokens** | ~1,290 output tokens per image |
@@ -25,7 +25,7 @@
 | **Tier** | Nano Banana 2 (Flash, previous gen) |
 | **Speed** | Fast |
 | **Aspect Ratios** | 1:1, 16:9, 9:16, 4:3, 3:4 |
-| **Max Resolution** | Up to 1024Ã—1024 (1K tier) |
+| **Max Resolution** | Up to 1024ê—1024 (1K tier) |
 | **Rate Limits (Free)** | ~10 RPM / ~500 RPD |
 | **Best For** | Stable fallback, proven quality |
 
@@ -66,13 +66,13 @@ Control output resolution with the `imageSize` parameter. Note the **uppercase K
 
 | `imageSize` Value | Pixel Range | Model Availability | Use Case |
 |-------------------|-------------|-------------------|----------|
-| `512` | Up to 512Ã—512 | All models | Drafts, quick iteration, low bandwidth |
-| `1K` (default) | Up to 1024Ã—1024 | All models | Standard web use, social media |
-| `2K` | Up to 2048Ã—2048 | 3.1 Flash | Quality assets, detailed work |
-| `4K` | Up to 4096Ã—4096 | 3.1 Flash | Print production, hero images, final assets |
+| `512` | Up to 512ê—512 | All models | Drafts, quick iteration, low bandwidth |
+| `1K` (default) | Up to 1024ê—1024 | All models | Standard web use, social media |
+| `2K` | Up to 2048ê—2048 | 3.1 Flash | Quality assets, detailed work |
+| `4K` | Up to 4096ê—4096 | 3.1 Flash | Print production, hero images, final assets |
 
 **Notes:**
-- Actual pixel dimensions depend on aspect ratio (e.g., 4K at 16:9 = 4096Ã—2304)
+- Actual pixel dimensions depend on aspect ratio (e.g., 4K at 16:9 = 4096ê—2304)
 - Higher resolutions consume more tokens and cost more
 - Default is `1K` if `imageSize` is not specified
 
@@ -151,8 +151,8 @@ Useful for character consistency, style transfer, and brand-aligned generation.
 | Model | Resolution | Cost per Image | Notes |
 |-------|-----------|---------------|-------|
 | 3.1 Flash | 1K | ~$0.039 | Standard |
-| 3.1 Flash | 2K | ~$0.078 | 2Ã— standard |
-| 3.1 Flash | 4K | ~$0.156 | 4Ã— standard |
+| 3.1 Flash | 2K | ~$0.078 | 2ê— standard |
+| 3.1 Flash | 4K | ~$0.156 | 4ê— standard |
 | 2.5 Flash | 1K | ~$0.039 | Standard |
 | Batch API | Any | 50% discount | Asynchronous, higher latency |
 
@@ -164,7 +164,7 @@ Research suggests NB2 pricing may be ~$0.067/img (vs documented $0.039). Verify 
 | Property | Value |
 |----------|-------|
 | **Format** | PNG |
-| **Max Resolution** | Up to 4096Ã—4096 (4K tier, 3.1 Flash) |
+| **Max Resolution** | Up to 4096ê—4096 (4K tier, 3.1 Flash) |
 | **Color Space** | sRGB |
 | **Text Rendering** | Supported - best under 25 characters |
 | **Style Control** | Via prompt engineering |

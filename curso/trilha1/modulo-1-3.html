@@ -4,29 +4,29 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-na-pratica" name="ARCKHÉ-course"/>
-<title>1.3 Sistema de memÃ³ria: curta, mÃ©dia e longa | Claude Code na PrÃ¡tica</title>
+<meta content="claude-na-pratica" name="ARCKHê-course"/>
+<title>1.3 Sistema de memêÂ³ria: curta, mêÂ©dia e longa | Claude Code na PrêÂ¡tica</title>
 <!-- ANTI-FOUC: bloqueante, SEPARADO, antes do Tailwind/learn.css -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){ var r={}; for (var x in o) r[x]=o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHê-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var THEMES = { 'ARCKHê-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'emerald');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
+      s.setProperty('--ARCKHê-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
       var fam = p.font==='system' ? 'system-ui,-apple-system,"Segoe UI",Roboto,sans-serif' : (p.font==='leitura' ? '"Atkinson Hyperlegible","Inter",system-ui,sans-serif' : '"Inter",system-ui,sans-serif');
       s.setProperty('--font-body', fam);
@@ -43,8 +43,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../assets/learn.css" rel="stylesheet"/>
-<!-- Manifesto do curso (IDÃŠNTICO em TODA pagina) -->
-<script data-ARCKHÉ-manifest="" type="application/json">
+<!-- Manifesto do curso (IDêÅ NTICO em TODA pagina) -->
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "claude-na-pratica",
     "tracks": [
@@ -79,7 +79,7 @@
     .dark body { background-color: #111827; }
     .topic-explanation { display: none; }
     .topic-explanation.active { display: block; }
-    section[data-ARCKHÉ-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
+    section[data-ARCKHê-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
     .skip { position:absolute; left:-999px; top:0; z-index:100; }
     .skip:focus { left:8px; top:8px; background:#111827; color:#fff; padding:8px 12px; border-radius:8px; }
 
@@ -126,28 +126,28 @@
     }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-1-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha1/modulo-1-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha1/modulo-1-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
-<a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-1-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha1/modulo-1-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha1/modulo-1-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<a class="skip" href="#conteudo">Pular para o conteêÂºdo</a>
 <!-- NAV -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">âš¡</span>
-<span class="font-bold text-lg hidden sm:inline">Claude Code na PrÃ¡tica</span>
+<span class="text-2xl">ê¢Å¡Â¡</span>
+<span class="font-bold text-lg hidden sm:inline">Claude Code na PrêÂ¡tica</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Construir</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Operar &amp; Lucrar</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Biblioteca</span></a>
-<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHÉ-journey-open="" title="Minha jornada" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden lg:inline">Jornada</span>
-<span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHê-journey-open="" title="Minha jornada" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden lg:inline">Jornada</span>
+<span aria-hidden="true" class="ARCKHê-journey-badge hidden"></span>
 </button>
 <button aria-label="Alternar tema claro/escuro" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle" title="Tema claro/escuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -158,31 +158,31 @@
 </div>
 </nav>
 <!-- BREADCRUMB -->
-<nav aria-label="Trilha de navegaÃ§Ã£o" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Trilha de navegaêÂ§êÂ£o" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
-<a class="hover:text-emerald-400" href="../../index.html">InÃ­cio</a>
+<a class="hover:text-emerald-400" href="../../index.html">InêÂ­cio</a>
 <span>/</span>
 <a class="hover:text-emerald-400" href="index.html">Fundamentos</a>
 <span>/</span>
-<span class="text-emerald-400">MÃ³dulo 1.3</span>
+<span class="text-emerald-400">MêÂ³dulo 1.3</span>
 </div>
 </nav>
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 1.3</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ§  Sistema de memÃ³ria: curta, mÃ©dia e longa</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Quanto mais contexto certo o Claude tem, melhores as respostas. Aqui vocÃª separa a memÃ³ria em trÃªs nÃ­veis, escreve um <code class="text-emerald-400">CLAUDE.md</code> enxuto e monta uma rotina de "salvar memÃ³ria" â€” para que um chat novo renda igual a um antigo.</p>
+<span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MêâDULO 1.3</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸Â§Â  Sistema de memêÂ³ria: curta, mêÂ©dia e longa</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Quanto mais contexto certo o Claude tem, melhores as respostas. Aqui vocêÂª separa a memêÂ³ria em trêÂªs nêÂ­veis, escreve um <code class="text-emerald-400">CLAUDE.md</code> enxuto e monta uma rotina de "salvar memêÂ³ria" ê¢â¬â para que um chat novo renda igual a um antigo.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">TÃ³picos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">TêÂ³picos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">~45</div><div class="text-xs text-neutral-400">Minutos</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Iniciante</div><div class="text-xs text-neutral-400">NÃ­vel</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">PrÃ¡tica</div><div class="text-xs text-neutral-400">Tipo</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Iniciante</div><div class="text-xs text-neutral-400">NêÂ­vel</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">PrêÂ¡tica</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 <!-- Medidor de progresso do modulo -->
 <div class="mt-6 max-w-2xl">
-<div aria-label="Progresso do mÃ³dulo 1.3" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter" data-ARCKHÉ-meter="modulo:1-3" role="progressbar">
-<span class="ARCKHÉ-meter-pct" data-ARCKHÉ-meter-pct="">0%</span> <span class="ARCKHÉ-meter-count text-neutral-400 text-sm" data-ARCKHÉ-meter-frac="">0 de 6</span>
+<div aria-label="Progresso do mêÂ³dulo 1.3" aria-valuemax="100" aria-valuemin="0" class="ARCKHê-meter" data-ARCKHê-meter="modulo:1-3" role="progressbar">
+<span class="ARCKHê-meter-pct" data-ARCKHê-meter-pct="">0%</span> <span class="ARCKHê-meter-count text-neutral-400 text-sm" data-ARCKHê-meter-frac="">0 de 6</span>
 </div>
 </div>
 </div>
@@ -190,21 +190,21 @@
 <!-- CONTEUDO + TOC -->
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[220px_1fr] lg:gap-10" id="conteudo">
 <!-- TOC sticky -->
-<nav aria-label="Ãndice da pÃ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-3">SeÃ§Ã£o <span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">6</span></p>
+<nav aria-label="êÂndice da pêÂ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-3">SeêÂ§êÂ£o <span class="ARCKHê-toc-pos">1</span> de <span class="ARCKHê-toc-total">6</span></p>
 <ul class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-1">1. Os trÃªs nÃ­veis</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-2">2. MemÃ³ria curta</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-3">3. Baldes (buckets)</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-4">4. CLAUDE.md</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-5">5. MemÃ³ria longa</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-6">6. memory save</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-1">1. Os trêÂªs nêÂ­veis</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-2">2. MemêÂ³ria curta</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-3">3. Baldes (buckets)</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-4">4. CLAUDE.md</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-5">5. MemêÂ³ria longa</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-emerald-400" href="#topico-6">6. memory save</a></li>
 </ul>
 </nav>
-<div class="ARCKHÉ-prose">
-<!-- SVG modelo mental: curta / mÃ©dia / longa -->
+<div class="ARCKHê-prose">
+<!-- SVG modelo mental: curta / mêÂ©dia / longa -->
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-10 overflow-hidden">
-<svg aria-label="Os trÃªs nÃ­veis de memÃ³ria do Claude Code: curta, que Ã© a sessÃ£o do agora; mÃ©dia, que Ã© o CLAUDE.md, um por pasta; e longa, que Ã© a base de conhecimento em disco. Uma seta memory save liga a conversa Ã  base de conhecimento." class="w-full h-auto" role="img" viewbox="0 0 1000 250">
+<svg aria-label="Os trêÂªs nêÂ­veis de memêÂ³ria do Claude Code: curta, que êÂ© a sessêÂ£o do agora; mêÂ©dia, que êÂ© o CLAUDE.md, um por pasta; e longa, que êÂ© a base de conhecimento em disco. Uma seta memory save liga a conversa êÂ  base de conhecimento." class="w-full h-auto" role="img" viewbox="0 0 1000 250">
 <defs>
 <lineargradient id="m13-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#34d399"></stop><stop offset="1" stop-color="#10b981"></stop></lineargradient>
 <filter height="180%" id="m13-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -215,134 +215,134 @@
 <rect fill="url(#m13-grid)" height="250" width="1000" x="0" y="0"></rect>
 <!-- CURTA -->
 <g class="wf-a" filter="url(#m13-glow)"><rect fill="#0e2018" height="120" rx="16" stroke="url(#m13-grad)" stroke-width="2.5" width="270" x="40" y="58"></rect></g>
-<text fill="#34d399" font-family="Inter,sans-serif" font-size="19" font-weight="700" text-anchor="middle" x="175" y="92">â±ï¸ Curta</text>
-<text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="175" y="118">a sessÃ£o Â· o "agora"</text>
+<text fill="#34d399" font-family="Inter,sans-serif" font-size="19" font-weight="700" text-anchor="middle" x="175" y="92">ê¢ÂÂ±ê¯Â¸Â Curta</text>
+<text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="175" y="118">a sessêÂ£o êÂ· o "agora"</text>
 <text fill="#7fd6b4" font-family="Inter,sans-serif" font-size="11.5" text-anchor="middle" x="175" y="140">some ao abrir chat novo</text>
 <!-- seta curta -> media -->
 <path d="M310,118 L362,118" fill="none" marker-end="url(#m13-ah)" opacity="0.6" stroke="#34d399" stroke-width="2"></path>
 <!-- MEDIA -->
 <g class="wf-a" filter="url(#m13-glow)"><rect fill="#0e2018" height="120" rx="16" stroke="url(#m13-grad)" stroke-width="2.5" width="270" x="365" y="58"></rect></g>
-<text fill="#34d399" font-family="Inter,sans-serif" font-size="19" font-weight="700" text-anchor="middle" x="500" y="92">ðŸ“‹ MÃ©dia</text>
-<text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="500" y="118">CLAUDE.md Â· 1 por pasta</text>
+<text fill="#34d399" font-family="Inter,sans-serif" font-size="19" font-weight="700" text-anchor="middle" x="500" y="92">ê°Å¸ââ¹ MêÂ©dia</text>
+<text fill="#9fe7c9" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="500" y="118">CLAUDE.md êÂ· 1 por pasta</text>
 <text fill="#7fd6b4" font-family="Inter,sans-serif" font-size="11.5" text-anchor="middle" x="500" y="140">o "manual do projeto"</text>
 <!-- seta media -> longa -->
 <path d="M635,118 L687,118" fill="none" marker-end="url(#m13-ah)" opacity="0.6" stroke="#34d399" stroke-width="2"></path>
 <!-- LONGA -->
 <g class="wf-a" filter="url(#m13-glow)"><rect fill="#0e1b26" height="120" rx="16" stroke="#38bdf8" stroke-width="2.5" width="270" x="690" y="58"></rect></g>
-<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="19" font-weight="700" text-anchor="middle" x="825" y="92">ðŸ—„ï¸ Longa</text>
+<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="19" font-weight="700" text-anchor="middle" x="825" y="92">ê°Å¸ââê¯Â¸Â Longa</text>
 <text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="825" y="118">base de conhecimento</text>
-<text fill="#7cc3ec" font-family="Inter,sans-serif" font-size="11.5" text-anchor="middle" x="825" y="140">notas em disco Â· durÃ¡vel</text>
+<text fill="#7cc3ec" font-family="Inter,sans-serif" font-size="11.5" text-anchor="middle" x="825" y="140">notas em disco êÂ· durêÂ¡vel</text>
 <!-- memory save: curva da conversa (curta) para a base (longa) -->
 <path d="M175,178 C175,228 825,228 825,178" fill="none" marker-end="url(#m13-ahc)" opacity="0.7" stroke="#38bdf8" stroke-dasharray="5 5" stroke-width="2"></path>
-<text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="500" y="224">ðŸ’¾ memory save â€” a conversa que importa vira arquivo</text>
-<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="500" y="40">o melhor sistema de memÃ³ria Ã© o que funciona mesmo num chat novo</text>
+<text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="500" y="224">ê°Å¸âÂ¾ memory save ê¢â¬â a conversa que importa vira arquivo</text>
+<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="500" y="40">o melhor sistema de memêÂ³ria êÂ© o que funciona mesmo num chat novo</text>
 </svg>
 </div>
-<h2 class="text-2xl font-bold mb-6">ConteÃºdo detalhado</h2>
+<h2 class="text-2xl font-bold mb-6">ConteêÂºdo detalhado</h2>
 <!-- TOPICO 1 -->
-<section class="mb-16" data-ARCKHÉ-module="1-3" data-ARCKHÉ-topic="modulo-1-3#topico-1" data-ARCKHÉ-track="1" id="topico-1">
+<section class="mb-16" data-ARCKHê-module="1-3" data-ARCKHê-topic="modulo-1-3#topico-1" data-ARCKHê-track="1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">1</span>
-<h2 class="text-2xl font-bold">ðŸ§  Os trÃªs nÃ­veis de memÃ³ria</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â  Os trêÂªs nêÂ­veis de memêÂ³ria</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t1-p1">A ideia Ã© simples: <strong class="text-emerald-400">quanto mais contexto certo o Claude tem sobre vocÃª e seu projeto, melhores sÃ£o as respostas e o cÃ³digo</strong>. Mas nem todo dado Ã© igual â€” alguns mudam o tempo todo, outros quase nunca. Por isso separamos a memÃ³ria em trÃªs nÃ­veis, cada um com uma "taxa de mudanÃ§a" diferente.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-3-t1-p1">A ideia êÂ© simples: <strong class="text-emerald-400">quanto mais contexto certo o Claude tem sobre vocêÂª e seu projeto, melhores sêÂ£o as respostas e o cêÂ³digo</strong>. Mas nem todo dado êÂ© igual ê¢â¬â alguns mudam o tempo todo, outros quase nunca. Por isso separamos a memêÂ³ria em trêÂªs nêÂ­veis, cada um com uma "taxa de mudanêÂ§a" diferente.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">O modelo mental de memÃ³ria curta, mÃ©dia e longa â€” e como os trÃªs se encaixam num sÃ³ sistema.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem esse mapa, as pessoas jogam tudo na conversa e sofrem com respostas que pioram. Com ele, vocÃª sabe <em>onde</em> cada informaÃ§Ã£o mora.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Curta = sessÃ£o Â· MÃ©dia = <code class="text-emerald-400">CLAUDE.md</code> Â· Longa = base de conhecimento em disco Â· cada nÃ­vel tem sua taxa de mudanÃ§a.</p></div>
+<div><span class="text-emerald-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm">O modelo mental de memêÂ³ria curta, mêÂ©dia e longa ê¢â¬â e como os trêÂªs se encaixam num sêÂ³ sistema.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem esse mapa, as pessoas jogam tudo na conversa e sofrem com respostas que pioram. Com ele, vocêÂª sabe <em>onde</em> cada informaêÂ§êÂ£o mora.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Curta = sessêÂ£o êÂ· MêÂ©dia = <code class="text-emerald-400">CLAUDE.md</code> êÂ· Longa = base de conhecimento em disco êÂ· cada nêÂ­vel tem sua taxa de mudanêÂ§a.</p></div>
 </div>
-<!-- Timeline dos 3 nÃ­veis -->
+<!-- Timeline dos 3 nêÂ­veis -->
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">â±ï¸</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Curta â€” o agora</h4><p class="text-neutral-300 text-sm">O que vocÃª falou nesta conversa. Vive dentro da sessÃ£o; some ao abrir um chat novo. Muda toda hora.</p></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">ê¢ÂÂ±ê¯Â¸Â</span></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Curta ê¢â¬â o agora</h4><p class="text-neutral-300 text-sm">O que vocêÂª falou nesta conversa. Vive dentro da sessêÂ£o; some ao abrir um chat novo. Muda toda hora.</p></div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">ðŸ“‹</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">MÃ©dia â€” o manual do projeto</h4><p class="text-neutral-300 text-sm">Um <code class="text-emerald-400">CLAUDE.md</code> na raiz da pasta diz o que Ã© o projeto, o objetivo, o stack e as decisÃµes. Muda Ã s vezes, mas tem estabilidade.</p></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">ê°Å¸ââ¹</span></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">MêÂ©dia ê¢â¬â o manual do projeto</h4><p class="text-neutral-300 text-sm">Um <code class="text-emerald-400">CLAUDE.md</code> na raiz da pasta diz o que êÂ© o projeto, o objetivo, o stack e as decisêÂµes. Muda êÂ s vezes, mas tem estabilidade.</p></div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">ðŸ—„ï¸</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Longa â€” o arquivo morto vivo</h4><p class="text-neutral-300 text-sm">Notas, decisÃµes e aprendizados guardados em disco para consultar meses adiante. Quase nunca muda; sÃ³ cresce.</p></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">ê°Å¸ââê¯Â¸Â</span></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Longa ê¢â¬â o arquivo morto vivo</h4><p class="text-neutral-300 text-sm">Notas, decisêÂµes e aprendizados guardados em disco para consultar meses adiante. Quase nunca muda; sêÂ³ cresce.</p></div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ¢</span> Analogia do escritÃ³rio</h3>
-<p class="text-neutral-300 text-sm">A <strong>memÃ³ria curta</strong> Ã© o que estÃ¡ espalhado na sua mesa agora. O <strong><code>CLAUDE.md</code></strong> Ã© o quadro fixo na parede com as regras do projeto â€” quem entra na sala lÃª primeiro. A <strong>base de conhecimento</strong> Ã© o arquivo de gavetas atrÃ¡s de vocÃª: nÃ£o olha toda hora, mas sabe onde achar.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸ÂÂ¢</span> Analogia do escritêÂ³rio</h3>
+<p class="text-neutral-300 text-sm">A <strong>memêÂ³ria curta</strong> êÂ© o que estêÂ¡ espalhado na sua mesa agora. O <strong><code>CLAUDE.md</code></strong> êÂ© o quadro fixo na parede com as regras do projeto ê¢â¬â quem entra na sala lêÂª primeiro. A <strong>base de conhecimento</strong> êÂ© o arquivo de gavetas atrêÂ¡s de vocêÂª: nêÂ£o olha toda hora, mas sabe onde achar.</p>
 </div>
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-emerald-400 mb-3 flex items-center"><span class="mr-2">â­</span> A regra de ouro</h3>
-<p class="text-neutral-300 text-sm">O melhor sistema de memÃ³ria Ã© aquele que <strong>nÃ£o exige que vocÃª esteja num chat especÃ­fico para funcionar</strong>. Se vocÃª abrir uma conversa nova do zero, o Claude deveria render quase igual â€” porque o que importa estÃ¡ escrito em arquivo, nÃ£o preso na conversa anterior.</p>
+<h3 class="text-lg font-semibold text-emerald-400 mb-3 flex items-center"><span class="mr-2">ê¢Â­Â</span> A regra de ouro</h3>
+<p class="text-neutral-300 text-sm">O melhor sistema de memêÂ³ria êÂ© aquele que <strong>nêÂ£o exige que vocêÂª esteja num chat especêÂ­fico para funcionar</strong>. Se vocêÂª abrir uma conversa nova do zero, o Claude deveria render quase igual ê¢â¬â porque o que importa estêÂ¡ escrito em arquivo, nêÂ£o preso na conversa anterior.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-ARCKHÉ-module="1-3" data-ARCKHÉ-topic="modulo-1-3#topico-2" data-ARCKHÉ-track="1" id="topico-2">
+<section class="mb-16" data-ARCKHê-module="1-3" data-ARCKHê-topic="modulo-1-3#topico-2" data-ARCKHê-track="1" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">2</span>
-<h2 class="text-2xl font-bold">â±ï¸ MemÃ³ria curta e o context rot</h2>
+<h2 class="text-2xl font-bold">ê¢ÂÂ±ê¯Â¸Â MemêÂ³ria curta e o context rot</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t2-p1">A memÃ³ria curta Ã© o estado da conversa atual mais o bÃ¡sico sobre vocÃª. Ã‰ o nÃ­vel mais <strong class="text-emerald-400">frÃ¡gil</strong>: desaparece a cada chat novo. E tem um efeito traiÃ§oeiro â€” quando a conversa fica longa demais, a qualidade cai. Ã‰ o <strong class="text-emerald-400">context rot</strong>. Por isso recomeÃ§ar Ã© saudÃ¡vel, nÃ£o desperdÃ­cio.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-3-t2-p1">A memêÂ³ria curta êÂ© o estado da conversa atual mais o bêÂ¡sico sobre vocêÂª. êâ° o nêÂ­vel mais <strong class="text-emerald-400">frêÂ¡gil</strong>: desaparece a cada chat novo. E tem um efeito traiêÂ§oeiro ê¢â¬â quando a conversa fica longa demais, a qualidade cai. êâ° o <strong class="text-emerald-400">context rot</strong>. Por isso recomeêÂ§ar êÂ© saudêÂ¡vel, nêÂ£o desperdêÂ­cio.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">O estado da conversa atual mais instruÃ§Ãµes gerais sobre vocÃª.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Ã‰ o nÃ­vel mais frÃ¡gil â€” saber disso evita frustraÃ§Ã£o e ensina quando recomeÃ§ar.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Contexto de sessÃ£o Â· instruÃ§Ãµes gerais Â· <strong>context rot</strong> (a qualidade cai quando a conversa fica longa demais).</p></div>
+<div><span class="text-emerald-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm">O estado da conversa atual mais instruêÂ§êÂµes gerais sobre vocêÂª.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">êâ° o nêÂ­vel mais frêÂ¡gil ê¢â¬â saber disso evita frustraêÂ§êÂ£o e ensina quando recomeêÂ§ar.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Contexto de sessêÂ£o êÂ· instruêÂ§êÂµes gerais êÂ· <strong>context rot</strong> (a qualidade cai quando a conversa fica longa demais).</p></div>
 </div>
 <!-- Grid: conversa curta vs longa -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">âœ“ Conversa enxuta</h4>
+<h4 class="font-bold text-emerald-400 mb-4">ê¢Åâ Conversa enxuta</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Foco num assunto por vez â€” respostas afiadas.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>RecomeÃ§a sem medo quando trocar de tema.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>O contexto durÃ¡vel jÃ¡ estÃ¡ em arquivo, nÃ£o na conversa.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Foco num assunto por vez ê¢â¬â respostas afiadas.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>RecomeêÂ§a sem medo quando trocar de tema.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>O contexto durêÂ¡vel jêÂ¡ estêÂ¡ em arquivo, nêÂ£o na conversa.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— SessÃ£o eterna</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ SessêÂ£o eterna</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Arrasta tudo num chat sÃ³ â€” a qualidade vai caindo.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Acha que conversa longa = mais memÃ³ria (Ã© o oposto).</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Perde tudo quando o chat fecha, sem nada salvo.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Arrasta tudo num chat sêÂ³ ê¢â¬â a qualidade vai caindo.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Acha que conversa longa = mais memêÂ³ria (êÂ© o oposto).</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Perde tudo quando o chat fecha, sem nada salvo.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Dica prÃ¡tica</h3>
-<p class="text-neutral-300 text-sm">Quando sentir a conversa "pesada" ou notar respostas piores, abra um chat novo. Se o seu <code>CLAUDE.md</code> e a base de conhecimento estiverem em ordem, vocÃª nÃ£o perde nada â€” recomeÃ§ar Ã© parte do mÃ©todo.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Dica prêÂ¡tica</h3>
+<p class="text-neutral-300 text-sm">Quando sentir a conversa "pesada" ou notar respostas piores, abra um chat novo. Se o seu <code>CLAUDE.md</code> e a base de conhecimento estiverem em ordem, vocêÂª nêÂ£o perde nada ê¢â¬â recomeêÂ§ar êÂ© parte do mêÂ©todo.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-ARCKHÉ-module="1-3" data-ARCKHÉ-topic="modulo-1-3#topico-3" data-ARCKHÉ-track="1" id="topico-3">
+<section class="mb-16" data-ARCKHê-module="1-3" data-ARCKHê-topic="modulo-1-3#topico-3" data-ARCKHê-track="1" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">3</span>
-<h2 class="text-2xl font-bold">ðŸª£ Organize sua vida em "baldes"</h2>
+<h2 class="text-2xl font-bold">ê°Å¸ÂªÂ£ Organize sua vida em "baldes"</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t3-p1">Antes de escrever um <code class="text-emerald-400">CLAUDE.md</code>, vocÃª precisa de <strong class="text-emerald-400">onde colocÃ¡-lo</strong>. A base da memÃ³ria mÃ©dia Ã© dividir tudo o que vocÃª faz em 5â€“8 grandes Ã¡reas â€” os <strong class="text-emerald-400">baldes</strong> (buckets) â€” e transformar cada uma numa pasta.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-3-t3-p1">Antes de escrever um <code class="text-emerald-400">CLAUDE.md</code>, vocêÂª precisa de <strong class="text-emerald-400">onde colocêÂ¡-lo</strong>. A base da memêÂ³ria mêÂ©dia êÂ© dividir tudo o que vocêÂª faz em 5ê¢â¬â8 grandes êÂ¡reas ê¢â¬â os <strong class="text-emerald-400">baldes</strong> (buckets) ê¢â¬â e transformar cada uma numa pasta.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Dividir suas frentes de trabalho em 5â€“8 baldes, cada um virando uma pasta no computador.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Ã‰ o alicerce da memÃ³ria mÃ©dia. Sem baldes, nÃ£o hÃ¡ onde morar um <code>CLAUDE.md</code>.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Bucket = cluster de projetos relacionados Â· uma pasta por bucket Â· comece simples (<code>pessoal</code>, <code>cliente-x</code>, <code>estudos</code>).</p></div>
+<div><span class="text-emerald-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm">Dividir suas frentes de trabalho em 5ê¢â¬â8 baldes, cada um virando uma pasta no computador.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">êâ° o alicerce da memêÂ³ria mêÂ©dia. Sem baldes, nêÂ£o hêÂ¡ onde morar um <code>CLAUDE.md</code>.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Bucket = cluster de projetos relacionados êÂ· uma pasta por bucket êÂ· comece simples (<code>pessoal</code>, <code>cliente-x</code>, <code>estudos</code>).</p></div>
 </div>
 <!-- Passo a passo (timeline numerada) -->
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">PeÃ§a ao Claude para organizar</h4><p class="text-neutral-300 text-sm">Use o prompt de baldes (seÃ§Ã£o Prompts) para agrupar suas atividades em 5â€“8 Ã¡reas.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">PeêÂ§a ao Claude para organizar</h4><p class="text-neutral-300 text-sm">Use o prompt de baldes (seêÂ§êÂ£o Prompts) para agrupar suas atividades em 5ê¢â¬â8 êÂ¡reas.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">2</span></div>
@@ -350,60 +350,60 @@
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Reserve um balde <code class="text-emerald-400">pessoal</code></h4><p class="text-neutral-300 text-sm">Sempre tenha um balde para seus dados e documentos prÃ³prios.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Reserve um balde <code class="text-emerald-400">pessoal</code></h4><p class="text-neutral-300 text-sm">Sempre tenha um balde para seus dados e documentos prêÂ³prios.</p></div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Dica prÃ¡tica</h3>
-<p class="text-neutral-300 text-sm">NÃ£o busque a taxonomia perfeita. Comece com poucos baldes amplos e ajuste depois â€” Ã© mais fÃ¡cil dividir um balde grande do que juntar dez pequenos.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Dica prêÂ¡tica</h3>
+<p class="text-neutral-300 text-sm">NêÂ£o busque a taxonomia perfeita. Comece com poucos baldes amplos e ajuste depois ê¢â¬â êÂ© mais fêÂ¡cil dividir um balde grande do que juntar dez pequenos.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-ARCKHÉ-module="1-3" data-ARCKHÉ-topic="modulo-1-3#topico-4" data-ARCKHÉ-track="1" id="topico-4">
+<section class="mb-16" data-ARCKHê-module="1-3" data-ARCKHê-topic="modulo-1-3#topico-4" data-ARCKHê-track="1" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">4</span>
-<h2 class="text-2xl font-bold">ðŸ“‹ CLAUDE.md â€” o manual do projeto</h2>
+<h2 class="text-2xl font-bold">ê°Å¸ââ¹ CLAUDE.md ê¢â¬â o manual do projeto</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t4-p1">O <code class="text-emerald-400">CLAUDE.md</code> Ã© um arquivo na raiz de cada pasta que explica o projeto ao Claude. <strong class="text-emerald-400">Apenas um por pasta</strong>, curto (~200 palavras). O Claude lÃª esse arquivo automaticamente ao abrir a pasta â€” ele vira a sua "estrela-guia". Ã‰ o coraÃ§Ã£o da memÃ³ria mÃ©dia.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-3-t4-p1">O <code class="text-emerald-400">CLAUDE.md</code> êÂ© um arquivo na raiz de cada pasta que explica o projeto ao Claude. <strong class="text-emerald-400">Apenas um por pasta</strong>, curto (~200 palavras). O Claude lêÂª esse arquivo automaticamente ao abrir a pasta ê¢â¬â ele vira a sua "estrela-guia". êâ° o coraêÂ§êÂ£o da memêÂ³ria mêÂ©dia.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Um arquivo <code>CLAUDE.md</code> na raiz da pasta, curto, que descreve o projeto ao Claude.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Ã‰ o coraÃ§Ã£o da memÃ³ria mÃ©dia. Lido automaticamente, vira a referÃªncia fixa de todo o trabalho na pasta.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">O que Ã© a pasta Â· objetivo (north star) Â· stack Â· decisÃµes fixas Â· mapa de memÃ³ria Â· referÃªncias. DecisÃµes viram regras (ex.: "nada de posts gerados por IA").</p></div>
+<div><span class="text-emerald-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm">Um arquivo <code>CLAUDE.md</code> na raiz da pasta, curto, que descreve o projeto ao Claude.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">êâ° o coraêÂ§êÂ£o da memêÂ³ria mêÂ©dia. Lido automaticamente, vira a referêÂªncia fixa de todo o trabalho na pasta.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">O que êÂ© a pasta êÂ· objetivo (north star) êÂ· stack êÂ· decisêÂµes fixas êÂ· mapa de memêÂ³ria êÂ· referêÂªncias. DecisêÂµes viram regras (ex.: "nada de posts gerados por IA").</p></div>
 </div>
-<!-- CAIXA DE CÃ“DIGO: template do CLAUDE.md -->
+<!-- CAIXA DE CêâDIGO: template do CLAUDE.md -->
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
 <p class="text-sm text-neutral-400 mb-2">Template de <code class="text-emerald-400">CLAUDE.md</code> (pronto para copiar)</p>
-<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap"># CLAUDE.md â€” &lt;nome do projeto&gt;
+<pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap"># CLAUDE.md ê¢â¬â &lt;nome do projeto&gt;
 
-## O que Ã© esta pasta
-&lt;Uma frase: o que vive aqui e para quÃª.&gt;
+## O que êÂ© esta pasta
+&lt;Uma frase: o que vive aqui e para quêÂª.&gt;
 
 ## Objetivo (north star)
-&lt;O resultado que este projeto persegue. Toda decisÃ£o Ã© medida contra isto.&gt;
+&lt;O resultado que este projeto persegue. Toda decisêÂ£o êÂ© medida contra isto.&gt;
 
 ## Stack
-&lt;Ferramentas, linguagens, serviÃ§os usados. Ex.: Next.js, Stripe, Supabase.&gt;
+&lt;Ferramentas, linguagens, serviêÂ§os usados. Ex.: Next.js, Stripe, Supabase.&gt;
 
-## DecisÃµes fixas
-- &lt;DecisÃ£o 1 â€” ex.: tudo em portuguÃªs.&gt;
-- &lt;DecisÃ£o 2 â€” ex.: sem dependÃªncias pesadas.&gt;
-- &lt;DecisÃ£o 3 â€” ex.: nada de conteÃºdo gerado por IA sem revisÃ£o.&gt;
+## DecisêÂµes fixas
+- &lt;DecisêÂ£o 1 ê¢â¬â ex.: tudo em portuguêÂªs.&gt;
+- &lt;DecisêÂ£o 2 ê¢â¬â ex.: sem dependêÂªncias pesadas.&gt;
+- &lt;DecisêÂ£o 3 ê¢â¬â ex.: nada de conteêÂºdo gerado por IA sem revisêÂ£o.&gt;
 
-## Mapa de memÃ³ria
+## Mapa de memêÂ³ria
 - Base de conhecimento: ./conhecimento/
 - Subpastas por tema: &lt;ex.: decisoes, notas, referencias&gt;
 
-## MemÃ³ria (memory save)
+## MemêÂ³ria (memory save)
 Quando eu pedir para salvar/lembrar uma conversa, grave o essencial em
 ./conhecimento/ na subpasta mais relacionada ao tema.
 
-## ReferÃªncias
+## ReferêÂªncias
 - &lt;link ou caminho de algo importante.&gt;</pre>
 </div>
 <!-- Passo a passo -->
@@ -414,83 +414,83 @@ Quando eu pedir para salvar/lembrar uma conversa, grave o essencial em
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Preencha objetivo, stack e decisÃµes</h4><p class="text-neutral-300 text-sm">EspecÃ­fico de cada balde. Salve como <code class="text-emerald-400">CLAUDE.md</code> na raiz da pasta.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Preencha objetivo, stack e decisêÂµes</h4><p class="text-neutral-300 text-sm">EspecêÂ­fico de cada balde. Salve como <code class="text-emerald-400">CLAUDE.md</code> na raiz da pasta.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">PeÃ§a ao Claude para te entrevistar</h4><p class="text-neutral-300 text-sm">Ele faz 3â€“5 perguntas e completa o que faltou, mantendo o arquivo curto.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">PeêÂ§a ao Claude para te entrevistar</h4><p class="text-neutral-300 text-sm">Ele faz 3ê¢â¬â5 perguntas e completa o que faltou, mantendo o arquivo curto.</p></div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âœ‚ï¸</span> Mantenha enxuto</h3>
-<p class="text-neutral-300 text-sm">Mire em ~200 palavras â€” algo que cabe numa tela. Se crescer demais, mova os detalhes para a base de conhecimento. O <code>CLAUDE.md</code> guarda "o projeto hoje", nÃ£o o histÃ³rico.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê¢Åâê¯Â¸Â</span> Mantenha enxuto</h3>
+<p class="text-neutral-300 text-sm">Mire em ~200 palavras ê¢â¬â algo que cabe numa tela. Se crescer demais, mova os detalhes para a base de conhecimento. O <code>CLAUDE.md</code> guarda "o projeto hoje", nêÂ£o o histêÂ³rico.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-ARCKHÉ-module="1-3" data-ARCKHÉ-topic="modulo-1-3#topico-5" data-ARCKHÉ-track="1" id="topico-5">
+<section class="mb-16" data-ARCKHê-module="1-3" data-ARCKHê-topic="modulo-1-3#topico-5" data-ARCKHê-track="1" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">5</span>
-<h2 class="text-2xl font-bold">ðŸ—„ï¸ MemÃ³ria longa: a base que cresce</h2>
+<h2 class="text-2xl font-bold">ê°Å¸ââê¯Â¸Â MemêÂ³ria longa: a base que cresce</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t5-p1">A memÃ³ria longa sÃ£o notas e decisÃµes guardadas em arquivos de texto (markdown) que vocÃª consulta no futuro. O <code class="text-emerald-400">CLAUDE.md</code> cuida do "como o projeto Ã© hoje"; a base de conhecimento guarda o <strong class="text-emerald-400">histÃ³rico e os aprendizados</strong>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-3-t5-p1">A memêÂ³ria longa sêÂ£o notas e decisêÂµes guardadas em arquivos de texto (markdown) que vocêÂª consulta no futuro. O <code class="text-emerald-400">CLAUDE.md</code> cuida do "como o projeto êÂ© hoje"; a base de conhecimento guarda o <strong class="text-emerald-400">histêÂ³rico e os aprendizados</strong>.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Notas e decisÃµes em arquivos markdown interligados, organizados em subpastas por tema.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Ã‰ a memÃ³ria institucional do projeto â€” o que vocÃª decidiu e aprendeu, disponÃ­vel meses depois.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Markdown interligado Â· subpastas por tema Â· editÃ¡vel Ã  mÃ£o Â· ferramentas como Obsidian sÃ³ <em>visualizam</em> os arquivos (sÃ£o opcionais).</p></div>
+<div><span class="text-emerald-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm">Notas e decisêÂµes em arquivos markdown interligados, organizados em subpastas por tema.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">êâ° a memêÂ³ria institucional do projeto ê¢â¬â o que vocêÂª decidiu e aprendeu, disponêÂ­vel meses depois.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Markdown interligado êÂ· subpastas por tema êÂ· editêÂ¡vel êÂ  mêÂ£o êÂ· ferramentas como Obsidian sêÂ³ <em>visualizam</em> os arquivos (sêÂ£o opcionais).</p></div>
 </div>
 <!-- Grid: o que vai pra cada lugar -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">âœ“ Vai para a memÃ³ria longa</h4>
+<h4 class="font-bold text-emerald-400 mb-4">ê¢Åâ Vai para a memêÂ³ria longa</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>DecisÃµes importantes (com data e motivo).</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Frameworks e aprendizados que valem por meses.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>ReferÃªncias e notas que vocÃª vai querer reler.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>DecisêÂµes importantes (com data e motivo).</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Frameworks e aprendizados que valem por meses.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>ReferêÂªncias e notas que vocêÂª vai querer reler.</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— NÃƒO vai para lÃ¡</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ NêÆO vai para lêÂ¡</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>A conversa inteira copiada e colada.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Detalhes do dia que mudam toda hora.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Coisas que pertencem ao <code>CLAUDE.md</code> (o "hoje").</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>A conversa inteira copiada e colada.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Detalhes do dia que mudam toda hora.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Coisas que pertencem ao <code>CLAUDE.md</code> (o "hoje").</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ”­</span> Obsidian Ã© opcional</h3>
-<p class="text-neutral-300 text-sm">A base de conhecimento sÃ£o sÃ³ arquivos <code>.md</code> em pastas â€” vocÃª nÃ£o precisa de nenhum app. Ferramentas como o Obsidian apenas <em>visualizam</em> e conectam esses arquivos; o conteÃºdo continua sendo seu, em texto, no disco.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ­</span> Obsidian êÂ© opcional</h3>
+<p class="text-neutral-300 text-sm">A base de conhecimento sêÂ£o sêÂ³ arquivos <code>.md</code> em pastas ê¢â¬â vocêÂª nêÂ£o precisa de nenhum app. Ferramentas como o Obsidian apenas <em>visualizam</em> e conectam esses arquivos; o conteêÂºdo continua sendo seu, em texto, no disco.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-ARCKHÉ-module="1-3" data-ARCKHÉ-topic="modulo-1-3#topico-6" data-ARCKHÉ-track="1" id="topico-6">
+<section class="mb-16" data-ARCKHê-module="1-3" data-ARCKHê-topic="modulo-1-3#topico-6" data-ARCKHê-track="1" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">6</span>
-<h2 class="text-2xl font-bold">ðŸ’¾ "memory save": registre o que importa</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ¾ "memory save": registre o que importa</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t6-p1">O <strong class="text-emerald-400">memory save</strong> Ã© uma rotina: ao pedir "salve isto", o Claude grava o essencial da conversa na pasta certa da base. Transforma boas conversas em conhecimento permanente â€” <strong class="text-emerald-400">sem copiar-e-colar manual</strong>. Ã‰ o que fecha o ciclo entre os trÃªs nÃ­veis.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-3-t6-p1">O <strong class="text-emerald-400">memory save</strong> êÂ© uma rotina: ao pedir "salve isto", o Claude grava o essencial da conversa na pasta certa da base. Transforma boas conversas em conhecimento permanente ê¢â¬â <strong class="text-emerald-400">sem copiar-e-colar manual</strong>. êâ° o que fecha o ciclo entre os trêÂªs nêÂ­veis.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-emerald-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Uma rotina onde, ao pedir "salve", o Claude grava o essencial na pasta certa da base.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Converte boas conversas em conhecimento durÃ¡vel, sem trabalho manual.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">SeÃ§Ã£o de memÃ³ria no <code>CLAUDE.md</code> Â· escolha da subpasta certa Â· salvar sÃ³ o que tem valor durÃ¡vel (decisÃµes, frameworks).</p></div>
+<div><span class="text-emerald-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm">Uma rotina onde, ao pedir "salve", o Claude grava o essencial na pasta certa da base.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Converte boas conversas em conhecimento durêÂ¡vel, sem trabalho manual.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">SeêÂ§êÂ£o de memêÂ³ria no <code>CLAUDE.md</code> êÂ· escolha da subpasta certa êÂ· salvar sêÂ³ o que tem valor durêÂ¡vel (decisêÂµes, frameworks).</p></div>
 </div>
 <!-- Passo a passo -->
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Adicione a seÃ§Ã£o ao <code class="text-emerald-400">CLAUDE.md</code></h4><p class="text-neutral-300 text-sm">Diga <em>onde</em> salvar quando vocÃª pedir (use a seÃ§Ã£o "MemÃ³ria" do template).</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">Adicione a seêÂ§êÂ£o ao <code class="text-emerald-400">CLAUDE.md</code></h4><p class="text-neutral-300 text-sm">Diga <em>onde</em> salvar quando vocêÂª pedir (use a seêÂ§êÂ£o "MemêÂ³ria" do template).</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">2</span></div>
@@ -498,116 +498,116 @@ Quando eu pedir para salvar/lembrar uma conversa, grave o essencial em
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">PeÃ§a para o Claude escolher a subpasta</h4><p class="text-neutral-300 text-sm">Pelo tema da conversa â€” e salvar sÃ³ decisÃµes e aprendizados durÃ¡veis.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold mb-2">PeêÂ§a para o Claude escolher a subpasta</h4><p class="text-neutral-300 text-sm">Pelo tema da conversa ê¢â¬â e salvar sêÂ³ decisêÂµes e aprendizados durêÂ¡veis.</p></div>
 </div>
 </div>
 <details class="bg-dark-800 border border-dark-600 rounded-xl p-5 mb-6">
-<summary class="cursor-pointer font-semibold text-emerald-400">Indo mais fundo (opcional): por que recomeÃ§ar nÃ£o perde nada</summary>
-<p class="text-neutral-300 text-sm mt-3">Com <code>CLAUDE.md</code> + base de conhecimento em ordem, abrir um chat novo Ã© seguro: o que importa estÃ¡ em arquivo, nÃ£o na sessÃ£o. VocÃª evita o context rot e mantÃ©m a performance estÃ¡vel. A memÃ³ria nÃ£o pode depender da conversa anterior â€” esse Ã© o teste final do sistema.</p>
+<summary class="cursor-pointer font-semibold text-emerald-400">Indo mais fundo (opcional): por que recomeêÂ§ar nêÂ£o perde nada</summary>
+<p class="text-neutral-300 text-sm mt-3">Com <code>CLAUDE.md</code> + base de conhecimento em ordem, abrir um chat novo êÂ© seguro: o que importa estêÂ¡ em arquivo, nêÂ£o na sessêÂ£o. VocêÂª evita o context rot e mantêÂ©m a performance estêÂ¡vel. A memêÂ³ria nêÂ£o pode depender da conversa anterior ê¢â¬â esse êÂ© o teste final do sistema.</p>
 </details>
 <!-- Checagem leve opcional -->
-<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-1-3#q1">
-<p class="font-medium mb-4">Auto-checagem (opcional): onde mora a "estrela-guia" que o Claude lÃª automaticamente ao abrir uma pasta?</p>
-<div class="ARCKHÉ-check-options space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">Na memÃ³ria curta â€” basta deixar tudo na conversa atual.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">No <code>CLAUDE.md</code> da raiz da pasta â€” um por pasta, ~200 palavras.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">No Obsidian â€” sem ele a memÃ³ria nÃ£o funciona.</button>
+<div class="ARCKHê-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHê-check="modulo-1-3#q1">
+<p class="font-medium mb-4">Auto-checagem (opcional): onde mora a "estrela-guia" que o Claude lêÂª automaticamente ao abrir uma pasta?</p>
+<div class="ARCKHê-check-options space-y-2">
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="0" type="button">Na memêÂ³ria curta ê¢â¬â basta deixar tudo na conversa atual.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="1" type="button">No <code>CLAUDE.md</code> da raiz da pasta ê¢â¬â um por pasta, ~200 palavras.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="2" type="button">No Obsidian ê¢â¬â sem ele a memêÂ³ria nêÂ£o funciona.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHê-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- EXERCICIOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âœï¸ ExercÃ­cios</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂê¯Â¸Â ExercêÂ­cios</h2>
 <div class="space-y-4">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. Mapeie seus baldes <span class="text-xs text-neutral-500">(fÃ¡cil)</span></h3><p class="text-neutral-300 text-sm">Liste de 5 a 8 baldes da sua vida/trabalho. <span class="text-emerald-400">CritÃ©rio:</span> cada balde Ã© uma Ã¡rea distinta, sem sobreposiÃ§Ã£o grande.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Crie um <code class="text-emerald-400">CLAUDE.md</code> de verdade <span class="text-xs text-neutral-500">(mÃ©dio)</span></h3><p class="text-neutral-300 text-sm">Escolha um projeto real e escreva um <code>CLAUDE.md</code> de no mÃ¡ximo ~200 palavras. <span class="text-emerald-400">CritÃ©rio:</span> tem objetivo, stack e ao menos 2 decisÃµes; cabe numa tela.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Teste do chat novo <span class="text-xs text-neutral-500">(mÃ©dio)</span></h3><p class="text-neutral-300 text-sm">Abra uma conversa do zero e peÃ§a ao Claude para resumir o projeto sÃ³ pelo <code>CLAUDE.md</code>. <span class="text-emerald-400">CritÃ©rio:</span> o resumo bate com o que vocÃª escreveu, sem dar contexto extra.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. Salve na base de conhecimento <span class="text-xs text-neutral-500">(mÃ©dio)</span></h3><p class="text-neutral-300 text-sm">Crie uma subpasta <code class="text-emerald-400">conhecimento/</code> e registre 1 decisÃ£o em markdown. <span class="text-emerald-400">CritÃ©rio:</span> o arquivo existe, tem data e estÃ¡ na pasta certa.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. Enxugue <span class="text-xs text-neutral-500">(mÃ©dio)</span></h3><p class="text-neutral-300 text-sm">Releia seu <code>CLAUDE.md</code> e corte tudo que nÃ£o Ã© durÃ¡vel. <span class="text-emerald-400">CritÃ©rio:</span> nada de detalhes de conversa do dia; sÃ³ o que vale por semanas/meses.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. Mapeie seus baldes <span class="text-xs text-neutral-500">(fêÂ¡cil)</span></h3><p class="text-neutral-300 text-sm">Liste de 5 a 8 baldes da sua vida/trabalho. <span class="text-emerald-400">CritêÂ©rio:</span> cada balde êÂ© uma êÂ¡rea distinta, sem sobreposiêÂ§êÂ£o grande.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Crie um <code class="text-emerald-400">CLAUDE.md</code> de verdade <span class="text-xs text-neutral-500">(mêÂ©dio)</span></h3><p class="text-neutral-300 text-sm">Escolha um projeto real e escreva um <code>CLAUDE.md</code> de no mêÂ¡ximo ~200 palavras. <span class="text-emerald-400">CritêÂ©rio:</span> tem objetivo, stack e ao menos 2 decisêÂµes; cabe numa tela.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Teste do chat novo <span class="text-xs text-neutral-500">(mêÂ©dio)</span></h3><p class="text-neutral-300 text-sm">Abra uma conversa do zero e peêÂ§a ao Claude para resumir o projeto sêÂ³ pelo <code>CLAUDE.md</code>. <span class="text-emerald-400">CritêÂ©rio:</span> o resumo bate com o que vocêÂª escreveu, sem dar contexto extra.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. Salve na base de conhecimento <span class="text-xs text-neutral-500">(mêÂ©dio)</span></h3><p class="text-neutral-300 text-sm">Crie uma subpasta <code class="text-emerald-400">conhecimento/</code> e registre 1 decisêÂ£o em markdown. <span class="text-emerald-400">CritêÂ©rio:</span> o arquivo existe, tem data e estêÂ¡ na pasta certa.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. Enxugue <span class="text-xs text-neutral-500">(mêÂ©dio)</span></h3><p class="text-neutral-300 text-sm">Releia seu <code>CLAUDE.md</code> e corte tudo que nêÂ£o êÂ© durêÂ¡vel. <span class="text-emerald-400">CritêÂ©rio:</span> nada de detalhes de conversa do dia; sêÂ³ o que vale por semanas/meses.</p></div>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âŒ¨ï¸ Prompts prontos</h2>
-<p class="text-neutral-300 text-sm mb-6">Estes prompts montam sua memÃ³ria mÃ©dia e longa na prÃ¡tica. Copie, ajuste para o seu contexto e rode no Claude Code. O banco completo estÃ¡ na <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Biblioteca â†’ Prompts</a>.</p>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂ¨ê¯Â¸Â Prompts prontos</h2>
+<p class="text-neutral-300 text-sm mb-6">Estes prompts montam sua memêÂ³ria mêÂ©dia e longa na prêÂ¡tica. Copie, ajuste para o seu contexto e rode no Claude Code. O banco completo estêÂ¡ na <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Biblioteca ê¢â â Prompts</a>.</p>
 <div class="space-y-5">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Organizar em baldes (canÃ´nico)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Com base em tudo o que vocÃª sabe sobre mim e no que eu trabalho, organize minha vida em 5 a 8 "baldes". Cada projeto deve cair em um balde. NÃ£o invente fatos: se faltar informaÃ§Ã£o, me pergunte. Sem enrolaÃ§Ã£o.</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">Based on everything you know about me and everything I work on, organize my life into 5 to 8 buckets. Put any project into one of those buckets. Don't invent facts â€” ask me if something is missing. No fluff.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Aplicar o CLAUDE.md em cada pasta</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Adicione um arquivo CLAUDE.md na raiz de cada uma das pastas dos baldes, usando o template que vou te passar. Depois, me faÃ§a perguntas sobre cada projeto para preencher o briefing completo. Apenas um CLAUDE.md por pasta.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Salvar na memÃ³ria longa ("memory save")</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Quando eu pedir para salvar, guardar, encerrar ou lembrar uma conversa, grave o essencial em markdown na minha base de conhecimento, na subpasta mais relacionada ao tema. Salve sÃ³ decisÃµes e aprendizados durÃ¡veis, nÃ£o a conversa toda.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Template de CLAUDE.md (pronto para copiar)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap"># CLAUDE.md â€” &lt;nome do projeto&gt;
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Organizar em baldes (canêÂ´nico)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Com base em tudo o que vocêÂª sabe sobre mim e no que eu trabalho, organize minha vida em 5 a 8 "baldes". Cada projeto deve cair em um balde. NêÂ£o invente fatos: se faltar informaêÂ§êÂ£o, me pergunte. Sem enrolaêÂ§êÂ£o.</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">Based on everything you know about me and everything I work on, organize my life into 5 to 8 buckets. Put any project into one of those buckets. Don't invent facts ê¢â¬â ask me if something is missing. No fluff.</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Aplicar o CLAUDE.md em cada pasta</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Adicione um arquivo CLAUDE.md na raiz de cada uma das pastas dos baldes, usando o template que vou te passar. Depois, me faêÂ§a perguntas sobre cada projeto para preencher o briefing completo. Apenas um CLAUDE.md por pasta.</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Salvar na memêÂ³ria longa ("memory save")</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Quando eu pedir para salvar, guardar, encerrar ou lembrar uma conversa, grave o essencial em markdown na minha base de conhecimento, na subpasta mais relacionada ao tema. Salve sêÂ³ decisêÂµes e aprendizados durêÂ¡veis, nêÂ£o a conversa toda.</pre></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Template de CLAUDE.md (pronto para copiar)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap"># CLAUDE.md ê¢â¬â &lt;nome do projeto&gt;
 
-## O que Ã© esta pasta
-&lt;Uma frase: o que vive aqui e para quÃª.&gt;
+## O que êÂ© esta pasta
+&lt;Uma frase: o que vive aqui e para quêÂª.&gt;
 
 ## Objetivo (north star)
-&lt;O resultado que este projeto persegue. Toda decisÃ£o Ã© medida contra isto.&gt;
+&lt;O resultado que este projeto persegue. Toda decisêÂ£o êÂ© medida contra isto.&gt;
 
 ## Stack
-&lt;Ferramentas, linguagens, serviÃ§os usados. Ex.: Next.js, Stripe, Supabase.&gt;
+&lt;Ferramentas, linguagens, serviêÂ§os usados. Ex.: Next.js, Stripe, Supabase.&gt;
 
-## DecisÃµes fixas
-- &lt;DecisÃ£o 1 â€” ex.: tudo em portuguÃªs.&gt;
-- &lt;DecisÃ£o 2 â€” ex.: sem dependÃªncias pesadas.&gt;
-- &lt;DecisÃ£o 3 â€” ex.: nada de conteÃºdo gerado por IA sem revisÃ£o.&gt;
+## DecisêÂµes fixas
+- &lt;DecisêÂ£o 1 ê¢â¬â ex.: tudo em portuguêÂªs.&gt;
+- &lt;DecisêÂ£o 2 ê¢â¬â ex.: sem dependêÂªncias pesadas.&gt;
+- &lt;DecisêÂ£o 3 ê¢â¬â ex.: nada de conteêÂºdo gerado por IA sem revisêÂ£o.&gt;
 
-## Mapa de memÃ³ria
+## Mapa de memêÂ³ria
 - Base de conhecimento: ./conhecimento/
 - Subpastas por tema: &lt;ex.: decisoes, notas, referencias&gt;
 
-## MemÃ³ria (memory save)
+## MemêÂ³ria (memory save)
 Quando eu pedir para salvar/lembrar uma conversa, grave o essencial em
 ./conhecimento/ na subpasta mais relacionada ao tema.
 
-## ReferÃªncias
+## ReferêÂªncias
 - &lt;link ou caminho de algo importante.&gt;</pre><p class="text-xs text-neutral-500 mt-2">Dica: mantenha o <code>CLAUDE.md</code> em torno de ~200 palavras. Se crescer, mova detalhes para a base de conhecimento.</p></div>
 </div>
 </section>
 <!-- ERROS COMUNS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âš ï¸ Erros comuns</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢Å¡Â ê¯Â¸Â Erros comuns</h2>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Deixar tudo na conversa.</strong> Confiar na memÃ³ria curta e perder o contexto ao abrir um chat novo. <em>Corrija:</em> escreva o que importa no <code>CLAUDE.md</code>.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong><code>CLAUDE.md</code> gigante.</strong> Encher de detalhes que mudam toda hora. <em>Corrija:</em> mantenha ~200 palavras; o resto vai para a base.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Mais de um <code>CLAUDE.md</code> por pasta.</strong> Gera confusÃ£o sobre qual o Claude lÃª. <em>Corrija:</em> sÃ³ um por pasta, na raiz.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Salvar lixo na memÃ³ria longa.</strong> Jogar a conversa inteira na base. <em>Corrija:</em> salve sÃ³ decisÃµes e aprendizados durÃ¡veis.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Arrastar uma sessÃ£o eterna.</strong> Achar que conversa longa = mais memÃ³ria. <em>Corrija:</em> recomece sem medo; o sistema em arquivo segura o contexto.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Deixar tudo na conversa.</strong> Confiar na memêÂ³ria curta e perder o contexto ao abrir um chat novo. <em>Corrija:</em> escreva o que importa no <code>CLAUDE.md</code>.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong><code>CLAUDE.md</code> gigante.</strong> Encher de detalhes que mudam toda hora. <em>Corrija:</em> mantenha ~200 palavras; o resto vai para a base.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Mais de um <code>CLAUDE.md</code> por pasta.</strong> Gera confusêÂ£o sobre qual o Claude lêÂª. <em>Corrija:</em> sêÂ³ um por pasta, na raiz.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Salvar lixo na memêÂ³ria longa.</strong> Jogar a conversa inteira na base. <em>Corrija:</em> salve sêÂ³ decisêÂµes e aprendizados durêÂ¡veis.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Arrastar uma sessêÂ£o eterna.</strong> Achar que conversa longa = mais memêÂ³ria. <em>Corrija:</em> recomece sem medo; o sistema em arquivo segura o contexto.</span></li>
 </ul>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-emerald-900/40 via-dark-800 to-dark-800 rounded-xl border border-emerald-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumo do mÃ³dulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Åâ¦</span> Resumo do mêÂ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>TrÃªs nÃ­veis</strong><span class="text-neutral-400"> â€” curta (sessÃ£o), mÃ©dia (<code>CLAUDE.md</code>) e longa (base de conhecimento); cada um com sua taxa de mudanÃ§a.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>Context rot</strong><span class="text-neutral-400"> â€” conversa longa demais piora as respostas; recomeÃ§ar Ã© saudÃ¡vel.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>Baldes + CLAUDE.md</strong><span class="text-neutral-400"> â€” uma pasta por frente de trabalho, um <code>CLAUDE.md</code> enxuto por pasta.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong>memory save</strong><span class="text-neutral-400"> â€” boas conversas viram conhecimento durÃ¡vel na base, sem copiar-e-colar.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>TrêÂªs nêÂ­veis</strong><span class="text-neutral-400"> ê¢â¬â curta (sessêÂ£o), mêÂ©dia (<code>CLAUDE.md</code>) e longa (base de conhecimento); cada um com sua taxa de mudanêÂ§a.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>Context rot</strong><span class="text-neutral-400"> ê¢â¬â conversa longa demais piora as respostas; recomeêÂ§ar êÂ© saudêÂ¡vel.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>Baldes + CLAUDE.md</strong><span class="text-neutral-400"> ê¢â¬â uma pasta por frente de trabalho, um <code>CLAUDE.md</code> enxuto por pasta.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong>memory save</strong><span class="text-neutral-400"> ê¢â¬â boas conversas viram conhecimento durêÂ¡vel na base, sem copiar-e-colar.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-emerald-400 mb-3">Checklist de conclusÃ£o</h3>
+<h3 class="font-semibold text-emerald-400 mb-3">Checklist de conclusêÂ£o</h3>
 <ul class="space-y-2 text-sm text-neutral-300">
-<li>â˜ Defini de 5 a 8 baldes para minha vida/trabalho.</li>
-<li>â˜ Criei uma pasta por balde.</li>
-<li>â˜ Cada pasta tem <strong>um</strong> <code>CLAUDE.md</code> na raiz, com ~200 palavras.</li>
-<li>â˜ Cada <code>CLAUDE.md</code> traz objetivo, stack e ao menos 2 decisÃµes.</li>
-<li>â˜ Testei um chat novo e o Claude resumiu o projeto sÃ³ pelo <code>CLAUDE.md</code>.</li>
-<li>â˜ Criei a subpasta <code>conhecimento/</code> e salvei ao menos 1 decisÃ£o.</li>
-<li>â˜ Adicionei a seÃ§Ã£o de "memory save" ao <code>CLAUDE.md</code>.</li>
+<li>ê¢ËÂ Defini de 5 a 8 baldes para minha vida/trabalho.</li>
+<li>ê¢ËÂ Criei uma pasta por balde.</li>
+<li>ê¢ËÂ Cada pasta tem <strong>um</strong> <code>CLAUDE.md</code> na raiz, com ~200 palavras.</li>
+<li>ê¢ËÂ Cada <code>CLAUDE.md</code> traz objetivo, stack e ao menos 2 decisêÂµes.</li>
+<li>ê¢ËÂ Testei um chat novo e o Claude resumiu o projeto sêÂ³ pelo <code>CLAUDE.md</code>.</li>
+<li>ê¢ËÂ Criei a subpasta <code>conhecimento/</code> e salvei ao menos 1 decisêÂ£o.</li>
+<li>ê¢ËÂ Adicionei a seêÂ§êÂ£o de "memory save" ao <code>CLAUDE.md</code>.</li>
 </ul>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-emerald-400 mb-2">PrÃ³ximo mÃ³dulo:</h3>
-<p class="text-neutral-300">1.4 â€” Power Features: recursos avanÃ§ados para tirar mais do Claude Code</p>
+<h3 class="font-semibold text-emerald-400 mb-2">PrêÂ³ximo mêÂ³dulo:</h3>
+<p class="text-neutral-300">1.4 ê¢â¬â Power Features: recursos avanêÂ§ados para tirar mais do Claude Code</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Voltar para a trilha</a>
-<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-4.html">PrÃ³ximo mÃ³dulo â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Voltar para a trilha</a>
+<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-4.html">PrêÂ³ximo mêÂ³dulo ê¢â â</a>
 </div>
 </div>
 </section>
@@ -616,7 +616,7 @@ Quando eu pedir para salvar/lembrar uma conversa, grave o essencial em
 <!-- FOOTER -->
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Claude Code na PrÃ¡tica â€” <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>Claude Code na PrêÂ¡tica ê¢â¬â <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <!-- SCRIPTS: nucleo v1 -->
@@ -625,7 +625,7 @@ Quando eu pedir para salvar/lembrar uma conversa, grave o essencial em
     (function(){ var tt=document.getElementById('theme-toggle'); if(!tt) return; var di=document.getElementById('theme-toggle-dark-icon'), li=document.getElementById('theme-toggle-light-icon'), html=document.documentElement;
       function sync(){ if(html.classList.contains('dark')){ li&&li.classList.remove('hidden'); di&&di.classList.add('hidden'); } else { di&&di.classList.remove('hidden'); li&&li.classList.add('hidden'); } }
       sync();
-      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}'); p.theme=dark?'ARCKHÉ-dark':'claro'; localStorage.setItem('ARCKHÉ.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
+      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHê.prefs')||'{}'); p.theme=dark?'ARCKHê-dark':'claro'; localStorage.setItem('ARCKHê.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
     function openModal(id){ var m=document.getElementById(id); if(m){ m.classList.remove('hidden'); document.body.style.overflow='hidden'; } }
     function closeModal(){ document.querySelectorAll('.modal').forEach(function(m){ m.classList.add('hidden'); }); document.body.style.overflow='auto'; }
     document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
@@ -633,19 +633,19 @@ Quando eu pedir para salvar/lembrar uma conversa, grave o essencial em
 <!-- Camada de aprendizagem -->
 <script>
     window.addEventListener('DOMContentLoaded', function(){
-      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
-        ARCKHÉ.registerCheck('modulo-1-3#q1', {
+      if (window.ARCKHê && ARCKHê.registerCheck) {
+        ARCKHê.registerCheck('modulo-1-3#q1', {
           answer: 1,
           explain: {
-            0: 'A memÃ³ria curta some ao abrir um chat novo â€” nÃ£o Ã© onde mora a estrela-guia.',
-            1: 'Isso! O CLAUDE.md na raiz da pasta Ã© lido automaticamente: um por pasta, ~200 palavras.',
-            2: 'O Obsidian sÃ³ visualiza arquivos .md â€” Ã© opcional. A memÃ³ria vive nos arquivos, nÃ£o no app.'
+            0: 'A memêÂ³ria curta some ao abrir um chat novo ê¢â¬â nêÂ£o êÂ© onde mora a estrela-guia.',
+            1: 'Isso! O CLAUDE.md na raiz da pasta êÂ© lido automaticamente: um por pasta, ~200 palavras.',
+            2: 'O Obsidian sêÂ³ visualiza arquivos .md ê¢â¬â êÂ© opcional. A memêÂ³ria vive nos arquivos, nêÂ£o no app.'
           }
         });
       }
     });
   </script>
 <script src="../../assets/learn.js"></script>
-<script>if (window.ARCKHÉ && typeof window.ARCKHÉ.init==='function'){ window.ARCKHÉ.init(); }</script>
+<script>if (window.ARCKHê && typeof window.ARCKHê.init==='function'){ window.ARCKHê.init(); }</script>
 </body>
 </html>

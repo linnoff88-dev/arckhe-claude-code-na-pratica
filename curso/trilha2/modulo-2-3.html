@@ -4,29 +4,29 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="claude-na-pratica" name="ARCKHÉ-course"/>
-<title>2.3 Construa qualquer coisa: a stack universal | Claude Code na PrÃ¡tica</title>
+<meta content="claude-na-pratica" name="ARCKHê-course"/>
+<title>2.3 Construa qualquer coisa: a stack universal | Claude Code na PrêÂ¡tica</title>
 <!-- ANTI-FOUC: bloqueante, SEPARADO, antes do Tailwind/learn.css -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){ var r={}; for (var x in o) r[x]=o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHê-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var THEMES = { 'ARCKHê-dark':{dark:true,attr:null,cs:'dark'},'claro':{dark:false,attr:null,cs:'light'},'sepia':{dark:false,attr:'sepia',cs:'light'},'foco':{dark:null,attr:'foco',cs:null},'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark===true) html.classList.add('dark'); else if (t.dark===false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark')?'dark':'light'));
       html.setAttribute('data-font', p.font||'inter'); html.setAttribute('data-accent', p.accent||'emerald');
       var s = html.style, scale=(+p.fontScale||100);
-      s.setProperty('--ARCKHÉ-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
+      s.setProperty('--ARCKHê-font-scale',(scale/100).toString()); s.setProperty('font-size', scale+'%');
       s.setProperty('--measure',(+p.lineWidth||68)+'ch'); s.setProperty('--lh-body',(+p.leading||1.7).toString());
       var fam = p.font==='system' ? 'system-ui,-apple-system,"Segoe UI",Roboto,sans-serif' : (p.font==='leitura' ? '"Atkinson Hyperlegible","Inter",system-ui,sans-serif' : '"Inter",system-ui,sans-serif');
       s.setProperty('--font-body', fam);
@@ -43,8 +43,8 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../assets/learn.css" rel="stylesheet"/>
-<!-- Manifesto do curso (IDÃŠNTICO em TODA pagina) -->
-<script data-ARCKHÉ-manifest="" type="application/json">
+<!-- Manifesto do curso (IDêÅ NTICO em TODA pagina) -->
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "claude-na-pratica",
     "tracks": [
@@ -79,7 +79,7 @@
     .dark body { background-color: #111827; }
     .topic-explanation { display: none; }
     .topic-explanation.active { display: block; }
-    section[data-ARCKHÉ-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
+    section[data-ARCKHê-topic], [id^="topico-"], [id^="modulo-"] { scroll-margin-top: 5rem; }
     .skip { position:absolute; left:-999px; top:0; z-index:100; }
     .skip:focus { left:8px; top:8px; background:#111827; color:#fff; padding:8px 12px; border-radius:8px; }
 
@@ -126,28 +126,28 @@
     }
   </style>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-2-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha2/modulo-2-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha2/modulo-2-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
-<a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-2-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha2/modulo-2-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha2/modulo-2-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<a class="skip" href="#conteudo">Pular para o conteêÂºdo</a>
 <!-- NAV -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html">
-<span class="text-2xl">âš¡</span>
-<span class="font-bold text-lg hidden sm:inline">Claude Code na PrÃ¡tica</span>
+<span class="text-2xl">ê¢Å¡Â¡</span>
+<span class="font-bold text-lg hidden sm:inline">Claude Code na PrêÂ¡tica</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-blue-400 bg-blue-500/10" href="index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Construir</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Operar &amp; Lucrar</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Biblioteca</span></a>
-<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHÉ-journey-open="" title="Minha jornada" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden lg:inline">Jornada</span>
-<span aria-hidden="true" class="ARCKHÉ-journey-badge hidden"></span>
+<button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-neutral-300 hover:text-neutral-100 transition-colors text-sm ml-1" data-ARCKHê-journey-open="" title="Minha jornada" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden lg:inline">Jornada</span>
+<span aria-hidden="true" class="ARCKHê-journey-badge hidden"></span>
 </button>
 <button aria-label="Alternar tema claro/escuro" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle" title="Tema claro/escuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -158,31 +158,31 @@
 </div>
 </nav>
 <!-- BREADCRUMB -->
-<nav aria-label="Trilha de navegaÃ§Ã£o" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Trilha de navegaêÂ§êÂ£o" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
-<a class="hover:text-blue-400" href="../../index.html">InÃ­cio</a>
+<a class="hover:text-blue-400" href="../../index.html">InêÂ­cio</a>
 <span>/</span>
 <a class="hover:text-blue-400" href="index.html">Construir</a>
 <span>/</span>
-<span class="text-blue-400">MÃ³dulo 2.3</span>
+<span class="text-blue-400">MêÂ³dulo 2.3</span>
 </div>
 </nav>
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 2.3</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ§© Construa qualquer coisa: a stack universal</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Se vocÃª imagina, vocÃª constrÃ³i. Aqui vocÃª aprende a pensar por primeiros princÃ­pios, reconhecer a stack universal de qualquer projeto com IA e montar um fluxo real de captaÃ§Ã£o de leads â€” com a mentalidade de alta agÃªncia por trÃ¡s.</p>
+<span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MêâDULO 2.3</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸Â§Â© Construa qualquer coisa: a stack universal</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Se vocêÂª imagina, vocêÂª constrêÂ³i. Aqui vocêÂª aprende a pensar por primeiros princêÂ­pios, reconhecer a stack universal de qualquer projeto com IA e montar um fluxo real de captaêÂ§êÂ£o de leads ê¢â¬â com a mentalidade de alta agêÂªncia por trêÂ¡s.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">6</div><div class="text-xs text-neutral-400">TÃ³picos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">6</div><div class="text-xs text-neutral-400">TêÂ³picos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">~45</div><div class="text-xs text-neutral-400">Minutos</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Iniciante</div><div class="text-xs text-neutral-400">NÃ­vel</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Conceito+PrÃ¡tica</div><div class="text-xs text-neutral-400">Tipo</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Iniciante</div><div class="text-xs text-neutral-400">NêÂ­vel</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Conceito+PrêÂ¡tica</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 <!-- Medidor de progresso do modulo -->
 <div class="mt-6 max-w-2xl">
-<div aria-label="Progresso do mÃ³dulo 2.3" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter" data-ARCKHÉ-meter="modulo:2-3" role="progressbar">
-<span class="ARCKHÉ-meter-pct" data-ARCKHÉ-meter-pct="">0%</span> <span class="ARCKHÉ-meter-count text-neutral-400 text-sm" data-ARCKHÉ-meter-frac="">0 de 6</span>
+<div aria-label="Progresso do mêÂ³dulo 2.3" aria-valuemax="100" aria-valuemin="0" class="ARCKHê-meter" data-ARCKHê-meter="modulo:2-3" role="progressbar">
+<span class="ARCKHê-meter-pct" data-ARCKHê-meter-pct="">0%</span> <span class="ARCKHê-meter-count text-neutral-400 text-sm" data-ARCKHê-meter-frac="">0 de 6</span>
 </div>
 </div>
 </div>
@@ -190,21 +190,21 @@
 <!-- CONTEUDO + TOC -->
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:grid lg:grid-cols-[220px_1fr] lg:gap-10" id="conteudo">
 <!-- TOC sticky -->
-<nav aria-label="Ãndice da pÃ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-3">SeÃ§Ã£o <span class="ARCKHÉ-toc-pos">1</span> de <span class="ARCKHÉ-toc-total">6</span></p>
+<nav aria-label="êÂndice da pêÂ¡gina" class="hidden lg:block sticky top-24 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-3">SeêÂ§êÂ£o <span class="ARCKHê-toc-pos">1</span> de <span class="ARCKHê-toc-total">6</span></p>
 <ul class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-1">1. Primeiros princÃ­pios</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-2">2. Protocolo de 5 passos</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-3">3. A stack universal</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-4">4. ICP + raspar leads</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-5">5. Validar + empacotar</a></li>
-<li><a class="ARCKHÉ-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-6">6. Alta agÃªncia + meta-prompt</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-1">1. Primeiros princêÂ­pios</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-2">2. Protocolo de 5 passos</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-3">3. A stack universal</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-4">4. ICP + raspar leads</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-5">5. Validar + empacotar</a></li>
+<li><a class="ARCKHê-toc-link block py-1 text-neutral-400 hover:text-blue-400" href="#topico-6">6. Alta agêÂªncia + meta-prompt</a></li>
 </ul>
 </nav>
-<div class="ARCKHÉ-prose">
-<!-- SVG: a stack universal (equaÃ§Ã£o A+B=C / fan-out) -->
+<div class="ARCKHê-prose">
+<!-- SVG: a stack universal (equaêÂ§êÂ£o A+B=C / fan-out) -->
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 mb-10 overflow-hidden">
-<svg aria-label="As cinco peÃ§as da stack universal â€” pensar, guardar, criar visuais, raspar e conectar â€” somadas resultam em qualquer projeto construÃ­do" class="w-full h-auto" role="img" viewbox="0 0 1000 240">
+<svg aria-label="As cinco peêÂ§as da stack universal ê¢â¬â pensar, guardar, criar visuais, raspar e conectar ê¢â¬â somadas resultam em qualquer projeto construêÂ­do" class="w-full h-auto" role="img" viewbox="0 0 1000 240">
 <defs>
 <lineargradient id="m23-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#60a5fa"></stop><stop offset="1" stop-color="#3b82f6"></stop></lineargradient>
 <filter height="180%" id="m23-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -213,13 +213,13 @@
 <marker id="m23-ahc" markerheight="9" markerwidth="9" orient="auto" refx="6.5" refy="4.5"><path d="M0,0 L8,4.5 L0,9 L2.4,4.5 Z" fill="#22d3ee"></path></marker>
 </defs>
 <rect fill="url(#m23-grid)" height="240" width="1000" x="0" y="0"></rect>
-<!-- 5 peÃ§as empilhadas (lado A da equaÃ§Ã£o) -->
+<!-- 5 peêÂ§as empilhadas (lado A da equaêÂ§êÂ£o) -->
 <g font-family="Inter,sans-serif" font-size="12.5" font-weight="600">
-<g class="wf-a"><rect fill="#0e1622" height="34" rx="9" stroke="#60a5fa" stroke-width="2" width="200" x="30" y="20"></rect><text fill="#bfdbfe" text-anchor="middle" x="130" y="42">ðŸ§  Pensar (IA)</text></g>
-<g class="wf-a"><rect fill="#0e1622" height="34" rx="9" stroke="#60a5fa" stroke-width="2" width="200" x="30" y="62"></rect><text fill="#bfdbfe" text-anchor="middle" x="130" y="84">ðŸ—„ï¸ Guardar (banco)</text></g>
-<g class="wf-a"><rect fill="#0e1622" height="34" rx="9" stroke="#60a5fa" stroke-width="2" width="200" x="30" y="104"></rect><text fill="#bfdbfe" text-anchor="middle" x="130" y="126">ðŸŽ¨ Criar visuais</text></g>
-<g class="wf-a"><rect fill="#0e1622" height="34" rx="9" stroke="#60a5fa" stroke-width="2" width="200" x="30" y="146"></rect><text fill="#bfdbfe" text-anchor="middle" x="130" y="168">ðŸ•·ï¸ Raspar dados</text></g>
-<g class="wf-a"><rect fill="#0e1622" height="34" rx="9" stroke="#60a5fa" stroke-width="2" width="200" x="30" y="188"></rect><text fill="#bfdbfe" text-anchor="middle" x="130" y="210">ðŸ”Œ Conectar (automaÃ§Ã£o)</text></g>
+<g class="wf-a"><rect fill="#0e1622" height="34" rx="9" stroke="#60a5fa" stroke-width="2" width="200" x="30" y="20"></rect><text fill="#bfdbfe" text-anchor="middle" x="130" y="42">ê°Å¸Â§Â  Pensar (IA)</text></g>
+<g class="wf-a"><rect fill="#0e1622" height="34" rx="9" stroke="#60a5fa" stroke-width="2" width="200" x="30" y="62"></rect><text fill="#bfdbfe" text-anchor="middle" x="130" y="84">ê°Å¸ââê¯Â¸Â Guardar (banco)</text></g>
+<g class="wf-a"><rect fill="#0e1622" height="34" rx="9" stroke="#60a5fa" stroke-width="2" width="200" x="30" y="104"></rect><text fill="#bfdbfe" text-anchor="middle" x="130" y="126">ê°Å¸Å½Â¨ Criar visuais</text></g>
+<g class="wf-a"><rect fill="#0e1622" height="34" rx="9" stroke="#60a5fa" stroke-width="2" width="200" x="30" y="146"></rect><text fill="#bfdbfe" text-anchor="middle" x="130" y="168">ê°Å¸â¢Â·ê¯Â¸Â Raspar dados</text></g>
+<g class="wf-a"><rect fill="#0e1622" height="34" rx="9" stroke="#60a5fa" stroke-width="2" width="200" x="30" y="188"></rect><text fill="#bfdbfe" text-anchor="middle" x="130" y="210">ê°Å¸âÅ Conectar (automaêÂ§êÂ£o)</text></g>
 </g>
 <!-- sinal de + ao lado -->
 <text fill="#22d3ee" font-family="Inter,sans-serif" font-size="34" font-weight="800" text-anchor="middle" x="262" y="128">+</text>
@@ -234,355 +234,355 @@
 <!-- hub Claude Code -->
 <g filter="url(#m23-glow)"><rect fill="#0e1b26" height="62" rx="13" stroke="url(#m23-grad)" stroke-width="2.5" width="190" x="470" y="90"></rect></g>
 <text fill="#dbeafe" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="565" y="116">Claude Code</text>
-<text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="11.5" text-anchor="middle" x="565" y="136">orquestra as 5 peÃ§as</text>
+<text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="11.5" text-anchor="middle" x="565" y="136">orquestra as 5 peêÂ§as</text>
 <!-- sinal de = -->
 <text fill="#22d3ee" font-family="Inter,sans-serif" font-size="30" font-weight="800" text-anchor="middle" x="700" y="130">=</text>
 <!-- resultado: qualquer coisa -->
 <g filter="url(#m23-glow)"><rect fill="#0e2230" height="86" rx="16" stroke="#22d3ee" stroke-width="2.5" width="220" x="740" y="78"></rect></g>
 <text fill="#a5f3fc" font-family="Inter,sans-serif" font-size="20" font-weight="700" text-anchor="middle" x="850" y="116">qualquer coisa</text>
-<text fill="#7dd3e8" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="850" y="140">site Â· app Â· fluxo Â· dashboard</text>
-<!-- arco "imaginou â†’ construiu" -->
+<text fill="#7dd3e8" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="850" y="140">site êÂ· app êÂ· fluxo êÂ· dashboard</text>
+<!-- arco "imaginou ê¢â â construiu" -->
 <path d="M130,16 C420,-22 700,-22 850,72" fill="none" marker-end="url(#m23-ah)" opacity="0.6" stroke="#60a5fa" stroke-dasharray="5 6" stroke-width="1.5"></path>
-<text fill="#60a5fa" font-family="Inter,sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="500" y="14">imaginou â†’ construiu</text>
-<!-- rodapÃ© protocolo -->
-<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="850" y="200">Questionar Â· Deletar Â· Simplificar Â· Acelerar Â· Automatizar</text>
+<text fill="#60a5fa" font-family="Inter,sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="500" y="14">imaginou ê¢â â construiu</text>
+<!-- rodapêÂ© protocolo -->
+<text fill="#6b7280" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="850" y="200">Questionar êÂ· Deletar êÂ· Simplificar êÂ· Acelerar êÂ· Automatizar</text>
 </svg>
 </div>
-<h2 class="text-2xl font-bold mb-6">ConteÃºdo detalhado</h2>
+<h2 class="text-2xl font-bold mb-6">ConteêÂºdo detalhado</h2>
 <!-- TOPICO 1 -->
-<section class="mb-16" data-ARCKHÉ-module="2-3" data-ARCKHÉ-topic="modulo-2-3#topico-1" data-ARCKHÉ-track="2" id="topico-1">
+<section class="mb-16" data-ARCKHê-module="2-3" data-ARCKHê-topic="modulo-2-3#topico-1" data-ARCKHê-track="2" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">1</span>
-<h2 class="text-2xl font-bold">ðŸ§± Primeiros princÃ­pios: tira as suposiÃ§Ãµes, conta os Ã¡tomos</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â± Primeiros princêÂ­pios: tira as suposiêÂ§êÂµes, conta os êÂ¡tomos</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-3-t1-p1">Todo problema Ã© uma <strong class="text-blue-400">pilha de suposiÃ§Ãµes em cima de Ã¡tomos</strong>. Pensar por primeiros princÃ­pios Ã© tirar as suposiÃ§Ãµes, contar os Ã¡tomos e reconstruir. A maioria das pessoas raciocina por analogia â€” copia o que os outros fazem com pequenas variaÃ§Ãµes. Ã‰ por isso que quase ninguÃ©m dÃ¡ grandes saltos.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-3-t1-p1">Todo problema êÂ© uma <strong class="text-blue-400">pilha de suposiêÂ§êÂµes em cima de êÂ¡tomos</strong>. Pensar por primeiros princêÂ­pios êÂ© tirar as suposiêÂ§êÂµes, contar os êÂ¡tomos e reconstruir. A maioria das pessoas raciocina por analogia ê¢â¬â copia o que os outros fazem com pequenas variaêÂ§êÂµes. êâ° por isso que quase ninguêÂ©m dêÂ¡ grandes saltos.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Uma forma de raciocÃ­nio que recusa o "porque sim". VocÃª desmonta o problema atÃ© as verdades que pode verificar sozinho e reconstrÃ³i a partir delas.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Ã‰ como vocÃª sai do "copiar com leve ajuste" e chega a soluÃ§Ãµes que pareciam impossÃ­veis. O Ãºnico limite real Ã© a fÃ­sica, nÃ£o a convenÃ§Ã£o.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">SuposiÃ§Ã£o vs. Ã¡tomo Â· recomendaÃ§Ã£o disfarÃ§ada de lei Â· "qual Ã© a restriÃ§Ã£o real aqui?"</p></div>
+<div><span class="text-blue-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm">Uma forma de raciocêÂ­nio que recusa o "porque sim". VocêÂª desmonta o problema atêÂ© as verdades que pode verificar sozinho e reconstrêÂ³i a partir delas.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">êâ° como vocêÂª sai do "copiar com leve ajuste" e chega a soluêÂ§êÂµes que pareciam impossêÂ­veis. O êÂºnico limite real êÂ© a fêÂ­sica, nêÂ£o a convenêÂ§êÂ£o.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">SuposiêÂ§êÂ£o vs. êÂ¡tomo êÂ· recomendaêÂ§êÂ£o disfarêÂ§ada de lei êÂ· "qual êÂ© a restriêÂ§êÂ£o real aqui?"</p></div>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ðŸ”‹</span> Analogia: a bateria de 600 dÃ³lares</h3>
-<p class="text-neutral-300 text-sm">Em 2012 dizia-se que uma bateria custava 600 dÃ³lares por kWh e que isso era um "piso intransponÃ­vel". AlguÃ©m decompÃ´s a bateria nos metais que a formam, conferiu o preÃ§o de cada um na bolsa e chegou a ~80 dÃ³lares por kWh. O "piso" era convenÃ§Ã£o; a matÃ©ria-prima contava outra histÃ³ria.</p>
+<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ê°Å¸ââ¹</span> Analogia: a bateria de 600 dêÂ³lares</h3>
+<p class="text-neutral-300 text-sm">Em 2012 dizia-se que uma bateria custava 600 dêÂ³lares por kWh e que isso era um "piso intransponêÂ­vel". AlguêÂ©m decompêÂ´s a bateria nos metais que a formam, conferiu o preêÂ§o de cada um na bolsa e chegou a ~80 dêÂ³lares por kWh. O "piso" era convenêÂ§êÂ£o; a matêÂ©ria-prima contava outra histêÂ³ria.</p>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Pergunta-guia</h3>
-<p class="text-neutral-300 text-sm">Tudo que parece fixo â€” preÃ§o, prazo, nÃºmero de pessoas, "o jeito certo" â€” costuma ser <em>recomendaÃ§Ã£o disfarÃ§ada de lei</em>. O que de fato sustenta (load-bearing) Ã© a fÃ­sica: energia, custo do Ã¡tomo, tempo. Em qualquer projeto, pergunte: <strong class="text-primary">qual Ã© a restriÃ§Ã£o real aqui?</strong></p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Pergunta-guia</h3>
+<p class="text-neutral-300 text-sm">Tudo que parece fixo ê¢â¬â preêÂ§o, prazo, nêÂºmero de pessoas, "o jeito certo" ê¢â¬â costuma ser <em>recomendaêÂ§êÂ£o disfarêÂ§ada de lei</em>. O que de fato sustenta (load-bearing) êÂ© a fêÂ­sica: energia, custo do êÂ¡tomo, tempo. Em qualquer projeto, pergunte: <strong class="text-primary">qual êÂ© a restriêÂ§êÂ£o real aqui?</strong></p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 2 -->
-<section class="mb-16" data-ARCKHÉ-module="2-3" data-ARCKHÉ-topic="modulo-2-3#topico-2" data-ARCKHÉ-track="2" id="topico-2">
+<section class="mb-16" data-ARCKHê-module="2-3" data-ARCKHê-topic="modulo-2-3#topico-2" data-ARCKHê-track="2" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">2</span>
-<h2 class="text-2xl font-bold">ðŸ—‘ï¸ O protocolo de 5 passos (a ordem importa)</h2>
+<h2 class="text-2xl font-bold">ê°Å¸ââê¯Â¸Â O protocolo de 5 passos (a ordem importa)</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-3-t2-p1">Antes de construir, enxugue. O erro nÂº 1 em automaÃ§Ãµes Ã© <strong class="text-blue-400">automatizar algo que nunca deveria ter existido</strong>. Pular um passo faz vocÃª otimizar o que nÃ£o devia existir â€” por isso a ordem Ã© sagrada.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-3-t2-p1">Antes de construir, enxugue. O erro nêÂº 1 em automaêÂ§êÂµes êÂ© <strong class="text-blue-400">automatizar algo que nunca deveria ter existido</strong>. Pular um passo faz vocêÂª otimizar o que nêÂ£o devia existir ê¢â¬â por isso a ordem êÂ© sagrada.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Um processo de engenharia em cinco passos para enxugar qualquer sistema ou ideia antes de construir.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Se vocÃª otimiza antes de deletar, gasta esforÃ§o polindo lixo. Deletar primeiro economiza tudo o que vem depois.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Requisito com dono Â· deletar ~10% de volta Â· otimizar sÃ³ depois Â· enunciar atÃ© ficar entediante.</p></div>
+<div><span class="text-blue-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm">Um processo de engenharia em cinco passos para enxugar qualquer sistema ou ideia antes de construir.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Se vocêÂª otimiza antes de deletar, gasta esforêÂ§o polindo lixo. Deletar primeiro economiza tudo o que vem depois.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Requisito com dono êÂ· deletar ~10% de volta êÂ· otimizar sêÂ³ depois êÂ· enunciar atêÂ© ficar entediante.</p></div>
 </div>
 <div class="space-y-4 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold mb-1">Questione cada requisito</h4><p class="text-neutral-300 text-sm">Cada exigÃªncia tem que ter o <strong class="text-blue-400">nome de uma pessoa</strong> por trÃ¡s, nunca "o jurÃ­dico pediu". Requisito sem dono Ã© suspeito.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold mb-1">Questione cada requisito</h4><p class="text-neutral-300 text-sm">Cada exigêÂªncia tem que ter o <strong class="text-blue-400">nome de uma pessoa</strong> por trêÂ¡s, nunca "o jurêÂ­dico pediu". Requisito sem dono êÂ© suspeito.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold mb-1">Delete a parte ou o passo</h4><p class="text-neutral-300 text-sm">Se depois vocÃª nÃ£o precisar devolver pelo menos ~10% do que tirou, Ã© porque nÃ£o deletou o suficiente.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold mb-1">Delete a parte ou o passo</h4><p class="text-neutral-300 text-sm">Se depois vocêÂª nêÂ£o precisar devolver pelo menos ~10% do que tirou, êÂ© porque nêÂ£o deletou o suficiente.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold mb-1">Simplifique e otimize</h4><p class="text-neutral-300 text-sm">SÃ³ <em>depois</em> de deletar. Otimizar antes Ã© o clÃ¡ssico erro.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold mb-1">Simplifique e otimize</h4><p class="text-neutral-300 text-sm">SêÂ³ <em>depois</em> de deletar. Otimizar antes êÂ© o clêÂ¡ssico erro.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">4</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold mb-1">Acelere o ciclo</h4><p class="text-neutral-300 text-sm">Agora que o sistema estÃ¡ enxuto, deixe cada volta mais rÃ¡pida.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold mb-1">Acelere o ciclo</h4><p class="text-neutral-300 text-sm">Agora que o sistema estêÂ¡ enxuto, deixe cada volta mais rêÂ¡pida.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">5</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold mb-1">Automatize</h4><p class="text-neutral-300 text-sm">Por Ãºltimo, para nÃ£o tocar mais naquilo.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold mb-1">Automatize</h4><p class="text-neutral-300 text-sm">Por êÂºltimo, para nêÂ£o tocar mais naquilo.</p></div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ§ </span> Passo a passo mental</h3>
-<p class="text-neutral-300 text-sm">Quebre tudo em partes â†’ o que Ã© dado? o que Ã© substantivo? o que Ã© restriÃ§Ã£o? â†’ reduza atÃ© a pergunta essencial ficar nua â†’ <strong class="text-primary">enuncie o problema atÃ© ele ficar entediante</strong> â†’ sÃ³ entÃ£o escreva cÃ³digo.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸Â§Â </span> Passo a passo mental</h3>
+<p class="text-neutral-300 text-sm">Quebre tudo em partes ê¢â â o que êÂ© dado? o que êÂ© substantivo? o que êÂ© restriêÂ§êÂ£o? ê¢â â reduza atêÂ© a pergunta essencial ficar nua ê¢â â <strong class="text-primary">enuncie o problema atêÂ© ele ficar entediante</strong> ê¢â â sêÂ³ entêÂ£o escreva cêÂ³digo.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 3 -->
-<section class="mb-16" data-ARCKHÉ-module="2-3" data-ARCKHÉ-topic="modulo-2-3#topico-3" data-ARCKHÉ-track="2" id="topico-3">
+<section class="mb-16" data-ARCKHê-module="2-3" data-ARCKHê-topic="modulo-2-3#topico-3" data-ARCKHê-track="2" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">3</span>
-<h2 class="text-2xl font-bold">ðŸ§© A stack universal: pensar + guardar + criar + raspar + conectar</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â© A stack universal: pensar + guardar + criar + raspar + conectar</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-3-t3-p1">Iniciantes acham que precisam de dezenas de ferramentas confusas. NÃ£o precisam. Quase tudo que se constrÃ³i com IA se reduz a <strong class="text-blue-400">cinco funÃ§Ãµes</strong>. Saber disso tira a paralisia.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-3-t3-p1">Iniciantes acham que precisam de dezenas de ferramentas confusas. NêÂ£o precisam. Quase tudo que se constrêÂ³i com IA se reduz a <strong class="text-blue-400">cinco funêÂ§êÂµes</strong>. Saber disso tira a paralisia.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">O conjunto mÃ­nimo de ferramentas para construir praticamente qualquer coisa. Surpreendentemente curto.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">VocÃª adiciona ferramentas sÃ³ quando uma das cinco funÃ§Ãµes pedir â€” nunca por moda.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Pensar Â· guardar Â· criar visuais Â· raspar Â· conectar.</p></div>
+<div><span class="text-blue-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm">O conjunto mêÂ­nimo de ferramentas para construir praticamente qualquer coisa. Surpreendentemente curto.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">VocêÂª adiciona ferramentas sêÂ³ quando uma das cinco funêÂ§êÂµes pedir ê¢â¬â nunca por moda.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Pensar êÂ· guardar êÂ· criar visuais êÂ· raspar êÂ· conectar.</p></div>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-2xl mb-2">ðŸ§ </div><h4 class="font-semibold text-blue-400 mb-1">Pensar</h4><p class="text-neutral-300 text-xs">Uma IA que raciocina e executa (Claude Code).</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-2xl mb-2">ðŸ—„ï¸</div><h4 class="font-semibold text-blue-400 mb-1">Guardar</h4><p class="text-neutral-300 text-xs">Um lugar para os dados (um banco, com API pronta).</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-2xl mb-2">ðŸŽ¨</div><h4 class="font-semibold text-blue-400 mb-1">Criar visuais</h4><p class="text-neutral-300 text-xs">GeraÃ§Ã£o de imagens, assets e telas bonitas.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-2xl mb-2">ðŸ•·ï¸</div><h4 class="font-semibold text-blue-400 mb-1">Raspar dados</h4><p class="text-neutral-300 text-xs">Buscar informaÃ§Ã£o pÃºblica lÃ¡ fora (raspadores prontos).</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-2xl mb-2">ðŸ”Œ</div><h4 class="font-semibold text-blue-400 mb-1">Conectar</h4><p class="text-neutral-300 text-xs">AutomaÃ§Ãµes que ligam as peÃ§as (a prÃ³pria IA, ou controle visual fino).</p></div>
-<div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-5"><div class="text-2xl mb-2">âœ¨</div><h4 class="font-semibold text-blue-400 mb-1">SÃ³ isso</h4><p class="text-neutral-300 text-xs">VocÃª quase nunca precisa de mais. Combine as cinco e construa.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-2xl mb-2">ê°Å¸Â§Â </div><h4 class="font-semibold text-blue-400 mb-1">Pensar</h4><p class="text-neutral-300 text-xs">Uma IA que raciocina e executa (Claude Code).</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-2xl mb-2">ê°Å¸ââê¯Â¸Â</div><h4 class="font-semibold text-blue-400 mb-1">Guardar</h4><p class="text-neutral-300 text-xs">Um lugar para os dados (um banco, com API pronta).</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-2xl mb-2">ê°Å¸Å½Â¨</div><h4 class="font-semibold text-blue-400 mb-1">Criar visuais</h4><p class="text-neutral-300 text-xs">GeraêÂ§êÂ£o de imagens, assets e telas bonitas.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-2xl mb-2">ê°Å¸â¢Â·ê¯Â¸Â</div><h4 class="font-semibold text-blue-400 mb-1">Raspar dados</h4><p class="text-neutral-300 text-xs">Buscar informaêÂ§êÂ£o pêÂºblica lêÂ¡ fora (raspadores prontos).</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-2xl mb-2">ê°Å¸âÅ</div><h4 class="font-semibold text-blue-400 mb-1">Conectar</h4><p class="text-neutral-300 text-xs">AutomaêÂ§êÂµes que ligam as peêÂ§as (a prêÂ³pria IA, ou controle visual fino).</p></div>
+<div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-5"><div class="text-2xl mb-2">ê¢ÅÂ¨</div><h4 class="font-semibold text-blue-400 mb-1">SêÂ³ isso</h4><p class="text-neutral-300 text-xs">VocêÂª quase nunca precisa de mais. Combine as cinco e construa.</p></div>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ðŸ³</span> Analogia: a stack como uma cozinha</h3>
-<p class="text-neutral-300 text-sm">Construir Ã© montar uma cozinha completa: o chef que <strong>pensa</strong> (a IA), a despensa pra <strong>guardar</strong> ingredientes (o banco), o prato pra <strong>emplatar</strong> bonito (os visuais), a feira pra <strong>buscar</strong> ingredientes frescos lÃ¡ fora (o raspador) e a brigada que faz tudo andar sozinho (as automaÃ§Ãµes). Faltou uma estaÃ§Ã£o, o prato nÃ£o sai.</p>
+<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ê°Å¸ÂÂ³</span> Analogia: a stack como uma cozinha</h3>
+<p class="text-neutral-300 text-sm">Construir êÂ© montar uma cozinha completa: o chef que <strong>pensa</strong> (a IA), a despensa pra <strong>guardar</strong> ingredientes (o banco), o prato pra <strong>emplatar</strong> bonito (os visuais), a feira pra <strong>buscar</strong> ingredientes frescos lêÂ¡ fora (o raspador) e a brigada que faz tudo andar sozinho (as automaêÂ§êÂµes). Faltou uma estaêÂ§êÂ£o, o prato nêÂ£o sai.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<h4 class="font-bold text-blue-400 mb-4">ðŸ›£ï¸ Piloto automÃ¡tico (IA)</h4>
+<h4 class="font-bold text-blue-400 mb-4">ê°Å¸âºÂ£ê¯Â¸Â Piloto automêÂ¡tico (IA)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>O Claude Code assume a maior parte do caminho.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Ideal para a maior parte do percurso, sem vocÃª dirigir.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢Åâ</span><span>O Claude Code assume a maior parte do caminho.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢Åâ</span><span>Ideal para a maior parte do percurso, sem vocêÂª dirigir.</span></li>
 </ul>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
-<h4 class="font-bold text-blue-400 mb-4">ðŸŽ›ï¸ Pegar o volante (automaÃ§Ã£o visual)</h4>
+<h4 class="font-bold text-blue-400 mb-4">ê°Å¸Å½âºê¯Â¸Â Pegar o volante (automaêÂ§êÂ£o visual)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Ferramentas visuais dÃ£o controle fino em trechos especÃ­ficos.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Ã‰ bom saber dirigir o carro nos dois modos.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢Åâ</span><span>Ferramentas visuais dêÂ£o controle fino em trechos especêÂ­ficos.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢Åâ</span><span>êâ° bom saber dirigir o carro nos dois modos.</span></li>
 </ul>
 </div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 4 -->
-<section class="mb-16" data-ARCKHÉ-module="2-3" data-ARCKHÉ-topic="modulo-2-3#topico-4" data-ARCKHÉ-track="2" id="topico-4">
+<section class="mb-16" data-ARCKHê-module="2-3" data-ARCKHê-topic="modulo-2-3#topico-4" data-ARCKHê-track="2" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">4</span>
-<h2 class="text-2xl font-bold">ðŸŽ¯ Quem vocÃª procura + raspar com a loja de raspadores</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Å½Â¯ Quem vocêÂª procura + raspar com a loja de raspadores</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-3-t4-p1">Sem pÃºblico definido, nenhum raspador serve para nada. Primeiro defina o <strong class="text-blue-400">Perfil de Cliente Ideal (ICP)</strong> â€” quem exatamente vocÃª quer alcanÃ§ar â€” e sÃ³ entÃ£o saia coletando dados.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-3-t4-p1">Sem pêÂºblico definido, nenhum raspador serve para nada. Primeiro defina o <strong class="text-blue-400">Perfil de Cliente Ideal (ICP)</strong> ê¢â¬â quem exatamente vocêÂª quer alcanêÂ§ar ê¢â¬â e sêÂ³ entêÂ£o saia coletando dados.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Definir nicho + lugar + sinais (ex.: "telhadistas em SÃ£o Paulo com presenÃ§a em redes") antes de abrir qualquer ferramenta, e entÃ£o raspar dados pÃºblicos.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">CaptaÃ§Ã£o de leads Ã© jogo de volume: pense em centenas, nÃ£o em dezenas. E vocÃª Ã© pago pelo valor que cria e por quanto desse valor consegue capturar/replicar.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">ICP Â· jogo de volume Â· chave de API Â· "actor" (cada raspador) Â· multicanal.</p></div>
+<div><span class="text-blue-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm">Definir nicho + lugar + sinais (ex.: "telhadistas em SêÂ£o Paulo com presenêÂ§a em redes") antes de abrir qualquer ferramenta, e entêÂ£o raspar dados pêÂºblicos.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">CaptaêÂ§êÂ£o de leads êÂ© jogo de volume: pense em centenas, nêÂ£o em dezenas. E vocêÂª êÂ© pago pelo valor que cria e por quanto desse valor consegue capturar/replicar.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">ICP êÂ· jogo de volume êÂ· chave de API êÂ· "actor" (cada raspador) êÂ· multicanal.</p></div>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ðŸ•·ï¸</span> Passo a passo: raspar leads</h3>
+<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ê°Å¸â¢Â·ê¯Â¸Â</span> Passo a passo: raspar leads</h3>
 <ol class="space-y-2 text-neutral-300 text-sm list-decimal list-inside">
-<li>Defina o ICP: nicho, cidade/regiÃ£o e sinais. Anote antes de abrir qualquer ferramenta.</li>
-<li>Crie conta numa loja de raspadores (ex.: <strong>Apify</strong>, em apify.com) e faÃ§a login.</li>
-<li>VÃ¡ em <em>Settings â†’ API &amp; Integrations</em> e copie sua chave de API.</li>
-<li>Conecte a loja ao Claude Code (via conector/MCP ou colando o token na configuraÃ§Ã£o).</li>
-<li>PeÃ§a em linguagem natural o que vocÃª quer. A IA encontra o melhor "actor", roda e devolve os dados.</li>
+<li>Defina o ICP: nicho, cidade/regiêÂ£o e sinais. Anote antes de abrir qualquer ferramenta.</li>
+<li>Crie conta numa loja de raspadores (ex.: <strong>Apify</strong>, em apify.com) e faêÂ§a login.</li>
+<li>VêÂ¡ em <em>Settings ê¢â â API &amp; Integrations</em> e copie sua chave de API.</li>
+<li>Conecte a loja ao Claude Code (via conector/MCP ou colando o token na configuraêÂ§êÂ£o).</li>
+<li>PeêÂ§a em linguagem natural o que vocêÂª quer. A IA encontra o melhor "actor", roda e devolve os dados.</li>
 </ol>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âš–ï¸</span> Custo vs. tempo</h3>
-<p class="text-neutral-300 text-sm">Existem caminhos gratuitos e pagos. Lembre que <strong class="text-primary">seu tempo tambÃ©m tem custo</strong>. Se vocÃª tem mais capital que tempo, plataformas que jÃ¡ entregam contatos validados (como o <strong>Apollo</strong>, apollo.io) poupam etapas. Se tem mais tempo que capital, monte o fluxo peÃ§a por peÃ§a com um raspador + um validador.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê¢Å¡âê¯Â¸Â</span> Custo vs. tempo</h3>
+<p class="text-neutral-300 text-sm">Existem caminhos gratuitos e pagos. Lembre que <strong class="text-primary">seu tempo tambêÂ©m tem custo</strong>. Se vocêÂª tem mais capital que tempo, plataformas que jêÂ¡ entregam contatos validados (como o <strong>Apollo</strong>, apollo.io) poupam etapas. Se tem mais tempo que capital, monte o fluxo peêÂ§a por peêÂ§a com um raspador + um validador.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 5 -->
-<section class="mb-16" data-ARCKHÉ-module="2-3" data-ARCKHÉ-topic="modulo-2-3#topico-5" data-ARCKHÉ-track="2" id="topico-5">
+<section class="mb-16" data-ARCKHê-module="2-3" data-ARCKHê-topic="modulo-2-3#topico-5" data-ARCKHê-track="2" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">5</span>
-<h2 class="text-2xl font-bold">âœ… Validar, enriquecer e empacotar o resultado</h2>
+<h2 class="text-2xl font-bold">ê¢Åâ¦ Validar, enriquecer e empacotar o resultado</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-3-t5-p1">Lista grande nÃ£o vale nada se os e-mails quicam â€” e dado num terminal nÃ£o Ã© resultado. VocÃª <strong class="text-blue-400">valida</strong> os contatos e depois <strong class="text-blue-400">empacota</strong> num formato que usa de verdade: a tela onde vocÃª abre e jÃ¡ liga para o contato.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-3-t5-p1">Lista grande nêÂ£o vale nada se os e-mails quicam ê¢â¬â e dado num terminal nêÂ£o êÂ© resultado. VocêÂª <strong class="text-blue-400">valida</strong> os contatos e depois <strong class="text-blue-400">empacota</strong> num formato que usa de verdade: a tela onde vocêÂª abre e jêÂ¡ liga para o contato.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Validar e-mails (existem? estÃ£o ativos?), enriquecer contatos e transformar os dados crus num HTML/dashboard utilizÃ¡vel.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">E-mail invÃ¡lido derruba a reputaÃ§Ã£o do seu envio e queima a lista. Validar Ã© barato perto do prejuÃ­zo.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">ValidaÃ§Ã£o em lote Â· "resultado desejado" no prompt Â· atualizaÃ§Ã£o agendada Â· deploy + repositÃ³rio.</p></div>
+<div><span class="text-blue-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm">Validar e-mails (existem? estêÂ£o ativos?), enriquecer contatos e transformar os dados crus num HTML/dashboard utilizêÂ¡vel.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">E-mail invêÂ¡lido derruba a reputaêÂ§êÂ£o do seu envio e queima a lista. Validar êÂ© barato perto do prejuêÂ­zo.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">ValidaêÂ§êÂ£o em lote êÂ· "resultado desejado" no prompt êÂ· atualizaêÂ§êÂ£o agendada êÂ· deploy + repositêÂ³rio.</p></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
-<h4 class="font-bold text-blue-400 mb-4">ðŸ”Ž Validar e enriquecer</h4>
+<h4 class="font-bold text-blue-400 mb-4">ê°Å¸âÅ½ Validar e enriquecer</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400">â€¢</span><span>Com uma plataforma de prospecÃ§Ã£o (ex.: <strong>Apollo</strong>, apollo.io) jÃ¡ vem embutido â€” vocÃª pula esta etapa.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">â€¢</span><span>Com orÃ§amento enxuto, use um validador em lote (ex.: <strong>Anymail Finder</strong>, anymailfinder.com): busca, valida e encontra e-mails que faltam, e tem API.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">â€¢</span><span>Entregue a chave ao Claude Code e peÃ§a para validar a lista raspada â€” sem subir arquivo manualmente.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢â¬Â¢</span><span>Com uma plataforma de prospecêÂ§êÂ£o (ex.: <strong>Apollo</strong>, apollo.io) jêÂ¡ vem embutido ê¢â¬â vocêÂª pula esta etapa.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢â¬Â¢</span><span>Com orêÂ§amento enxuto, use um validador em lote (ex.: <strong>Anymail Finder</strong>, anymailfinder.com): busca, valida e encontra e-mails que faltam, e tem API.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢â¬Â¢</span><span>Entregue a chave ao Claude Code e peêÂ§a para validar a lista raspada ê¢â¬â sem subir arquivo manualmente.</span></li>
 </ul>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
-<h4 class="font-bold text-blue-400 mb-4">ðŸ“Š Empacotar em algo utilizÃ¡vel</h4>
+<h4 class="font-bold text-blue-400 mb-4">ê°Å¸âÅ  Empacotar em algo utilizêÂ¡vel</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400">â€¢</span><span>PeÃ§a uma pÃ¡gina HTML/dashboard com os campos que importam (nome, e-mail, redes, um fato interessante).</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">â€¢</span><span>Abra localmente para revisar.</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">â€¢</span><span>Se for recorrente, hospede e agende a atualizaÃ§Ã£o (ex.: a cada 7 dias) â€” monta uma vez, esquece.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢â¬Â¢</span><span>PeêÂ§a uma pêÂ¡gina HTML/dashboard com os campos que importam (nome, e-mail, redes, um fato interessante).</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢â¬Â¢</span><span>Abra localmente para revisar.</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">ê¢â¬Â¢</span><span>Se for recorrente, hospede e agende a atualizaêÂ§êÂ£o (ex.: a cada 7 dias) ê¢â¬â monta uma vez, esquece.</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-dark-800 border border-dark-600 rounded-xl p-6 mb-6">
-<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ðŸ³</span> Exemplo prÃ¡tico guiado</h3>
-<p class="text-neutral-300 text-sm mb-3"><strong>Meta:</strong> uma lista utilizÃ¡vel de 10 telhadistas em SÃ£o Paulo, com nome, e-mail, redes e um fato interessante â€” para iniciar conversas.</p>
+<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ê°Å¸ÂÂ³</span> Exemplo prêÂ¡tico guiado</h3>
+<p class="text-neutral-300 text-sm mb-3"><strong>Meta:</strong> uma lista utilizêÂ¡vel de 10 telhadistas em SêÂ£o Paulo, com nome, e-mail, redes e um fato interessante ê¢â¬â para iniciar conversas.</p>
 <ol class="space-y-1.5 text-neutral-300 text-sm list-decimal list-inside">
-<li>Defina o ICP: "telhadistas, SÃ£o Paulo, com presenÃ§a online".</li>
+<li>Defina o ICP: "telhadistas, SêÂ£o Paulo, com presenêÂ§a online".</li>
 <li>Conecte a loja de raspadores ao Claude Code (chave de API copiada).</li>
-<li>PeÃ§a a raspagem em portuguÃªs. A IA escolhe o melhor "actor" e traz os dados.</li>
-<li>Valide os e-mails com a chave do validador e receba a versÃ£o limpa.</li>
-<li>PeÃ§a uma pÃ¡gina HTML bonita com os 10 contatos e abra localmente.</li>
+<li>PeêÂ§a a raspagem em portuguêÂªs. A IA escolhe o melhor "actor" e traz os dados.</li>
+<li>Valide os e-mails com a chave do validador e receba a versêÂ£o limpa.</li>
+<li>PeêÂ§a uma pêÂ¡gina HTML bonita com os 10 contatos e abra localmente.</li>
 <li>Avalie a economia: qual o custo por lead? Quantos converto a partir disso?</li>
 </ol>
-<p class="text-neutral-400 text-xs mt-3">Repare: vocÃª usou quatro das cinco peÃ§as â€” pensar, raspar, validar e criar visual. Faltou sÃ³ "guardar", que entra quando quiser persistir a lista num banco.</p>
+<p class="text-neutral-400 text-xs mt-3">Repare: vocêÂª usou quatro das cinco peêÂ§as ê¢â¬â pensar, raspar, validar e criar visual. Faltou sêÂ³ "guardar", que entra quando quiser persistir a lista num banco.</p>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- TOPICO 6 -->
-<section class="mb-16" data-ARCKHÉ-module="2-3" data-ARCKHÉ-topic="modulo-2-3#topico-6" data-ARCKHÉ-track="2" id="topico-6">
+<section class="mb-16" data-ARCKHê-module="2-3" data-ARCKHê-topic="modulo-2-3#topico-6" data-ARCKHê-track="2" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3 flex-wrap">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">6</span>
-<h2 class="text-2xl font-bold">ðŸ§  Alta agÃªncia + o meta-prompt de clarificaÃ§Ã£o</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â  Alta agêÂªncia + o meta-prompt de clarificaêÂ§êÂ£o</h2>
 </div>
-<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dÃºvida</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>Tenho dêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m2-3-t6-p1"><strong class="text-blue-400">Alta agÃªncia</strong> Ã© a crenÃ§a de que vocÃª consegue resolver, contornar e fazer acontecer, mesmo quando o caminho Ã³bvio estÃ¡ fechado. E quando vocÃª nÃ£o souber o caminho, o melhor movimento Ã© fazer a IA te entrevistar primeiro.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m2-3-t6-p1"><strong class="text-blue-400">Alta agêÂªncia</strong> êÂ© a crenêÂ§a de que vocêÂª consegue resolver, contornar e fazer acontecer, mesmo quando o caminho êÂ³bvio estêÂ¡ fechado. E quando vocêÂª nêÂ£o souber o caminho, o melhor movimento êÂ© fazer a IA te entrevistar primeiro.</p>
 <div class="bg-dark-700/50 rounded-lg p-5 space-y-3 mb-6">
-<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">A postura de quem resolve sem esperar permissÃ£o, combinada com um prompt que destrava qualquer problema mal definido.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">~80% das vezes o problema nÃ£o Ã© tÃ©cnico â€” Ã© falta de clareza sobre qual Ã© o gargalo. O meta-prompt resolve isso fazendo a IA esclarecer suas intenÃ§Ãµes antes de propor soluÃ§Ã£o.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">RestriÃ§Ã£o como recomendaÃ§Ã£o Â· agir sem permissÃ£o Â· declarar objetivo + resultado desejado Â· pensar a soluÃ§Ã£o em conjunto.</p></div>
+<div><span class="text-blue-400 font-semibold">O que êÂ©:</span><p class="text-neutral-300 text-sm">A postura de quem resolve sem esperar permissêÂ£o, combinada com um prompt que destrava qualquer problema mal definido.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">~80% das vezes o problema nêÂ£o êÂ© têÂ©cnico ê¢â¬â êÂ© falta de clareza sobre qual êÂ© o gargalo. O meta-prompt resolve isso fazendo a IA esclarecer suas intenêÂ§êÂµes antes de propor soluêÂ§êÂ£o.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">RestriêÂ§êÂ£o como recomendaêÂ§êÂ£o êÂ· agir sem permissêÂ£o êÂ· declarar objetivo + resultado desejado êÂ· pensar a soluêÂ§êÂ£o em conjunto.</p></div>
 </div>
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ðŸ“ž</span> O teste mental da alta agÃªncia</h3>
-<p class="text-neutral-300 text-sm">Se vocÃª estivesse preso e tivesse uma Ãºnica ligaÃ§Ã£o para alguÃ©m que com certeza atenderia e te ajudaria, quem vocÃª chamaria? Essa pessoa Ã© o seu modelo de alta agÃªncia. A meta Ã© virar essa pessoa: tratar restriÃ§Ãµes como recomendaÃ§Ãµes atÃ© prova em contrÃ¡rio.</p>
+<h3 class="text-lg font-semibold text-blue-400 mb-3 flex items-center"><span class="mr-2">ê°Å¸âÅ¾</span> O teste mental da alta agêÂªncia</h3>
+<p class="text-neutral-300 text-sm">Se vocêÂª estivesse preso e tivesse uma êÂºnica ligaêÂ§êÂ£o para alguêÂ©m que com certeza atenderia e te ajudaria, quem vocêÂª chamaria? Essa pessoa êÂ© o seu modelo de alta agêÂªncia. A meta êÂ© virar essa pessoa: tratar restriêÂ§êÂµes como recomendaêÂ§êÂµes atêÂ© prova em contrêÂ¡rio.</p>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¬</span> O movimento que destrava tudo</h3>
-<p class="text-neutral-300 text-sm">Sempre que travar, mande o meta-prompt <em>"me faÃ§a perguntas pra esclarecer"</em> (estÃ¡ pronto na seÃ§Ã£o de prompts abaixo) e responda Ã s perguntas que a IA fizer. Muitas vezes a clareza que surge das perguntas jÃ¡ Ã© metade da soluÃ§Ã£o.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¬</span> O movimento que destrava tudo</h3>
+<p class="text-neutral-300 text-sm">Sempre que travar, mande o meta-prompt <em>"me faêÂ§a perguntas pra esclarecer"</em> (estêÂ¡ pronto na seêÂ§êÂ£o de prompts abaixo) e responda êÂ s perguntas que a IA fizer. Muitas vezes a clareza que surge das perguntas jêÂ¡ êÂ© metade da soluêÂ§êÂ£o.</p>
 </div>
 <details class="bg-dark-800 border border-dark-600 rounded-xl p-5 mb-6">
-<summary class="cursor-pointer font-semibold text-blue-400">Indo mais fundo (opcional): por que perguntas vÃªm antes de respostas</summary>
-<p class="text-neutral-300 text-sm mt-3">Pedir soluÃ§Ã£o para um problema mal definido forÃ§a a IA a adivinhar â€” e ela vai chutar. Quando vocÃª inverte e pede que ela te entreviste, cada pergunta expÃµe uma suposiÃ§Ã£o escondida. Ao final, o gargalo real costuma caber em uma frase. AÃ­, sim, a soluÃ§Ã£o Ã© quase trivial.</p>
+<summary class="cursor-pointer font-semibold text-blue-400">Indo mais fundo (opcional): por que perguntas vêÂªm antes de respostas</summary>
+<p class="text-neutral-300 text-sm mt-3">Pedir soluêÂ§êÂ£o para um problema mal definido forêÂ§a a IA a adivinhar ê¢â¬â e ela vai chutar. Quando vocêÂª inverte e pede que ela te entreviste, cada pergunta expêÂµe uma suposiêÂ§êÂ£o escondida. Ao final, o gargalo real costuma caber em uma frase. AêÂ­, sim, a soluêÂ§êÂ£o êÂ© quase trivial.</p>
 </details>
 <!-- Checagem leve opcional -->
-<div class="ARCKHÉ-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-2-3#q1">
+<div class="ARCKHê-check mt-8 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHê-check="modulo-2-3#q1">
 <p class="font-medium mb-4">Auto-checagem (opcional): na ordem do protocolo de 5 passos, o que vem ANTES de simplificar e otimizar?</p>
-<div class="ARCKHÉ-check-options space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">Automatizar o passo o quanto antes.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">Questionar cada requisito e deletar o que nÃ£o tem dono.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Acelerar o ciclo para ganhar velocidade.</button>
+<div class="ARCKHê-check-options space-y-2">
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="0" type="button">Automatizar o passo o quanto antes.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="1" type="button">Questionar cada requisito e deletar o que nêÂ£o tem dono.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHê-check-option="2" type="button">Acelerar o ciclo para ganhar velocidade.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHê-check-feedback="" role="status"></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span></button>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 hover:bg-blue-500/30 transition-colors" data-ARCKHê-read-toggle="" type="button"><span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span></button>
 </div>
 </section>
 <!-- EXERCICIOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âœï¸ ExercÃ­cios</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂê¯Â¸Â ExercêÂ­cios</h2>
 <div class="space-y-4">
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. Desmonte com primeiros princÃ­pios <span class="text-xs text-neutral-500">(mÃ©dio)</span></h3><p class="text-neutral-300 text-sm">Pegue uma "regra fixa" do seu trabalho ("isso leva 3 dias", "precisa de tal aprovaÃ§Ã£o"). Liste as suposiÃ§Ãµes e separe fÃ­sica de convenÃ§Ã£o. <span class="text-blue-400">CritÃ©rio:</span> identificou ao menos uma "lei" que era sÃ³ recomendaÃ§Ã£o e descreveu uma alternativa viÃ¡vel.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Mapeie sua ideia na stack universal <span class="text-xs text-neutral-500">(mÃ©dio)</span></h3><p class="text-neutral-300 text-sm">Escolha um projeto seu e preencha as cinco funÃ§Ãµes: pensar / guardar / criar / raspar / conectar. <span class="text-blue-400">CritÃ©rio:</span> as cinco endereÃ§adas, com justificativa para cada peÃ§a incluÃ­da ou dispensada.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Rode o fluxo de leads <span class="text-xs text-neutral-500">(prÃ¡tico)</span></h3><p class="text-neutral-300 text-sm">Conecte uma loja de raspadores ao Claude Code e raspe 10 leads reais do seu ICP, em HTML. <span class="text-blue-400">CritÃ©rio:</span> arquivo HTML aberto no navegador com 10 contatos contendo nome e um canal de contato.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. Aplique o protocolo de 5 passos <span class="text-xs text-neutral-500">(mÃ©dio)</span></h3><p class="text-neutral-300 text-sm">Pegue uma automaÃ§Ã£o que vocÃª tem (ou planeja) e passe pelos 5 passos na ordem. <span class="text-blue-400">CritÃ©rio:</span> ao menos um passo/requisito deletado antes de qualquer otimizaÃ§Ã£o, com justificativa.</p></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. Use o meta-prompt num problema travado <span class="text-xs text-neutral-500">(fÃ¡cil)</span></h3><p class="text-neutral-300 text-sm">Escolha algo que vocÃª nÃ£o sabe resolver e mande o meta-prompt de clarificaÃ§Ã£o. Responda Ã s perguntas. <span class="text-blue-400">CritÃ©rio:</span> vocÃª enuncia o gargalo real em uma frase clara depois da troca.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">1. Desmonte com primeiros princêÂ­pios <span class="text-xs text-neutral-500">(mêÂ©dio)</span></h3><p class="text-neutral-300 text-sm">Pegue uma "regra fixa" do seu trabalho ("isso leva 3 dias", "precisa de tal aprovaêÂ§êÂ£o"). Liste as suposiêÂ§êÂµes e separe fêÂ­sica de convenêÂ§êÂ£o. <span class="text-blue-400">CritêÂ©rio:</span> identificou ao menos uma "lei" que era sêÂ³ recomendaêÂ§êÂ£o e descreveu uma alternativa viêÂ¡vel.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">2. Mapeie sua ideia na stack universal <span class="text-xs text-neutral-500">(mêÂ©dio)</span></h3><p class="text-neutral-300 text-sm">Escolha um projeto seu e preencha as cinco funêÂ§êÂµes: pensar / guardar / criar / raspar / conectar. <span class="text-blue-400">CritêÂ©rio:</span> as cinco endereêÂ§adas, com justificativa para cada peêÂ§a incluêÂ­da ou dispensada.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">3. Rode o fluxo de leads <span class="text-xs text-neutral-500">(prêÂ¡tico)</span></h3><p class="text-neutral-300 text-sm">Conecte uma loja de raspadores ao Claude Code e raspe 10 leads reais do seu ICP, em HTML. <span class="text-blue-400">CritêÂ©rio:</span> arquivo HTML aberto no navegador com 10 contatos contendo nome e um canal de contato.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">4. Aplique o protocolo de 5 passos <span class="text-xs text-neutral-500">(mêÂ©dio)</span></h3><p class="text-neutral-300 text-sm">Pegue uma automaêÂ§êÂ£o que vocêÂª tem (ou planeja) e passe pelos 5 passos na ordem. <span class="text-blue-400">CritêÂ©rio:</span> ao menos um passo/requisito deletado antes de qualquer otimizaêÂ§êÂ£o, com justificativa.</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><h3 class="font-semibold mb-1">5. Use o meta-prompt num problema travado <span class="text-xs text-neutral-500">(fêÂ¡cil)</span></h3><p class="text-neutral-300 text-sm">Escolha algo que vocêÂª nêÂ£o sabe resolver e mande o meta-prompt de clarificaêÂ§êÂ£o. Responda êÂ s perguntas. <span class="text-blue-400">CritêÂ©rio:</span> vocêÂª enuncia o gargalo real em uma frase clara depois da troca.</p></div>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âŒ¨ï¸ Prompts prontos</h2>
-<p class="text-neutral-300 text-sm mb-6">Comece sempre pelo <strong class="text-blue-400">meta-prompt de clarificaÃ§Ã£o</strong> â€” Ã© o mais importante. O banco completo estÃ¡ na <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Biblioteca â†’ Prompts</a>.</p>
+<h2 class="text-2xl font-bold mb-6">ê¢ÅÂ¨ê¯Â¸Â Prompts prontos</h2>
+<p class="text-neutral-300 text-sm mb-6">Comece sempre pelo <strong class="text-blue-400">meta-prompt de clarificaêÂ§êÂ£o</strong> ê¢â¬â êÂ© o mais importante. O banco completo estêÂ¡ na <a class="text-sky-400 hover:text-sky-300" href="../trilha4/modulo-4-1.html">Biblioteca ê¢â â Prompts</a>.</p>
 <div class="space-y-5">
-<div class="bg-dark-800 rounded-xl border border-blue-500/30 p-5"><p class="text-sm text-blue-400 font-semibold mb-2">â­ Meta-prompt de clarificaÃ§Ã£o (o mais importante)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Este Ã© o resultado que eu quero: [descreva o resultado desejado].
-Antes de propor qualquer soluÃ§Ã£o, me faÃ§a perguntas para esclarecer
-minhas intenÃ§Ãµes. Como devo pensar este problema? Depois vamos
-pensar a soluÃ§Ã£o juntos.</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">This is what I am trying to achieve: [desired outcome].
+<div class="bg-dark-800 rounded-xl border border-blue-500/30 p-5"><p class="text-sm text-blue-400 font-semibold mb-2">ê¢Â­Â Meta-prompt de clarificaêÂ§êÂ£o (o mais importante)</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Este êÂ© o resultado que eu quero: [descreva o resultado desejado].
+Antes de propor qualquer soluêÂ§êÂ£o, me faêÂ§a perguntas para esclarecer
+minhas intenêÂ§êÂµes. Como devo pensar este problema? Depois vamos
+pensar a soluêÂ§êÂ£o juntos.</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">This is what I am trying to achieve: [desired outcome].
 Ask me questions to clarify my intentions before proposing anything.
 How should I best think about this problem? Then we'll think about
 the solution together.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Desmontar por primeiros princÃ­pios</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Quebre este problema em primeiros princÃ­pios. Liste as suposiÃ§Ãµes,
-separe o que Ã© restriÃ§Ã£o fÃ­sica real do que Ã© sÃ³ convenÃ§Ã£o
-("sempre se fez assim"), e reconstrua a soluÃ§Ã£o a partir do que
-nÃ£o pode ser duvidado: [problema].</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">Break this problem down to first principles. List the assumptions,
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Desmontar por primeiros princêÂ­pios</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Quebre este problema em primeiros princêÂ­pios. Liste as suposiêÂ§êÂµes,
+separe o que êÂ© restriêÂ§êÂ£o fêÂ­sica real do que êÂ© sêÂ³ convenêÂ§êÂ£o
+("sempre se fez assim"), e reconstrua a soluêÂ§êÂ£o a partir do que
+nêÂ£o pode ser duvidado: [problema].</pre><p class="text-xs text-neutral-500 mt-2 mb-1">Original (EN):</p><pre class="font-mono text-xs bg-dark-900 rounded-lg p-3 overflow-x-auto text-neutral-400 whitespace-pre-wrap">Break this problem down to first principles. List the assumptions,
 separate real physical constraints from mere convention
 ("this is how it's always done"), and rebuild the solution from
 what cannot be doubted: [problem].</pre></div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Aplicar o protocolo de 5 passos</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Aplique o protocolo de 5 passos a este processo, na ordem:
-(1) questionar cada requisito â€” cada um precisa do nome de uma
-pessoa responsÃ¡vel; (2) deletar partes; (3) simplificar e otimizar;
+(1) questionar cada requisito ê¢â¬â cada um precisa do nome de uma
+pessoa responsêÂ¡vel; (2) deletar partes; (3) simplificar e otimizar;
 (4) acelerar o ciclo; (5) automatizar. Processo: [descreva].</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Mapear minha ideia na stack universal</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Tenho esta ideia: [ideia]. Mapeie-a na stack universal â€” pensar,
-guardar, criar visuais, raspar dados, conectar com automaÃ§Ãµes.
-Para cada uma das cinco funÃ§Ãµes, diga qual ferramenta usar ou se
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Mapear minha ideia na stack universal</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Tenho esta ideia: [ideia]. Mapeie-a na stack universal ê¢â¬â pensar,
+guardar, criar visuais, raspar dados, conectar com automaêÂ§êÂµes.
+Para cada uma das cinco funêÂ§êÂµes, diga qual ferramenta usar ou se
 posso dispensar.</pre></div>
-<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Raspar leads</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Quero alcanÃ§ar [nicho] em [cidade/regiÃ£o]. Use uma loja de
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Raspar leads</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Quero alcanêÂ§ar [nicho] em [cidade/regiêÂ£o]. Use uma loja de
 raspadores, encontre o melhor "actor" e me traga, de cada lead:
-nome, e-mail, redes sociais e um fato interessante. Me dÃª 10 para
-eu iniciar conversas. Pode entregar numa pÃ¡gina HTML bonita.</pre></div>
+nome, e-mail, redes sociais e um fato interessante. Me dêÂª 10 para
+eu iniciar conversas. Pode entregar numa pêÂ¡gina HTML bonita.</pre></div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><p class="text-sm text-neutral-400 mb-2">Empacotar resultado em dashboard recorrente</p><pre class="font-mono text-sm bg-dark-900 rounded-lg p-4 overflow-x-auto text-neutral-200 whitespace-pre-wrap">Quero um dashboard com estes dados: [campos]. Meu resultado
 desejado: [o que quero ver e fazer]. Gere em HTML, organize por
-[critÃ©rio], e me explique como hospedar e agendar a atualizaÃ§Ã£o a
+[critêÂ©rio], e me explique como hospedar e agendar a atualizaêÂ§êÂ£o a
 cada 7 dias.</pre></div>
 </div>
 </section>
 <!-- ERROS COMUNS -->
 <section class="mb-16">
-<h2 class="text-2xl font-bold mb-6">âš ï¸ Erros comuns</h2>
+<h2 class="text-2xl font-bold mb-6">ê¢Å¡Â ê¯Â¸Â Erros comuns</h2>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Otimizar antes de deletar.</strong> VocÃª simplifica e automatiza um passo que nunca deveria existir. Sempre questione e delete primeiro.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Confundir convenÃ§Ã£o com fÃ­sica.</strong> Aceitar "nÃ£o dÃ¡ em uma semana" como lei. Quase sempre Ã© recomendaÃ§Ã£o â€” pergunte qual Ã© a restriÃ§Ã£o <em>real</em>.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Raspar sem ICP.</strong> Coletar dados sem saber quem vocÃª procura gera uma lista grande e inÃºtil. Defina o pÃºblico antes.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Pular a validaÃ§Ã£o de e-mails.</strong> Lista cheia de e-mails que quicam queima sua reputaÃ§Ã£o de envio. Valide ou use uma fonte jÃ¡ validada.</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">âœ—</span><span><strong>Pedir soluÃ§Ã£o sem clareza.</strong> Mandar a IA "resolver" um problema mal definido. Use o meta-prompt e deixe a IA te entrevistar primeiro.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Otimizar antes de deletar.</strong> VocêÂª simplifica e automatiza um passo que nunca deveria existir. Sempre questione e delete primeiro.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Confundir convenêÂ§êÂ£o com fêÂ­sica.</strong> Aceitar "nêÂ£o dêÂ¡ em uma semana" como lei. Quase sempre êÂ© recomendaêÂ§êÂ£o ê¢â¬â pergunte qual êÂ© a restriêÂ§êÂ£o <em>real</em>.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Raspar sem ICP.</strong> Coletar dados sem saber quem vocêÂª procura gera uma lista grande e inêÂºtil. Defina o pêÂºblico antes.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Pular a validaêÂ§êÂ£o de e-mails.</strong> Lista cheia de e-mails que quicam queima sua reputaêÂ§êÂ£o de envio. Valide ou use uma fonte jêÂ¡ validada.</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400 mt-0.5">ê¢Åâ</span><span><strong>Pedir soluêÂ§êÂ£o sem clareza.</strong> Mandar a IA "resolver" um problema mal definido. Use o meta-prompt e deixe a IA te entrevistar primeiro.</span></li>
 </ul>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-blue-900/40 via-dark-800 to-dark-800 rounded-xl border border-blue-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumo do mÃ³dulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Åâ¦</span> Resumo do mêÂ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong>Primeiros princÃ­pios</strong><span class="text-neutral-400"> â€” tira as suposiÃ§Ãµes, conta os Ã¡tomos; separe fÃ­sica de convenÃ§Ã£o e pergunte qual Ã© a restriÃ§Ã£o real.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong>Protocolo de 5 passos</strong><span class="text-neutral-400"> â€” questione â†’ delete â†’ simplifique â†’ acelere â†’ automatize. A ordem Ã© sagrada.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong>Stack universal</strong><span class="text-neutral-400"> â€” pensar + guardar + criar + raspar + conectar. Quase tudo cabe nessas cinco.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong>Fluxo de leads</strong><span class="text-neutral-400"> â€” ICP â†’ raspar â†’ validar â†’ empacotar num HTML utilizÃ¡vel.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong>Alta agÃªncia + meta-prompt</strong><span class="text-neutral-400"> â€” quando travar, faÃ§a a IA te entrevistar antes de propor.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong>Primeiros princêÂ­pios</strong><span class="text-neutral-400"> ê¢â¬â tira as suposiêÂ§êÂµes, conta os êÂ¡tomos; separe fêÂ­sica de convenêÂ§êÂ£o e pergunte qual êÂ© a restriêÂ§êÂ£o real.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong>Protocolo de 5 passos</strong><span class="text-neutral-400"> ê¢â¬â questione ê¢â â delete ê¢â â simplifique ê¢â â acelere ê¢â â automatize. A ordem êÂ© sagrada.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong>Stack universal</strong><span class="text-neutral-400"> ê¢â¬â pensar + guardar + criar + raspar + conectar. Quase tudo cabe nessas cinco.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong>Fluxo de leads</strong><span class="text-neutral-400"> ê¢â¬â ICP ê¢â â raspar ê¢â â validar ê¢â â empacotar num HTML utilizêÂ¡vel.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">ê¢Åâ</span><div><strong>Alta agêÂªncia + meta-prompt</strong><span class="text-neutral-400"> ê¢â¬â quando travar, faêÂ§a a IA te entrevistar antes de propor.</span></div></div>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-blue-400 mb-3">Checklist de conclusÃ£o</h3>
+<h3 class="font-semibold text-blue-400 mb-3">Checklist de conclusêÂ£o</h3>
 <ul class="space-y-2 text-sm text-neutral-300">
-<li>â˜ Sei explicar, com minhas palavras, o que Ã© pensamento de primeiros princÃ­pios e dei um exemplo prÃ³prio.</li>
-<li>â˜ Consigo separar, num problema real, o que Ã© restriÃ§Ã£o fÃ­sica do que Ã© sÃ³ convenÃ§Ã£o.</li>
-<li>â˜ Sei recitar e aplicar o protocolo de 5 passos na ordem.</li>
-<li>â˜ Sei nomear as 5 peÃ§as da stack universal e mapear uma ideia minha nelas.</li>
-<li>â˜ Conectei uma loja de raspadores ao Claude Code e rodei uma raspagem de leads reais.</li>
-<li>â˜ Validei os e-mails de uma lista.</li>
-<li>â˜ Tenho o meta-prompt de clarificaÃ§Ã£o salvo e jÃ¡ usei pelo menos uma vez.</li>
+<li>ê¢ËÂ Sei explicar, com minhas palavras, o que êÂ© pensamento de primeiros princêÂ­pios e dei um exemplo prêÂ³prio.</li>
+<li>ê¢ËÂ Consigo separar, num problema real, o que êÂ© restriêÂ§êÂ£o fêÂ­sica do que êÂ© sêÂ³ convenêÂ§êÂ£o.</li>
+<li>ê¢ËÂ Sei recitar e aplicar o protocolo de 5 passos na ordem.</li>
+<li>ê¢ËÂ Sei nomear as 5 peêÂ§as da stack universal e mapear uma ideia minha nelas.</li>
+<li>ê¢ËÂ Conectei uma loja de raspadores ao Claude Code e rodei uma raspagem de leads reais.</li>
+<li>ê¢ËÂ Validei os e-mails de uma lista.</li>
+<li>ê¢ËÂ Tenho o meta-prompt de clarificaêÂ§êÂ£o salvo e jêÂ¡ usei pelo menos uma vez.</li>
 </ul>
 </div>
 <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
-<h3 class="font-semibold text-blue-400 mb-2">PrÃ³ximo mÃ³dulo:</h3>
-<p class="text-neutral-300">2.4 â€” Design Systems: dar identidade visual consistente ao que vocÃª constrÃ³i</p>
+<h3 class="font-semibold text-blue-400 mb-2">PrêÂ³ximo mêÂ³dulo:</h3>
+<p class="text-neutral-300">2.4 ê¢â¬â Design Systems: dar identidade visual consistente ao que vocêÂª constrêÂ³i</p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Voltar para a trilha</a>
-<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="modulo-2-4.html">PrÃ³ximo: 2.4 â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Voltar para a trilha</a>
+<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="modulo-2-4.html">PrêÂ³ximo: 2.4 ê¢â â</a>
 </div>
 </div>
 </section>
@@ -591,7 +591,7 @@ cada 7 dias.</pre></div>
 <!-- FOOTER -->
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Claude Code na PrÃ¡tica â€” <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>Claude Code na PrêÂ¡tica ê¢â¬â <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <!-- SCRIPTS: nucleo v1 -->
@@ -600,7 +600,7 @@ cada 7 dias.</pre></div>
     (function(){ var tt=document.getElementById('theme-toggle'); if(!tt) return; var di=document.getElementById('theme-toggle-dark-icon'), li=document.getElementById('theme-toggle-light-icon'), html=document.documentElement;
       function sync(){ if(html.classList.contains('dark')){ li&&li.classList.remove('hidden'); di&&di.classList.add('hidden'); } else { di&&di.classList.remove('hidden'); li&&li.classList.add('hidden'); } }
       sync();
-      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHÉ.prefs')||'{}'); p.theme=dark?'ARCKHÉ-dark':'claro'; localStorage.setItem('ARCKHÉ.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
+      tt.addEventListener('click', function(){ html.classList.toggle('dark'); var dark=html.classList.contains('dark'); localStorage.setItem('theme', dark?'dark':'light'); try{ var p=JSON.parse(localStorage.getItem('ARCKHê.prefs')||'{}'); p.theme=dark?'ARCKHê-dark':'claro'; localStorage.setItem('ARCKHê.prefs', JSON.stringify(p)); }catch(e){} html.style.colorScheme=dark?'dark':'light'; sync(); }); })();
     function openModal(id){ var m=document.getElementById(id); if(m){ m.classList.remove('hidden'); document.body.style.overflow='hidden'; } }
     function closeModal(){ document.querySelectorAll('.modal').forEach(function(m){ m.classList.add('hidden'); }); document.body.style.overflow='auto'; }
     document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
@@ -608,19 +608,19 @@ cada 7 dias.</pre></div>
 <!-- Camada de aprendizagem -->
 <script>
     window.addEventListener('DOMContentLoaded', function(){
-      if (window.ARCKHÉ && ARCKHÉ.registerCheck) {
-        ARCKHÉ.registerCheck('modulo-2-3#q1', {
+      if (window.ARCKHê && ARCKHê.registerCheck) {
+        ARCKHê.registerCheck('modulo-2-3#q1', {
           answer: 1,
           explain: {
-            0: 'Automatizar Ã© o Ãºltimo passo â€” fazÃª-lo cedo cristaliza o que deveria ter sido deletado.',
-            1: 'Isso! Primeiro questione cada requisito (cada um com dono) e delete o que sobra; sÃ³ entÃ£o simplifique.',
-            2: 'Acelerar vem depois de simplificar. VocÃª nÃ£o acelera um sistema que ainda carrega passos inÃºteis.'
+            0: 'Automatizar êÂ© o êÂºltimo passo ê¢â¬â fazêÂª-lo cedo cristaliza o que deveria ter sido deletado.',
+            1: 'Isso! Primeiro questione cada requisito (cada um com dono) e delete o que sobra; sêÂ³ entêÂ£o simplifique.',
+            2: 'Acelerar vem depois de simplificar. VocêÂª nêÂ£o acelera um sistema que ainda carrega passos inêÂºteis.'
           }
         });
       }
     });
   </script>
 <script src="../../assets/learn.js"></script>
-<script>if (window.ARCKHÉ && typeof window.ARCKHÉ.init==='function'){ window.ARCKHÉ.init(); }</script>
+<script>if (window.ARCKHê && typeof window.ARCKHê.init==='function'){ window.ARCKHê.init(); }</script>
 </body>
 </html>
